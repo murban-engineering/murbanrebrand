@@ -126,8 +126,8 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/images/hero-main.png"
-                alt="Mountain landscape with camping tent at sunset"
+                src="/images/hero-industrial.jpg"
+                alt="Industrial storage tanks with safety railings and piping"
                 fill
                 className="object-cover"
                 priority
