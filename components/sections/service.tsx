@@ -40,12 +40,9 @@ import {
   ArrowRight,
   type LucideIcon,
 } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import servicesBuilding from "@/assets/services-building.jpg";
 import modernWhiteBuilding from "@/assets/modern-white-building.jpg";
 import storageTanks from "@/assets/storage-tanks.jpg";
 import modernFactory from "@/assets/modern-factory.jpg";
@@ -55,6 +52,7 @@ type ServiceCardProps = {
   icon: LucideIcon;
   title: string;
   description: string;
+  imagePlaceholderLabel?: string;
   onSelect?: () => void;
   showCTA?: boolean;
   ctaHref?: string;
@@ -97,6 +95,7 @@ const ServiceCard = ({
   icon: Icon,
   title,
   description,
+  imagePlaceholderLabel,
   onSelect,
   showCTA = true,
   ctaHref = "/contact",
@@ -143,6 +142,12 @@ const ServiceCard = ({
             <div className="service-card-header">
               <Icon className="service-card-icon" aria-hidden="true" strokeWidth={2} />
               <h3 className="service-card-title">{title}</h3>
+            </div>
+            <div
+              className="mt-4 flex h-32 items-center justify-center rounded-xl border border-dashed border-primary/30 bg-primary/5 px-3 text-center text-xs font-medium uppercase tracking-wide text-primary/80"
+              aria-label={`${title} image placeholder`}
+            >
+              {imagePlaceholderLabel ?? `Image placeholder for ${title}`}
             </div>
             <p className="service-card-description">{description}</p>
           </article>
