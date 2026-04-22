@@ -1,85 +1,48 @@
 "use client";
 
-import { FadeImage } from "@/components/fade-image";
-
 const features = [
   {
-    title: "Smart Temperature Control",
-    description: "Innovation",
-    image: "/images/d18fe616-5596-4559-90f5-a90f5397d0d8.png",
+    title: "Precision — Ultrasonic Testing",
+    description: "Advanced UT techniques for internal flaw detection",
   },
   {
-    title: "Ultra-Light Carbon Frame",
-    description: "Performance",
-    image: "/images/e26fa9c3-966d-4966-94a4-954a1e511c1c.png",
+    title: "Innovation — Phased Array UT",
+    description: "Multi-element probes for complex geometry scanning",
   },
   {
-    title: "Weather-Resistant Design",
-    description: "Durability",
-    image: "/images/car.jpg",
+    title: "Safety — Risk Assessment",
+    description: "API 579/580 fitness-for-service evaluations",
   },
   {
-    title: "Integrated GPS Tracking",
-    description: "Navigation",
-    image: "/images/204cee22-9e85-49e8-9303-1d309af626b0.png",
+    title: "Analysis — MFL Scanning",
+    description: "Magnetic flux leakage for tank floor mapping",
   },
   {
-    title: "Built-In LED Flashlight",
-    description: "Visibility",
-    image: "/images/led-flashlight-bottle.png",
+    title: "Detection — Radiographic Testing",
+    description: "X-ray and gamma imaging for weld inspection",
   },
   {
-    title: "Self-Heating Technology",
-    description: "Comfort",
-    image: "/images/heating-campfire.png",
+    title: "Monitoring — Thermal Imaging",
+    description: "Infrared surveys for temperature anomalies",
   },
 ];
 
 export function FeaturedProductsSection() {
   return (
-    <section id="technology" className="bg-background">
-      {/* Section Title */}
-      <div className="px-6 py-20 text-center md:px-12 md:py-28 lg:px-20 lg:py-32 lg:pb-20">
-        <h2 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl lg:text-5xl">
-          Engineered for Excellence.
-          <br />
-          Designed for Adventure.
-        </h2>
-        <p className="mx-auto mt-6 max-w-md text-sm text-muted-foreground">
-          Technology
-        </p>
-      </div>
+    <section id="services" className="bg-background px-6 py-20 md:px-12 lg:px-20">
+      <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
+        Engineered for Excellence.
+        <br />
+        Designed for Industry.
+      </h2>
 
-      {/* Features Grid */}
-      <div className="grid grid-cols-1 gap-4 px-6 pb-20 md:grid-cols-3 md:px-12 lg:px-20">
+      <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2">
         {features.map((feature) => (
-          <div key={feature.title} className="group">
-            {/* Image */}
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-              <FadeImage
-                src={feature.image || "/placeholder.svg"}
-                alt={feature.title}
-                fill
-                className="object-cover group-hover:scale-105"
-              />
-            </div>
-
-            {/* Content */}
-            <div className="py-6">
-              <p className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
-                {feature.description}
-              </p>
-              <h3 className="text-foreground text-xl font-semibold">
-                {feature.title}
-              </h3>
-            </div>
-          </div>
+          <article key={feature.title} className="rounded-2xl border border-border p-6">
+            <h3 className="text-xl font-semibold text-foreground">{feature.title}</h3>
+            <p className="mt-2 text-muted-foreground">{feature.description}</p>
+          </article>
         ))}
-      </div>
-
-      {/* CTA Link */}
-      <div className="flex justify-center px-6 pb-28 md:px-12 lg:px-20">
-        
       </div>
     </section>
   );
