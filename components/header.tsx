@@ -40,16 +40,28 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-10 md:flex">
           <Link
-            href="#products"
+            href="#"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Products
+            Home
           </Link>
           <Link
-            href="#technology"
+            href="#"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Technology
+            About
+          </Link>
+          <Link
+            href="#"
+            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+          >
+            Services
+          </Link>
+          <Link
+            href="#"
+            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+          >
+            Industries
           </Link>
           <Link
             href="#gallery"
@@ -58,20 +70,20 @@ export function Header() {
             Gallery
           </Link>
           <Link
-            href="#accessories"
+            href="#"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Accessories
+            Contact
           </Link>
         </nav>
 
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="#reserve"
-            className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${isScrolled ? "bg-foreground text-background hover:opacity-80" : "bg-white text-foreground hover:bg-white/90"}`}
+            href="#"
+            className={`text-sm font-medium transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Buy the product
+            Portal
           </Link>
         </div>
 
@@ -91,39 +103,53 @@ export function Header() {
         <div className="border-t border-border bg-background px-6 py-8 md:hidden rounded-b-2xl">
           <nav className="flex flex-col gap-6">
             <Link
-              href="#products"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Products
+              Home
             </Link>
             <Link
-              href="#technology"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Technology
+              About
             </Link>
             <Link
-              href="#gallery"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               Gallery
             </Link>
             <Link
-              href="#accessories"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Accessories
+              Services
             </Link>
             <Link
-              href="#reserve"
-              className="mt-4 bg-foreground px-5 py-3 text-center text-sm font-medium text-background rounded-full"
+              href="#"
+              className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Reserve
+              Industries
+            </Link>
+            <Link
+              href="#"
+              className="text-lg text-foreground"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </Link>
+            <Link
+              href="#"
+              className="text-lg text-foreground"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Portal
             </Link>
           </nav>
         </div>
