@@ -2,82 +2,125 @@
 
 import Link from "next/link";
 
-const companyLinks = ["About Us", "Industry Solutions", "Project Gallery", "Certifications", "FAQ"];
-const serviceLinks = [
-  "NDT Inspection",
-  "Phased Array Testing",
-  "API 653 Tank Inspection",
-  "API 570 Piping",
-  "3D Laser Scanning",
-  "Tank Calibration",
-  "View all services",
-];
+const footerLinks = {
+  explore: [
+    { label: "Products", href: "#products" },
+    { label: "Technology", href: "#technology" },
+    { label: "Gallery", href: "#gallery" },
+    { label: "Accessories", href: "#accessories" },
+  ],
+  about: [
+    { label: "Our Story", href: "#" },
+    { label: "Team", href: "#" },
+    { label: "Careers", href: "#" },
+    { label: "Contact", href: "#" },
+  ],
+  service: [
+    { label: "FAQ", href: "#" },
+    { label: "Shipping", href: "#" },
+    { label: "Returns", href: "#" },
+    { label: "Warranty", href: "#" },
+  ],
+};
 
 export function FooterSection() {
-  const year = new Date().getFullYear();
-
   return (
-    <footer className="bg-background border-t border-border">
-      <div className="grid gap-10 px-6 py-16 md:px-12 lg:grid-cols-4 lg:px-20">
-        <div className="lg:col-span-2">
-          <h3 className="text-xl font-semibold">MURBAN Engineering</h3>
-          <p className="mt-4 max-w-xl text-muted-foreground">
-            Specialist firm in Asset Integrity, Inspection, and Non-Destructive Testing (NDT). We deliver reliable and
-            safe inspection solutions for critical infrastructure across Africa.
-          </p>
-          <div className="mt-6 space-y-1 text-sm text-muted-foreground">
-            <p>info@murban-eng.com</p>
-            <p>+254 20 265 0618</p>
-            <p>Mombasa, Kenya</p>
+    <footer className="bg-background">
+      {/* Main Footer Content */}
+      <div className="border-t border-border px-6 py-16 md:px-12 md:py-20 lg:px-20">
+        <div className="grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-5">
+          {/* Brand */}
+          <div className="col-span-2 md:col-span-1 lg:col-span-2">
+            <Link href="/" className="text-lg font-medium text-foreground">
+              MURBAN ENGINEERING
+            </Link>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              Premium smart bottles engineered for adventure. GPS tracking, LED flashlight, and self-heating technology.
+            </p>
           </div>
-          <Link href="#" className="mt-5 inline-flex text-sm font-medium underline underline-offset-4">
-            Connect on LinkedIn
-          </Link>
-        </div>
 
-        <div>
-          <h4 className="text-sm font-semibold uppercase tracking-wider">Company</h4>
-          <ul className="mt-4 space-y-2">
-            {companyLinks.map((link) => (
-              <li key={link} className="text-sm text-muted-foreground">
-                <Link href="#">{link}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+          {/* Explore */}
+          <div>
+            <h4 className="mb-4 text-sm font-medium text-foreground">Explore</h4>
+            <ul className="space-y-3">
+              {footerLinks.explore.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <div>
-          <h4 className="text-sm font-semibold uppercase tracking-wider">Services</h4>
-          <ul className="mt-4 space-y-2">
-            {serviceLinks.map((link) => (
-              <li key={link} className="text-sm text-muted-foreground">
-                <Link href="/services">{link}</Link>
-              </li>
-            ))}
-          </ul>
+          {/* About */}
+          <div>
+            <h4 className="mb-4 text-sm font-medium text-foreground">About</h4>
+            <ul className="space-y-3">
+              {footerLinks.about.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          <div className="mt-8 rounded-2xl border border-border p-4">
-            <h5 className="font-medium">Start a Project</h5>
-            <p className="mt-2 text-sm text-muted-foreground">Ready to discuss your inspection needs? Our team is here to help.</p>
-            <div className="mt-4 space-y-2 text-sm">
-              <Link href="/contact" className="block underline underline-offset-4">
-                Get in Touch
-              </Link>
-              <Link href="/portal" className="block underline underline-offset-4">
-                Client Portal
-              </Link>
-            </div>
+          {/* Service */}
+          <div>
+            <h4 className="mb-4 text-sm font-medium text-foreground">Service</h4>
+            <ul className="space-y-3">
+              {footerLinks.service.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-border px-6 py-5 md:px-12 lg:px-20">
-        <div className="flex flex-col gap-3 text-sm text-muted-foreground md:flex-row md:justify-between">
-          <p>© {year} Murban Engineering Services. All rights reserved.</p>
-          <div className="flex gap-4">
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">FAQ</Link>
-            <Link href="/contact">Contact</Link>
+      {/* Bottom Bar */}
+      <div className="border-t border-border px-6 py-6 md:px-12 lg:px-20">
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+          <p className="text-xs text-muted-foreground">
+            2026 MURBAN ENGINEERING. All rights reserved.
+          </p>
+
+          
+
+          {/* Social Links */}
+          <div className="flex items-center gap-4">
+            <Link
+              href="#"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Instagram
+            </Link>
+            <Link
+              href="#"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Twitter
+            </Link>
+            <Link
+              href="#"
+              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
+            >
+              YouTube
+            </Link>
           </div>
         </div>
       </div>
