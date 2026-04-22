@@ -1,137 +1,34 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState, useCallback } from "react";
+import Link from "next/link";
+
+const projects = [
+  { title: "API 653 — Storage Tank Inspection", image: "/images/bottle-water.png" },
+  { title: "API 570 — Pipeline Assessment", image: "/images/bottle-stream.png" },
+  { title: "Marine NDT — Offshore Inspection", image: "/images/bottle-lake.png" },
+];
 
 export function GallerySection() {
-  const galleryRef = useRef<HTMLDivElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [sectionHeight, setSectionHeight] = useState("100vh");
-  const [translateX, setTranslateX] = useState(0);
-  const rafRef = useRef<number | null>(null);
-  const lastScrollRef = useRef(0);
-
-  const images = [
-    { src: "/images/bottle-bike.png", alt: "Thermal bottle on bike" },
-    { src: "/images/bottle-lake.png", alt: "Thermal bottle by lake" },
-    { src: "/images/bottle-water.png", alt: "Thermal bottle in water" },
-    { src: "/images/bottle-stream.png", alt: "Thermal bottle by stream" },
-    { src: "/images/bottle-fire.png", alt: "Thermal bottle by fire" },
-    { src: "/images/bottle-snow.png", alt: "Thermal bottle in snow" },
-    { src: "/images/bottle-mountain.png", alt: "Thermal bottle on mountain" },
-    { src: "/images/bottle-canyon.png", alt: "Thermal bottle at canyon" },
-  ];
-
-  // Calculate section height based on content width
-  useEffect(() => {
-    const calculateHeight = () => {
-      if (!containerRef.current) return;
-      const containerWidth = containerRef.current.scrollWidth;
-      const viewportWidth = window.innerWidth;
-      const viewportHeight = window.innerHeight;
-      // Height = viewport height + the extra scroll needed to reveal all content
-      const totalHeight = viewportHeight + (containerWidth - viewportWidth);
-      setSectionHeight(`${totalHeight}px`);
-    };
-
-    // Small delay to ensure container is rendered
-    const timer = setTimeout(calculateHeight, 100);
-    window.addEventListener("resize", calculateHeight);
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("resize", calculateHeight);
-    };
-  }, []);
-
-  const updateTransform = useCallback(() => {
-    if (!galleryRef.current || !containerRef.current) return;
-    
-    const rect = galleryRef.current.getBoundingClientRect();
-    const containerWidth = containerRef.current.scrollWidth;
-    const viewportWidth = window.innerWidth;
-    
-    // Total scroll distance needed to reveal all images
-    const totalScrollDistance = containerWidth - viewportWidth;
-    
-    // Current scroll position within this section
-    const scrolled = Math.max(0, -rect.top);
-    
-    // Progress from 0 to 1
-    const progress = Math.min(1, scrolled / totalScrollDistance);
-    
-    // Calculate new translateX
-    const newTranslateX = progress * -totalScrollDistance;
-    
-    setTranslateX(newTranslateX);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Cancel any pending animation frame
-      if (rafRef.current) {
-        cancelAnimationFrame(rafRef.current);
-      }
-      
-      // Use requestAnimationFrame for smooth updates
-      rafRef.current = requestAnimationFrame(updateTransform);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    updateTransform();
-    
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      if (rafRef.current) {
-        cancelAnimationFrame(rafRef.current);
-      }
-    };
-  }, [updateTransform]);
-
   return (
-    <section 
-      id="gallery"
-      ref={galleryRef}
-      className="relative bg-background"
-      style={{ height: sectionHeight }}
-    >
-      {/* Sticky container */}
-      <div className="sticky top-0 h-screen overflow-hidden">
-        <div className="flex h-full items-center">
-          {/* Horizontal scrolling container */}
-          <div 
-            ref={containerRef}
-            className="flex gap-6 px-6"
-            style={{
-              transform: `translate3d(${translateX}px, 0, 0)`,
-              WebkitTransform: `translate3d(${translateX}px, 0, 0)`,
-              backfaceVisibility: 'hidden',
-              WebkitBackfaceVisibility: 'hidden',
-              perspective: 1000,
-              WebkitPerspective: 1000,
-              touchAction: 'pan-y',
-            }}
-          >
-            {images.map((image, index) => (
-              <div
-                key={index}
-                className="relative h-[70vh] w-[85vw] flex-shrink-0 overflow-hidden rounded-2xl md:w-[60vw] lg:w-[45vw]"
-                style={{
-                  transform: 'translateZ(0)',
-                  WebkitTransform: 'translateZ(0)',
-                }}
-              >
-                <Image
-                  src={image.src || "/placeholder.svg"}
-                  alt={image.alt}
-                  fill
-                  className="object-cover"
-                  priority={index < 3}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+    <section id="gallery" className="bg-background px-6 py-20 md:px-12 lg:px-20">
+      <p className="text-sm uppercase tracking-widest text-muted-foreground">Project Gallery</p>
+      <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">Our Work in the Field</h2>
+
+      <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+        {projects.map((project) => (
+          <article key={project.title} className="overflow-hidden rounded-2xl border border-border">
+            <div className="relative h-56">
+              <Image src={project.image} alt={project.title} fill className="object-cover" />
+            </div>
+            <p className="p-5 text-lg font-medium">{project.title}</p>
+          </article>
+        ))}
       </div>
+
+      <Link href="/gallery" className="mt-8 inline-flex text-sm font-semibold underline underline-offset-4">
+        View Full Gallery
+      </Link>
     </section>
   );
 }

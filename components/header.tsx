@@ -5,6 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
+const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Industries", href: "/industries" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Contact", href: "/contact" },
+];
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,75 +28,61 @@ export function Header() {
   }, []);
 
   return (
-    <header 
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-3xl transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-md rounded-full" : "bg-transparent"}`}
+    <header
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-6xl transition-all duration-300 ${
+        isScrolled ? "bg-background/90 backdrop-blur-md rounded-2xl" : "bg-transparent"
+      }`}
       style={{
-        boxShadow: isScrolled ? "rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px" : "none"
+        boxShadow: isScrolled
+          ? "rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px"
+          : "none",
       }}
     >
-      <div className="flex items-center justify-between transition-all duration-300 px-2 pl-5 py-2">
-        {/* Logo */}
-        <Link href="#" className="flex items-center">
+      <div className="flex items-center justify-between transition-all duration-300 px-3 py-3 md:px-5">
+        <Link href="/" className="flex items-center gap-3">
           <Image
             src="/images/murban-logo.ico"
             alt="Murban Engineering"
-            width={40}
-            height={40}
+            width={38}
+            height={38}
             className="object-contain"
           />
+          <span className={`text-sm font-semibold ${isScrolled ? "text-foreground" : "text-white"}`}>
+            MURBAN Engineering
+          </span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-10 md:flex">
-          <Link
-            href="#"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Home
-          </Link>
-          <Link
-            href="#"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            About
-          </Link>
-          <Link
-            href="#"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Services
-          </Link>
-          <Link
-            href="#"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Industries
-          </Link>
-          <Link
-            href="#gallery"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Gallery
-          </Link>
-          <Link
-            href="#"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Contact
-          </Link>
+        <nav className="hidden items-center gap-6 md:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className={`text-sm transition-colors ${
+                isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/80 hover:text-white"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
-        {/* CTA */}
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden items-center gap-3 md:flex">
           <Link
-            href="#"
-            className={`text-sm font-medium transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+            href="/portal"
+            className={`text-sm font-medium transition-colors ${
+              isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/80 hover:text-white"
+            }`}
           >
             Portal
           </Link>
+          <Link
+            href="/quote"
+            className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            Get a Quote
+          </Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           type="button"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -98,59 +93,21 @@ export function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="border-t border-border bg-background px-6 py-8 md:hidden rounded-b-2xl">
-          <nav className="flex flex-col gap-6">
-            <Link
-              href="#"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="#"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              href="#"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Gallery
-            </Link>
-            <Link
-              href="#"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Services
-            </Link>
-            <Link
-              href="#"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Industries
-            </Link>
-            <Link
-              href="#"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </Link>
-            <Link
-              href="#"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Portal
-            </Link>
+          <nav className="flex flex-col gap-5">
+            {[...navLinks, { label: "Client Portal", href: "/portal" }, { label: "Get a Quote", href: "/quote" }].map(
+              (link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-lg text-foreground"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ),
+            )}
           </nav>
         </div>
       )}
