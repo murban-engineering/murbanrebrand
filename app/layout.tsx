@@ -7,7 +7,7 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'VILDMARK | Go Further',
+  title: 'MURBAN ENGINEERING | Go Further',
   description: 'High-performance outdoor gear engineered for the modern explorer. Lightweight, durable, adventure-ready.',
   generator: 'v0.app',
   icons: {
