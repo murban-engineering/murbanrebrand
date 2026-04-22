@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 export function Header() {
@@ -26,8 +27,14 @@ export function Header() {
     >
       <div className="flex items-center justify-between transition-all duration-300 px-2 pl-5 py-2">
         {/* Logo */}
-        <Link href="#" className={`text-lg font-medium tracking-tight transition-colors duration-300 ${isScrolled ? "text-foreground" : "text-white"}`}>
-          MURBAN ENGINEERING
+        <Link href="#" className="flex items-center">
+          <Image
+            src="/images/murban-logo.ico"
+            alt="Murban Engineering"
+            width={40}
+            height={40}
+            className="object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation */}
