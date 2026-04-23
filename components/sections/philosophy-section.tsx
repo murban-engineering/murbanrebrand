@@ -84,7 +84,7 @@ export function PhilosophySection() {
               >
                 <Image
                   src="/images/product-backpack.png"
-                  alt="V1 Expedition Backpack in alpine setting"
+                  alt="Field technician backpack kit"
                   fill
                   className="object-cover"
                 />
@@ -106,8 +106,8 @@ export function PhilosophySection() {
                 }}
               >
                 <Image
-                  src="/images/02cdc426-dff4-4dff-b131-1b134c3699b5.png"
-                  alt="V1 Thermal mug in forest setting"
+                  src="/images/product-forest.png"
+                  alt="Technical field gear setup"
                   fill
                   className="object-cover"
                 />
