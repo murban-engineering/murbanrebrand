@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const word = "MURBAN";
@@ -138,21 +139,30 @@ export function HeroSection() {
                 className="absolute inset-0 flex items-end overflow-hidden"
                 style={{ opacity: textOpacity }}
               >
-                <h1 className="w-full text-[22vw] font-medium leading-[0.8] tracking-tighter text-white">
-                  {word.split("").map((letter, index) => (
-                    <span
-                      key={index}
-                      className="inline-block animate-[slideUp_0.8s_ease-out_forwards] opacity-0"
-                      style={{
-                        animationDelay: `${index * 0.08}s`,
-                        transition: 'all 1.5s',
-                        transitionTimingFunction: 'cubic-bezier(0.86, 0, 0.07, 1)',
-                      }}
+                <div className="w-full bg-gradient-to-t from-black/70 via-black/40 to-transparent px-6 pb-10 pt-24 text-white md:px-12 md:pb-14 lg:px-16">
+                  <h1 className="text-2xl font-semibold leading-tight tracking-wide md:text-4xl">
+                    {word}
+                    <br />
+                    ENGINEERING
+                  </h1>
+                  <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/90 md:text-base">
+                    A specialist firm in Asset Integrity, Inspection, and Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions for oil & gas, energy, marine, and industrial sectors across Africa.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <Link
+                      href="#services"
+                      className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black transition hover:bg-white/90"
                     >
-                      {letter}
-                    </span>
-                  ))}
-                </h1>
+                      Explore Services
+                    </Link>
+                    <Link
+                      href="#our-projects"
+                      className="rounded-md border border-white/80 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+                    >
+                      View Our Projects
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
 
