@@ -7,8 +7,8 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'MURBAN ENGINEERING | Go Further',
-  description: 'High-performance outdoor gear engineered for the modern explorer. Lightweight, durable, adventure-ready.',
+  title: 'MURBAN ENGINEERING | Precision Engineering',
+  description: 'Industrial inspection and engineering services for critical infrastructure. NDT, tank calibration, and engineering assessments across Africa.',
   generator: 'v0.app',
   icons: {
     icon: [

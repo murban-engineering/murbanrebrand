@@ -4,49 +4,49 @@ import { FadeImage } from "@/components/fade-image";
 
 const features = [
   {
-    title: "Smart Temperature Control",
-    description: "Innovation",
+    title: "Ultrasonic Testing",
+    description: "NDT Services",
     image: "/images/d18fe616-5596-4559-90f5-a90f5397d0d8.png",
   },
   {
-    title: "Ultra-Light Carbon Frame",
-    description: "Performance",
+    title: "Phased Array UT",
+    description: "Advanced NDT",
     image: "/images/e26fa9c3-966d-4966-94a4-954a1e511c1c.png",
   },
   {
-    title: "Weather-Resistant Design",
-    description: "Durability",
+    title: "Risk Assessment",
+    description: "Engineering",
     image: "/images/car.jpg",
   },
   {
-    title: "Integrated GPS Tracking",
-    description: "Navigation",
+    title: "MFL Scanning",
+    description: "Pipeline Integrity",
     image: "/images/204cee22-9e85-49e8-9303-1d309af626b0.png",
   },
   {
-    title: "Built-In LED Flashlight",
-    description: "Visibility",
+    title: "Radiographic Testing",
+    description: "Inspection",
     image: "/images/led-flashlight-bottle.png",
   },
   {
-    title: "Self-Heating Technology",
-    description: "Comfort",
+    title: "Thermal Imaging",
+    description: "Diagnostics",
     image: "/images/heating-campfire.png",
   },
 ];
 
 export function FeaturedProductsSection() {
   return (
-    <section id="technology" className="bg-background">
+    <section id="services" className="bg-background">
       {/* Section Title */}
       <div className="px-6 py-20 text-center md:px-12 md:py-28 lg:px-20 lg:py-32 lg:pb-20">
         <h2 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl lg:text-5xl">
           Engineered for Excellence.
           <br />
-          Designed for Adventure.
+          Designed for Industry.
         </h2>
         <p className="mx-auto mt-6 max-w-md text-sm text-muted-foreground">
-          Technology
+          Our Services
         </p>
       </div>
 

@@ -40,10 +40,10 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-10 md:flex">
           <Link
-            href="#products"
+            href="#services"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Products
+            Services
           </Link>
           <Link
             href="#technology"
@@ -55,23 +55,23 @@ export function Header() {
             href="#gallery"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Gallery
+            Projects
           </Link>
           <Link
-            href="#accessories"
+            href="#about"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Accessories
+            About
           </Link>
         </nav>
 
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="#reserve"
+            href="#contact"
             className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${isScrolled ? "bg-foreground text-background hover:opacity-80" : "bg-white text-foreground hover:bg-white/90"}`}
           >
-            Buy the product
+            Get in Touch
           </Link>
         </div>
 
@@ -91,11 +91,11 @@ export function Header() {
         <div className="border-t border-border bg-background px-6 py-8 md:hidden rounded-b-2xl">
           <nav className="flex flex-col gap-6">
             <Link
-              href="#products"
+              href="#services"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Products
+              Services
             </Link>
             <Link
               href="#technology"
@@ -109,21 +109,21 @@ export function Header() {
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Gallery
+              Projects
             </Link>
             <Link
-              href="#accessories"
+              href="#about"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Accessories
+              About
             </Link>
             <Link
-              href="#reserve"
+              href="#contact"
               className="mt-4 bg-foreground px-5 py-3 text-center text-sm font-medium text-background rounded-full"
               onClick={() => setIsMenuOpen(false)}
             >
-              Reserve
+              Get in Touch
             </Link>
           </nav>
         </div>

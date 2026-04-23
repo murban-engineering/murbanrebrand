@@ -1,10 +1,10 @@
 "use client";
 
 const specs = [
-  { label: "Weight", value: "400g" },
-  { label: "Capacity", value: "0.5L - 2L" },
-  { label: "Setup", value: "2 min" },
-  { label: "Packed size", value: "30 x 15 cm" },
+  { label: "Years Experience", value: "20+" },
+  { label: "Projects Completed", value: "6,500+" },
+  { label: "Countries Worldwide", value: "35+" },
+  { label: "Compliance Rate", value: "100%" },
 ];
 
 export function EditorialSection() {

@@ -3,23 +3,23 @@
 import Link from "next/link";
 
 const footerLinks = {
-  explore: [
-    { label: "Products", href: "#products" },
-    { label: "Technology", href: "#technology" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Accessories", href: "#accessories" },
+  services: [
+    { label: "NDT Inspection", href: "#services" },
+    { label: "Tank Calibration", href: "#services" },
+    { label: "Engineering", href: "#services" },
+    { label: "Certifications", href: "#" },
   ],
-  about: [
-    { label: "Our Story", href: "#" },
-    { label: "Team", href: "#" },
+  company: [
+    { label: "About Us", href: "#about" },
+    { label: "Projects", href: "#gallery" },
     { label: "Careers", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Contact", href: "#contact" },
   ],
-  service: [
-    { label: "FAQ", href: "#" },
-    { label: "Shipping", href: "#" },
-    { label: "Returns", href: "#" },
-    { label: "Warranty", href: "#" },
+  industries: [
+    { label: "Oil & Gas", href: "#" },
+    { label: "Power Generation", href: "#" },
+    { label: "Storage Terminals", href: "#" },
+    { label: "Marine & Shipping", href: "#" },
   ],
 };
 
@@ -35,15 +35,15 @@ export function FooterSection() {
               MURBAN ENGINEERING
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Premium smart bottles engineered for adventure. GPS tracking, LED flashlight, and self-heating technology.
+              Industrial inspection and engineering services. Serving critical infrastructure across Africa since 2007.
             </p>
           </div>
 
-          {/* Explore */}
+          {/* Services */}
           <div>
-            <h4 className="mb-4 text-sm font-medium text-foreground">Explore</h4>
+            <h4 className="mb-4 text-sm font-medium text-foreground">Services</h4>
             <ul className="space-y-3">
-              {footerLinks.explore.map((link) => (
+              {footerLinks.services.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -56,11 +56,11 @@ export function FooterSection() {
             </ul>
           </div>
 
-          {/* About */}
+          {/* Company */}
           <div>
-            <h4 className="mb-4 text-sm font-medium text-foreground">About</h4>
+            <h4 className="mb-4 text-sm font-medium text-foreground">Company</h4>
             <ul className="space-y-3">
-              {footerLinks.about.map((link) => (
+              {footerLinks.company.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -73,11 +73,11 @@ export function FooterSection() {
             </ul>
           </div>
 
-          {/* Service */}
+          {/* Industries */}
           <div>
-            <h4 className="mb-4 text-sm font-medium text-foreground">Service</h4>
+            <h4 className="mb-4 text-sm font-medium text-foreground">Industries</h4>
             <ul className="space-y-3">
-              {footerLinks.service.map((link) => (
+              {footerLinks.industries.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
@@ -107,7 +107,7 @@ export function FooterSection() {
               href="#"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
-              Instagram
+              LinkedIn
             </Link>
             <Link
               href="#"
@@ -119,7 +119,7 @@ export function FooterSection() {
               href="#"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
-              YouTube
+              Email
             </Link>
           </div>
         </div>
