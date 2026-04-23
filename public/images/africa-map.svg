@@ -1,0 +1,37 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Africa operations map</title>
+  <desc id="desc">Stylized map of Africa with country labels for Murban Engineering operations.</desc>
+  <rect width="1200" height="900" fill="#F8FAFC"/>
+  <path d="M570 120L640 165L685 235L740 260L775 330L760 390L790 455L765 520L720 575L705 655L640 710L560 740L500 710L450 655L390 620L350 555L340 500L290 450L300 365L355 300L430 255L475 190L530 150L570 120Z" fill="#0F766E" fill-opacity="0.88"/>
+  <path d="M610 725L650 775L620 820L565 840L520 815L500 780L530 748L570 735L610 725Z" fill="#115E59"/>
+
+  <circle cx="515" cy="355" r="8" fill="#F59E0B"/>
+  <text x="530" y="360" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Ghana</text>
+
+  <circle cx="555" cy="325" r="8" fill="#F59E0B"/>
+  <text x="570" y="330" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Nigeria</text>
+
+  <circle cx="680" cy="300" r="8" fill="#F59E0B"/>
+  <text x="695" y="305" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Egypt</text>
+
+  <circle cx="680" cy="455" r="8" fill="#F59E0B"/>
+  <text x="695" y="460" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Kenya</text>
+
+  <circle cx="655" cy="485" r="8" fill="#F59E0B"/>
+  <text x="670" y="490" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Uganda</text>
+
+  <circle cx="695" cy="520" r="8" fill="#F59E0B"/>
+  <text x="710" y="525" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Tanzania</text>
+
+  <circle cx="555" cy="570" r="8" fill="#F59E0B"/>
+  <text x="570" y="575" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Angola</text>
+
+  <circle cx="580" cy="675" r="8" fill="#F59E0B"/>
+  <text x="595" y="680" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Namibia</text>
+
+  <circle cx="640" cy="775" r="8" fill="#F59E0B"/>
+  <text x="655" y="780" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">South Africa</text>
+
+  <circle cx="730" cy="640" r="8" fill="#F59E0B"/>
+  <text x="745" y="645" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Mozambique</text>
+</svg>
