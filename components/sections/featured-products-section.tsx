@@ -39,13 +39,13 @@ export function FeaturedProductsSection() {
   return (
     <section id="technology" className="bg-background">
       {/* Section Title */}
-      <div className="px-6 py-20 text-center md:px-12 md:py-28 lg:px-20 lg:py-32 lg:pb-20">
-        <h2 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl lg:text-5xl">
+      <div className="px-6 py-fluid-lg text-center md:px-12 lg:px-20">
+        <h2 className="text-fluid-4xl font-medium tracking-tight text-foreground text-balance">
           Engineered for Excellence.
           <br />
           Designed for Adventure.
         </h2>
-        <p className="mx-auto mt-6 max-w-md text-sm text-muted-foreground">
+        <p className="mx-auto mt-6 max-w-md text-fluid-sm text-muted-foreground">
           Technology
         </p>
       </div>
