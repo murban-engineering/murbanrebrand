@@ -3,62 +3,6 @@
 import Image from "next/image";
 import { useEffect, useRef, useState, useCallback } from "react";
 
-const serviceGroups = [
-  {
-    title: "General NDT",
-    services: [
-      "NDT Inspection Services — Full-scope Non-Destructive Testing coverage tailored to your assets and regulations.",
-      "Tank Calibration Services — Accurate volume measurement and tank calibration across all storage configurations.",
-      "API 570 Piping Inspection and Certification — Piping system inspection for code compliance.",
-      "API 653 Aboveground Storage Tank Inspection and Certification — Tank integrity inspections that deliver official API 653 certification and reporting.",
-      "API 510 Pressure Vessel Inspection — Pressure vessel safety verification with detailed API 510 compliance documentation.",
-      "Magnetic Particle Testing — Surface flaw detection using powerful magnetic particle inspection methods.",
-      "Fluorescent Magnet Particle Testing — Crack detection enhanced with fluorescent indicators and ultraviolet inspection.",
-      "Dye Penetrant Testing — Critical PT inspections that reveal surface flaws and discontinuities for safer, more reliable asset performance.",
-      "RT Radiographic Services — High-resolution radiographic imaging that uncovers hidden discontinuities without interrupting service.",
-      "Paint & Coating Inspection — Checking protective coating thickness and quality to extend asset life.",
-      "Positive Material Identification Testing — Verify alloy composition quickly with positive material identification technology.",
-      "Surface Hardness Testing — Measuring metal surface strength to validate fabrication quality and wear resistance.",
-    ],
-  },
-  {
-    title: "Advanced NDT",
-    services: [
-      "Ultrasonic Flaw Testing C-Scan — Detailed flaw mapping using advanced ultrasonic C-scan imaging techniques.",
-      "Ultrasonic Flaw Testing B-Scan — Internal defect detection and profiling delivered through precision B-scan testing.",
-      "Murban Phased Array Testing — Advanced phased array ultrasonics for complex geometry and high-resolution flaw detection.",
-      "3D Laser Scanning Services — High-accuracy spatial data capture for asset management, design planning, and facility maintenance.",
-      "Thermal Camera Inspection — Thermal imaging surveys that uncover temperature anomalies and emerging issues before they escalate.",
-      "Alternating Current Field Measurement — Advanced electromagnetic inspection that detects and sizes surface cracks with exceptional accuracy.",
-      "Murban Gas Detection — Comprehensive monitoring solutions that detect hazardous gases early and keep worksites compliant.",
-      "Murban Pressure Testing — Verify system strength and tightness through controlled pressure testing.",
-      "Floormap 3D MFL Scanning — 3D magnetic flux leakage scanning that pinpoints tank floor defects with precision.",
-      "Sphere Tank Inspections — Inspection of spherical tanks with detailed structural and safety reporting.",
-      "Murban UAV Inspection — Aerial inspection using drone-based technology to access challenging environments.",
-    ],
-  },
-  {
-    title: "Engineering Assessments",
-    services: [
-      "API 579 Murban Fitness for Service — API 579-based integrity assessments that uncover defects, document risk, and guide repair or replacement decisions.",
-      "API 580 Murban Risk Based Inspection — Risk-based inspection strategies prioritizing safety-critical assets and intervals.",
-      "Boiler Inspection Services — Thorough inspections that keep boiler systems safe, efficient, and compliant.",
-      "Lifting Equipment Thorough Examination and Certification — Safe lifting equipment checks paired with formal certification packages.",
-    ],
-  },
-  {
-    title: "Engineering & Fabrication",
-    services: [
-      "Detailed Engineering — Comprehensive technical plans and documentation.",
-      "Procurement — Sourcing materials for project execution.",
-      "Fabrication — Precision cutting, welding, and assembly services.",
-      "Construction and Erection — Safe, code-compliant erection of steel structures, pipelines, and storage tanks.",
-      "Specialized Welding — Certified TIG, MIG, SMAW, and SAW welding that safeguards structural integrity.",
-      "Surface Preparation and Paint Works — Surface cleaning and industrial paint coating.",
-    ],
-  },
-];
-
 export function PhilosophySection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [alpineTranslateX, setAlpineTranslateX] = useState(-100);
@@ -180,34 +124,14 @@ export function PhilosophySection() {
 
       {/* Description */}
       <div id="services" className="px-6 py-fluid-lg md:px-12 lg:px-20">
-        <div className="mx-auto max-w-7xl">
-          <p className="text-center text-xs uppercase tracking-widest text-muted-foreground">
-            Services
+        <div className="text-center content-wide">
+          <p className="text-xs uppercase tracking-widest text-muted-foreground">
+            First generation
           </p>
-          <h3 className="mt-5 text-center text-3xl font-semibold tracking-tight md:text-5xl">
-            Precision Inspection & Engineering Services
-          </h3>
-          <p className="mx-auto mt-5 max-w-3xl text-center text-muted-foreground md:text-lg">
-            Comprehensive Non-Destructive Testing and Advanced NDT support to keep critical infrastructure running at peak performance.
+          <p className="mt-8 leading-relaxed text-muted-foreground text-fluid-3xl text-center text-balance">
+            Alpine & Forest are high-tech outdoor accessories designed for modern adventurers. 
+            Lightweight, durable, and engineered for extreme conditions.
           </p>
-
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {serviceGroups.map((group) => (
-              <article key={group.title} className="rounded-2xl border border-border/60 bg-card p-6">
-                <h4 className="text-xl font-semibold">{group.title}</h4>
-                <ul className="mt-5 space-y-4">
-                  {group.services.map((service) => (
-                    <li key={service} className="rounded-xl border border-border/60 bg-background/60 p-4">
-                      <div className="mb-3 flex h-28 items-center justify-center rounded-lg border border-dashed border-primary/40 bg-primary/5 text-center text-xs font-semibold uppercase tracking-wide text-primary/80">
-                        Image Placeholder
-                      </div>
-                      <p className="text-sm leading-relaxed text-muted-foreground">{service}</p>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
         </div>
       </div>
     </section>
