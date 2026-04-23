@@ -52,7 +52,8 @@ type ServiceCardProps = {
   icon: LucideIcon;
   title: string;
   description: string;
-  imagePlaceholderLabel?: string;
+  imageSrc?: string;
+  imageAlt?: string;
   onSelect?: () => void;
   showCTA?: boolean;
   ctaHref?: string;
@@ -95,7 +96,8 @@ const ServiceCard = ({
   icon: Icon,
   title,
   description,
-  imagePlaceholderLabel,
+  imageSrc,
+  imageAlt,
   onSelect,
   showCTA = true,
   ctaHref = "/contact",
@@ -143,11 +145,25 @@ const ServiceCard = ({
               <Icon className="service-card-icon" aria-hidden="true" strokeWidth={2} />
               <h3 className="service-card-title">{title}</h3>
             </div>
-            <div
-              className="mt-4 flex h-32 items-center justify-center rounded-xl border border-dashed border-primary/30 bg-primary/5 px-3 text-center text-xs font-medium uppercase tracking-wide text-primary/80"
-              aria-label={`${title} image placeholder`}
-            >
-              {imagePlaceholderLabel ?? `Image placeholder for ${title}`}
+            <div className="mt-4 overflow-hidden rounded-xl border border-border/40 bg-card/40">
+              {imageSrc ? (
+                <img
+                  src={imageSrc}
+                  alt={imageAlt ?? `${title} service image`}
+                  className="h-32 w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width={640}
+                  height={360}
+                />
+              ) : (
+                <div
+                  className="flex h-32 items-center justify-center border border-dashed border-primary/30 bg-primary/5 px-3 text-center text-xs font-medium uppercase tracking-wide text-primary/80"
+                  aria-label={`${title} image placeholder`}
+                >
+                  {`Image for ${title}`}
+                </div>
+              )}
             </div>
             <p className="service-card-description">{description}</p>
           </article>
@@ -162,6 +178,22 @@ const ServiceCard = ({
     </div>
   );
 };
+
+const serviceCardImages = [
+  "/images/storage-tanks.jpg",
+  "/images/industrial-pipes.jpg",
+  "/images/industrial-refinery.jpg",
+  "/images/industrial-silos.jpg",
+  "/images/industrial-plant.jpg",
+  "/images/modern-facility.jpg",
+  "/images/modern-factory.jpg",
+  "/images/pipeline-construction.jpg",
+  "/images/aerial-refinery.jpg",
+  "/images/hero-industrial.jpg",
+];
+
+const getServiceCardImage = (index: number) =>
+  serviceCardImages[index % serviceCardImages.length];
 
 const serviceSections = [
   { id: "general-ndt", label: "General NDT" },
@@ -2190,7 +2222,7 @@ const Services = () => {
               </div>
             </AnimateOnScroll>
             <div className="services-grid services-grid--selectable">
-              {cluster.services.map((service) => (
+              {cluster.services.map((service, serviceIndex) => (
                 <ServiceCard
                   key={service.title}
                   icon={service.icon}
@@ -2198,6 +2230,8 @@ const Services = () => {
                   description={service.description}
                   onSelect={() => navigate(`/services/${service.slug}`)}
                   ctaHref={`/services/${service.slug}`}
+                  imageSrc={getServiceCardImage(serviceIndex)}
+                  imageAlt={service.title}
                 />
               ))}
             </div>
@@ -2240,7 +2274,7 @@ const Services = () => {
             </div>
           </AnimateOnScroll>
           <div className="services-grid">
-            {fabricationServices.map((service) => (
+            {fabricationServices.map((service, serviceIndex) => (
               <ServiceCard
                 key={service.title}
                 icon={service.icon}
@@ -2248,6 +2282,8 @@ const Services = () => {
                 description={service.description}
                 onSelect={() => navigate(`/services/${service.slug}`)}
                 ctaHref={`/services/${service.slug}`}
+                imageSrc={getServiceCardImage(serviceIndex + 6)}
+                imageAlt={service.title}
               />
             ))}
           </div>
