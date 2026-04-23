@@ -66,7 +66,7 @@ export function PhilosophySection() {
   }, [updateTransforms]);
 
   return (
-    <section id="products" className="bg-background">
+    <section id="about" className="bg-background">
       <div ref={sectionRef} className="relative" style={{ height: "200vh" }}>
         <div className="sticky top-0 flex h-screen items-center justify-center">
           <div className="relative w-full">
@@ -75,7 +75,9 @@ export function PhilosophySection() {
               style={{ opacity: titleOpacity }}
             >
               <h2 className="px-6 text-center text-[12vw] font-medium leading-[0.95] tracking-tighter text-foreground md:text-[10vw] lg:text-[8vw]">
-                Meet Alpine Forest Murban Engineering.
+                Meet Alpine & Forest.
+                <br />
+                Murban Engineering.
               </h2>
             </div>
 
@@ -123,7 +125,7 @@ export function PhilosophySection() {
         </div>
       </div>
 
-      <div id="services" className="px-6 py-fluid-lg md:px-12 lg:px-20">
+      <div className="px-6 py-fluid-lg md:px-12 lg:px-20">
         <div className="content-wide text-center">
           <p className="text-xs uppercase tracking-widest text-muted-foreground">Company Profile</p>
           <p className="mt-8 text-center text-fluid-3xl leading-relaxed text-muted-foreground text-balance">
