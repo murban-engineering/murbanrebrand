@@ -123,12 +123,12 @@ export function PhilosophySection() {
       </div>
 
       {/* Description */}
-      <div className="px-6 py-20 md:px-12 md:py-28 lg:px-20 lg:py-36 lg:pb-14">
-        <div className="text-center">
+      <div className="px-6 py-fluid-lg md:px-12 lg:px-20">
+        <div className="text-center content-wide">
           <p className="text-xs uppercase tracking-widest text-muted-foreground">
             First generation
           </p>
-          <p className="mt-8 leading-relaxed text-muted-foreground text-3xl text-center">
+          <p className="mt-8 leading-relaxed text-muted-foreground text-fluid-3xl text-center text-balance">
             Alpine & Forest are high-tech outdoor accessories designed for modern adventurers. 
             Lightweight, durable, and engineered for extreme conditions.
           </p>

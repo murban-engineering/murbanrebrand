@@ -277,13 +277,10 @@ export function TechnologySection() {
       {/* Description Section with Background Image and Scroll Reveal */}
       <div 
         ref={textSectionRef}
-        className="relative overflow-hidden bg-background px-6 py-24 md:px-12 md:py-32 lg:px-20 lg:py-40"
+        className="relative overflow-hidden bg-background px-6 py-fluid-xl md:px-12 lg:px-20"
       >
-        {/* Background Image with Grayscale Filter */}
-        
-
         {/* Text Content */}
-        <div className="relative z-10 mx-auto max-w-4xl">
+        <div className="relative z-10 content-readable">
           <ScrollRevealText text={descriptionText} />
         </div>
       </div>

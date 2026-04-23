@@ -31,10 +31,10 @@ export function FooterSection() {
         <div className="grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-5">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 lg:col-span-2">
-            <Link href="/" className="text-lg font-medium text-foreground">
+            <Link href="/" className="text-fluid-lg font-medium text-foreground">
               MURBAN ENGINEERING
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-4 max-w-xs text-fluid-sm leading-relaxed text-muted-foreground text-pretty">
               Premium smart bottles engineered for adventure. GPS tracking, LED flashlight, and self-heating technology.
             </p>
           </div>

@@ -51,8 +51,8 @@ export function CollectionSection() {
   return (
     <section id="accessories" className="bg-background">
       {/* Section Title */}
-      <div className="px-6 py-20 md:px-12 lg:px-20 md:py-10">
-        <h2 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">
+      <div className="px-6 py-fluid-md md:px-12 lg:px-20">
+        <h2 className="text-fluid-3xl font-medium tracking-tight text-foreground text-balance">
           Essential Accessories
         </h2>
       </div>
@@ -77,14 +77,14 @@ export function CollectionSection() {
               <div className="py-6">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
-                    <h3 className="text-lg font-medium leading-snug text-foreground">
+                    <h3 className="text-fluid-lg font-medium leading-snug text-foreground text-balance">
                       {accessory.name}
                     </h3>
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <p className="mt-2 text-fluid-sm text-muted-foreground text-pretty">
                       {accessory.description}
                     </p>
                   </div>
-                  <span className="text-lg font-medium text-foreground">
+                  <span className="text-fluid-lg font-medium text-foreground">
                     {accessory.price}
                   </span>
                 </div>
@@ -111,14 +111,14 @@ export function CollectionSection() {
               <div className="py-6">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
-                    <h3 className="text-lg font-medium leading-snug text-foreground">
+                    <h3 className="text-fluid-lg font-medium leading-snug text-foreground text-balance">
                       {accessory.name}
                     </h3>
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <p className="mt-2 text-fluid-sm text-muted-foreground text-pretty">
                       {accessory.description}
                     </p>
                   </div>
-                  <span className="font-medium text-foreground text-2xl">
+                  <span className="font-medium text-foreground text-fluid-2xl">
                     {accessory.price}
                   </span>
                 </div>
