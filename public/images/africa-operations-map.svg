@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Murban Engineering Africa Operations Map</title>
+  <desc id="desc">Stylized Africa map with highlighted countries and country labels for Murban Engineering operations.</desc>
+  <rect width="1200" height="800" fill="#ececef"/>
+
+  <!-- Stylized Africa silhouette -->
+  <path d="M720 110 L810 150 L860 210 L900 300 L890 380 L850 450 L860 520 L830 620 L760 680 L680 670 L640 590 L600 560 L575 470 L540 430 L520 350 L540 290 L580 250 L610 190 L660 150 Z"
+        fill="#d8dadd" stroke="#c3c8ce" stroke-width="3"/>
+
+  <!-- Highlighted operation regions (approximate visual markers) -->
+  <circle cx="760" cy="320" r="14" fill="#b91c1c"/>
+  <circle cx="780" cy="355" r="10" fill="#b91c1c"/>
+  <circle cx="745" cy="355" r="10" fill="#b91c1c"/>
+  <circle cx="800" cy="300" r="10" fill="#b91c1c"/>
+  <circle cx="790" cy="270" r="9" fill="#b91c1c"/>
+  <circle cx="775" cy="240" r="8" fill="#b91c1c"/>
+  <circle cx="815" cy="248" r="7" fill="#b91c1c"/>
+  <circle cx="760" cy="390" r="9" fill="#b91c1c"/>
+  <circle cx="730" cy="395" r="8" fill="#b91c1c"/>
+  <circle cx="715" cy="430" r="7" fill="#b91c1c"/>
+  <circle cx="690" cy="370" r="8" fill="#b91c1c"/>
+  <circle cx="780" cy="525" r="9" fill="#b91c1c"/>
+  <circle cx="730" cy="515" r="8" fill="#b91c1c"/>
+  <circle cx="765" cy="560" r="8" fill="#b91c1c"/>
+  <circle cx="640" cy="340" r="9" fill="#b91c1c"/>
+  <circle cx="520" cy="355" r="9" fill="#b91c1c"/>
+
+  <!-- Labels -->
+  <g font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">
+    <text x="80" y="100">Kenya (HQ)</text>
+    <text x="80" y="145">Uganda</text>
+    <text x="80" y="190">Tanzania</text>
+    <text x="80" y="235">Ethiopia</text>
+    <text x="80" y="280">Rwanda</text>
+    <text x="80" y="325">Burundi</text>
+    <text x="80" y="370">Zambia</text>
+    <text x="80" y="415">Eritrea</text>
+    <text x="80" y="460">Seychelles</text>
+    <text x="80" y="505">Madagascar</text>
+
+    <text x="320" y="100">Somalia</text>
+    <text x="320" y="145">Zimbabwe</text>
+    <text x="320" y="190">Djibouti</text>
+    <text x="320" y="235">Malawi</text>
+    <text x="320" y="280">DRC</text>
+    <text x="320" y="325">Ghana</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="20" fill="#b91c1c" font-weight="700">
+    <text x="680" y="740">Murban Engineering • Across Africa</text>
+  </g>
+</svg>
