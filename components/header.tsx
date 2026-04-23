@@ -27,7 +27,7 @@ export function Header() {
     >
       <div className="flex items-center justify-between transition-all duration-300 px-2 pl-5 py-2">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="#" className="flex items-center">
           <Image
             src="/images/murban-logo.ico"
             alt="Murban Engineering"
@@ -40,37 +40,37 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-10 md:flex">
           <Link
-            href="/"
+            href="#"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             Home
           </Link>
           <Link
-            href="/about"
+            href="#"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             About
           </Link>
           <Link
-            href="/services"
+            href="#"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             Services
           </Link>
           <Link
-            href="/industry-solutions"
+            href="#"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             Industries
           </Link>
           <Link
-            href="/project-gallery"
+            href="#gallery"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             Gallery
           </Link>
           <Link
-            href="/contact"
+            href="#"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             Contact
@@ -80,10 +80,10 @@ export function Header() {
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="/certifications"
+            href="#"
             className={`text-sm font-medium transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Certifications
+            Portal
           </Link>
         </div>
 
@@ -103,53 +103,53 @@ export function Header() {
         <div className="border-t border-border bg-background px-6 py-8 md:hidden rounded-b-2xl">
           <nav className="flex flex-col gap-6">
             <Link
-              href="/"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
-              href="/about"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
-              href="/project-gallery"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               Gallery
             </Link>
             <Link
-              href="/services"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link
-              href="/industry-solutions"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               Industries
             </Link>
             <Link
-              href="/contact"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </Link>
             <Link
-              href="/certifications"
+              href="#"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Certifications
+              Portal
             </Link>
           </nav>
         </div>
