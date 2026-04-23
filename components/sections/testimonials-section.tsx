@@ -8,8 +8,9 @@ export function TestimonialsSection() {
       {/* Large Text Statement */}
       <div className="px-6 py-fluid-xl md:px-12 lg:px-20">
         <p className="content-wide text-fluid-3xl leading-relaxed text-foreground text-pretty">
-          Alpine & Forest accessories combine aerospace-grade materials with cutting-edge technology — 
-          designed for explorers who refuse to compromise on quality or performance in the wild.
+          About Murban Engineering
+          <br />
+          Specialist in Asset Integrity, Inspection, and Non-Destructive Testing.
         </p>
       </div>
 
@@ -23,6 +24,21 @@ export function TestimonialsSection() {
         />
         {/* Fade gradient overlay - white at bottom fading to transparent at top */}
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+      </div>
+
+      <div className="px-6 pb-fluid-xl md:px-12 lg:px-20">
+        <div className="content-wide space-y-6 text-foreground">
+          <h3 className="text-2xl font-semibold md:text-3xl">Company Profile</h3>
+          <p className="text-base leading-relaxed text-pretty md:text-lg">
+            Murban Engineering is a specialist firm in Asset Integrity, Inspection, and Non-Destructive
+            Testing (NDT). We deliver reliable and safe inspection solutions that support critical
+            infrastructure in the oil & gas, energy, marine, and industrial sectors.
+          </p>
+          <p className="text-base leading-relaxed text-pretty md:text-lg">
+            With over 20 years of experience, we operate across Africa. Our services help clients extend
+            asset life, ensure regulatory compliance, and minimize downtime.
+          </p>
+        </div>
       </div>
     </section>
   );
