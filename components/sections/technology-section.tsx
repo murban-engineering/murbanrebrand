@@ -148,7 +148,7 @@ export function TechnologySection() {
   const grayscaleAmount = Math.round((1 - textProgress) * 100);
 
   return (
-    <section ref={sectionRef} className="relative bg-foreground">
+    <section id="industries" ref={sectionRef} className="relative bg-foreground">
       {/* Sticky container for scroll animation */}
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="flex h-full w-full items-center justify-center">

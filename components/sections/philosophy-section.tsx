@@ -123,7 +123,7 @@ export function PhilosophySection() {
       </div>
 
       {/* Description */}
-      <div className="px-6 py-fluid-lg md:px-12 lg:px-20">
+      <div id="services" className="px-6 py-fluid-lg md:px-12 lg:px-20">
         <div className="text-center content-wide">
           <p className="text-xs uppercase tracking-widest text-muted-foreground">
             First generation

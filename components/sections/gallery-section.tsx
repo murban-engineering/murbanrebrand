@@ -89,7 +89,7 @@ export function GallerySection() {
 
   return (
     <section 
-      id="gallery"
+      id="our-projects"
       ref={galleryRef}
       className="relative bg-background"
       style={{ height: sectionHeight }}

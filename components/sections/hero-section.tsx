@@ -76,7 +76,7 @@ export function HeroSection() {
   const sideTranslateY = -(imageProgress * 15); // Move up by 15% when fully expanded
 
   return (
-    <section ref={sectionRef} className="relative bg-background">
+    <section id="home" ref={sectionRef} className="relative bg-background">
       {/* Sticky container for scroll animation */}
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="flex h-full w-full items-center justify-center">

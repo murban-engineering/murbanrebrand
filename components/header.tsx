@@ -40,34 +40,34 @@ export function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-10 md:flex">
           <Link
-            href="#"
+            href="#home"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             Home
           </Link>
           <Link
-            href="#"
+            href="#products"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             About
           </Link>
           <Link
-            href="#"
+            href="#services"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             Services
           </Link>
           <Link
-            href="#"
+            href="#industries"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             Industries
           </Link>
           <Link
-            href="#gallery"
+            href="#our-projects"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Gallery
+            Our Projects
           </Link>
           <Link
             href="#"
@@ -80,7 +80,9 @@ export function Header() {
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="#"
+            href="https://portal.murban-eng.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`text-sm font-medium transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             Portal
@@ -103,35 +105,35 @@ export function Header() {
         <div className="border-t border-border bg-background px-6 py-8 md:hidden rounded-b-2xl">
           <nav className="flex flex-col gap-6">
             <Link
-              href="#"
+              href="#home"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
-              href="#"
+              href="#products"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
-              href="#"
+              href="#our-projects"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Gallery
+              Our Projects
             </Link>
             <Link
-              href="#"
+              href="#services"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link
-              href="#"
+              href="#industries"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -145,7 +147,9 @@ export function Header() {
               Contact
             </Link>
             <Link
-              href="#"
+              href="https://portal.murban-eng.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
