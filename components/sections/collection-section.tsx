@@ -22,7 +22,7 @@ const accessories = [
     name: "Carbon Fiber Bike Mount",
     description: "Ultra-light mounting system for cycling",
     price: "$129",
-    image: "/images/ndt-35.jpg",
+    image: "/images/welder.jpg",
   },
   {
     id: 4,
