@@ -47,13 +47,25 @@ const serviceSeed = [
     category: "General NDT",
     title: "Ultrasonic Flaw Testing C-Scan",
     shortDescription:
-      "Detailed flaw mapping using advanced ultrasonic C-scan imaging techniques.",
+      "Detailed corrosion mapping and flaw visualization using advanced ultrasonic C-scan imaging.",
   },
   {
     category: "General NDT",
     title: "Ultrasonic Flaw Testing B-Scan",
     shortDescription:
-      "Internal defect detection and profiling delivered through precision B-scan testing.",
+      "Cross-sectional ultrasonic imaging for defect characterization, sizing, and localization.",
+  },
+  {
+    category: "General NDT",
+    title: "UTM Ultrasonic Thickness Measurement",
+    shortDescription:
+      "Accurate non-destructive thickness measurements to monitor structural integrity and corrosion.",
+  },
+  {
+    category: "General NDT",
+    title: "Visual Inspection",
+    shortDescription:
+      "Comprehensive visual assessments that identify visible defects, anomalies, and operational risks.",
   },
   {
     category: "General NDT",
