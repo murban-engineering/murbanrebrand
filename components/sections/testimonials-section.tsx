@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import { AfricaGoogleMap } from "./africa-google-map";
+
 const africanCountries = [
   "Nigeria",
   "Ghana",
@@ -87,15 +89,7 @@ export function TestimonialsSection() {
 
           <div>
             <p className="text-xs uppercase tracking-widest text-muted-foreground">Where We Work</p>
-            <div className="mt-4 overflow-hidden rounded-2xl border border-border bg-card">
-              <Image
-                src="/images/africa-map.svg"
-                alt="Map of Africa with highlighted countries where Murban Engineering operates"
-                width={1200}
-                height={900}
-                className="h-auto w-full"
-              />
-            </div>
+            <AfricaGoogleMap className="mt-4 overflow-hidden rounded-2xl border border-border bg-card" />
             <p className="mt-4 text-sm text-muted-foreground">
               Countries shown on the map: {africanCountries.join(", ")}.
             </p>
@@ -148,15 +142,7 @@ export function TestimonialsSection() {
               </ol>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-border bg-card">
-              <Image
-                src="/images/africa-map.svg"
-                alt="Murban group capability overview"
-                width={1200}
-                height={900}
-                className="h-auto w-full"
-              />
-            </div>
+            <AfricaGoogleMap className="overflow-hidden rounded-2xl border border-border bg-card" />
           </div>
 
           <div>
@@ -207,15 +193,7 @@ export function TestimonialsSection() {
                   </p>
                 ))}
               </div>
-              <div className="overflow-hidden rounded-2xl border border-border bg-card">
-                <Image
-                  src="/images/africa-map.svg"
-                  alt="Africa map showing Murban work regions"
-                  width={1200}
-                  height={900}
-                  className="h-auto w-full"
-                />
-              </div>
+              <AfricaGoogleMap className="overflow-hidden rounded-2xl border border-border bg-card" />
             </div>
           </div>
         </div>
