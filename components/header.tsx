@@ -46,7 +46,7 @@ export function Header() {
             Home
           </Link>
           <Link
-            href="#products"
+            href="#about"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
             About
@@ -112,7 +112,7 @@ export function Header() {
               Home
             </Link>
             <Link
-              href="#products"
+              href="#about"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >

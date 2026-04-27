@@ -57,7 +57,7 @@ export function PhilosophySection() {
   }, [updateTransforms]);
 
   return (
-    <section id="products" className="bg-background">
+    <section id="about" className="bg-background">
       {/* Scroll-Animated Product Grid */}
       <div ref={sectionRef} className="relative" style={{ height: "200vh" }}>
         <div className="sticky top-0 h-screen flex items-center justify-center">
@@ -68,6 +68,7 @@ export function PhilosophySection() {
               style={{ opacity: titleOpacity }}
             >
               <h2 className="text-[12vw] font-medium leading-[0.95] tracking-tighter text-foreground md:text-[10vw] lg:text-[8vw] text-center px-6">
+                Company Profile
                 Engineered Field Solutions.
               </h2>
             </div>
@@ -119,13 +120,13 @@ export function PhilosophySection() {
         <div className="content-wide mx-auto">
           <div className="text-center">
             <p className="text-xs uppercase tracking-widest text-muted-foreground">
-              General NDT • Advanced NDT • Engineering Assessments • Engineering & Fabrication
+              Company Profile
             </p>
             <h3 className="mt-4 text-fluid-4xl font-medium text-foreground text-balance">
-              Precision Inspection & Engineering Services
+              Murban Engineering
             </h3>
             <p className="mt-6 leading-relaxed text-muted-foreground text-fluid-xl text-balance">
-              Comprehensive Non-Destructive Testing and Advanced NDT support to keep critical infrastructure running at peak performance.
+              Murban Engineering is a specialist firm in Asset Integrity, Inspection, and Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions that support critical infrastructure in the oil & gas, energy, marine, and industrial sectors.
             </p>
           </div>
 
