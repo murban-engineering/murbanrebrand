@@ -5,6 +5,17 @@ import Link from "next/link";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { serviceCategories, services } from "@/lib/services";
 
+const technologyTrainingPartnerLogos = [
+  "/images/Screenshot 2026-04-27 203523.png",
+  "/images/Screenshot 2026-04-27 203527.png",
+  "/images/Screenshot 2026-04-27 203532.png",
+  "/images/Screenshot 2026-04-27 203536.png",
+  "/images/Screenshot 2026-04-27 203541.png",
+  "/images/Screenshot 2026-04-27 203545.png",
+  "/images/Screenshot 2026-04-27 203549.png",
+  "/images/Screenshot 2026-04-27 203554.png",
+];
+
 export function PhilosophySection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [leftImageTranslateX, setLeftImageTranslateX] = useState(-100);
@@ -139,6 +150,32 @@ export function PhilosophySection() {
                 {category}
               </span>
             ))}
+          </div>
+
+
+          <div className="mt-14">
+            <h4 className="text-center text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
+              TECHNOLOGY AND TRAINING PARTNERS
+            </h4>
+
+            <div className="relative mt-8 overflow-hidden">
+              <div className="trusted-marquee">
+                {[...technologyTrainingPartnerLogos, ...technologyTrainingPartnerLogos].map((logo, index) => (
+                  <div
+                    key={`${logo}-${index}`}
+                    className="flex h-24 w-56 shrink-0 items-center justify-center rounded-xl border border-border/60 bg-card/80 px-6"
+                  >
+                    <Image
+                      src={logo}
+                      alt="Technology and training partner logo"
+                      width={180}
+                      height={70}
+                      className="h-14 w-auto object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
