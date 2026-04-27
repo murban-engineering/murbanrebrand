@@ -188,6 +188,7 @@ const serviceCardImages = [
   "/images/DSCN4156.JPG",
   "/images/0615281f-0698-4990-b2b8-72f600089fd6.jpg",
   "/images/welder.jpg",
+  "/images/ndt-35.jpg",
   "/images/DSCN4103.JPG",
   "/images/DSCN4156.JPG",
 ];
