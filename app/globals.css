@@ -324,3 +324,23 @@
 .content-narrow { max-width: 45ch; margin-inline: auto; }
 .content-readable { max-width: 65ch; margin-inline: auto; }
 .content-wide { max-width: 85ch; margin-inline: auto; }
+
+@keyframes trusted-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.trusted-marquee {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: trusted-marquee-scroll 30s linear infinite;
+}
+
+.trusted-marquee-reverse {
+  animation-direction: reverse;
+}
