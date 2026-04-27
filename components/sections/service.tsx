@@ -180,16 +180,16 @@ const ServiceCard = ({
 };
 
 const serviceCardImages = [
-  "/images/storage-tanks.jpg",
-  "/images/industrial-pipes.jpg",
-  "/images/industrial-refinery.jpg",
-  "/images/industrial-silos.jpg",
-  "/images/industrial-plant.jpg",
-  "/images/modern-facility.jpg",
-  "/images/modern-factory.jpg",
-  "/images/pipeline-construction.jpg",
-  "/images/aerial-refinery.jpg",
-  "/images/hero-industrial.jpg",
+  "/images/magnetic Flux Leakage 1.jpg",
+  "/images/Pipes.JPG",
+  "/images/DSCN4103.JPG",
+  "/images/DSCN4117.JPG",
+  "/images/DSCF5799.JPG",
+  "/images/DSCN4156.JPG",
+  "/images/0615281f-0698-4990-b2b8-72f600089fd6.jpg",
+  "/images/ndt-35.jpg",
+  "/images/DSCN4103.JPG",
+  "/images/DSCN4156.JPG",
 ];
 
 const getServiceCardImage = (index: number) =>
