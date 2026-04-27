@@ -200,6 +200,7 @@ const serviceSections = [
   { id: "advanced-ndt", label: "Advanced NDT" },
   { id: "engineering-assessments", label: "Engineering Assessments" },
   { id: "fabrication-services", label: "Engineering & Fabrication" },
+  { id: "technology-training-partners", label: "Technology & Training Partners" },
 ];
 
 const ndtServiceItems: ServiceItemInput[] = [
@@ -2086,6 +2087,17 @@ const generalNdtServices = allServices.filter(s => generalNdtTitles.includes(s.t
 const advancedNdtServices = allServices.filter(s => advancedNdtTitles.includes(s.title));
 const engineeringAssessmentServices = allServices.filter(s => engineeringAssessmentTitles.includes(s.title));
 
+const technologyTrainingPartnerLogos = [
+  "/images/Screenshot 2026-04-27 203523.png",
+  "/images/Screenshot 2026-04-27 203527.png",
+  "/images/Screenshot 2026-04-27 203532.png",
+  "/images/Screenshot 2026-04-27 203536.png",
+  "/images/Screenshot 2026-04-27 203541.png",
+  "/images/Screenshot 2026-04-27 203545.png",
+  "/images/Screenshot 2026-04-27 203549.png",
+  "/images/Screenshot 2026-04-27 203554.png",
+];
+
 const Services = () => {
   const navigate = useNavigate();
 
@@ -2263,6 +2275,37 @@ const Services = () => {
             >
               <Link to="/contact">Discuss Your Next Build</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      <section id="technology-training-partners" className="bg-background py-20">
+        <div className="container mx-auto px-4">
+          <AnimateOnScroll direction="left">
+            <div className="mx-auto max-w-5xl text-center">
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground">
+                TECHNOLOGY AND TRAINING PARTNERS
+              </h2>
+            </div>
+          </AnimateOnScroll>
+
+          <div className="relative mt-10 overflow-hidden">
+            <div className="trusted-marquee">
+              {[...technologyTrainingPartnerLogos, ...technologyTrainingPartnerLogos].map((logo, index) => (
+                <div
+                  key={`${logo}-${index}`}
+                  className="flex h-24 w-56 shrink-0 items-center justify-center rounded-xl border border-border/60 bg-card/80 px-6"
+                >
+                  <img
+                    src={logo}
+                    alt="Technology and training partner logo"
+                    className="h-14 w-auto object-contain"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
