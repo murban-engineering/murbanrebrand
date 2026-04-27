@@ -19,7 +19,6 @@ export function GallerySection() {
     { src: "/images/DSCN4156.JPG", alt: "Modern industrial facility" },
     { src: "/images/0615281f-0698-4990-b2b8-72f600089fd6.jpg", alt: "Modern factory building" },
     { src: "/images/welder.jpg", alt: "Pipeline construction work" },
-    { src: "/images/ndt-35.jpg", alt: "Pipeline construction work" },
     { src: "/images/magnetic Flux Leakage 1.jpg", alt: "Storage tank farm" },
   ];
 

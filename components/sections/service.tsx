@@ -188,7 +188,6 @@ const serviceCardImages = [
   "/images/DSCN4156.JPG",
   "/images/0615281f-0698-4990-b2b8-72f600089fd6.jpg",
   "/images/welder.jpg",
-  "/images/ndt-35.jpg",
   "/images/DSCN4103.JPG",
   "/images/DSCN4156.JPG",
 ];
@@ -1582,8 +1581,9 @@ export const serviceDetails: Record<string, ServiceDetail> = {
         title: "Advantages",
         items: [
           "Identifies temperature anomalies indicative of potential defects or failures.",
-          "Enhances safety by identifying overheating components or electrical issues.",
+          "Enables early detection of equipment malfunctions, preventing costly downtime.",
           "Supports predictive maintenance strategies to optimize asset performance.",
+          "Enhances safety by identifying overheating components or electrical issues.",
         ],
       },
     ],
@@ -1601,7 +1601,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "UAV Drone Inspection Services",
     description:
-      "Murban Engineering offers UAV (Unmanned Aerial Vehicle) inspection services that deliver fast, safe, and cost-effective assessments of assets in difficult-to-reach areas. Equipped with high-resolution cameras and smart sensors, our drone teams capture the detailed visual and thermal data you need to plan maintenance, validate repairs, and manage asset integrity without putting personnel at risk.",
+      "Murban Engineering offers UAV (Unmanned Aerial Vehicle) inspection services, which provide efficient and cost-effective aerial assessments of assets. Our UAVs are equipped with high-resolution cameras and sensors, allowing us to capture valuable data from hard-to-reach areas. With our UAV Inspection services, you can access comprehensive visual data and reports, enabling informed decision-making for maintenance and asset management.",
     sections: [
       {
         title: "Services We Offer",
