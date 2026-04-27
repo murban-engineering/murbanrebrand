@@ -12,14 +12,14 @@ export function GallerySection() {
   const lastScrollRef = useRef(0);
 
   const images = [
-    { src: "/images/industrial-plant.jpg", alt: "Industrial plant view" },
-    { src: "/images/industrial-pipes.jpg", alt: "Industrial piping systems" },
-    { src: "/images/industrial-refinery.jpg", alt: "Refinery operations" },
-    { src: "/images/industrial-silos.jpg", alt: "Industrial silos complex" },
-    { src: "/images/modern-facility.jpg", alt: "Modern industrial facility" },
-    { src: "/images/modern-factory.jpg", alt: "Modern factory building" },
-    { src: "/images/pipeline-construction.jpg", alt: "Pipeline construction work" },
-    { src: "/images/storage-tanks.jpg", alt: "Storage tank farm" },
+    { src: "/images/DSCF5799.JPG", alt: "Industrial plant view" },
+    { src: "/images/Pipes.JPG", alt: "Industrial piping systems" },
+    { src: "/images/DSCN4103.JPG", alt: "Refinery operations" },
+    { src: "/images/DSCN4117.JPG", alt: "Industrial silos complex" },
+    { src: "/images/DSCN4156.JPG", alt: "Modern industrial facility" },
+    { src: "/images/0615281f-0698-4990-b2b8-72f600089fd6.jpg", alt: "Modern factory building" },
+    { src: "/images/welder.jpg", alt: "Pipeline construction work" },
+    { src: "/images/magnetic Flux Leakage 1.jpg", alt: "Storage tank farm" },
   ];
 
   // Calculate section height based on content width
