@@ -180,16 +180,16 @@ const ServiceCard = ({
 };
 
 const serviceCardImages = [
-  "/images/storage-tanks.jpg",
-  "/images/industrial-pipes.jpg",
-  "/images/industrial-refinery.jpg",
-  "/images/industrial-silos.jpg",
-  "/images/industrial-plant.jpg",
-  "/images/modern-facility.jpg",
-  "/images/modern-factory.jpg",
-  "/images/pipeline-construction.jpg",
-  "/images/aerial-refinery.jpg",
-  "/images/hero-industrial.jpg",
+  "/images/magnetic Flux Leakage 1.jpg",
+  "/images/Pipes.JPG",
+  "/images/DSCN4103.JPG",
+  "/images/DSCN4117.JPG",
+  "/images/DSCF5799.JPG",
+  "/images/DSCN4156.JPG",
+  "/images/0615281f-0698-4990-b2b8-72f600089fd6.jpg",
+  "/images/welder.jpg",
+  "/images/DSCN4103.JPG",
+  "/images/DSCN4156.JPG",
 ];
 
 const getServiceCardImage = (index: number) =>
@@ -528,7 +528,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Pressure Testing Services",
     description:
-      "Pressure testing is a crucial element in ensuring the integrity of pressure vessels and systems. Murban Engineering specializes in conducting rigorous pressure tests that verify the strength and reliability of your equipment. Our tests adhere to industry standards and regulations, providing assurance that your pressure systems are operating safely and efficiently.",
+      "Pressure testing is a crucial element in ensuring the integrity of pressure vessels and systems. Murban Engineering specializes in conducting rigorous pressure tests that verify the strength and reliability of your equipment. Our tests adhere to industry standards and regulations, providing you with the assurance that your pressure systems are operating safely and efficiently.",
     sections: [
       {
         title: "Services We Offer",
@@ -721,30 +721,14 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Services", "API 510 Pressure Vessel Inspection"],
     headline: "API 510 PRESSURE VESSEL Inspection: Ensuring SAFETY & Reliability",
     description:
-      "Murban Engineering is your trusted partner for API 510 inspection services, dedicated to ensuring the safety, reliability, and compliance of your pressure vessels. With comprehensive expertise and a commitment to excellence, we tailor inspection solutions to meet your operational needs.",
+      "Murban Engineering is your trusted partner for API 510 inspection services, dedicated to ensuring the safety, reliability, and compliance of your pressure vessels. With comprehensive expertise and commitment to excellence, we deliver unmatched inspection solutions tailored to meet your specific needs.",
     sections: [
       {
         title: "Why Murban Engineering for API 510 Inspection?",
         items: [
-          "Industry expertise from certified inspectors with deep knowledge of API 510 standards.",
-          "Regulatory compliance guidance that keeps your pressure vessels aligned with mandatory requirements.",
-          "Customized inspection approaches adapted to your facility, operational demands, and maintenance goals.",
-        ],
-      },
-      {
-        title: "Technology-Driven Insights",
-        items: [
-          "Cutting-edge inspection technology that uncovers defects, degradation, and risk indicators early.",
-          "Detailed inspection reports with actionable recommendations for maintenance, repair, or continued monitoring.",
-          "Clear documentation that empowers informed decisions on asset readiness and lifecycle planning.",
-        ],
-      },
-      {
-        title: "Our Commitment to Safety & Reliability",
-        items: [
-          "Consistent focus on safeguarding assets while elevating safety and reliability standards.",
-          "Professional service delivery that upholds the highest levels of quality across every inspection.",
-          "Responsive support that makes it easy to schedule inspections and maintain compliance momentum.",
+          "Industry Expertise: Our team of certified inspectors boasts extensive experience and expertise in API standards, guaranteeing thorough assessments and reliable results.",
+          "Regulatory Compliance: We adhere strictly to industry regulations and standards, ensuring that your pressure vessels meet all necessary requirements for safe operation.",
+          "Customized Approach: Murban Engineering understands that each facility has unique needs. That's why we customize our inspection plans to fit your operational requirements, optimizing efficiency and minimizing disruptions.",
         ],
       },
     ],
@@ -768,30 +752,12 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "API 570 Piping Inspection and Certification",
     description:
-      "At Murban Engineering, we recognize the critical role that API 570 Piping Inspection plays in maintaining the integrity and safety of industrial piping systems across petrochemical, oil and gas, refining, and other high-demand sectors. With Murban Engineering, you can trust that your piping systems remain safe, compliant, and optimized for efficient operation.",
+      "At Murban Engineering, we recognize the critical role that API 570 Piping Inspection plays in maintaining the integrity and safety of your industrial piping systems. API 570, developed by the American Petroleum Institute (API), is the industry standard for inspecting, certifying, and ensuring the reliability of piping systems. Piping is the lifeline of various industries, including petrochemical, oil and gas, refining, and more, where safety and efficiency are paramount.",
     sections: [
       {
         title: "The Significance of API 570 Inspection",
         items: [
-          "Thoroughly assesses piping for corrosion, leaks, defects, and structural weaknesses before they compromise performance.",
-          "Prevents costly downtime, environmental incidents, and safety hazards by catching issues early.",
-          "Supports regulatory compliance, operational licensing, and safe facility operation through documented API 570 adherence.",
-        ],
-      },
-      {
-        title: "Our Comprehensive API 570 Inspection Process",
-        items: [
-          "Certified API 570 inspectors perform detailed visual examinations and non-destructive testing (NDT).",
-          "Precise thickness measurements, component assessments, and flaw classification for every piping circuit.",
-          "Action-oriented reports recommending repairs, replacements, alterations, or continued monitoring to maintain compliance.",
-        ],
-      },
-      {
-        title: "Why Choose Murban for API 570 Compliance",
-        items: [
-          "Prioritizes safety to reduce the risk of piping failures, accidents, and environmental events.",
-          "Extends piping system lifespan, reducing replacement frequency and overall maintenance costs.",
-          "Enhances facility reputation, reliability, and conformance with industry standards and environmental regulations.",
+          "Our API 570 Piping Inspection services are designed to meticulously assess your piping systems for corrosion, leaks, defects, and structural issues. Over time, these factors can compromise the safety and performance of your piping infrastructure. With API 570 inspections, we catch these issues early, preventing costly downtime, environmental incidents, and safety hazards. Moreover, API 570 compliance is essential for meeting regulatory requirements, maintaining operational licenses, and ensuring the safe and legal operation of your facilities.",
         ],
       },
     ],
@@ -1010,6 +976,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
         title: "Advantages",
         items: [
           "Ensures proper application and adhesion of coatings for corrosion protection.",
+          "Detects defects such as cracks, blisters, and uneven coverage early.",
           "Enhances durability and longevity of painted surfaces.",
           "Supports compliance with coating specifications and industry standards.",
         ],
@@ -1473,7 +1440,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Positive Material Identification (PMI) Testing",
     description:
-      "Positive Material Identification (PMI) Testing is a critical service offered by Murban Engineering to confirm the composition of materials used in your equipment and structures. Our PMI testing ensures material compatibility with intended applications and compliance with industry standards. With our expertise, you can maintain the quality and safety of your assets, preventing material-related issues and ensuring long-term reliability.",
+      "Positive Material Identification (PMI) Testing is a critical service offered by Murban Engineering to confirm the composition of materials used in your equipment and structures. Our PMI testing ensures material compatibility with intended applications and compliance with industry standards. With our expertise, you can maintain the quality and safety of your assets, preventing material-related issues and ensuring long-term reliability. These services represent Murban Engineering's commitment to providing comprehensive asset integrity solutions that prioritize safety, compliance, and operational efficiency across a wide range of industries.",
     sections: [
       {
         title: "What Our PMI Testing Provides",
