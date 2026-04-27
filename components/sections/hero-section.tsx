@@ -8,25 +8,25 @@ const word = "MURBAN";
 
 const sideImages = [
   {
-    src: "/images/industrial-pipes.jpg",
+    src: "/23730007-22db-41f5-9a96-98b6d9704de4.jpg",
     alt: "Industrial pipe network",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/modern-factory.jpg",
+    src: "/5e24b8ca-7c8d-4605-a7a4-d332c8277654.jpg",
     alt: "Modern factory infrastructure",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/pipeline-construction.jpg",
+    src: "/WhatsApp Image 2019-02-22 at 17.23.59 (22).jpeg",
     alt: "Pipeline construction site",
     position: "right",
     span: 1,
   },
   {
-    src: "/images/storage-tanks.jpg",
+    src: "/WhatsApp Image 2019-02-22 at 17.23.59 (24).jpeg",
     alt: "Industrial storage tanks",
     position: "right",
     span: 1,

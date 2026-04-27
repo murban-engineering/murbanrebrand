@@ -6,32 +6,32 @@ const features = [
   {
     title: "Smart Temperature Control",
     description: "Innovation",
-    image: "/images/industrial-plant.jpg",
+    image: "/images/DSCF5799.JPG",
   },
   {
     title: "Ultra-Light Carbon Frame",
     description: "Performance",
-    image: "/images/industrial-refinery.jpg",
+    image: "/images/DSCN4103.JPG",
   },
   {
     title: "Weather-Resistant Design",
     description: "Durability",
-    image: "/images/modern-facility.jpg",
+    image: "/images/DSCN4156.JPG",
   },
   {
     title: "Integrated GPS Tracking",
     description: "Navigation",
-    image: "/images/industrial-silos.jpg",
+    image: "/images/DSCN4117.JPG",
   },
   {
     title: "Built-In LED Flashlight",
     description: "Visibility",
-    image: "/images/led-flashlight-bottle.png",
+    image: "/images/welder.jpg",
   },
   {
     title: "Self-Heating Technology",
     description: "Comfort",
-    image: "/images/heating-campfire.png",
+    image: "/images/DSCF5799.JPG",
   },
 ];
 
