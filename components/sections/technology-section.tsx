@@ -61,25 +61,25 @@ function ScrollRevealText({ text }: { text: string }) {
 
 const sideImages = [
   {
-    src: "/images/storage-tanks.jpg",
+    src: "/images/magnetic Flux Leakage 1.jpg",
     alt: "Tank inspection platform",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/industrial-pipes.jpg",
+    src: "/images/Pipes.JPG",
     alt: "Industrial fire line piping",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/industrial-refinery.jpg",
+    src: "/images/DSCN4103.JPG",
     alt: "Horizontal vessel installation",
     position: "right",
     span: 1,
   },
   {
-    src: "/images/industrial-silos.jpg",
+    src: "/images/DSCN4117.JPG",
     alt: "Storage vessels and access stairways",
     position: "right",
     span: 1,
@@ -306,7 +306,7 @@ export function TechnologySection() {
               }}
             >
               <Image
-                src="/images/hero-industrial.jpg"
+                src="/images/DSCN4156.JPG"
                 alt="Murban industrial storage installation"
                 fill
                 className="object-cover"

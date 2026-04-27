@@ -85,7 +85,7 @@ export function PhilosophySection() {
                 }}
               >
                 <Image
-                  src="/images/product-backpack.png"
+                  src="/e2c9980a37088c7b40c2e03e40fbd666_f250.jpg"
                   alt="Field technician backpack kit"
                   fill
                   className="object-cover"
@@ -108,7 +108,7 @@ export function PhilosophySection() {
                 }}
               >
                 <Image
-                  src="/images/product-forest.png"
+                  src="/WhatsApp Image 2019-02-22 at 18.08.49 (1).jpeg"
                   alt="Technical field gear setup"
                   fill
                   className="object-cover"
