@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import { ScrollGate } from "@/components/scroll-gate";
 import { HeroSection } from "@/components/sections/hero-section";
 import { PhilosophySection } from "@/components/sections/philosophy-section";
 import { FeaturedProductsSection } from "@/components/sections/featured-products-section";
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Header />
+      <ScrollGate />
       <HeroSection />
       <PhilosophySection />
       <FeaturedProductsSection />
