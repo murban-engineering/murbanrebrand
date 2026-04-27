@@ -80,7 +80,7 @@ export function Header() {
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="https://portal.murban-eng.com/"
+            href="https://portal.murban-eng.com/#/"
             target="_blank"
             rel="noopener noreferrer"
             className={`text-sm font-medium transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
@@ -147,7 +147,7 @@ export function Header() {
               Contact
             </Link>
             <Link
-              href="https://portal.murban-eng.com/"
+              href="https://portal.murban-eng.com/#/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg text-foreground"
