@@ -9,10 +9,12 @@ import { CollectionSection } from "@/components/sections/collection-section";
 import { EditorialSection } from "@/components/sections/editorial-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { FooterSection } from "@/components/sections/footer-section";
+import { ResetHomeOnLoad } from "@/components/reset-home-on-load";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
+      <ResetHomeOnLoad />
       <Header />
       <HeroSection />
       <TrustedLeadersSection />
