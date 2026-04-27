@@ -1,37 +1,53 @@
 <svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Africa operations map</title>
-  <desc id="desc">Stylized map of Africa with country labels for Murban Engineering operations.</desc>
+  <desc id="desc">Geographic map of Africa with highlighted countries where Murban Engineering operates.</desc>
+
   <rect width="1200" height="900" fill="#F8FAFC"/>
-  <path d="M570 120L640 165L685 235L740 260L775 330L760 390L790 455L765 520L720 575L705 655L640 710L560 740L500 710L450 655L390 620L350 555L340 500L290 450L300 365L355 300L430 255L475 190L530 150L570 120Z" fill="#0F766E" fill-opacity="0.88"/>
-  <path d="M610 725L650 775L620 820L565 840L520 815L500 780L530 748L570 735L610 725Z" fill="#115E59"/>
 
-  <circle cx="515" cy="355" r="8" fill="#F59E0B"/>
-  <text x="530" y="360" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Ghana</text>
+  <!-- Sea -->
+  <rect x="150" y="70" width="900" height="760" rx="28" fill="#E2E8F0"/>
 
-  <circle cx="555" cy="325" r="8" fill="#F59E0B"/>
-  <text x="570" y="330" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Nigeria</text>
+  <!-- Africa mainland (more geographically accurate silhouette) -->
+  <path d="M584 146L612 156L640 177L668 189L696 208L713 236L735 260L742 288L755 315L775 338L795 363L804 395L796 429L805 459L817 487L809 516L796 540L774 560L754 585L740 617L729 647L709 675L687 700L664 730L642 752L614 772L585 784L556 790L526 784L503 768L482 744L468 717L453 690L434 671L412 651L392 625L376 597L357 567L345 536L337 506L326 481L311 454L297 432L290 404L294 374L304 344L325 321L344 297L365 278L390 261L419 245L442 227L463 205L484 186L510 170L538 158L562 150L584 146Z"
+    fill="#0F766E" fill-opacity="0.92" stroke="#0B4F4A" stroke-width="4"/>
 
-  <circle cx="680" cy="300" r="8" fill="#F59E0B"/>
-  <text x="695" y="305" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Egypt</text>
+  <!-- Madagascar -->
+  <path d="M819 639L837 655L844 679L838 705L823 730L804 748L786 744L780 721L788 694L797 672L809 651L819 639Z"
+    fill="#0F766E" fill-opacity="0.92" stroke="#0B4F4A" stroke-width="3"/>
 
-  <circle cx="680" cy="455" r="8" fill="#F59E0B"/>
-  <text x="695" y="460" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Kenya</text>
+  <!-- Major internal boundaries (stylized country separators for readability) -->
+  <path d="M503 768L505 708L488 654L473 613L452 573L435 536L421 493L411 456L404 417L397 378L393 334L390 262"
+    stroke="#CFFAFE" stroke-width="2" stroke-linecap="round"/>
+  <path d="M556 790L558 736L560 686L564 634L572 586L586 536L597 495L609 455L621 420L642 387L664 354L692 320L724 290"
+    stroke="#CFFAFE" stroke-width="2" stroke-linecap="round"/>
+  <path d="M326 481L366 474L407 470L448 471L489 476L530 482L573 488L615 497L657 507L699 520L742 538"
+    stroke="#CFFAFE" stroke-width="2" stroke-linecap="round"/>
 
-  <circle cx="655" cy="485" r="8" fill="#F59E0B"/>
-  <text x="670" y="490" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Uganda</text>
+  <!-- Countries of operation -->
+  <g fill="#F59E0B" stroke="#92400E" stroke-width="1.5">
+    <circle cx="452" cy="383" r="7"/>
+    <circle cx="500" cy="366" r="7"/>
+    <circle cx="678" cy="302" r="7"/>
+    <circle cx="676" cy="472" r="7"/>
+    <circle cx="651" cy="491" r="7"/>
+    <circle cx="681" cy="530" r="7"/>
+    <circle cx="531" cy="588" r="7"/>
+    <circle cx="560" cy="690" r="7"/>
+    <circle cx="614" cy="758" r="7"/>
+    <circle cx="742" cy="642" r="7"/>
+  </g>
 
-  <circle cx="695" cy="520" r="8" fill="#F59E0B"/>
-  <text x="710" y="525" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Tanzania</text>
-
-  <circle cx="555" cy="570" r="8" fill="#F59E0B"/>
-  <text x="570" y="575" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Angola</text>
-
-  <circle cx="580" cy="675" r="8" fill="#F59E0B"/>
-  <text x="595" y="680" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Namibia</text>
-
-  <circle cx="640" cy="775" r="8" fill="#F59E0B"/>
-  <text x="655" y="780" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">South Africa</text>
-
-  <circle cx="730" cy="640" r="8" fill="#F59E0B"/>
-  <text x="745" y="645" font-family="Arial, sans-serif" font-size="24" fill="#0F172A">Mozambique</text>
+  <!-- Labels -->
+  <g font-family="Inter, Arial, sans-serif" font-size="22" fill="#0F172A" font-weight="500">
+    <text x="466" y="389">Ghana</text>
+    <text x="514" y="372">Nigeria</text>
+    <text x="691" y="308">Egypt</text>
+    <text x="690" y="478">Kenya</text>
+    <text x="664" y="498">Uganda</text>
+    <text x="695" y="536">Tanzania</text>
+    <text x="545" y="594">Angola</text>
+    <text x="574" y="696">Namibia</text>
+    <text x="628" y="764">South Africa</text>
+    <text x="756" y="648">Mozambique</text>
+  </g>
 </svg>
