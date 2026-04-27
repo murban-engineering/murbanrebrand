@@ -68,7 +68,7 @@ export function PhilosophySection() {
   }, [updateTransforms]);
 
   return (
-    <section id="about" className="bg-background">
+    <section id="company-profile" className="bg-background">
       {/* Scroll-Animated Product Grid */}
       <div ref={sectionRef} className="relative" style={{ height: "200vh" }}>
         <div className="sticky top-0 h-screen flex items-center justify-center">
