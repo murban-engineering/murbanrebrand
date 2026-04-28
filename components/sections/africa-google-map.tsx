@@ -7,22 +7,22 @@ type AfricaGoogleMapProps = {
 };
 
 export const whereWeWorkCountries = [
-  "Kenya",
-  "Uganda",
-  "Tanzania",
-  "Ethiopia",
-  "Rwanda",
-  "Burundi",
-  "Zambia",
-  "DRC",
-  "Somalia",
-  "Seychelles",
-  "Madagascar",
-  "Ghana",
-  "Eritrea",
-  "Djibouti",
-  "Zimbabwe",
-  "Malawi",
+  { name: "Kenya", label: "Kenya", isHQ: true },
+  { name: "Uganda", label: "Uganda" },
+  { name: "Tanzania", label: "Tanzania" },
+  { name: "Ethiopia", label: "Ethiopia" },
+  { name: "Rwanda", label: "Rwanda" },
+  { name: "Burundi", label: "Burundi" },
+  { name: "Zambia", label: "Zambia" },
+  { name: "Democratic Republic of the Congo", label: "DRC" },
+  { name: "Somalia", label: "Somalia" },
+  { name: "Seychelles", label: "Seychelles" },
+  { name: "Madagascar", label: "Madagascar" },
+  { name: "Ghana", label: "Ghana" },
+  { name: "Eritrea", label: "Eritrea" },
+  { name: "Djibouti", label: "Djibouti" },
+  { name: "Zimbabwe", label: "Zimbabwe" },
+  { name: "Malawi", label: "Malawi" },
 ] as const;
 
 export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
