@@ -88,6 +88,8 @@ const sideImages = [
 
 type Industry = {
   title: string;
+  imageSrc: string;
+  imageAlt: string;
   assetsCovered: string;
   keyServices: string[];
   whyItMatters: string;
@@ -103,6 +105,8 @@ const createIndustryAnchor = (title: string) =>
 const industries: Industry[] = [
   {
     title: "Oil & Gas Industry",
+    imageSrc: "/images/oiland gas.jpg",
+    imageAlt: "Oil and gas processing plant at sunrise",
     assetsCovered: "Storage tanks, sphere tanks, pressure vessels, pipelines, marine terminals, FPSOs",
     keyServices: [
       "API 653 Storage Tank Inspection",
@@ -124,6 +128,8 @@ const industries: Industry[] = [
   },
   {
     title: "Power & Steam Generation",
+    imageSrc: "/images/power and steam.jpg",
+    imageAlt: "Power and steam facility with industrial stacks",
     assetsCovered: "Boilers, heat exchangers, pressure vessels, steam lines",
     keyServices: [
       "Boiler Internal & External Inspections",
@@ -138,6 +144,8 @@ const industries: Industry[] = [
   },
   {
     title: "Storage & Logistics Terminals",
+    imageSrc: "/images/storage-tanks.jpg",
+    imageAlt: "Storage and logistics terminal with bulk tanks",
     assetsCovered: "Bulk liquid tanks, LPG spheres, loading lines, depot infrastructure",
     keyServices: [
       "Storage Tank Calibration",
@@ -156,6 +164,8 @@ const industries: Industry[] = [
   },
   {
     title: "Food Processing Industry",
+    imageSrc: "/images/food industry.jpg",
+    imageAlt: "Food processing production facility",
     assetsCovered: "Stainless tanks, pressure vessels, food-grade pipelines, steam boilers",
     keyServices: [
       "UT Thickness Surveys for Corrosion in Clean Systems",
@@ -170,6 +180,8 @@ const industries: Industry[] = [
   },
   {
     title: "Renewable Energy & Geothermal",
+    imageSrc: "/images/renewable energy.jpg",
+    imageAlt: "Renewable energy and geothermal infrastructure",
     assetsCovered: "Geothermal drilling rigs, solar plants, wind support structures",
     keyServices: [
       "NDT on Cementing and Casing Equipment",
@@ -184,6 +196,8 @@ const industries: Industry[] = [
   },
   {
     title: "Rail Industry",
+    imageSrc: "/images/rail industry.jpg",
+    imageAlt: "Rail industry yard and wagons",
     assetsCovered: "Rail wagons, bogies, bridges, storage depots, fuel tanks",
     keyServices: [
       "UT and RT for railcar tanks and weld seams",
@@ -199,6 +213,8 @@ const industries: Industry[] = [
   },
   {
     title: "Shipping & Marine Industry",
+    imageSrc: "/images/industrial-refinery.jpg",
+    imageAlt: "Marine and shipping terminal with industrial piping",
     assetsCovered:
       "Cargo tanks, ballast tanks, marine pipelines, ship hulls, offshore loading arms, vessel pressure systems, tankers, offshore platforms",
     keyServices: [
@@ -419,36 +435,51 @@ export function TechnologySection() {
               <article
                 id={createIndustryAnchor(industry.title)}
                 key={industry.title}
-                className="scroll-mt-28 rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm"
+                className="group scroll-mt-28 overflow-hidden rounded-2xl border border-[#0F3D76]/25 bg-gradient-to-br from-[#0F3D76]/5 via-card to-[#6D1F3A]/10 p-6 text-card-foreground shadow-[0_18px_45px_-30px_rgba(15,61,118,0.45)] transition-all duration-300 hover:border-[#6D1F3A]/45 hover:shadow-[0_24px_56px_-30px_rgba(109,31,58,0.5)]"
               >
-                <h4 className="text-xl font-semibold">{industry.title}</h4>
+                <div className="grid gap-5 md:grid-cols-[minmax(0,1fr)_220px] md:items-start">
+                  <div>
+                    <h4 className="text-xl font-semibold text-[#0F3D76]">{industry.title}</h4>
 
-                <div className="mt-4 space-y-2">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                    Assets Covered
-                  </p>
-                  <p className="text-sm leading-relaxed md:text-base">{industry.assetsCovered}</p>
-                </div>
+                    <div className="mt-4 space-y-2">
+                      <p className="text-sm font-semibold uppercase tracking-wide text-[#6D1F3A]">
+                        Assets Covered
+                      </p>
+                      <p className="text-sm leading-relaxed md:text-base">{industry.assetsCovered}</p>
+                    </div>
 
-                <div className="mt-4 space-y-2">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                    Key Services
-                  </p>
-                  <ul className="space-y-1 text-sm leading-relaxed md:text-base">
-                    {industry.keyServices.map((service) => (
-                      <li key={service} className="flex gap-2">
-                        <span aria-hidden="true">•</span>
-                        <span>{service}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                    <div className="mt-4 space-y-2">
+                      <p className="text-sm font-semibold uppercase tracking-wide text-[#6D1F3A]">
+                        Key Services
+                      </p>
+                      <ul className="space-y-1 text-sm leading-relaxed md:text-base">
+                        {industry.keyServices.map((service) => (
+                          <li key={service} className="flex gap-2">
+                            <span aria-hidden="true" className="text-[#0F3D76]">•</span>
+                            <span>{service}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-                <div className="mt-4 space-y-2">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                    Why It Matters
-                  </p>
-                  <p className="text-sm leading-relaxed md:text-base">{industry.whyItMatters}</p>
+                    <div className="mt-4 space-y-2">
+                      <p className="text-sm font-semibold uppercase tracking-wide text-[#6D1F3A]">
+                        Why It Matters
+                      </p>
+                      <p className="text-sm leading-relaxed md:text-base">{industry.whyItMatters}</p>
+                    </div>
+                  </div>
+
+                  <div className="relative h-48 overflow-hidden rounded-xl border border-[#0F3D76]/25 md:h-full md:min-h-[250px]">
+                    <Image
+                      src={industry.imageSrc}
+                      alt={industry.imageAlt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 767px) 100vw, 220px"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#6D1F3A]/45 via-transparent to-[#0F3D76]/25" />
+                  </div>
                 </div>
               </article>
             ))}
