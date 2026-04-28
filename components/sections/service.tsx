@@ -2246,7 +2246,8 @@ const Services = () => {
                 Engineering & Fabrication
               </span>
               <h2 className="mt-5 text-4xl md:text-5xl font-semibold text-foreground tracking-tight">
-                Murban Engineering and Fabrication Services
+                <span style={{ color: "#A60D0F" }}>Murban</span>{" "}
+                <span style={{ color: "#213164" }}>Engineering</span> and Fabrication Services
               </h2>
               <p className="mt-5 text-lg text-muted-foreground">
                 From detailed engineering to turnkey fabrication and installation
