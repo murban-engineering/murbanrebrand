@@ -2,128 +2,88 @@
 
 import Link from "next/link";
 
-const footerLinks = {
-  explore: [
-    { label: "Products", href: "#products" },
-    { label: "Technology", href: "#technology" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Accessories", href: "#accessories" },
-  ],
-  about: [
-    { label: "Our Story", href: "#" },
-    { label: "Team", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#" },
-  ],
-  service: [
-    { label: "FAQ", href: "#" },
-    { label: "Shipping", href: "#" },
-    { label: "Returns", href: "#" },
-    { label: "Warranty", href: "#" },
-  ],
-};
+const companyLinks = [
+  { label: "About Us", href: "#" },
+  { label: "Industry Solutions", href: "#" },
+  { label: "Privacy & Policy", href: "#" },
+  { label: "FAQ", href: "#" },
+];
+
+const serviceLinksColumnOne = [
+  { label: "Alternating Current Field Measurement", href: "#" },
+  { label: "API 570 Piping Inspection and Certification", href: "#" },
+  { label: "Murban Fitness for Service", href: "#" },
+  { label: "Murban Risk Based Inspection", href: "#" },
+  { label: "Boiler Inspection", href: "#" },
+  { label: "Lifting Equipment Thorough Examination and Certification", href: "#" },
+];
+
+const serviceLinksColumnTwo = [
+  { label: "Murban Pressure Testing", href: "#" },
+  { label: "Paint Inspection", href: "#" },
+  { label: "PMI Testing", href: "#" },
+  { label: "RT Service", href: "#" },
+  { label: "Risk Based Inspection", href: "#" },
+  { label: "Sphere Tank Inspection", href: "#" },
+];
 
 export function FooterSection() {
   return (
-    <footer className="bg-background">
-      {/* Main Footer Content */}
-      <div className="border-t border-border px-6 py-16 md:px-12 md:py-20 lg:px-20">
-        <div className="grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-5">
-          {/* Brand */}
-          <div className="col-span-2 md:col-span-1 lg:col-span-2">
-            <Link href="/" className="text-fluid-lg font-medium text-foreground">
-              MURBAN ENGINEERING
-            </Link>
-            <p className="mt-4 max-w-xs text-fluid-sm leading-relaxed text-muted-foreground text-pretty">
-              Premium smart bottles engineered for adventure. GPS tracking, LED flashlight, and self-heating technology.
+    <footer className="bg-neutral-200">
+      <div className="px-6 py-14 md:px-12 lg:px-20">
+        <div className="grid gap-12 lg:grid-cols-[1.4fr_0.7fr_0.7fr_0.7fr]">
+          <div>
+            <h2 className="text-4xl font-semibold tracking-tight text-foreground">Murban Engineering</h2>
+            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              Our operations are split into two divisions, Murban Inspection Services and Murban
+              Engineering Services. We pick the best talent from the industry and continually invest
+              in their development through rigorous external and internal training so they stay
+              ahead of industry trends.
             </p>
+
+            <div className="mt-10 space-y-3 text-lg text-muted-foreground">
+              <p>Off Airport Road, Mombasa Port Reitz</p>
+              <p>+254 20 265 0618</p>
+              <p>info@murban-eng.com</p>
+            </div>
+
+            <div className="mt-14">
+              <h3 className="text-4xl font-semibold text-foreground">Follow Us</h3>
+              <Link
+                href="#"
+                aria-label="LinkedIn"
+                className="mt-6 inline-flex h-14 w-14 items-center justify-center rounded-full border border-rose-200 text-xl font-medium text-foreground transition-colors hover:bg-white"
+              >
+                in
+              </Link>
+            </div>
           </div>
 
-          {/* Explore */}
-          <div>
-            <h4 className="mb-4 text-sm font-medium text-foreground">Explore</h4>
-            <ul className="space-y-3">
-              {footerLinks.explore.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* About */}
-          <div>
-            <h4 className="mb-4 text-sm font-medium text-foreground">About</h4>
-            <ul className="space-y-3">
-              {footerLinks.about.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Service */}
-          <div>
-            <h4 className="mb-4 text-sm font-medium text-foreground">Service</h4>
-            <ul className="space-y-3">
-              {footerLinks.service.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="border-t border-border px-6 py-6 md:px-12 lg:px-20">
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p className="text-xs text-muted-foreground">
-            2026 MURBAN ENGINEERING. All rights reserved.
-          </p>
-
-          
-
-          {/* Social Links */}
-          <div className="flex items-center gap-4">
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Instagram
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Twitter
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              YouTube
-            </Link>
-          </div>
+          <FooterColumn title="Company" links={companyLinks} />
+          <FooterColumn title="Services" links={serviceLinksColumnOne} />
+          <FooterColumn title="Services" links={serviceLinksColumnTwo} />
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterColumn({ title, links }: { title: string; links: { label: string; href: string }[] }) {
+  return (
+    <div>
+      <h4 className="text-4xl font-semibold text-foreground">{title}</h4>
+      <ul className="mt-8 space-y-5">
+        {links.map((link) => (
+          <li key={link.label}>
+            <Link
+              href={link.href}
+              className="text-lg leading-snug text-foreground transition-colors hover:text-muted-foreground"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
