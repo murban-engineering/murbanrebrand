@@ -58,9 +58,9 @@ export function TestimonialsSection() {
 
           <div>
             <p className="text-xs uppercase tracking-widest text-muted-foreground">Where We Work</p>
-            <AfricaGoogleMap className="mt-4 overflow-hidden rounded-2xl border border-border bg-card" />
-            <p className="mt-4 text-sm text-muted-foreground">
-              Countries shown on the map: {whereWeWorkCountries.join(", ")}.
+            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+              We support projects across Africa with teams and certified inspectors in key markets.
+              Countries shown on the map include {whereWeWorkCountries.map((country) => country.label).join(", ")}.
             </p>
           </div>
         </div>
@@ -111,7 +111,6 @@ export function TestimonialsSection() {
               </ol>
             </div>
 
-            <AfricaGoogleMap className="overflow-hidden rounded-2xl border border-border bg-card" />
           </div>
 
           <div>
@@ -164,10 +163,10 @@ export function TestimonialsSection() {
 
                 <div className="mt-10 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
                   <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
-                    {whereWeWorkCountries.map((country) => (
-                      <p key={country} className="flex items-center gap-3 text-2xl font-semibold text-foreground/90">
+                    {whereWeWorkCountries.map(({ name, label, isHQ }) => (
+                      <p key={name} className="flex items-center gap-3 text-2xl font-semibold text-foreground/90">
                         <CheckCircle2 className="h-6 w-6 shrink-0 text-primary" strokeWidth={2.1} aria-hidden="true" />
-                        {country === "Kenya" ? "Kenya (HQ)" : country}
+                        {isHQ ? `${label} (HQ)` : label}
                       </p>
                     ))}
                   </div>
