@@ -26,16 +26,15 @@ export function TestimonialsSection() {
       </div>
 
       {/* About Image */}
-      <div className="relative aspect-[16/9] w-full">
-        <Image
-          src="/images/Screenshot 2026-04-28 190300.png"
-          alt="Murban Engineering inspection team onsite"
-          fill
-          className="object-cover object-center saturate-125"
-        />
-        {/* Brand color overlays to keep the About hero lively and on-brand */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#A60D0F]/55 via-transparent to-[#213164]/55 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/45 to-transparent" />
+      <div className="px-6 md:px-12 lg:px-20">
+        <div className="relative aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-2xl">
+          <Image
+            src="/images/Screenshot 2026-04-28 190300.png"
+            alt="Murban Engineering inspection team onsite"
+            fill
+            className="object-cover object-center"
+          />
+        </div>
       </div>
 
       {/* Company Profile + Where We Work */}
