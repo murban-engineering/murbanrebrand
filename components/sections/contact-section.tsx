@@ -1,8 +1,33 @@
 import { Upload, Facebook, Instagram, Youtube } from "lucide-react";
 
+const officeLocations = [
+  {
+    city: "Nairobi",
+    division: "Murban Engineering",
+    lines: [
+      "Kofisi Karen Road",
+      "P.O Box 856 00606",
+      "Nairobi Kenya",
+      "Tel: +254 203673821",
+      "Mob: +254 703041821",
+    ],
+  },
+  {
+    city: "Mombasa",
+    division: "Murban Inspection",
+    lines: [
+      "Off Airport Road",
+      "P. O. Box 99215 – 80107",
+      "Mombasa, Kenya",
+      "Tel: +254 202651068",
+      "Mob: +254 724966694",
+    ],
+  },
+];
+
 export function ContactSection() {
   return (
-    <section className="bg-[#213164] px-6 py-12 md:px-12 md:py-16 lg:px-20">
+    <section id="contact-us" className="bg-[#213164] px-6 py-12 md:px-12 md:py-16 lg:px-20">
       <div className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl border border-white/10 bg-[#213164] shadow-2xl lg:grid-cols-[1.2fr_0.8fr]">
         <div
           className="relative min-h-[360px] p-8 md:min-h-[520px] md:p-12"
@@ -21,24 +46,22 @@ export function ContactSection() {
               <h2 className="mt-6 text-4xl font-semibold tracking-tight text-white md:text-6xl">Contact us</h2>
             </div>
 
-            <div className="grid gap-8 text-white/90 sm:grid-cols-2">
-              <div>
-                <p className="text-xs uppercase tracking-[0.22em] text-white/65">Our address</p>
-                <p className="mt-3 text-sm leading-relaxed md:text-base">
-                  123456 Moscow
-                  <br />
-                  Lane Dyuzheva
-                  <br />
-                  Building 47 office 202
-                </p>
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-[0.22em] text-white/65">Our contacts</p>
-                <p className="mt-3 text-sm leading-relaxed md:text-base">
-                  hello@name.com
-                  <br />
-                  +7 900 800 70 60
-                </p>
+            <div className="mt-8">
+              <p className="text-[11px] uppercase tracking-[0.24em] text-white/65">Our Office Locations</p>
+              <div className="mt-4 grid gap-6 text-[12px] leading-relaxed text-white/90 sm:grid-cols-2">
+                {officeLocations.map((office) => (
+                  <div key={office.city}>
+                    <p className="text-sm font-semibold text-white">{office.city}</p>
+                    <p className="mt-1 text-[12px] font-medium text-white/95">{office.division}</p>
+                    <p className="mt-2 space-y-0.5 text-[11px] leading-relaxed text-white/90">
+                      {office.lines.map((line) => (
+                        <span key={line} className="block">
+                          {line}
+                        </span>
+                      ))}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

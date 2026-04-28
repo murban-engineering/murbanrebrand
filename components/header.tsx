@@ -115,7 +115,7 @@ export function Header() {
           <Link href="#our-projects" className={navTextClass}>
             Our Projects
           </Link>
-          <Link href="#" className={navTextClass}>
+          <Link href="#contact-us" className={navTextClass}>
             Contact
           </Link>
         </nav>
@@ -204,7 +204,7 @@ export function Header() {
             <Link href="#our-projects" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
               Our Projects
             </Link>
-            <Link href="#" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
+            <Link href="#contact-us" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
             <Link
