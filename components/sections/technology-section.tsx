@@ -93,6 +93,13 @@ type Industry = {
   whyItMatters: string;
 };
 
+
+const createIndustryAnchor = (title: string) =>
+  `industry-${title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)+/g, "")}`;
+
 const industries: Industry[] = [
   {
     title: "Oil & Gas Industry",
@@ -410,8 +417,9 @@ export function TechnologySection() {
           <div className="grid grid-cols-1 gap-6 pt-4 md:grid-cols-2">
             {industries.map((industry) => (
               <article
+                id={createIndustryAnchor(industry.title)}
                 key={industry.title}
-                className="rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm"
+                className="scroll-mt-28 rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm"
               >
                 <h4 className="text-xl font-semibold">{industry.title}</h4>
 
