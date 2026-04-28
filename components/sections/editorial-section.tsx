@@ -1,10 +1,6 @@
 "use client";
 
 const specs = [
-  { label: "Weight", value: "400g" },
-  { label: "Capacity", value: "0.5L - 2L" },
-  { label: "Setup", value: "2 min" },
-  { label: "Packed size", value: "30 x 15 cm" },
 ];
 
 export function EditorialSection() {
@@ -20,21 +16,23 @@ export function EditorialSection() {
       </div>
 
       {/* Specs Grid */}
-      <div className="grid grid-cols-2 border-t border-border md:grid-cols-4">
-        {specs.map((spec) => (
-          <div
-            key={spec.label}
-            className="border-b border-r border-border p-8 text-center last:border-r-0 md:border-b-0"
-          >
-            <p className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
-              {spec.label}
-            </p>
-            <p className="font-medium text-foreground text-4xl">
-              {spec.value}
-            </p>
-          </div>
-        ))}
-      </div>
+      {specs.length > 0 ? (
+        <div className="grid grid-cols-2 border-t border-border md:grid-cols-4">
+          {specs.map((spec) => (
+            <div
+              key={spec.label}
+              className="border-b border-r border-border p-8 text-center last:border-r-0 md:border-b-0"
+            >
+              <p className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
+                {spec.label}
+              </p>
+              <p className="font-medium text-foreground text-4xl">
+                {spec.value}
+              </p>
+            </div>
+          ))}
+        </div>
+      ) : null}
 
       {/* Full-width Video */}
       <div className="relative aspect-[16/9] w-full md:aspect-[21/9]">

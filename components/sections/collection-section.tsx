@@ -21,24 +21,6 @@ const accessories = [
     description: "Ultra-light mounting system for cycling",
     image: "/images/welder.jpg",
   },
-  {
-    id: 4,
-    name: "Premium Carry Strap",
-    description: "Adjustable strap with quick-release clips",
-    image: "/images/DSCN4156.JPG",
-  },
-  {
-    id: 5,
-    name: "Carabiner Clip System",
-    description: "Secure attachment for hands-free carrying",
-    image: "/images/magnetic Flux Leakage 1.jpg",
-  },
-  {
-    id: 6,
-    name: "Bluetooth Speaker Base",
-    description: "High-fidelity audio dock with grip stabilizers",
-    image: "/images/0615281f-0698-4990-b2b8-72f600089fd6.jpg",
-  },
 ];
 
 export function CollectionSection() {
