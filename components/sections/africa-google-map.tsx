@@ -27,15 +27,18 @@ export const whereWeWorkCountries = [
 
 export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
   return (
-    <div className={`${className ?? ""} relative`} aria-label="Africa map showing Murban operations" role="img">
-      <div className="relative aspect-[16/10] w-full min-h-[280px] overflow-hidden">
+    <div
+      className={`${className ?? ""} relative bg-[#213164] p-4`}
+      aria-label="Africa map showing Murban operations"
+      role="img"
+    >
+      <div className="relative aspect-[16/10] w-full min-h-[280px] overflow-hidden rounded-xl bg-[#213164]">
         <Image
-          src="/images/africa-map.jpg"
-          alt="Africa map with highlighted Murban Engineering operation countries"
+          src="/images/africa-map.svg"
+          alt="Africa operations map"
           fill
-          className="object-cover"
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          priority={false}
+          className="object-contain"
+          priority
         />
       </div>
     </div>
