@@ -36,7 +36,7 @@ function ScrollRevealText({ text }: { text: string }) {
   return (
     <p
       ref={containerRef}
-      className="text-3xl font-semibold leading-snug md:text-4xl lg:text-5xl"
+      className="text-2xl font-semibold leading-snug sm:text-3xl md:text-4xl lg:text-5xl"
     >
       {words.map((word, index) => {
         const wordProgress = index / words.length;
@@ -279,8 +279,8 @@ export function TechnologySection() {
 
   return (
     <section id="industries" ref={sectionRef} className="relative bg-foreground">
-      {/* Sticky container for scroll animation */}
-      <div className="sticky top-0 h-screen overflow-hidden">
+      {/* Sticky container for scroll animation (desktop/tablet) */}
+      <div className="sticky top-0 hidden h-screen overflow-hidden md:block">
         <div className="flex h-full w-full items-center justify-center">
           {/* Bento Grid Container */}
           <div
@@ -408,7 +408,21 @@ export function TechnologySection() {
       </div>
 
       {/* Scroll space to enable animation */}
-      <div className="h-[200vh]" />
+      <div className="hidden h-[200vh] md:block" />
+
+      {/* Mobile hero fallback */}
+      <div className="relative h-[60vh] min-h-[420px] overflow-hidden md:hidden">
+        <Image
+          src="/images/DSCN4156.JPG"
+          alt="Murban industrial storage installation"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-foreground/45" />
+        <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
+          <h2 className="text-4xl font-medium leading-tight tracking-tight text-white">Inspection Across Industries.</h2>
+        </div>
+      </div>
 
       {/* Description Section with Background Image and Scroll Reveal */}
       <div
@@ -430,16 +444,27 @@ export function TechnologySection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 pt-4 md:grid-cols-2">
+          <div className="flex flex-col gap-8 pt-4">
             {industries.map((industry) => (
               <article
                 id={createIndustryAnchor(industry.title)}
                 key={industry.title}
-                className="group scroll-mt-28 overflow-hidden rounded-2xl border border-[#0F3D76]/25 bg-gradient-to-br from-[#0F3D76]/5 via-card to-[#6D1F3A]/10 p-6 text-card-foreground shadow-[0_18px_45px_-30px_rgba(15,61,118,0.45)] transition-all duration-300 hover:border-[#6D1F3A]/45 hover:shadow-[0_24px_56px_-30px_rgba(109,31,58,0.5)]"
+                className="group scroll-mt-28 overflow-hidden rounded-2xl border border-[#0F3D76]/25 bg-gradient-to-br from-[#0F3D76]/5 via-card to-[#6D1F3A]/10 p-5 text-card-foreground shadow-[0_18px_45px_-30px_rgba(15,61,118,0.45)] transition-all duration-300 hover:border-[#6D1F3A]/45 hover:shadow-[0_24px_56px_-30px_rgba(109,31,58,0.5)] md:p-6"
               >
-                <div className="grid gap-5 md:grid-cols-[minmax(0,1fr)_220px] md:items-start">
+                <div className="grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)] lg:items-start">
+                  <div className="relative h-52 overflow-hidden rounded-xl border border-[#0F3D76]/25 sm:h-64 lg:h-full lg:min-h-[280px]">
+                    <Image
+                      src={industry.imageSrc}
+                      alt={industry.imageAlt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 1023px) 100vw, 280px"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#6D1F3A]/45 via-transparent to-[#0F3D76]/25" />
+                  </div>
+
                   <div>
-                    <h4 className="text-xl font-semibold text-[#0F3D76]">{industry.title}</h4>
+                    <h4 className="text-xl font-semibold text-[#0F3D76] md:text-2xl">{industry.title}</h4>
 
                     <div className="mt-4 space-y-2">
                       <p className="text-sm font-semibold uppercase tracking-wide text-[#6D1F3A]">
@@ -468,17 +493,6 @@ export function TechnologySection() {
                       </p>
                       <p className="text-sm leading-relaxed md:text-base">{industry.whyItMatters}</p>
                     </div>
-                  </div>
-
-                  <div className="relative h-48 overflow-hidden rounded-xl border border-[#0F3D76]/25 md:h-full md:min-h-[250px]">
-                    <Image
-                      src={industry.imageSrc}
-                      alt={industry.imageAlt}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 767px) 100vw, 220px"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#6D1F3A]/45 via-transparent to-[#0F3D76]/25" />
                   </div>
                 </div>
               </article>
