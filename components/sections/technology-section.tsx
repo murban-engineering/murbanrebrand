@@ -457,10 +457,13 @@ export function TechnologySection() {
                       src={industry.imageSrc}
                       alt={industry.imageAlt}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-90"
                       sizes="(max-width: 1023px) 100vw, 280px"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#6D1F3A]/45 via-transparent to-[#0F3D76]/25" />
+                    <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full border-2 border-[#6D1F3A]/50 transition-transform duration-700 group-hover:translate-x-[-8px] group-hover:translate-y-[8px] group-hover:scale-125" />
+                    <div className="pointer-events-none absolute -left-5 bottom-5 h-16 w-16 rounded-full border border-[#0F3D76]/60 transition-transform duration-700 group-hover:translate-x-[8px] group-hover:translate-y-[-8px] group-hover:scale-90" />
+                    <div className="absolute left-0 right-0 top-0 h-1 origin-left scale-x-0 bg-[#6D1F3A] transition-transform duration-500 group-hover:scale-x-100" />
                   </div>
 
                   <div>
