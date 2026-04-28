@@ -49,10 +49,8 @@ export function FooterSection() {
               ahead of industry trends.
             </p>
 
-            <div className="mt-8 space-y-3 text-sm text-muted-foreground md:mt-10 md:text-base">
-              <p>Off Airport Road, Mombasa Port Reitz</p>
-              <p>+254 20 265 0618</p>
-              <p>info@murban-eng.com</p>
+            <div className="mt-8 text-sm text-muted-foreground md:mt-10 md:text-base">
+              <p>Find our latest office details in the Contact Us section above.</p>
             </div>
 
             <div className="mt-10 md:mt-14">
