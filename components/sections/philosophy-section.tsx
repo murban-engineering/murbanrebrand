@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { serviceCategories, services } from "@/lib/services";
+import { TestimonialsSection } from "./testimonials-section";
 
 const technologyTrainingPartnerLogos = [
   "/images/Screenshot 2026-04-27 203523.png",
@@ -125,6 +126,8 @@ export function PhilosophySection() {
           </div>
         </div>
       </div>
+
+      <TestimonialsSection />
 
       {/* Description */}
       <div id="services" className="px-6 py-fluid-lg md:px-12 lg:px-20">
