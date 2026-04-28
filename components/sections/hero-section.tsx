@@ -205,9 +205,13 @@ export function HeroSection() {
       {/* Tagline Section */}
       <div className="px-6 pt-32 pb-28 md:pt-48 md:px-12 md:pb-36 lg:px-20 lg:pt-56 lg:pb-44">
         <p className="mx-auto max-w-2xl text-center text-2xl leading-relaxed text-muted-foreground md:text-3xl lg:text-[2.5rem] lg:leading-snug">
-          Lightweight, durable
+          ISO 9001:2015
           <br />
-          and adventure-ready.
+          20+ years experience
+          <br />
+          Certified ASNT SNT-TC-1A
+          <br />
+          Level II Technicians
         </p>
       </div>
     </section>
