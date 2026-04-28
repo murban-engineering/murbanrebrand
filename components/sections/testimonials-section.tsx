@@ -2,20 +2,7 @@
 
 import Image from "next/image";
 
-import { AfricaGoogleMap } from "./africa-google-map";
-
-const africanCountries = [
-  "Nigeria",
-  "Ghana",
-  "Kenya",
-  "Uganda",
-  "Tanzania",
-  "Angola",
-  "Namibia",
-  "South Africa",
-  "Mozambique",
-  "Egypt",
-];
+import { AfricaGoogleMap, whereWeWorkCountries } from "./africa-google-map";
 
 const whoWeAre = [
   "Conventional and Advanced NDT and Inspection Services",
@@ -23,25 +10,6 @@ const whoWeAre = [
   "Oil and Gas, Refinery, Petrochemical, Heavy Industry, Mining and Power Plant",
   "Qualified and certified inspectors and N-D-T Practitioners",
   "Kenya headquarters with Africa expertise since 2007",
-];
-
-const whereWeWorkExtended = [
-  "Kenya",
-  "Uganda",
-  "Tanzania",
-  "Ethiopia",
-  "Rwanda",
-  "Burundi",
-  "Zambia",
-  "DRC",
-  "Somalia",
-  "Seychelles",
-  "Madagascar",
-  "Ghana",
-  "Eritrea",
-  "Djibouti",
-  "Zimbabwe",
-  "Malawi",
 ];
 
 export function TestimonialsSection() {
@@ -91,7 +59,7 @@ export function TestimonialsSection() {
             <p className="text-xs uppercase tracking-widest text-muted-foreground">Where We Work</p>
             <AfricaGoogleMap className="mt-4 overflow-hidden rounded-2xl border border-border bg-card" />
             <p className="mt-4 text-sm text-muted-foreground">
-              Countries shown on the map: {africanCountries.join(", ")}.
+              Countries shown on the map: {whereWeWorkCountries.join(", ")}.
             </p>
           </div>
         </div>
@@ -187,7 +155,7 @@ export function TestimonialsSection() {
             <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Where We Work</h3>
             <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-start">
               <div className="grid grid-cols-2 gap-x-10 gap-y-2">
-                {whereWeWorkExtended.map((country) => (
+                {whereWeWorkCountries.map((country) => (
                   <p key={country} className="text-xl leading-relaxed text-muted-foreground">
                     • {country}
                   </p>
