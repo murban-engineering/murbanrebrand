@@ -12,14 +12,14 @@ export function GallerySection() {
   const lastScrollRef = useRef(0);
 
   const images = [
-    { src: "/images/DSCF5799.JPG", alt: "Industrial plant view", label: "Plant Infrastructure" },
-    { src: "/images/Pipes.JPG", alt: "Industrial piping systems", label: "Piping Networks" },
-    { src: "/images/DSCN4103.JPG", alt: "Refinery operations", label: "Refinery Operations" },
-    { src: "/images/DSCN4117.JPG", alt: "Industrial silos complex", label: "Silos & Terminals" },
-    { src: "/images/DSCN4156.JPG", alt: "Modern industrial facility", label: "Storage Systems" },
-    { src: "/images/0615281f-0698-4990-b2b8-72f600089fd6.jpg", alt: "Modern factory building", label: "Factory Expansion" },
-    { src: "/images/welder.jpg", alt: "Pipeline construction work", label: "Pipeline Construction" },
-    { src: "/images/magnetic Flux Leakage 1.jpg", alt: "Storage tank farm", label: "Tank Integrity" },
+    { src: "/images/DSCF5799.JPG", alt: "Industrial plant view" },
+    { src: "/images/Pipes.JPG", alt: "Industrial piping systems" },
+    { src: "/images/DSCN4103.JPG", alt: "Refinery operations" },
+    { src: "/images/DSCN4117.JPG", alt: "Industrial silos complex" },
+    { src: "/images/DSCN4156.JPG", alt: "Modern industrial facility" },
+    { src: "/images/0615281f-0698-4990-b2b8-72f600089fd6.jpg", alt: "Modern factory building" },
+    { src: "/images/welder.jpg", alt: "Pipeline construction work" },
+    { src: "/images/magnetic Flux Leakage 1.jpg", alt: "Storage tank farm" },
   ];
 
   // Calculate section height based on content width
@@ -131,11 +131,6 @@ export function GallerySection() {
                 <div className="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full border-2 border-primary/60 transition-transform duration-700 group-hover:translate-x-[-10px] group-hover:translate-y-[10px] group-hover:scale-125" />
                 <div className="pointer-events-none absolute -left-4 bottom-8 h-20 w-20 rounded-full border border-primary/40 transition-transform duration-700 group-hover:translate-x-[8px] group-hover:translate-y-[-8px] group-hover:scale-90" />
                 <div className="absolute left-0 right-0 top-0 z-10 h-1 origin-left scale-x-0 bg-primary transition-transform duration-500 group-hover:scale-x-100" />
-                <div className="absolute bottom-0 left-0 right-0 z-20 translate-y-3 px-5 pb-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                  <span className="font-heading text-lg tracking-[0.18em] text-primary-foreground">
-                    {image.label}
-                  </span>
-                </div>
               </div>
             ))}
           </div>
