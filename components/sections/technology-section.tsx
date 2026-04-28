@@ -336,40 +336,23 @@ export function TechnologySection() {
               />
               <div className="absolute inset-0 bg-foreground/40" />
 
-              {/* Title Text - Fades out word by word with blur */}
+              {/* Title Text - Fades out with blur */}
               <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-                <h2 className="max-w-3xl text-5xl font-medium leading-tight tracking-tight text-white md:text-5xl lg:text-7xl">
-                  {["Inspection", "Across", "Industries."].map((word, index) => {
-                    // Each word fades out sequentially based on scrollProgress
-                    const wordFadeStart = index * 0.07; // Technology: 0, Meets: 0.07, Wilderness: 0.14
-                    const wordFadeEnd = wordFadeStart + 0.07;
-                    const wordProgress = Math.max(
-                      0,
-                      Math.min(
-                        1,
-                        (scrollProgress - wordFadeStart) / (wordFadeEnd - wordFadeStart),
-                      ),
-                    );
-                    const wordOpacity = 1 - wordProgress;
-                    const wordBlur = wordProgress * 10; // 0px to 10px blur
-
-                    return (
-                      <span
-                        key={index}
-                        className="inline-block"
-                        style={{
-                          opacity: wordOpacity,
-                          filter: `blur(${wordBlur}px)`,
-                          transition: "opacity 0.1s linear, filter 0.1s linear",
-                          marginRight: index < 2 ? "0.3em" : "0",
-                        }}
-                      >
-                        {word}
-                        {index === 1 && <br />}
-                      </span>
-                    );
-                  })}
-                </h2>
+                <div
+                  className="space-y-3 text-white"
+                  style={{
+                    opacity: 1 - Math.min(1, scrollProgress / 0.21),
+                    filter: `blur(${Math.min(10, (scrollProgress / 0.21) * 10)}px)`,
+                    transition: "opacity 0.1s linear, filter 0.1s linear",
+                  }}
+                >
+                  <h2 className="max-w-3xl text-5xl font-medium leading-tight tracking-tight md:text-5xl lg:text-7xl">
+                    Industries We Serve
+                  </h2>
+                  <p className="mx-auto max-w-2xl text-base md:text-lg lg:text-xl">
+                    Delivering specialized expertise across multiple sectors
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -420,7 +403,10 @@ export function TechnologySection() {
         />
         <div className="absolute inset-0 bg-foreground/45" />
         <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
-          <h2 className="text-4xl font-medium leading-tight tracking-tight text-white">Inspection Across Industries.</h2>
+          <div className="space-y-2 text-white">
+            <h2 className="text-4xl font-medium leading-tight tracking-tight">Industries We Serve</h2>
+            <p className="text-base md:text-lg">Delivering specialized expertise across multiple sectors</p>
+          </div>
         </div>
       </div>
 
