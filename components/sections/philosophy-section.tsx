@@ -146,9 +146,6 @@ export function PhilosophySection() {
             <h3 className="mt-4 text-fluid-4xl font-medium text-foreground text-balance">
               Murban Engineering
             </h3>
-            <p className="mt-6 leading-relaxed text-muted-foreground text-fluid-xl text-balance">
-              Murban Engineering is a specialist firm in Asset Integrity, Inspection, and Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions that support critical infrastructure in the oil & gas, energy, marine, and industrial sectors.
-            </p>
           </div>
 
           <div className="mt-10 flex flex-wrap justify-center gap-3">
