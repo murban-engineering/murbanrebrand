@@ -114,7 +114,7 @@ export function GallerySection() {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="group relative h-[70vh] w-[85vw] flex-shrink-0 overflow-hidden rounded-2xl border border-primary/20 bg-foreground/10 md:w-[60vw] lg:w-[45vw]"
+                className="relative h-[70vh] w-[85vw] flex-shrink-0 overflow-hidden rounded-2xl border border-primary/20 bg-foreground/10 md:w-[60vw] lg:w-[45vw]"
                 style={{
                   transform: 'translateZ(0)',
                   WebkitTransform: 'translateZ(0)',
@@ -124,13 +124,9 @@ export function GallerySection() {
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
                   fill
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+                  className="object-cover"
                   priority={index < 3}
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-100" />
-                <div className="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full border-2 border-primary/60 transition-transform duration-700 group-hover:translate-x-[-10px] group-hover:translate-y-[10px] group-hover:scale-125" />
-                <div className="pointer-events-none absolute -left-4 bottom-8 h-20 w-20 rounded-full border border-primary/40 transition-transform duration-700 group-hover:translate-x-[8px] group-hover:translate-y-[-8px] group-hover:scale-90" />
-                <div className="absolute left-0 right-0 top-0 z-10 h-1 origin-left scale-x-0 bg-primary transition-transform duration-500 group-hover:scale-x-100" />
               </div>
             ))}
           </div>

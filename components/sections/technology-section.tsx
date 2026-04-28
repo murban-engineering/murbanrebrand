@@ -449,7 +449,7 @@ export function TechnologySection() {
               <article
                 id={createIndustryAnchor(industry.title)}
                 key={industry.title}
-                className="group scroll-mt-28 overflow-hidden rounded-2xl border border-[#0F3D76]/25 bg-gradient-to-br from-[#0F3D76]/5 via-card to-[#6D1F3A]/10 p-5 text-card-foreground shadow-[0_18px_45px_-30px_rgba(15,61,118,0.45)] transition-all duration-300 hover:border-[#6D1F3A]/45 hover:shadow-[0_24px_56px_-30px_rgba(109,31,58,0.5)] md:p-6"
+                className="scroll-mt-28 overflow-hidden rounded-2xl border border-[#0F3D76]/25 bg-gradient-to-br from-[#0F3D76]/5 via-card to-[#6D1F3A]/10 p-5 text-card-foreground shadow-[0_18px_45px_-30px_rgba(15,61,118,0.45)] md:p-6"
               >
                 <div className="grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)] lg:items-start">
                   <div className="relative h-52 overflow-hidden rounded-xl border border-[#0F3D76]/25 sm:h-64 lg:h-full lg:min-h-[280px]">
@@ -457,13 +457,10 @@ export function TechnologySection() {
                       src={industry.imageSrc}
                       alt={industry.imageAlt}
                       fill
-                      className="object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-90"
+                      className="object-cover"
                       sizes="(max-width: 1023px) 100vw, 280px"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#6D1F3A]/45 via-transparent to-[#0F3D76]/25" />
-                    <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full border-2 border-[#6D1F3A]/50 transition-transform duration-700 group-hover:translate-x-[-8px] group-hover:translate-y-[8px] group-hover:scale-125" />
-                    <div className="pointer-events-none absolute -left-5 bottom-5 h-16 w-16 rounded-full border border-[#0F3D76]/60 transition-transform duration-700 group-hover:translate-x-[8px] group-hover:translate-y-[-8px] group-hover:scale-90" />
-                    <div className="absolute left-0 right-0 top-0 h-1 origin-left scale-x-0 bg-[#6D1F3A] transition-transform duration-500 group-hover:scale-x-100" />
                   </div>
 
                   <div>
