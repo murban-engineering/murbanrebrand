@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Africa from "@react-map/africa";
 
 type AfricaGoogleMapProps = {
   className?: string;
@@ -33,13 +33,7 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
       role="img"
     >
       <div className="relative aspect-[16/10] w-full min-h-[280px] overflow-hidden rounded-xl bg-[#213164]">
-        <Image
-          src="/images/africa-map.svg"
-          alt="Africa operations map"
-          fill
-          className="object-contain"
-          priority
-        />
+        <Africa className="h-full w-full text-[#A60D0F]" />
       </div>
     </div>
   );
