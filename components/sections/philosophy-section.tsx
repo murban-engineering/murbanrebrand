@@ -79,10 +79,17 @@ export function PhilosophySection() {
               className="absolute inset-0 flex items-center justify-center pointer-events-none z-0"
               style={{ opacity: titleOpacity }}
             >
-              <h2 className="text-[12vw] font-medium leading-[0.95] tracking-tighter text-foreground md:text-[10vw] lg:text-[8vw] text-center px-6">
-                Company Profile
-                Engineered Field Solutions.
-              </h2>
+              <div className="px-6 text-center">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary sm:text-base">
+                  Why choose us
+                </p>
+                <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+                  What sets us apart
+                </h2>
+                <p className="mt-5 text-base font-medium text-foreground/90 sm:text-lg md:text-xl">
+                  Signature Delivery Experience, Data-Driven Decisions, Sustainability by Design
+                </p>
+              </div>
             </div>
 
             {/* Product Grid */}
