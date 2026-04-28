@@ -1,11 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import { ShieldCheck } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const companyLinks = [
   { label: "About Us", href: "#" },
   { label: "Industry Solutions", href: "#" },
-  { label: "Privacy & Policy", href: "#" },
   { label: "FAQ", href: "#" },
 ];
 
@@ -62,6 +70,87 @@ export function FooterSection() {
           <FooterColumn title="Company" links={companyLinks} />
           <FooterColumn title="Services" links={serviceLinksColumnOne} />
           <FooterColumn title="Services" links={serviceLinksColumnTwo} />
+        </div>
+
+        <div className="mt-10 border-t border-black/10 pt-8 md:mt-14 md:pt-10">
+          <Dialog>
+            <DialogTrigger asChild>
+              <button
+                type="button"
+                className="text-sm font-medium text-foreground underline underline-offset-4 transition-colors hover:text-muted-foreground md:text-base"
+              >
+                Privacy Policy
+              </button>
+            </DialogTrigger>
+
+            <DialogContent className="max-h-[85vh] max-w-4xl overflow-y-auto p-0">
+              <div className="relative overflow-hidden rounded-t-lg">
+                <img
+                  src="/images/industrial-refinery.jpg"
+                  alt="Industrial site representing secure engineering operations"
+                  className="h-48 w-full object-cover md:h-64"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute bottom-5 left-5 flex items-center gap-3 text-white md:bottom-6 md:left-6">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur">
+                    <ShieldCheck className="h-5 w-5" />
+                  </span>
+                  <p className="text-xs uppercase tracking-[0.2em] md:text-sm">Industry-grade privacy commitment</p>
+                </div>
+              </div>
+
+              <div className="space-y-6 px-6 pb-8 pt-6 md:px-8">
+                <DialogHeader className="text-left">
+                  <DialogTitle className="text-2xl md:text-3xl">Protecting your information and building trust</DialogTitle>
+                  <DialogDescription className="text-sm leading-relaxed text-muted-foreground md:text-base">
+                    Murban Engineering Services safeguards client and partner information with the same rigor we apply
+                    to our inspection and engineering assignments. This policy outlines how we collect, store, and use
+                    personal data in line with applicable regulations and our commitment to transparency.
+                  </DialogDescription>
+                </DialogHeader>
+
+                <section>
+                  <h4 className="text-base font-semibold text-foreground md:text-lg">Information we collect</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
+                    We collect details provided through contact forms, project onboarding, and training registrations.
+                    This may include contact names, company information, email addresses, phone numbers, and
+                    documentation relevant to service delivery.
+                  </p>
+                </section>
+
+                <section>
+                  <h4 className="text-base font-semibold text-foreground md:text-lg">How we use your data</h4>
+                  <ul className="mt-2 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground md:text-base">
+                    <li>Delivering inspection and engineering services.</li>
+                    <li>Coordinating training, certification, and compliance reporting.</li>
+                    <li>Responding to enquiries and providing project updates.</li>
+                    <li>Improving our offerings through aggregated insights.</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h4 className="text-base font-semibold text-foreground md:text-lg">Your privacy choices</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
+                    You can request access to, correction of, or deletion of your personal data by contacting our team
+                    at{" "}
+                    <a className="font-medium text-foreground underline underline-offset-4" href="mailto:info@murban-eng.com">
+                      info@murban-eng.com
+                    </a>
+                    . We respond promptly and transparently to all privacy-related requests.
+                  </p>
+                </section>
+
+                <section>
+                  <h4 className="text-base font-semibold text-foreground md:text-lg">Staying informed</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
+                    We update this policy as regulations evolve or our service delivery processes change. Significant
+                    updates are highlighted on this page, and we encourage you to review it periodically.
+                  </p>
+                </section>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </footer>
