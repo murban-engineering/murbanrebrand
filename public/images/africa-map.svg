@@ -2,29 +2,29 @@
   <title id="title">Africa operations map</title>
   <desc id="desc">Geographic map of Africa with highlighted countries where Murban Engineering operates.</desc>
 
-  <rect width="1200" height="900" fill="#F8FAFC"/>
+  <rect width="1200" height="900" fill="#213164"/>
 
   <!-- Sea -->
-  <rect x="150" y="70" width="900" height="760" rx="28" fill="#E2E8F0"/>
+  <rect x="150" y="70" width="900" height="760" rx="28" fill="#213164"/>
 
   <!-- Africa mainland (more geographically accurate silhouette) -->
   <path d="M584 146L612 156L640 177L668 189L696 208L713 236L735 260L742 288L755 315L775 338L795 363L804 395L796 429L805 459L817 487L809 516L796 540L774 560L754 585L740 617L729 647L709 675L687 700L664 730L642 752L614 772L585 784L556 790L526 784L503 768L482 744L468 717L453 690L434 671L412 651L392 625L376 597L357 567L345 536L337 506L326 481L311 454L297 432L290 404L294 374L304 344L325 321L344 297L365 278L390 261L419 245L442 227L463 205L484 186L510 170L538 158L562 150L584 146Z"
-    fill="#0F766E" fill-opacity="0.92" stroke="#0B4F4A" stroke-width="4"/>
+    fill="#5F6F94" fill-opacity="0.95" stroke="#C7D0E3" stroke-width="4"/>
 
   <!-- Madagascar -->
   <path d="M819 639L837 655L844 679L838 705L823 730L804 748L786 744L780 721L788 694L797 672L809 651L819 639Z"
-    fill="#0F766E" fill-opacity="0.92" stroke="#0B4F4A" stroke-width="3"/>
+    fill="#5F6F94" fill-opacity="0.95" stroke="#C7D0E3" stroke-width="3"/>
 
   <!-- Major internal boundaries (stylized country separators for readability) -->
   <path d="M503 768L505 708L488 654L473 613L452 573L435 536L421 493L411 456L404 417L397 378L393 334L390 262"
-    stroke="#CFFAFE" stroke-width="2" stroke-linecap="round"/>
+    stroke="#9FB0D1" stroke-width="2" stroke-linecap="round"/>
   <path d="M556 790L558 736L560 686L564 634L572 586L586 536L597 495L609 455L621 420L642 387L664 354L692 320L724 290"
-    stroke="#CFFAFE" stroke-width="2" stroke-linecap="round"/>
+    stroke="#9FB0D1" stroke-width="2" stroke-linecap="round"/>
   <path d="M326 481L366 474L407 470L448 471L489 476L530 482L573 488L615 497L657 507L699 520L742 538"
-    stroke="#CFFAFE" stroke-width="2" stroke-linecap="round"/>
+    stroke="#9FB0D1" stroke-width="2" stroke-linecap="round"/>
 
   <!-- Countries of operation -->
-  <g fill="#F59E0B" stroke="#92400E" stroke-width="1.5">
+  <g fill="#A60D0F" stroke="#7A090B" stroke-width="1.5">
     <circle cx="452" cy="383" r="7"/>
     <circle cx="500" cy="366" r="7"/>
     <circle cx="678" cy="302" r="7"/>
@@ -38,7 +38,7 @@
   </g>
 
   <!-- Labels -->
-  <g font-family="Inter, Arial, sans-serif" font-size="22" fill="#0F172A" font-weight="500">
+  <g font-family="Inter, Arial, sans-serif" font-size="22" fill="#F8FAFC" font-weight="500">
     <text x="466" y="389">Ghana</text>
     <text x="514" y="372">Nigeria</text>
     <text x="691" y="308">Egypt</text>
