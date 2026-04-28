@@ -17,9 +17,9 @@ export default function Home() {
       <ResetHomeOnLoad />
       <Header />
       <HeroSection />
-      <TestimonialsSection />
       <TrustedLeadersSection />
       <PhilosophySection />
+      <TestimonialsSection />
       <FeaturedProductsSection />
       <TechnologySection />
       <GallerySection />
