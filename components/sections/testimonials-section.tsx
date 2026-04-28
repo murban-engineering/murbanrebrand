@@ -113,43 +113,6 @@ export function TestimonialsSection() {
 
           </div>
 
-          <div>
-            <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Our Office Locations</h3>
-            <div className="mt-8 grid gap-6 md:grid-cols-2">
-              <div className="rounded-2xl border border-border bg-card p-6">
-                <h4 className="text-2xl font-medium text-primary">Nairobi</h4>
-                <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                  <strong className="text-foreground">Murban Engineering</strong>
-                  <br />
-                  Kofisi Karen Road
-                  <br />
-                  P.O Box 856 00606
-                  <br />
-                  Nairobi Kenya
-                  <br />
-                  Tel: +254 203673821
-                  <br />
-                  Mob: +254 703041821
-                </p>
-              </div>
-              <div className="rounded-2xl border border-border bg-card p-6">
-                <h4 className="text-2xl font-medium text-primary">Mombasa</h4>
-                <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                  <strong className="text-foreground">Murban Inspection</strong>
-                  <br />
-                  Off Airport Road
-                  <br />
-                  P. O. Box 99215 – 80107
-                  <br />
-                  Mombasa, Kenya
-                  <br />
-                  Tel +254 202651068
-                  <br />
-                  Mob: +254 724966694
-                </p>
-              </div>
-            </div>
-          </div>
 
           <div>
             <div className="rounded-3xl bg-muted/60 px-6 py-12 md:px-10">
