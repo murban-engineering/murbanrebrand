@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Africa from "@react-map/africa";
 
 type AfricaGoogleMapProps = {
   className?: string;
@@ -27,16 +27,13 @@ export const whereWeWorkCountries = [
 
 export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
   return (
-    <div className={`${className ?? ""} relative`} aria-label="Africa map showing Murban operations" role="img">
-      <div className="relative aspect-[16/10] w-full min-h-[280px] overflow-hidden">
-        <Image
-          src="/images/africa-map.jpg"
-          alt="Africa map with highlighted Murban Engineering operation countries"
-          fill
-          className="object-cover"
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          priority={false}
-        />
+    <div
+      className={`${className ?? ""} relative bg-[#213164] p-4`}
+      aria-label="Africa map showing Murban operations"
+      role="img"
+    >
+      <div className="relative aspect-[16/10] w-full min-h-[280px] overflow-hidden rounded-xl bg-[#213164]">
+        <Africa className="h-full w-full text-[#A60D0F]" />
       </div>
     </div>
   );
