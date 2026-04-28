@@ -7,6 +7,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { serviceCategories, services } from "@/lib/services";
 
 const industryLinks = [
+  { label: "All Industries", href: "#industries" },
   { label: "Oil & Gas Industry", href: "#industry-oil-gas-industry" },
   { label: "Power & Steam Generation", href: "#industry-power-steam-generation" },
   { label: "Storage & Logistics Terminals", href: "#industry-storage-logistics-terminals" },
