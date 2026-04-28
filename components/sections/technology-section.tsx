@@ -213,7 +213,7 @@ const industries: Industry[] = [
   },
   {
     title: "Shipping & Marine Industry",
-    imageSrc: "/images/industrial-refinery.jpg",
+    imageSrc: "/images/shippingand marine.jpg",
     imageAlt: "Marine and shipping terminal with industrial piping",
     assetsCovered:
       "Cargo tanks, ballast tanks, marine pipelines, ship hulls, offshore loading arms, vessel pressure systems, tankers, offshore platforms",
