@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { CheckCircle2, MapPin } from "lucide-react";
 
 import { AfricaGoogleMap, whereWeWorkCountries } from "./africa-google-map";
 
@@ -152,16 +153,27 @@ export function TestimonialsSection() {
           </div>
 
           <div>
-            <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Where We Work</h3>
-            <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-start">
-              <div className="grid grid-cols-2 gap-x-10 gap-y-2">
-                {whereWeWorkCountries.map((country) => (
-                  <p key={country} className="text-xl leading-relaxed text-muted-foreground">
-                    • {country}
-                  </p>
-                ))}
+            <div className="rounded-3xl bg-muted/60 px-6 py-12 md:px-10">
+              <div className="mx-auto max-w-5xl">
+                <div className="flex flex-col items-center text-center">
+                  <MapPin className="h-10 w-10 text-primary" strokeWidth={1.8} aria-hidden="true" />
+                  <h3 className="mt-3 text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
+                    Where We Work
+                  </h3>
+                </div>
+
+                <div className="mt-10 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+                  <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
+                    {whereWeWorkCountries.map((country) => (
+                      <p key={country} className="flex items-center gap-3 text-2xl font-semibold text-foreground/90">
+                        <CheckCircle2 className="h-6 w-6 shrink-0 text-primary" strokeWidth={2.1} aria-hidden="true" />
+                        {country === "Kenya" ? "Kenya (HQ)" : country}
+                      </p>
+                    ))}
+                  </div>
+                  <AfricaGoogleMap className="overflow-hidden rounded-2xl bg-card" />
+                </div>
               </div>
-              <AfricaGoogleMap className="overflow-hidden rounded-2xl border border-border bg-card" />
             </div>
           </div>
         </div>
