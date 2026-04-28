@@ -28,13 +28,14 @@ export function TestimonialsSection() {
       {/* About Image */}
       <div className="relative aspect-[16/9] w-full">
         <Image
-          src="/images/e26fa9c3-966d-4966-94a4-954a1e511c1c.png"
+          src="/images/Screenshot 2026-04-28 190300.png"
           alt="Murban Engineering inspection team onsite"
           fill
-          className="object-cover"
+          className="object-cover object-center saturate-125"
         />
-        {/* Fade gradient overlay - white at bottom fading to transparent at top */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+        {/* Brand color overlays to keep the About hero lively and on-brand */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#A60D0F]/55 via-transparent to-[#213164]/55 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/45 to-transparent" />
       </div>
 
       {/* Company Profile + Where We Work */}
