@@ -31,44 +31,52 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
   const mapRef = useRef<HTMLObjectElement>(null);
 
   useEffect(() => {
-    const svgDocument = mapRef.current?.contentDocument;
-    if (!svgDocument) {
-      return;
-    }
+    const mapObject = mapRef.current;
+    if (!mapObject) return;
 
-    const svgRoot = svgDocument.querySelector("svg");
-    if (!svgRoot) {
-      return;
-    }
+    const colorizeMap = () => {
+      const svgDocument = mapObject.contentDocument;
+      if (!svgDocument) return;
 
-    const background = svgDocument.querySelector("rect");
-    if (background) {
-      background.setAttribute("fill", "transparent");
-    }
+      const svgRoot = svgDocument.querySelector("svg");
+      if (!svgRoot) return;
 
-    const countryPaths = Array.from(svgDocument.querySelectorAll("path"));
-
-    countryPaths.forEach((path) => {
-      const countryName = path.querySelector("title")?.textContent?.trim() ?? "";
-      const isActive = activeCountrySet.has(countryName);
-
-      path.setAttribute("fill", isActive ? "#A60D0F" : "#d8dde8");
-      path.setAttribute("stroke", "#213164");
-      path.setAttribute("stroke-width", "1");
-      path.style.transition = "fill 0.2s ease";
-
-      if (isActive) {
-        path.addEventListener("mouseenter", () => {
-          path.setAttribute("fill", "#c41f22");
-        });
-        path.addEventListener("mouseleave", () => {
-          path.setAttribute("fill", "#A60D0F");
-        });
+      const background = svgDocument.querySelector("rect");
+      if (background) {
+        background.setAttribute("fill", "transparent");
       }
-    });
 
-    const labels = svgDocument.querySelectorAll("g:last-of-type text");
-    labels.forEach((label) => label.setAttribute("fill", "#ffffff"));
+      const countryPaths = Array.from(svgDocument.querySelectorAll("path"));
+
+      countryPaths.forEach((path) => {
+        const countryName = path.querySelector("title")?.textContent?.trim() ?? "";
+        const isActive = activeCountrySet.has(countryName);
+
+        path.setAttribute("fill", isActive ? "#A60D0F" : "#d8dde8");
+        path.setAttribute("stroke", "#213164");
+        path.setAttribute("stroke-width", "1");
+        path.style.transition = "fill 0.2s ease";
+
+        if (isActive) {
+          path.addEventListener("mouseenter", () => {
+            path.setAttribute("fill", "#c41f22");
+          });
+          path.addEventListener("mouseleave", () => {
+            path.setAttribute("fill", "#A60D0F");
+          });
+        }
+      });
+
+      const labels = svgDocument.querySelectorAll("g:last-of-type text");
+      labels.forEach((label) => label.setAttribute("fill", "#ffffff"));
+    };
+
+    colorizeMap();
+    mapObject.addEventListener("load", colorizeMap);
+
+    return () => {
+      mapObject.removeEventListener("load", colorizeMap);
+    };
   }, []);
 
   return (
