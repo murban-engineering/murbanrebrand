@@ -44,6 +44,18 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (!isMenuOpen) {
+      document.body.style.overflow = "";
+      return;
+    }
+
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+
   const navTextClass = `text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`;
 
   return (
@@ -154,7 +166,12 @@ export function Header() {
 
         <button
           type="button"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => {
+            setIsMenuOpen((prev) => !prev);
+            setIsServicesOpen(false);
+            setIsIndustriesOpen(false);
+            setSelectedMobileServiceCategory(null);
+          }}
           className={`rounded-md p-1 transition-colors md:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
           aria-label="Toggle menu"
         >
@@ -163,7 +180,7 @@ export function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className="max-h-[75vh] overflow-y-auto rounded-b-2xl border-t border-border bg-background px-5 py-6 md:hidden">
+        <div className="max-h-[calc(100vh-84px)] overflow-y-auto rounded-b-2xl border-t border-border bg-background px-5 py-6 pb-10 shadow-xl md:hidden">
           <nav className="flex flex-col gap-4">
             <Link href="#home" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
               Home
