@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { getServiceImageForTitle } from "@/lib/service-images";
-import Link from "next/link";
+import { ServiceLink } from "@/components/service-navigation-state";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { serviceCategories, services } from "@/lib/services";
 import { TestimonialsSection } from "./testimonials-section";
@@ -199,9 +199,10 @@ export function PhilosophySection() {
 
           <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => (
-              <Link
+              <ServiceLink
                 key={service.slug}
                 href={`/services/${service.slug}`}
+                prefetch={true}
                 className="rounded-2xl border border-border bg-card p-4 md:p-5 transition-colors hover:border-primary/40 hover:bg-card/90"
               >
                 <article>
@@ -212,7 +213,7 @@ export function PhilosophySection() {
                         alt={`${service.title} service image`}
                         width={800}
                         height={420}
-                        className="h-24 w-full object-cover"
+                        className="h-24 w-full object-cover" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                       />
                     ) : (
                       <div className="flex h-24 items-center justify-center border border-dashed border-border bg-muted/30 text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
@@ -225,7 +226,7 @@ export function PhilosophySection() {
                     {service.shortDescription}
                   </p>
                 </article>
-              </Link>
+              </ServiceLink>
             ))}
           </div>
         </div>

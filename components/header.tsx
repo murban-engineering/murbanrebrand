@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { ServiceLink } from "@/components/service-navigation-state";
 import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { serviceCategories, services } from "@/lib/services";
@@ -84,13 +85,13 @@ export function Header() {
             </button>
             <div className="invisible absolute left-0 top-full z-50 mt-2 w-64 rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
               {serviceLinks.map((service) => (
-                <Link
+                <ServiceLink
                   key={service.href}
                   href={service.href}
                   className="block rounded-lg px-3 py-2 text-sm text-foreground transition-colors hover:bg-muted"
                 >
                   {service.label}
-                </Link>
+                </ServiceLink>
               ))}
             </div>
           </div>
@@ -164,14 +165,14 @@ export function Header() {
               {isServicesOpen && (
                 <div className="space-y-2 border-l border-border pl-4">
                   {serviceLinks.map((service) => (
-                    <Link
+                    <ServiceLink
                       key={service.href}
                       href={service.href}
                       className="block text-base text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {service.label}
-                    </Link>
+                    </ServiceLink>
                   ))}
                 </div>
               )}

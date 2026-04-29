@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, services } from "@/lib/services";
 import { ServiceWordReveal } from "@/components/service-word-reveal";
 import { getServiceImageForTitle } from "@/lib/service-images";
+import { ServiceDetailBackButton } from "@/components/service-navigation-state";
 
 type ServiceDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -99,12 +99,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
   return (
     <main className="min-h-screen bg-[linear-gradient(to_right,_#213164_0%,_#213164_72%,_#A60D0F_72%,_#A60D0F_100%)] px-6 pb-20 pt-24 md:px-12 lg:px-20">
       <div className="mx-auto w-full max-w-5xl">
-        <Link
-          href="/#services"
-          className="inline-flex items-center text-sm font-medium text-white/90 hover:text-white hover:underline"
-        >
-          ← Back to services
-        </Link>
+        <ServiceDetailBackButton className="inline-flex items-center text-sm font-medium text-white/90 hover:text-white hover:underline" />
 
         <div className="mt-6 overflow-hidden rounded-3xl border border-white/20 bg-black/25 shadow-2xl backdrop-blur-sm">
           {serviceImage ? (
