@@ -258,51 +258,6 @@
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 
-.hero-swipe-btn {
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid currentColor;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: 700;
-  background: transparent;
-  position: relative;
-  transition: all 1s;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.hero-swipe-btn::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: -40px;
-  transform: skewX(45deg);
-  background-color: var(--swipe-color, #a60d0f);
-  z-index: -1;
-  transition: all 1s;
-}
-
-.hero-swipe-btn:hover {
-  color: #ffffff;
-}
-
-.hero-swipe-btn:hover::before {
-  width: 160%;
-}
-
-.hero-swipe-btn--red {
-  --swipe-color: #a60d0f;
-}
-
-.hero-swipe-btn--navy {
-  --swipe-color: #213164;
-}
-
 /* Fade in animation for images */
 @keyframes fadeIn {
   from {
