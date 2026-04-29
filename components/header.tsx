@@ -18,20 +18,14 @@ const industryLinks = [
   { label: "Shipping & Marine Industry", href: "#industry-shipping-marine-industry" },
 ];
 
-const serviceLinks = [
-  { label: "All Services", href: "#services" },
-  ...serviceCategories
-    .map((category) => {
-      const categoryService = services.find((service) => service.category === category);
-      if (!categoryService) return null;
+const createSectionAnchor = (value: string) =>
+  `#services-${value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "")}`;
 
-      return {
-        label: category,
-        href: `/services/${categoryService.slug}`,
-      };
-    })
-    .filter((item): item is { label: string; href: string } => item !== null),
-];
+const serviceGroups = serviceCategories.map((category) => ({
+  category,
+  sectionHref: createSectionAnchor(category),
+  items: services.filter((service) => service.category === category),
+}));
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -83,15 +77,25 @@ export function Header() {
               Services
               <ChevronDown size={14} />
             </button>
-            <div className="invisible absolute left-0 top-full z-50 mt-2 w-64 rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
-              {serviceLinks.map((service) => (
-                <ServiceLink
-                  key={service.href}
-                  href={service.href}
-                  className="block rounded-lg px-3 py-2 text-sm text-foreground transition-colors hover:bg-muted"
-                >
-                  {service.label}
-                </ServiceLink>
+            <div className="invisible absolute left-0 top-full z-50 mt-2 max-h-[70vh] w-96 overflow-y-auto rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
+              <ServiceLink href="#services" className="mb-1 block rounded-lg px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted">
+                All Services
+              </ServiceLink>
+              {serviceGroups.map((group) => (
+                <div key={group.category} className="mb-2">
+                  <ServiceLink href={group.sectionHref} className="block rounded-lg px-3 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground transition-colors hover:bg-muted">
+                    {group.category}
+                  </ServiceLink>
+                  {group.items.map((service) => (
+                    <ServiceLink
+                      key={service.slug}
+                      href={`/services/${service.slug}`}
+                      className="block rounded-lg px-5 py-2 text-sm text-foreground transition-colors hover:bg-muted"
+                    >
+                      {service.title}
+                    </ServiceLink>
+                  ))}
+                </div>
               ))}
             </div>
           </div>
@@ -164,15 +168,25 @@ export function Header() {
               </button>
               {isServicesOpen && (
                 <div className="space-y-2 border-l border-border pl-4">
-                  {serviceLinks.map((service) => (
-                    <ServiceLink
-                      key={service.href}
-                      href={service.href}
-                      className="block text-base text-muted-foreground"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {service.label}
-                    </ServiceLink>
+                  <ServiceLink href="#services" className="block text-base text-muted-foreground" onClick={() => setIsMenuOpen(false)}>
+                    All Services
+                  </ServiceLink>
+                  {serviceGroups.map((group) => (
+                    <div key={group.category} className="space-y-2">
+                      <ServiceLink href={group.sectionHref} className="block text-sm font-semibold uppercase tracking-wide text-foreground" onClick={() => setIsMenuOpen(false)}>
+                        {group.category}
+                      </ServiceLink>
+                      {group.items.map((service) => (
+                        <ServiceLink
+                          key={service.slug}
+                          href={`/services/${service.slug}`}
+                          className="block text-base text-muted-foreground"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {service.title}
+                        </ServiceLink>
+                      ))}
+                    </div>
                   ))}
                 </div>
               )}
