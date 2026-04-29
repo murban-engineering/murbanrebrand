@@ -97,7 +97,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
 
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#213164] via-[#213164] to-[#A60D0F] px-6 pb-20 pt-24 md:px-12 lg:px-20">
+    <main className="min-h-screen bg-[linear-gradient(to_right,_#213164_0%,_#213164_72%,_#A60D0F_72%,_#A60D0F_100%)] px-6 pb-20 pt-24 md:px-12 lg:px-20">
       <div className="mx-auto w-full max-w-5xl">
         <Link
           href="/#services"
