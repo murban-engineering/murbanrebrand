@@ -279,8 +279,8 @@ export function TechnologySection() {
 
   return (
     <section id="industries" ref={sectionRef} className="relative bg-foreground">
-      {/* Sticky container for scroll animation (desktop/tablet) */}
-      <div className="sticky top-0 hidden h-screen overflow-hidden md:block">
+      {/* Sticky container for scroll animation */}
+      <div className="sticky top-0 h-screen overflow-hidden">
         <div className="flex h-full w-full items-center justify-center">
           {/* Bento Grid Container */}
           <div
@@ -408,21 +408,7 @@ export function TechnologySection() {
       </div>
 
       {/* Scroll space to enable animation */}
-      <div className="hidden h-[200vh] md:block" />
-
-      {/* Mobile hero fallback */}
-      <div className="relative h-[60vh] min-h-[420px] overflow-hidden md:hidden">
-        <Image
-          src="/images/DSCN4156.JPG"
-          alt="Murban industrial storage installation"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-foreground/45" />
-        <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
-          <h2 className="text-4xl font-medium leading-tight tracking-tight text-white">Industries We Serve</h2>
-        </div>
-      </div>
+      <div className="h-[200vh]" />
 
       {/* Description Section with Background Image and Scroll Reveal */}
       <div
