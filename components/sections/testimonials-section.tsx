@@ -19,9 +19,15 @@ export function TestimonialsSection() {
       {/* Large Text Statement */}
       <div className="px-6 py-fluid-xl md:px-12 lg:px-20">
         <p className="content-wide text-fluid-3xl leading-relaxed text-foreground text-pretty">
-          Murban Engineering specializes in Asset Integrity, Inspection, and Non-Destructive Testing.
-          We deliver safe, reliable inspection solutions for critical infrastructure across oil &amp; gas,
-          energy, marine, and industrial operations.
+          We operate through two divisions:
+          <br />
+          Murban Inspection Services
+          <br />
+          Murban Engineering Services
+          <br />
+          With a fully equipped laboratory in Mombasa and mobile teams deployed regionally, Murban is
+          your trusted partner for both on-site and lab-based inspections, delivered with safety,
+          speed, and precision.
         </p>
       </div>
 
