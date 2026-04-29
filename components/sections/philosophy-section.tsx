@@ -24,13 +24,6 @@ export function PhilosophySection() {
   const [rightImageTranslateX, setRightImageTranslateX] = useState(100);
   const [titleOpacity, setTitleOpacity] = useState(1);
   const rafRef = useRef<number | null>(null);
-  const [activeCoreValue, setActiveCoreValue] = useState<number | null>(null);
-
-  const coreValues = [
-    { name: "Passion for Innovation", color: "#A60D0F", value: 34 },
-    { name: "Customer Obsession", color: "#213164", value: 33 },
-    { name: "Drive for Results", color: "#FFFFFF", value: 33 },
-  ];
 
   const updateTransforms = useCallback(() => {
     if (!sectionRef.current) return;
@@ -183,72 +176,6 @@ export function PhilosophySection() {
 
 
           <div className="mt-14">
-            <h4 className="text-center text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
-              Core Values
-            </h4>
-
-            <div className="mt-8 grid items-center gap-8 rounded-2xl border border-white/20 bg-white/5 p-6 md:grid-cols-[minmax(0,360px)_minmax(0,1fr)]">
-              <svg viewBox="0 0 240 240" className="mx-auto h-64 w-64" role="img" aria-label="Core values pie chart">
-                <g transform="translate(120,120)">
-                  {coreValues.map((segment, index) => {
-                    const startAngle = coreValues
-                      .slice(0, index)
-                      .reduce((sum, item) => sum + (item.value / 100) * 360, -90);
-                    const endAngle = startAngle + (segment.value / 100) * 360;
-                    const start = {
-                      x: Math.cos((Math.PI * startAngle) / 180) * 90,
-                      y: Math.sin((Math.PI * startAngle) / 180) * 90,
-                    };
-                    const end = {
-                      x: Math.cos((Math.PI * endAngle) / 180) * 90,
-                      y: Math.sin((Math.PI * endAngle) / 180) * 90,
-                    };
-                    const largeArc = segment.value > 50 ? 1 : 0;
-                    const isActive = activeCoreValue === index;
-
-                    return (
-                      <path
-                        key={segment.name}
-                        d={`M 0 0 L ${start.x} ${start.y} A 90 90 0 ${largeArc} 1 ${end.x} ${end.y} Z`}
-                        fill={segment.color}
-                        stroke="#0f172a"
-                        strokeWidth={segment.color === "#FFFFFF" ? 1.5 : 1}
-                        className="cursor-pointer transition-all duration-200"
-                        style={{
-                          transform: isActive ? "scale(1.04)" : "scale(1)",
-                          transformOrigin: "center",
-                          filter: isActive ? "drop-shadow(0 0 12px rgba(255,255,255,0.25))" : "none",
-                        }}
-                        onMouseEnter={() => setActiveCoreValue(index)}
-                        onMouseLeave={() => setActiveCoreValue(null)}
-                      />
-                    );
-                  })}
-                </g>
-              </svg>
-
-              <ol className="space-y-3">
-                {coreValues.map((value, index) => (
-                  <li
-                    key={value.name}
-                    className="flex items-center gap-3 rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-sm transition-colors"
-                    onMouseEnter={() => setActiveCoreValue(index)}
-                    onMouseLeave={() => setActiveCoreValue(null)}
-                  >
-                    <span
-                      className="inline-block h-4 w-4 rounded-full border"
-                      style={{
-                        backgroundColor: value.color,
-                        borderColor: value.color === "#FFFFFF" ? "#cbd5e1" : value.color,
-                      }}
-                    />
-                    <span className="font-medium text-white">{index + 1}</span>
-                    <span className="text-foreground">{value.name}</span>
-                  </li>
-                ))}
-              </ol>
-            </div>
-
             <h4 className="text-center text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
               TECHNOLOGY AND TRAINING PARTNERS
             </h4>
