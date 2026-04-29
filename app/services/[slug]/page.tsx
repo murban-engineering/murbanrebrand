@@ -97,7 +97,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
 
 
   return (
-    <main className="min-h-screen bg-[linear-gradient(to_right,_#213164_0%,_#213164_72%,_#A60D0F_72%,_#A60D0F_100%)] px-6 pb-20 pt-24 md:px-12 lg:px-20">
+    <main className="min-h-screen bg-[linear-gradient(125deg,_#213164_0%,_#213164_58%,_#A60D0F_58%,_#A60D0F_100%)] px-6 pb-20 pt-24 md:px-12 lg:px-20">
       <div className="mx-auto w-full max-w-5xl">
         <ServiceDetailBackButton className="inline-flex items-center text-sm font-medium text-white/90 hover:text-white hover:underline" />
 
