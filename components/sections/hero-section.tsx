@@ -4,8 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
-const word = "MURBAN";
-
 const sideImages = [
   {
     src: "/new1.jpg",
@@ -140,10 +138,9 @@ export function HeroSection() {
                 style={{ opacity: textOpacity }}
               >
                 <div className="w-full bg-gradient-to-t from-black/70 via-black/40 to-transparent px-6 pb-10 pt-24 text-white md:px-12 md:pb-14 lg:px-16">
-                  <h1 className="text-2xl font-semibold leading-tight tracking-wide md:text-4xl">
-                    {word}
-                    <br />
-                    ENGINEERING
+                  <h1 className="text-2xl font-bold leading-tight tracking-wide md:text-4xl">
+                    <span style={{ color: "#A60D0F" }}>Murban</span>{" "}
+                    <span style={{ color: "#213164" }}>Engineering</span>
                   </h1>
                   <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/90 md:text-base">
                     A specialist firm in Asset Integrity, Inspection, and Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions for oil & gas, energy, marine, and industrial sectors across Africa.
