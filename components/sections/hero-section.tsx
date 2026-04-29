@@ -141,9 +141,9 @@ export function HeroSection() {
               >
                 <div className="w-full bg-gradient-to-t from-black/70 via-black/40 to-transparent px-6 pb-10 pt-24 text-white md:px-12 md:pb-14 lg:px-16">
                   <h1 className="text-2xl font-semibold leading-tight tracking-wide md:text-4xl">
-                    {word}
+                    <span className="text-[#A60D0F]">{word}</span>
                     <br />
-                    ENGINEERING
+                    <span className="text-[#213164]">ENGINEERING</span>
                   </h1>
                   <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/90 md:text-base">
                     A specialist firm in Asset Integrity, Inspection, and Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions for oil & gas, energy, marine, and industrial sectors across Africa.
@@ -151,13 +151,13 @@ export function HeroSection() {
                   <div className="mt-6 flex flex-wrap gap-3">
                     <Link
                       href="#services"
-                      className="rounded-md bg-white px-4 py-2 text-sm font-medium text-black transition hover:bg-white/90"
+                      className="rounded-md bg-[#A60D0F] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#8f0b0d]"
                     >
                       Explore Services
                     </Link>
                     <Link
                       href="#our-projects"
-                      className="rounded-md border border-white/80 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+                      className="rounded-md bg-[#213164] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#1a274d]"
                     >
                       View Our Projects
                     </Link>
