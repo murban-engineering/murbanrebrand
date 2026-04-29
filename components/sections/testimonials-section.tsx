@@ -7,7 +7,7 @@ import { AfricaGoogleMap, whereWeWorkCountries } from "./africa-google-map";
 
 const whoWeAre = [
   "Conventional and Advanced NDT and Inspection Services",
-  "API Inspection Agency",
+  "Engineering Agency",
   "Oil and Gas, Refinery, Petrochemical, Heavy Industry, Mining and Power Plant",
   "Qualified and certified inspectors and N-D-T Practitioners",
   "Kenya headquarters with Africa expertise since 2007",
@@ -75,20 +75,24 @@ export function TestimonialsSection() {
       {/* Extended About Content */}
       <div className="px-6 pb-fluid-xl md:px-12 lg:px-20">
         <div className="mx-auto max-w-6xl space-y-14">
-          <div>
-            <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Who We Are</h3>
-            <div className="mt-8 grid gap-5 md:grid-cols-2">
-              {whoWeAre.map((item) => (
-                <div key={item} className="rounded-xl border border-border bg-card/40 p-5">
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
+            <div className="animate-in fade-in-0 slide-in-from-left-4 duration-700">
+              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Who We Are</h3>
+              <div className="mt-8 grid gap-5 md:grid-cols-2">
+                {whoWeAre.map((item, index) => (
+                  <div
+                    key={item}
+                    className="rounded-xl border border-[#213164]/20 bg-card/70 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#A60D0F]/40 hover:shadow-md"
+                    style={{ animationDelay: `${index * 90}ms` }}
+                  >
                   <p className="text-base leading-relaxed text-muted-foreground">{item}</p>
                 </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-            <div>
-              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Murban API Agency</h3>
+            <div className="animate-in fade-in-0 slide-in-from-right-4 duration-700">
+              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Murban Engineering Agency</h3>
 
               <h4 className="mt-8 text-2xl font-medium text-primary">Vision</h4>
               <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
