@@ -7,7 +7,7 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  title: 'MURBAN ENGINEERING | Go Further',
+  title: 'MURBAN ENGINEERING',
   description: 'Murban Engineering.',
   applicationName: 'Murban Engineering',
   creator: 'Murban Engineering',
