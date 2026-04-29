@@ -34,15 +34,12 @@ export function EditorialSection() {
         </div>
       ) : null}
 
-      {/* Full-width Video */}
+      {/* Full-width Image */}
       <div className="relative aspect-[16/9] w-full md:aspect-[21/9]">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <img
+          src="/images/DSCN4156.JPG"
+          alt="Murban facility"
           className="absolute inset-0 h-full w-full object-cover"
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bcdafadc-cb7e-4cb7-9cbf-edcbaf2360a5_1-cNBCz5fomcLRmm1cTXSBOKCq10VP91.mp4"
         />
       </div>
     </section>
