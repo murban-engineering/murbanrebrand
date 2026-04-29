@@ -15,174 +15,174 @@ const createSlug = (value: string) =>
 
 const serviceSeed = [
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "NDT Inspection Services",
     shortDescription:
       "Full-scope Non-Destructive Testing coverage tailored to your assets and regulations.",
   },
   {
-    category: "Advanced NDT",
+    category: "Advanced NDT & Specialized Technologies",
     title: "Tank Calibration Services",
     shortDescription:
       "Accurate volume measurement and tank calibration across all storage configurations.",
   },
   {
-    category: "Engineering Assessments",
+    category: "Engineering Assessments & Certification",
     title: "API 570 Piping Inspection and Certification",
     shortDescription: "Piping system inspection for code compliance.",
   },
   {
-    category: "Engineering Assessments",
+    category: "Engineering Assessments & Certification",
     title: "API 653 Aboveground Storage Tank Inspection and Certification",
     shortDescription:
       "Tank integrity inspections that deliver official API 653 certification and reporting.",
   },
   {
-    category: "Engineering Assessments",
+    category: "Engineering Assessments & Certification",
     title: "API 510 Pressure Vessel Inspection",
     shortDescription:
       "Pressure vessel safety verification with detailed API 510 compliance documentation.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Ultrasonic Flaw Testing C-Scan",
     shortDescription:
       "Detailed corrosion mapping and flaw visualization using advanced ultrasonic C-scan imaging.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Ultrasonic Flaw Testing B-Scan",
     shortDescription:
       "Cross-sectional ultrasonic imaging for defect characterization, sizing, and localization.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "UTM Ultrasonic Thickness Measurement",
     shortDescription:
       "Accurate non-destructive thickness measurements to monitor structural integrity and corrosion.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Visual Inspection",
     shortDescription:
       "Comprehensive visual assessments that identify visible defects, anomalies, and operational risks.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Magnetic Particle Testing",
     shortDescription:
       "Surface flaw detection using powerful magnetic particle inspection methods.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Fluorescent Magnet Particle Testing",
     shortDescription:
       "Crack detection enhanced with fluorescent indicators and ultraviolet inspection.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Dye Penetrant Testing",
     shortDescription:
       "Critical PT inspections that reveal surface flaws and discontinuities for safer, more reliable asset performance.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "RT Radiographic Services",
     shortDescription:
       "High-resolution radiographic imaging that uncovers hidden discontinuities without interrupting service.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Paint & Coating Inspection",
     shortDescription:
       "Checking protective coating thickness and quality to extend asset life.",
   },
   {
-    category: "Engineering Assessments",
+    category: "Engineering Assessments & Certification",
     title: "Positive Material Identification Testing",
     shortDescription:
       "Verify alloy composition quickly with positive material identification technology.",
   },
   {
-    category: "Advanced NDT",
+    category: "Advanced NDT & Specialized Technologies",
     title: "Murban Phased Array Testing",
     shortDescription:
       "Advanced phased array ultrasonics for complex geometry and high-resolution flaw detection.",
   },
   {
-    category: "Advanced NDT",
+    category: "Advanced NDT & Specialized Technologies",
     title: "3D Laser Scanning Services",
     shortDescription:
       "High-accuracy spatial data capture for asset management, design planning, and facility maintenance.",
   },
   {
-    category: "Advanced NDT",
+    category: "Advanced NDT & Specialized Technologies",
     title: "Thermal Camera Inspection",
     shortDescription:
       "Thermal imaging surveys that uncover temperature anomalies and emerging issues before they escalate.",
   },
   {
-    category: "Advanced NDT",
+    category: "Advanced NDT & Specialized Technologies",
     title: "Alternating Current Field Measurement",
     shortDescription:
       "Advanced electromagnetic inspection that detects and sizes surface cracks with exceptional accuracy.",
   },
   {
-    category: "Engineering Assessments",
+    category: "Engineering Assessments & Certification",
     title: "API 579 Murban Fitness for Service",
     shortDescription:
       "API 579-based integrity assessments that uncover defects, document risk, and guide repair or replacement decisions.",
   },
   {
-    category: "Engineering Assessments",
+    category: "Engineering Assessments & Certification",
     title: "API 580 Murban Risk Based Inspection",
     shortDescription:
       "Risk-based inspection strategies prioritizing safety-critical assets and intervals.",
   },
   {
-    category: "Engineering Assessments",
+    category: "Engineering Assessments & Certification",
     title: "Boiler Inspection Services",
     shortDescription:
       "Thorough inspections that keep boiler systems safe, efficient, and compliant.",
   },
   {
-    category: "Engineering Assessments",
+    category: "Engineering Assessments & Certification",
     title: "Lifting Equipment Thorough Examination and Certification",
     shortDescription:
       "Safe lifting equipment checks paired with formal certification packages.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Murban Gas Detection",
     shortDescription:
       "Comprehensive monitoring solutions that detect hazardous gases early and keep worksites compliant.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Murban Pressure Testing",
     shortDescription:
       "Verify system strength and tightness through controlled pressure testing.",
   },
   {
-    category: "Advanced NDT",
+    category: "Advanced NDT & Specialized Technologies",
     title: "Floormap 3D MFL Scanning",
     shortDescription:
       "3D magnetic flux leakage scanning that pinpoints tank floor defects with precision.",
   },
   {
-    category: "Engineering Assessments",
+    category: "Engineering Assessments & Certification",
     title: "Sphere Tank Inspections",
     shortDescription:
       "Inspection of spherical tanks with detailed structural and safety reporting.",
   },
   {
-    category: "General NDT",
+    category: "General Non-Destructive Testing (NDT)",
     title: "Surface Hardness Testing",
     shortDescription:
       "Measuring metal surface strength to validate fabrication quality and wear resistance.",
   },
   {
-    category: "Advanced NDT",
+    category: "Advanced NDT & Specialized Technologies",
     title: "Murban UAV Inspection",
     shortDescription:
       "Aerial inspection using drone-based technology to access challenging environments.",
@@ -233,9 +233,9 @@ export const services: Service[] = serviceSeed.map((service) => ({
 }));
 
 export const serviceCategories = [
-  "General NDT",
-  "Advanced NDT",
-  "Engineering Assessments",
+  "General Non-Destructive Testing (NDT)",
+  "Advanced NDT & Specialized Technologies",
+  "Engineering Assessments & Certification",
   "Engineering & Fabrication",
 ] as const;
 

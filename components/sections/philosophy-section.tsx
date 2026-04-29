@@ -69,6 +69,9 @@ export function PhilosophySection() {
     };
   }, [updateTransforms]);
 
+  const categoryId = (value: string) =>
+    `services-${value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "")}`;
+
   return (
     <section id="company-profile" className="bg-background">
       {/* Scroll-Animated Product Grid */}
@@ -197,38 +200,47 @@ export function PhilosophySection() {
             </div>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {services.map((service) => (
-              <ServiceLink
-                key={service.slug}
-                href={`/services/${service.slug}`}
-                prefetch={true}
-                className="rounded-2xl border border-border bg-card p-4 md:p-5 transition-colors hover:border-primary/40 hover:bg-card/90"
-              >
-                <article>
-                  <div className="mb-4 overflow-hidden rounded-xl border border-border bg-muted/20">
-                    {getServiceImageForTitle(service.title) ? (
-                      <Image
-                        src={getServiceImageForTitle(service.title)!}
-                        alt={`${service.title} service image`}
-                        width={800}
-                        height={420}
-                        className="h-24 w-full object-cover" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                      />
-                    ) : (
-                      <div className="flex h-24 items-center justify-center border border-dashed border-border bg-muted/30 text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
-                        Image Placeholder
-                      </div>
-                    )}
-                  </div>
-                  <h4 className="text-base font-medium text-foreground">{service.title}</h4>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {service.shortDescription}
-                  </p>
-                </article>
-              </ServiceLink>
-            ))}
-          </div>
+          {serviceCategories.map((category) => (
+            <div key={category} id={categoryId(category)} className="mt-12">
+              <h4 className="text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                {category}
+              </h4>
+              <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+                {services
+                  .filter((service) => service.category === category)
+                  .map((service) => (
+                    <ServiceLink
+                      key={service.slug}
+                      href={`/services/${service.slug}`}
+                      prefetch={true}
+                      className="rounded-2xl border border-border bg-card p-4 md:p-5 transition-colors hover:border-primary/40 hover:bg-card/90"
+                    >
+                      <article>
+                        <div className="mb-4 overflow-hidden rounded-xl border border-border bg-muted/20">
+                          {getServiceImageForTitle(service.title) ? (
+                            <Image
+                              src={getServiceImageForTitle(service.title)!}
+                              alt={`${service.title} service image`}
+                              width={800}
+                              height={420}
+                              className="h-24 w-full object-cover" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                            />
+                          ) : (
+                            <div className="flex h-24 items-center justify-center border border-dashed border-border bg-muted/30 text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
+                              Image Placeholder
+                            </div>
+                          )}
+                        </div>
+                        <h4 className="text-base font-medium text-foreground">{service.title}</h4>
+                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                          {service.shortDescription}
+                        </p>
+                      </article>
+                    </ServiceLink>
+                  ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
