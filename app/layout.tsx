@@ -8,7 +8,11 @@ const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'MURBAN ENGINEERING | Go Further',
-  description: 'High-performance outdoor gear engineered for the modern explorer. Lightweight, durable, adventure-ready.',
+  description: 'Murban Engineering.',
+  applicationName: 'Murban Engineering',
+  creator: 'Murban Engineering',
+  publisher: 'Murban Engineering',
+  authors: [{ name: 'Murban Engineering' }],
   generator: 'v0.app',
   icons: {
     icon: '/murbanlogo.ico',
