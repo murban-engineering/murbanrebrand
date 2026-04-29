@@ -8,25 +8,25 @@ const word = "MURBAN";
 
 const sideImages = [
   {
-    src: "/images/home2.jpg",
+    src: "/new1.jpg",
     alt: "Industrial facility overview",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/home3.jpg",
+    src: "/new2.jpg",
     alt: "Industrial operations site",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/home4.jpg",
+    src: "/new3.JPG",
     alt: "Plant and pipeline infrastructure",
     position: "right",
     span: 1,
   },
   {
-    src: "/images/home5.jpg",
+    src: "/new4.jpg",
     alt: "Industrial storage and processing",
     position: "right",
     span: 1,
