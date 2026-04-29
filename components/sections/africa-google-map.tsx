@@ -52,18 +52,17 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
       const countryName = path.querySelector("title")?.textContent?.trim() ?? "";
       const isActive = activeCountrySet.has(countryName);
 
-      const isKenya = countryName === "Kenya";
-      path.setAttribute("fill", isActive ? (isKenya ? "#213164" : "#A60D0F") : "#d8dde8");
+      path.setAttribute("fill", isActive ? "#A60D0F" : "#d8dde8");
       path.setAttribute("stroke", "#213164");
       path.setAttribute("stroke-width", "1");
       path.style.transition = "fill 0.2s ease";
 
       if (isActive) {
         path.addEventListener("mouseenter", () => {
-          path.setAttribute("fill", isKenya ? "#2f447d" : "#c41f22");
+          path.setAttribute("fill", "#c41f22");
         });
         path.addEventListener("mouseleave", () => {
-          path.setAttribute("fill", isKenya ? "#213164" : "#A60D0F");
+          path.setAttribute("fill", "#A60D0F");
         });
       }
     });
