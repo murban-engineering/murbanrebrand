@@ -43,7 +43,7 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
 
     const background = svgDocument.querySelector("rect");
     if (background) {
-      background.setAttribute("fill", "#ffffff");
+      background.setAttribute("fill", "#213164");
     }
 
     const countryPaths = Array.from(svgDocument.querySelectorAll("path"));
@@ -68,7 +68,7 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
     });
 
     const labels = svgDocument.querySelectorAll("g:last-of-type text");
-    labels.forEach((label) => label.setAttribute("fill", "#213164"));
+    labels.forEach((label) => label.setAttribute("fill", "#ffffff"));
   }, []);
 
   return (
@@ -77,7 +77,7 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
       aria-label="Africa map showing Murban operations"
       role="img"
     >
-      <div className="relative aspect-[16/9] w-full min-h-[420px] overflow-hidden rounded-xl bg-white">
+      <div className="relative aspect-[16/10] w-full min-h-[280px] overflow-hidden rounded-xl bg-[#213164]">
         <object
           ref={mapRef}
           type="image/svg+xml"
