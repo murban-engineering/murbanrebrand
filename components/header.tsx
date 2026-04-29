@@ -31,6 +31,8 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
+  const [selectedServiceCategory, setSelectedServiceCategory] = useState<string | null>(null);
+  const [selectedMobileServiceCategory, setSelectedMobileServiceCategory] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -83,18 +85,31 @@ export function Header() {
               </ServiceLink>
               {serviceGroups.map((group) => (
                 <div key={group.category} className="mb-2">
-                  <ServiceLink href={group.sectionHref} className="block rounded-lg px-3 py-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground transition-colors hover:bg-muted">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setSelectedServiceCategory((prev) =>
+                        prev === group.category ? null : group.category,
+                      )
+                    }
+                    className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-muted-foreground transition-colors hover:bg-muted"
+                  >
                     {group.category}
-                  </ServiceLink>
-                  {group.items.map((service) => (
-                    <ServiceLink
-                      key={service.slug}
-                      href={`/services/${service.slug}`}
-                      className="block rounded-lg px-5 py-2 text-sm text-foreground transition-colors hover:bg-muted"
-                    >
-                      {service.title}
-                    </ServiceLink>
-                  ))}
+                    <ChevronDown
+                      size={14}
+                      className={`transition-transform ${selectedServiceCategory === group.category ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {selectedServiceCategory === group.category &&
+                    group.items.map((service) => (
+                      <ServiceLink
+                        key={service.slug}
+                        href={`/services/${service.slug}`}
+                        className="block rounded-lg px-5 py-2 text-sm text-foreground transition-colors hover:bg-muted"
+                      >
+                        {service.title}
+                      </ServiceLink>
+                    ))}
                 </div>
               ))}
             </div>
@@ -173,19 +188,32 @@ export function Header() {
                   </ServiceLink>
                   {serviceGroups.map((group) => (
                     <div key={group.category} className="space-y-2">
-                      <ServiceLink href={group.sectionHref} className="block text-sm font-semibold uppercase tracking-wide text-foreground" onClick={() => setIsMenuOpen(false)}>
+                      <button
+                        type="button"
+                        className="flex w-full items-center justify-between text-sm font-semibold uppercase tracking-wide text-foreground"
+                        onClick={() =>
+                          setSelectedMobileServiceCategory((prev) =>
+                            prev === group.category ? null : group.category,
+                          )
+                        }
+                      >
                         {group.category}
-                      </ServiceLink>
-                      {group.items.map((service) => (
-                        <ServiceLink
-                          key={service.slug}
-                          href={`/services/${service.slug}`}
-                          className="block text-base text-muted-foreground"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {service.title}
-                        </ServiceLink>
-                      ))}
+                        <ChevronDown
+                          size={16}
+                          className={`transition-transform ${selectedMobileServiceCategory === group.category ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                      {selectedMobileServiceCategory === group.category &&
+                        group.items.map((service) => (
+                          <ServiceLink
+                            key={service.slug}
+                            href={`/services/${service.slug}`}
+                            className="block text-base text-muted-foreground"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {service.title}
+                          </ServiceLink>
+                        ))}
                     </div>
                   ))}
                 </div>
