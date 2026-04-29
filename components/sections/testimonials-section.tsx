@@ -132,12 +132,17 @@ export function TestimonialsSection() {
 
                 <div className="mt-10 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
                   <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
-                    {whereWeWorkCountries.map(({ name, label, isHQ }) => (
-                      <p key={name} className="flex items-center gap-3 text-2xl font-semibold text-[#A60D0F]">
-                        <CheckCircle2 className="h-6 w-6 shrink-0 text-[#A60D0F]" strokeWidth={2.1} aria-hidden="true" />
-                        {isHQ ? `${label} (HQ)` : label}
-                      </p>
-                    ))}
+                    {whereWeWorkCountries.map(({ name, label, isHQ }) => {
+                      const isKenya = name === "Kenya";
+                      const highlightColor = isKenya ? "#213164" : "#A60D0F";
+
+                      return (
+                        <p key={name} className="flex items-center gap-3 text-2xl font-semibold" style={{ color: highlightColor }}>
+                          <CheckCircle2 className="h-6 w-6 shrink-0" style={{ color: highlightColor }} strokeWidth={2.1} aria-hidden="true" />
+                          {isHQ ? `${label} (HQ)` : label}
+                        </p>
+                      );
+                    })}
                   </div>
                   <AfricaGoogleMap className="overflow-hidden rounded-2xl bg-card" />
                 </div>
