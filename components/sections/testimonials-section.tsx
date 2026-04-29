@@ -113,7 +113,7 @@ export function TestimonialsSection() {
                 <li>• Safety and Sustainability are important to us;</li>
               </ul>
 
-              <div className="mt-10 rounded-2xl border border-border bg-card/40 p-6">
+              <div className="mt-10 rounded-2xl border border-border bg-card/40 p-6 lg:mx-auto lg:w-full lg:max-w-md">
                 <h4 className="text-center text-2xl font-medium text-primary">Core Values</h4>
                 <svg
                   viewBox="0 0 240 240"
