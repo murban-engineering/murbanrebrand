@@ -138,7 +138,7 @@ export function HeroSection() {
                 style={{ opacity: textOpacity }}
               >
                 <div className="w-full bg-gradient-to-t from-black/70 via-black/40 to-transparent px-6 pb-10 pt-24 text-white md:px-12 md:pb-14 lg:px-16">
-                  <h1 className="text-2xl font-bold leading-tight tracking-wide md:text-4xl">
+                  <h1 className="text-4xl font-bold leading-tight tracking-wide md:text-6xl">
                     <span className="block" style={{ color: "#A60D0F" }}>Murban</span>
                     <span className="block" style={{ color: "#213164" }}>Engineering</span>
                   </h1>
