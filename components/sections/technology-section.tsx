@@ -435,10 +435,10 @@ export function TechnologySection() {
               <article
                 id={createIndustryAnchor(industry.title)}
                 key={industry.title}
-                className="scroll-mt-28 overflow-hidden rounded-2xl border border-[#0F3D76]/25 bg-gradient-to-br from-[#0F3D76]/5 via-card to-[#6D1F3A]/10 p-5 text-card-foreground shadow-[0_18px_45px_-30px_rgba(15,61,118,0.45)] md:p-6"
+                className="scroll-mt-28 overflow-hidden rounded-2xl border border-border bg-card p-5 text-card-foreground shadow-sm md:p-6"
               >
                 <div className="grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)] lg:items-start">
-                  <div className="relative h-52 overflow-hidden rounded-xl border border-[#0F3D76]/25 sm:h-64 lg:h-full lg:min-h-[280px]">
+                  <div className="relative h-52 overflow-hidden rounded-xl border border-border sm:h-64 lg:h-full lg:min-h-[280px]">
                     <Image
                       src={industry.imageSrc}
                       alt={industry.imageAlt}
@@ -446,27 +446,27 @@ export function TechnologySection() {
                       className="object-cover"
                       sizes="(max-width: 1023px) 100vw, 280px"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#6D1F3A]/45 via-transparent to-[#0F3D76]/25" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/10" />
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-semibold text-[#0F3D76] md:text-2xl">{industry.title}</h4>
+                    <h4 className="text-xl font-semibold text-foreground md:text-2xl">{industry.title}</h4>
 
                     <div className="mt-4 space-y-2">
-                      <p className="text-sm font-semibold uppercase tracking-wide text-[#6D1F3A]">
+                      <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
                         Assets Covered
                       </p>
                       <p className="text-sm leading-relaxed md:text-base">{industry.assetsCovered}</p>
                     </div>
 
                     <div className="mt-4 space-y-2">
-                      <p className="text-sm font-semibold uppercase tracking-wide text-[#6D1F3A]">
+                      <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
                         Key Services
                       </p>
                       <ul className="space-y-1 text-sm leading-relaxed md:text-base">
                         {industry.keyServices.map((service) => (
                           <li key={service} className="flex gap-2">
-                            <span aria-hidden="true" className="text-[#0F3D76]">•</span>
+                            <span aria-hidden="true" className="text-muted-foreground">•</span>
                             <span>{service}</span>
                           </li>
                         ))}
@@ -474,7 +474,7 @@ export function TechnologySection() {
                     </div>
 
                     <div className="mt-4 space-y-2">
-                      <p className="text-sm font-semibold uppercase tracking-wide text-[#6D1F3A]">
+                      <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
                         Why It Matters
                       </p>
                       <p className="text-sm leading-relaxed md:text-base">{industry.whyItMatters}</p>
