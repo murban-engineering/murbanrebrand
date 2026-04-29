@@ -20,7 +20,6 @@ const trustedLogos = [
   "/images/Screenshot 2026-04-27 185515.png",
   "/images/Screenshot 2026-04-27 185522.png",
   "/images/Screenshot 2026-04-27 185527.png",
-  "/images/Screenshot 2026-04-27 185852.png",
 ];
 
 function MarqueeRow({ images, reverse = false }: { images: string[]; reverse?: boolean }) {
