@@ -162,10 +162,7 @@ export function PhilosophySection() {
         />
         <div className="content-wide relative z-10 mx-auto text-foreground">
           <div className="text-center">
-            <p className="text-xs uppercase tracking-widest text-foreground/70">
-              Company Profile
-            </p>
-            <h3 className="mt-4 text-fluid-4xl font-medium text-foreground text-balance">
+            <h3 className="text-fluid-4xl font-medium text-foreground text-balance">
               Murban Engineering
             </h3>
           </div>
