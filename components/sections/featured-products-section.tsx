@@ -4,33 +4,21 @@ import { FadeImage } from "@/components/fade-image";
 
 const features = [
   {
-    title: "Smart Temperature Control",
-    description: "Innovation",
     image: "/images/DSCF5799.JPG",
   },
   {
-    title: "Ultra-Light Carbon Frame",
-    description: "Performance",
     image: "/images/DSCN4103.JPG",
   },
   {
-    title: "Weather-Resistant Design",
-    description: "Durability",
     image: "/images/DSCN4156.JPG",
   },
   {
-    title: "Integrated GPS Tracking",
-    description: "Navigation",
     image: "/images/DSCN4117.JPG",
   },
   {
-    title: "Built-In LED Flashlight",
-    description: "Visibility",
     image: "/images/welder.jpg",
   },
   {
-    title: "Self-Heating Technology",
-    description: "Comfort",
     image: "/images/DSCF5799.JPG",
   },
 ];
@@ -52,26 +40,16 @@ export function FeaturedProductsSection() {
 
       {/* Features Grid */}
       <div className="grid grid-cols-1 gap-4 px-6 pb-20 md:grid-cols-3 md:px-12 lg:px-20">
-        {features.map((feature) => (
-          <div key={feature.title} className="group">
+        {features.map((feature, index) => (
+          <div key={index} className="group">
             {/* Image */}
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <FadeImage
                 src={feature.image || "/placeholder.svg"}
-                alt={feature.title}
+                alt={`Service image ${index + 1}`}
                 fill
                 className="object-cover group-hover:scale-105"
               />
-            </div>
-
-            {/* Content */}
-            <div className="py-6">
-              <p className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
-                {feature.description}
-              </p>
-              <h3 className="text-foreground text-xl font-semibold">
-                {feature.title}
-              </h3>
             </div>
           </div>
         ))}
