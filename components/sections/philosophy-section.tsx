@@ -150,12 +150,12 @@ export function PhilosophySection() {
               "linear-gradient(100deg, hsl(var(--foreground)/0.96) 0%, hsl(var(--foreground)/0.92) 58%, hsl(var(--background)) 58.4%, hsl(var(--background)) 100%)",
           }}
         />
-        <div className="content-wide relative z-10 mx-auto text-white">
+        <div className="content-wide relative z-10 mx-auto text-foreground">
           <div className="text-center">
-            <p className="text-xs uppercase tracking-widest text-white/70">
+            <p className="text-xs uppercase tracking-widest text-foreground/70">
               Company Profile
             </p>
-            <h3 className="mt-4 text-fluid-4xl font-medium text-white text-balance">
+            <h3 className="mt-4 text-fluid-4xl font-medium text-foreground text-balance">
               Murban Engineering
             </h3>
           </div>
@@ -164,7 +164,7 @@ export function PhilosophySection() {
             {serviceCategories.map((category) => (
               <span
                 key={category}
-                className="rounded-full border border-border px-4 py-2 text-xs font-medium tracking-wide text-white/75"
+                className="rounded-full border border-border bg-background/80 px-4 py-2 text-xs font-medium tracking-wide text-foreground/75"
               >
                 {category}
               </span>
@@ -173,7 +173,7 @@ export function PhilosophySection() {
 
 
           <div className="mt-14">
-            <h4 className="text-center text-2xl font-semibold tracking-tight text-white md:text-3xl">
+            <h4 className="text-center text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
               TECHNOLOGY AND TRAINING PARTNERS
             </h4>
 
@@ -202,10 +202,10 @@ export function PhilosophySection() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="rounded-2xl border border-white/30 bg-white/5 p-4 md:p-5 transition-colors hover:border-white/60 hover:bg-white/10"
+                className="rounded-2xl border border-border bg-card p-4 md:p-5 transition-colors hover:border-primary/40 hover:bg-card/90"
               >
                 <article>
-                  <div className="mb-4 overflow-hidden rounded-xl border border-white/25 bg-black/20">
+                  <div className="mb-4 overflow-hidden rounded-xl border border-border bg-muted/20">
                     {getServiceImageForTitle(service.title) ? (
                       <Image
                         src={getServiceImageForTitle(service.title)!}
@@ -220,8 +220,8 @@ export function PhilosophySection() {
                       </div>
                     )}
                   </div>
-                  <h4 className="text-base font-medium text-white">{service.title}</h4>
-                  <p className="mt-2 text-sm leading-relaxed text-white/75">
+                  <h4 className="text-base font-medium text-foreground">{service.title}</h4>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     {service.shortDescription}
                   </p>
                 </article>
