@@ -109,12 +109,42 @@ export function TestimonialsSection() {
                 <li>• Safety and Sustainability are important to us;</li>
               </ul>
 
-              <h4 className="mt-8 text-2xl font-medium text-primary">Core Values</h4>
-              <ol className="mt-3 space-y-1 text-lg leading-relaxed text-muted-foreground list-decimal pl-6">
-                <li>Passion for Innovation</li>
-                <li>Customer Obsession</li>
-                <li>Drive for Results</li>
-              </ol>
+              <div className="mt-10 rounded-2xl border border-border bg-card/40 p-6">
+                <h4 className="text-center text-2xl font-medium text-primary">Core Values</h4>
+                <svg
+                  viewBox="0 0 240 240"
+                  className="mx-auto mt-6 h-72 w-72 max-w-full"
+                  role="img"
+                  aria-label="Core values pie chart"
+                >
+                  <g transform="translate(120,120)">
+                    <path d="M 0 0 L 0 -90 A 90 90 0 0 1 77.94 45 Z" fill="#A60D0F" stroke="#0f172a" strokeWidth="1" />
+                    <path d="M 0 0 L 77.94 45 A 90 90 0 0 1 -77.94 45 Z" fill="#213164" stroke="#0f172a" strokeWidth="1" />
+                    <path d="M 0 0 L -77.94 45 A 90 90 0 0 1 0 -90 Z" fill="#FFFFFF" stroke="#0f172a" strokeWidth="1.5" />
+
+                    <text x="42" y="-18" textAnchor="middle" fontSize="8" fill="#FFFFFF" fontWeight="600">
+                      Passion for
+                    </text>
+                    <text x="42" y="-8" textAnchor="middle" fontSize="8" fill="#FFFFFF" fontWeight="600">
+                      Innovation
+                    </text>
+
+                    <text x="0" y="58" textAnchor="middle" fontSize="8" fill="#FFFFFF" fontWeight="600">
+                      Customer
+                    </text>
+                    <text x="0" y="68" textAnchor="middle" fontSize="8" fill="#FFFFFF" fontWeight="600">
+                      Obsession
+                    </text>
+
+                    <text x="-42" y="-18" textAnchor="middle" fontSize="8" fill="#0f172a" fontWeight="600">
+                      Drive for
+                    </text>
+                    <text x="-42" y="-8" textAnchor="middle" fontSize="8" fill="#0f172a" fontWeight="600">
+                      Results
+                    </text>
+                  </g>
+                </svg>
+              </div>
             </div>
 
           </div>
