@@ -109,6 +109,10 @@ export function HeroSection() {
                     alt={img.alt}
                     fill
                     className="object-cover"
+                    loading="lazy"
+                    fetchPriority="low"
+                    quality={65}
+                    sizes="(max-width: 768px) 45vw, (max-width: 1280px) 22vw, 18vw"
                   />
                 </div>
               ))}
@@ -130,6 +134,8 @@ export function HeroSection() {
                 fill
                 className="object-cover"
                 priority
+                quality={75}
+                sizes="(max-width: 1024px) 100vw, 42vw"
               />
               
               {/* Overlay Text - Fades out first */}
@@ -187,6 +193,10 @@ export function HeroSection() {
                     alt={img.alt}
                     fill
                     className="object-cover"
+                    loading="lazy"
+                    fetchPriority="low"
+                    quality={65}
+                    sizes="(max-width: 768px) 45vw, (max-width: 1280px) 22vw, 18vw"
                   />
                 </div>
               ))}
