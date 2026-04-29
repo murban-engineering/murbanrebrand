@@ -43,7 +43,7 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
 
     const background = svgDocument.querySelector("rect");
     if (background) {
-      background.setAttribute("fill", "#213164");
+      background.setAttribute("fill", "transparent");
     }
 
     const countryPaths = Array.from(svgDocument.querySelectorAll("path"));
@@ -52,17 +52,18 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
       const countryName = path.querySelector("title")?.textContent?.trim() ?? "";
       const isActive = activeCountrySet.has(countryName);
 
-      path.setAttribute("fill", isActive ? "#A60D0F" : "#d8dde8");
+      const isKenya = countryName === "Kenya";
+      path.setAttribute("fill", isActive ? (isKenya ? "#213164" : "#A60D0F") : "#d8dde8");
       path.setAttribute("stroke", "#213164");
       path.setAttribute("stroke-width", "1");
       path.style.transition = "fill 0.2s ease";
 
       if (isActive) {
         path.addEventListener("mouseenter", () => {
-          path.setAttribute("fill", "#c41f22");
+          path.setAttribute("fill", isKenya ? "#2f447d" : "#c41f22");
         });
         path.addEventListener("mouseleave", () => {
-          path.setAttribute("fill", "#A60D0F");
+          path.setAttribute("fill", isKenya ? "#213164" : "#A60D0F");
         });
       }
     });
@@ -77,7 +78,7 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
       aria-label="Africa map showing Murban operations"
       role="img"
     >
-      <div className="relative aspect-[16/10] w-full min-h-[280px] overflow-hidden rounded-xl bg-[#213164]">
+      <div className="relative aspect-[14/9] w-full min-h-[360px] overflow-hidden rounded-xl bg-transparent">
         <object
           ref={mapRef}
           type="image/svg+xml"
