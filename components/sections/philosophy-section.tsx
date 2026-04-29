@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { getServiceImageForTitle } from "@/lib/service-images";
 import Link from "next/link";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { serviceCategories, services } from "@/lib/services";
@@ -193,8 +194,20 @@ export function PhilosophySection() {
                 className="rounded-2xl border border-border/70 bg-card/40 p-4 md:p-5 transition-colors hover:border-primary/40 hover:bg-card/70"
               >
                 <article>
-                  <div className="mb-4 flex h-24 items-center justify-center rounded-xl border border-dashed border-border bg-muted/30 text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
-                    Image Placeholder
+                  <div className="mb-4 overflow-hidden rounded-xl border border-border/70 bg-muted/20">
+                    {getServiceImageForTitle(service.title) ? (
+                      <Image
+                        src={getServiceImageForTitle(service.title)!}
+                        alt={`${service.title} service image`}
+                        width={800}
+                        height={420}
+                        className="h-24 w-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-24 items-center justify-center border border-dashed border-border bg-muted/30 text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
+                        Image Placeholder
+                      </div>
+                    )}
                   </div>
                   <h4 className="text-base font-medium text-foreground">{service.title}</h4>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, services } from "@/lib/services";
 import { ServiceWordReveal } from "@/components/service-word-reveal";
+import { getServiceImageForTitle } from "@/lib/service-images";
 
 type ServiceDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -91,56 +93,81 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
   }
 
   const customContent = animatedServiceContent[service.slug];
+  const serviceImage = getServiceImageForTitle(service.title);
+
 
   return (
-    <main className="min-h-screen bg-background px-6 pb-20 pt-24 md:px-12 lg:px-20">
-      <div className="mx-auto w-full max-w-4xl">
+    <main className="min-h-screen bg-gradient-to-br from-[#213164] via-[#213164] to-[#A60D0F] px-6 pb-20 pt-24 md:px-12 lg:px-20">
+      <div className="mx-auto w-full max-w-5xl">
         <Link
           href="/#services"
-          className="inline-flex items-center text-sm font-medium text-primary hover:underline"
+          className="inline-flex items-center text-sm font-medium text-white/90 hover:text-white hover:underline"
         >
           ← Back to services
         </Link>
 
-        <div className="mt-6 rounded-3xl border border-border/70 bg-card/40 p-6 md:p-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+        <div className="mt-6 overflow-hidden rounded-3xl border border-white/20 bg-black/25 shadow-2xl backdrop-blur-sm">
+          {serviceImage ? (
+            <Image
+              src={serviceImage}
+              alt={`${service.title} service image`}
+              width={1600}
+              height={500}
+              className="h-56 w-full object-cover md:h-72"
+              priority
+            />
+          ) : (
+            <div className="flex h-56 w-full items-center justify-center bg-white/10 text-sm font-semibold uppercase tracking-[0.18em] text-white/80 md:h-72">
+              Service Image
+            </div>
+          )}
+          <div className="grid gap-8 p-6 md:grid-cols-[1.25fr_0.75fr] md:p-10">
+            <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/85">
             {service.category}
           </p>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-4xl">
             {service.title}
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+          <p className="mt-4 text-base leading-relaxed text-white/85 md:text-lg">
             {service.shortDescription}
           </p>
 
           <section className="mt-8 space-y-4">
-            <h2 className="text-xl font-semibold text-foreground">Service Overview</h2>
+            <h2 className="text-xl font-semibold text-white">Service Overview</h2>
             {customContent ? (
               <div className="space-y-4">
                 {customContent.paragraphs.map((paragraph, index) => (
                   <ServiceWordReveal
                     key={paragraph}
                     text={paragraph}
-                    className="leading-relaxed text-muted-foreground"
+                    className="leading-relaxed text-white/85"
                     startDelayMs={index * 280}
                   />
                 ))}
               </div>
             ) : (
-              <p className="leading-relaxed text-muted-foreground">{service.overview}</p>
+              <p className="leading-relaxed text-white/85">{service.overview}</p>
             )}
           </section>
 
           <section className="mt-8 space-y-4">
-            <h2 className="text-xl font-semibold text-foreground">
+            <h2 className="text-xl font-semibold text-white">
               {customContent ? "Advantages" : "Key Benefits"}
             </h2>
-            <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
+            <ul className="list-disc space-y-2 pl-5 text-white/90">
               {(customContent?.advantages ?? service.benefits).map((benefit) => (
                 <li key={benefit}>{benefit}</li>
               ))}
             </ul>
           </section>
+            </div>
+            <aside className="rounded-2xl border border-white/20 bg-white/10 p-5 text-white/90">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/75">Service Category</p>
+              <p className="mt-2 text-lg font-semibold text-white">{service.category}</p>
+              <p className="mt-5 text-sm leading-relaxed text-white/85">{service.shortDescription}</p>
+            </aside>
+          </div>
         </div>
       </div>
     </main>
