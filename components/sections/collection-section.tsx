@@ -5,20 +5,14 @@ import { FadeImage } from "@/components/fade-image";
 const accessories = [
   {
     id: 1,
-    name: "Wireless Charging Stand",
-    description: "Induction charging dock for effortless power",
     image: "/images/Pipes.JPG",
   },
   {
     id: 2,
-    name: "Protective Silicone Sleeve",
-    description: "Textured grip sleeve for enhanced durability",
     image: "/images/DSCN4117.JPG",
   },
   {
     id: 3,
-    name: "Carbon Fiber Bike Mount",
-    description: "Ultra-light mounting system for cycling",
     image: "/images/welder.jpg",
   },
 ];
@@ -29,7 +23,7 @@ export function CollectionSection() {
       {/* Section Title */}
       <div className="px-6 py-fluid-md md:px-12 lg:px-20">
         <h2 className="text-fluid-3xl font-medium tracking-tight text-foreground text-balance">
-          Essential Accessories
+          Our Projects
         </h2>
       </div>
 
@@ -43,24 +37,10 @@ export function CollectionSection() {
               <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-secondary">
                 <FadeImage
                   src={accessory.image || "/placeholder.svg"}
-                  alt={accessory.name}
+                  alt="Project image"
                   fill
                   className="object-cover group-hover:scale-105"
                 />
-              </div>
-
-              {/* Content */}
-              <div className="py-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex-1">
-                    <h3 className="text-fluid-lg font-medium leading-snug text-foreground text-balance">
-                      {accessory.name}
-                    </h3>
-                    <p className="mt-2 text-fluid-sm text-muted-foreground text-pretty">
-                      {accessory.description}
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           ))}
@@ -74,24 +54,10 @@ export function CollectionSection() {
               <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-secondary">
                 <FadeImage
                   src={accessory.image || "/placeholder.svg"}
-                  alt={accessory.name}
+                  alt="Project image"
                   fill
                   className="object-cover group-hover:scale-105"
                 />
-              </div>
-
-              {/* Content */}
-              <div className="py-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex-1">
-                    <h3 className="text-fluid-lg font-medium leading-snug text-foreground text-balance">
-                      {accessory.name}
-                    </h3>
-                    <p className="mt-2 text-fluid-sm text-muted-foreground text-pretty">
-                      {accessory.description}
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           ))}
