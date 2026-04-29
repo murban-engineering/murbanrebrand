@@ -73,7 +73,7 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
 
   return (
     <div
-      className={`${className ?? ""} relative bg-[#213164] p-4`}
+      className={`${className ?? ""} relative bg-white`}
       aria-label="Africa map showing Murban operations"
       role="img"
     >
