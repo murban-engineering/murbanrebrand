@@ -94,12 +94,12 @@ export function ContactSection() {
                 Upload file
               </button>
 
-              <button
-                type="submit"
+              <a
+                href="mailto:info@murban-eng.com"
                 className="inline-flex items-center rounded-md bg-[#A60D0F] px-6 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#8f0b0d]"
               >
-                Send message
-              </button>
+                Send us a message
+              </a>
             </div>
           </form>
         </div>
