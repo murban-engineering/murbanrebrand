@@ -1,4 +1,4 @@
-import { Upload, Facebook, Instagram, Youtube } from "lucide-react";
+import { Upload } from "lucide-react";
 
 const officeLocations = [
   {
@@ -105,16 +105,6 @@ export function ContactSection() {
         </div>
       </div>
 
-      <div className="mx-auto mt-6 flex max-w-7xl items-center justify-between text-white/80">
-        <div className="flex items-center gap-3">
-          {[Facebook, Instagram, Youtube].map((Icon, index) => (
-            <span key={index} className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/25">
-              <Icon className="h-4 w-4" />
-            </span>
-          ))}
-        </div>
-        <p className="text-xs uppercase tracking-[0.18em] text-white/70">follow us</p>
-      </div>
     </section>
   );
 }
