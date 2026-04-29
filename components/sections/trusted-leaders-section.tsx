@@ -13,7 +13,6 @@ const trustedLogos = [
   "/images/Screenshot 2026-04-27 185410.png",
   "/images/Screenshot 2026-04-27 185414.png",
   "/images/Screenshot 2026-04-27 185425.png",
-  "/images/Screenshot 2026-04-27 185454.png",
   "/images/Screenshot 2026-04-27 185459.png",
   "/images/Screenshot 2026-04-27 185503.png",
   "/images/Screenshot 2026-04-27 185510.png",
