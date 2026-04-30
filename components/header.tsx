@@ -71,7 +71,7 @@ export function Header() {
         <Link href="#" className="flex items-center">
           <Image
             src="/images/murban-logo.ico"
-            alt="Murban Engineering"
+            alt="murban ENGINEERING"
             width={40}
             height={40}
             className="object-contain"

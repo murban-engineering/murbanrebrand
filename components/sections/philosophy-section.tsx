@@ -156,7 +156,7 @@ export function PhilosophySection() {
         <div className="content-wide relative z-10 mx-auto text-foreground">
           <div className="text-center">
             <h3 className="text-fluid-4xl font-medium text-foreground text-balance">
-              Murban Engineering
+              murban ENGINEERING
             </h3>
           </div>
 

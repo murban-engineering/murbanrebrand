@@ -5,11 +5,11 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'MURBAN ENGINEERING',
-  description: 'Murban Engineering.',
-  applicationName: 'Murban Engineering',
-  creator: 'Murban Engineering',
-  publisher: 'Murban Engineering',
-  authors: [{ name: 'Murban Engineering' }],
+  description: 'murban ENGINEERING.',
+  applicationName: 'murban ENGINEERING',
+  creator: 'murban ENGINEERING',
+  publisher: 'murban ENGINEERING',
+  authors: [{ name: 'murban ENGINEERING' }],
   generator: 'v0.app',
   icons: {
     icon: '/murbanlogo.ico',

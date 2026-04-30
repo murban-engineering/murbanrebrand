@@ -435,7 +435,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Full-Scope Non-Destructive Testing",
     description:
-      "Murban Engineering delivers complete non-destructive testing (NDT) programs that combine certified inspectors, proven procedures, and advanced instrumentation. From in-service assets to fabrication projects, we help facilities document condition, validate compliance, and schedule maintenance with confidence.",
+      "murban ENGINEERING delivers complete non-destructive testing (NDT) programs that combine certified inspectors, proven procedures, and advanced instrumentation. From in-service assets to fabrication projects, we help facilities document condition, validate compliance, and schedule maintenance with confidence.",
     sections: [
       {
         title: "Inspection Capabilities",
@@ -470,7 +470,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "PAUT Phased Array Ultrasonic Testing",
     description:
-      "Phased array testing is an advanced ultrasonic inspection technique employed by Murban Engineering to provide accurate flaw detection and characterization in materials and components. Our phased array testing services are highly effective in identifying and assessing defects, discontinuities, and structural issues. We deliver detailed reports and recommendations, enabling you to take proactive measures to maintain asset integrity and safety.",
+      "Phased array testing is an advanced ultrasonic inspection technique employed by murban ENGINEERING to provide accurate flaw detection and characterization in materials and components. Our phased array testing services are highly effective in identifying and assessing defects, discontinuities, and structural issues. We deliver detailed reports and recommendations, enabling you to take proactive measures to maintain asset integrity and safety.",
     sections: [
       {
         title: "Services We Offer",
@@ -529,7 +529,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Pressure Testing Services",
     description:
-      "Pressure testing is a crucial element in ensuring the integrity of pressure vessels and systems. Murban Engineering specializes in conducting rigorous pressure tests that verify the strength and reliability of your equipment. Our tests adhere to industry standards and regulations, providing you with the assurance that your pressure systems are operating safely and efficiently.",
+      "Pressure testing is a crucial element in ensuring the integrity of pressure vessels and systems. murban ENGINEERING specializes in conducting rigorous pressure tests that verify the strength and reliability of your equipment. Our tests adhere to industry standards and regulations, providing you with the assurance that your pressure systems are operating safely and efficiently.",
     sections: [
       {
         title: "Services We Offer",
@@ -591,7 +591,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "API 579 Fitness for Service Assessments",
     description:
-      "Murban Engineering offers Fitness for Service assessments based on API 579 standards, a critical service for evaluating the structural integrity of equipment and assets. Our highly experienced team utilizes advanced techniques to assess the fitness of your equipment, identifying defects, damage, or anomalies that may compromise safety or performance. We provide comprehensive reports and actionable recommendations to support informed repair, maintenance, or replacement decisions while keeping your operations compliant and resilient.",
+      "murban ENGINEERING offers Fitness for Service assessments based on API 579 standards, a critical service for evaluating the structural integrity of equipment and assets. Our highly experienced team utilizes advanced techniques to assess the fitness of your equipment, identifying defects, damage, or anomalies that may compromise safety or performance. We provide comprehensive reports and actionable recommendations to support informed repair, maintenance, or replacement decisions while keeping your operations compliant and resilient.",
     sections: [
       {
         title: "Services We Offer",
@@ -656,7 +656,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "API 580 Risk-Based Inspection (RBI)",
     description:
-      "Murban Engineering's Risk-Based Inspection (RBI) services are designed to help you proactively manage and mitigate risks in your equipment and assets. Compliant with industry-standard API 580, our RBI approach involves data-driven assessments to identify potential hazards and prioritize maintenance activities. By leveraging our comprehensive RBI evaluations, you can efficiently allocate resources, reduce the likelihood of unexpected failures, and enhance safety and compliance across your operations.",
+      "murban ENGINEERING's Risk-Based Inspection (RBI) services are designed to help you proactively manage and mitigate risks in your equipment and assets. Compliant with industry-standard API 580, our RBI approach involves data-driven assessments to identify potential hazards and prioritize maintenance activities. By leveraging our comprehensive RBI evaluations, you can efficiently allocate resources, reduce the likelihood of unexpected failures, and enhance safety and compliance across your operations.",
     sections: [
       {
         title: "Services We Offer",
@@ -722,14 +722,14 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Services", "API 510 Pressure Vessel Inspection"],
     headline: "API 510 PRESSURE VESSEL Inspection: Ensuring SAFETY & Reliability",
     description:
-      "Murban Engineering is your trusted partner for API 510 inspection services, dedicated to ensuring the safety, reliability, and compliance of your pressure vessels. With comprehensive expertise and commitment to excellence, we deliver unmatched inspection solutions tailored to meet your specific needs.",
+      "murban ENGINEERING is your trusted partner for API 510 inspection services, dedicated to ensuring the safety, reliability, and compliance of your pressure vessels. With comprehensive expertise and commitment to excellence, we deliver unmatched inspection solutions tailored to meet your specific needs.",
     sections: [
       {
-        title: "Why Murban Engineering for API 510 Inspection?",
+        title: "Why murban ENGINEERING for API 510 Inspection?",
         items: [
           "Industry Expertise: Our team of certified inspectors boasts extensive experience and expertise in API standards, guaranteeing thorough assessments and reliable results.",
           "Regulatory Compliance: We adhere strictly to industry regulations and standards, ensuring that your pressure vessels meet all necessary requirements for safe operation.",
-          "Customized Approach: Murban Engineering understands that each facility has unique needs. That's why we customize our inspection plans to fit your operational requirements, optimizing efficiency and minimizing disruptions.",
+          "Customized Approach: murban ENGINEERING understands that each facility has unique needs. That's why we customize our inspection plans to fit your operational requirements, optimizing efficiency and minimizing disruptions.",
         ],
       },
     ],
@@ -753,7 +753,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "API 570 Piping Inspection and Certification",
     description:
-      "At Murban Engineering, we recognize the critical role that API 570 Piping Inspection plays in maintaining the integrity and safety of your industrial piping systems. API 570, developed by the American Petroleum Institute (API), is the industry standard for inspecting, certifying, and ensuring the reliability of piping systems. Piping is the lifeline of various industries, including petrochemical, oil and gas, refining, and more, where safety and efficiency are paramount.",
+      "At murban ENGINEERING, we recognize the critical role that API 570 Piping Inspection plays in maintaining the integrity and safety of your industrial piping systems. API 570, developed by the American Petroleum Institute (API), is the industry standard for inspecting, certifying, and ensuring the reliability of piping systems. Piping is the lifeline of various industries, including petrochemical, oil and gas, refining, and more, where safety and efficiency are paramount.",
     sections: [
       {
         title: "The Significance of API 570 Inspection",
@@ -800,7 +800,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "API 653 Aboveground Storage Tank Inspection and Certification",
     description:
-      "Murban Engineering specializes in API 653 Aboveground Storage Tank (AST) Inspection and Certification services to safeguard the integrity, safety, and compliance of your storage assets. Our certified team applies the American Petroleum Institute's API 653 standard to identify corrosion, leaks, structural deficiencies, and other conditions that can compromise tank performance, helping you maintain regulatory compliance and operational reliability.",
+      "murban ENGINEERING specializes in API 653 Aboveground Storage Tank (AST) Inspection and Certification services to safeguard the integrity, safety, and compliance of your storage assets. Our certified team applies the American Petroleum Institute's API 653 standard to identify corrosion, leaks, structural deficiencies, and other conditions that can compromise tank performance, helping you maintain regulatory compliance and operational reliability.",
     sections: [
       {
         title: "Why API 653 Inspection Matters",
@@ -924,7 +924,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "RT Radiographic Services",
     description:
-      "Radiographic Testing (RT) is a vital non-destructive testing method employed by Murban Engineering to provide insights into the internal condition of materials and structures. Our experienced technicians use advanced radiographic technology to detect and analyze potential defects, discontinuities, or material irregularities. We offer precise assessments and recommendations, enabling you to make informed decisions about maintenance, repair, or replacement, ensuring the ongoing safety and reliability of your assets.",
+      "Radiographic Testing (RT) is a vital non-destructive testing method employed by murban ENGINEERING to provide insights into the internal condition of materials and structures. Our experienced technicians use advanced radiographic technology to detect and analyze potential defects, discontinuities, or material irregularities. We offer precise assessments and recommendations, enabling you to make informed decisions about maintenance, repair, or replacement, ensuring the ongoing safety and reliability of your assets.",
     sections: [
       {
         title: "What Our Radiographic Testing Delivers",
@@ -963,7 +963,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Paint & Coating Inspection Services",
     description:
-      "At Murban Engineering, we specialize in Paint and Coating Inspection services, which are essential for maintaining the longevity and performance of assets. Our skilled inspectors ensure that coatings are applied correctly, adhere properly, and meet quality standards. With our services, you can trust that your assets are protected from corrosion and environmental factors, ultimately reducing maintenance costs and extending their lifespan.",
+      "At murban ENGINEERING, we specialize in Paint and Coating Inspection services, which are essential for maintaining the longevity and performance of assets. Our skilled inspectors ensure that coatings are applied correctly, adhere properly, and meet quality standards. With our services, you can trust that your assets are protected from corrosion and environmental factors, ultimately reducing maintenance costs and extending their lifespan.",
     sections: [
       {
         title: "Comprehensive Coating Quality Assurance",
@@ -1020,7 +1020,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Boiler Inspection Services",
     description:
-      "Boilers are critical components in various industries, and Murban Engineering's Boiler Inspection Services are dedicated to ensuring their safety and efficiency. Our expert inspectors conduct meticulous examinations to detect issues, corrosion, and wear and tear. We provide comprehensive reports and recommendations to address any identified problems, ensuring that your boilers operate at peak performance while meeting stringent safety standards.",
+      "Boilers are critical components in various industries, and murban ENGINEERING's Boiler Inspection Services are dedicated to ensuring their safety and efficiency. Our expert inspectors conduct meticulous examinations to detect issues, corrosion, and wear and tear. We provide comprehensive reports and recommendations to address any identified problems, ensuring that your boilers operate at peak performance while meeting stringent safety standards.",
     sections: [
       {
         title: "Services We Offer",
@@ -1085,7 +1085,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "MPI Magnetic Particle Testing",
     description:
-      "Magnetic Particle Testing (MPI) is a trusted non-destructive testing method used to reveal surface and near-surface defects in ferromagnetic components. Murban Engineering deploys MPI to safeguard the reliability of critical assets, combining precision field practices with expert evaluation so you receive clear data and actionable recommendations to address any detected flaws.",
+      "Magnetic Particle Testing (MPI) is a trusted non-destructive testing method used to reveal surface and near-surface defects in ferromagnetic components. murban ENGINEERING deploys MPI to safeguard the reliability of critical assets, combining precision field practices with expert evaluation so you receive clear data and actionable recommendations to address any detected flaws.",
     sections: [
       {
         title: "What Our MPI Service Delivers",
@@ -1142,7 +1142,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Surface Hardness Testing",
     description:
-      "Surface Hardness Testing is a critical service offered by Murban Engineering to assess the hardness of materials used in your equipment and structures. Our testing methods ensure that materials meet the required hardness specifications and quality standards for their intended applications. By utilizing our Surface Hardness Testing services, you can make informed decisions about material selection, quality control, and overall asset reliability.",
+      "Surface Hardness Testing is a critical service offered by murban ENGINEERING to assess the hardness of materials used in your equipment and structures. Our testing methods ensure that materials meet the required hardness specifications and quality standards for their intended applications. By utilizing our Surface Hardness Testing services, you can make informed decisions about material selection, quality control, and overall asset reliability.",
     sections: [
       {
         title: "Services We Offer",
@@ -1208,7 +1208,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Dye Penetrant Testing (PT)",
     description:
-      "Dye Penetrant Testing (PT) is a critical inspection method employed by Murban Engineering to detect surface flaws and discontinuities in various materials. Our skilled technicians apply penetrant solutions and meticulously examine components for defects. We provide comprehensive assessments and recommendations, enabling you to maintain the integrity and safety of your assets with confidence.",
+      "Dye Penetrant Testing (PT) is a critical inspection method employed by murban ENGINEERING to detect surface flaws and discontinuities in various materials. Our skilled technicians apply penetrant solutions and meticulously examine components for defects. We provide comprehensive assessments and recommendations, enabling you to maintain the integrity and safety of your assets with confidence.",
     sections: [
       {
         title: "Service Highlights",
@@ -1260,7 +1260,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Ultrasonic Flaw Testing C-Scan (Corrosion Mapping)",
     description:
-      "Ultrasonic flaw testing C-scan delivers a high-resolution corrosion map of critical assets, allowing integrity teams to visualize wall loss, pitting, and defects before they lead to failures. Murban Engineering's specialists utilize advanced ultrasonic instrumentation and experienced interpretation to provide the actionable insights needed to keep storage tanks, pipelines, and process equipment operating safely and efficiently.",
+      "Ultrasonic flaw testing C-scan delivers a high-resolution corrosion map of critical assets, allowing integrity teams to visualize wall loss, pitting, and defects before they lead to failures. murban ENGINEERING's specialists utilize advanced ultrasonic instrumentation and experienced interpretation to provide the actionable insights needed to keep storage tanks, pipelines, and process equipment operating safely and efficiently.",
     sections: [
       {
         title: "Advantages",
@@ -1286,7 +1286,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Ultrasonic Flaw Testing B-Scan (Profile Mapping)",
     description:
-      "B-scan ultrasonic testing provides a cross-sectional profile of wall thickness, laminations, and internal damage. Murban Engineering leverages B-scan techniques to map corrosion, erosion, and remaining life in piping systems, pressure boundaries, and structural weldments.",
+      "B-scan ultrasonic testing provides a cross-sectional profile of wall thickness, laminations, and internal damage. murban ENGINEERING leverages B-scan techniques to map corrosion, erosion, and remaining life in piping systems, pressure boundaries, and structural weldments.",
     sections: [
       {
         title: "Service Highlights",
@@ -1319,7 +1319,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Fluorescent Magnetic Particle Testing",
     description:
-      "Fluorescent Magnetic Particle Testing is a specialized technique employed by Murban Engineering to enhance the detection of flaws in critical components. Our services go beyond traditional magnetic particle testing, using fluorescent technology to improve flaw detection and characterization. We help you identify and address defects promptly, ensuring the reliability and safety of your equipment.",
+      "Fluorescent Magnetic Particle Testing is a specialized technique employed by murban ENGINEERING to enhance the detection of flaws in critical components. Our services go beyond traditional magnetic particle testing, using fluorescent technology to improve flaw detection and characterization. We help you identify and address defects promptly, ensuring the reliability and safety of your equipment.",
     sections: [
       {
         title: "Service Highlights",
@@ -1376,7 +1376,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Floormap 3D MFL Tank Floor Mapping",
     description:
-      "Murban Engineering offers advanced Floormap 3D MFL scanning services for precise assessment of tank floors. We employ cutting-edge technology to create accurate 3D maps of tank bottoms, enabling our inspectors to pinpoint corrosion and defects with exceptional clarity. The actionable insights we deliver support targeted maintenance programs that extend tank life and safeguard structural integrity.",
+      "murban ENGINEERING offers advanced Floormap 3D MFL scanning services for precise assessment of tank floors. We employ cutting-edge technology to create accurate 3D maps of tank bottoms, enabling our inspectors to pinpoint corrosion and defects with exceptional clarity. The actionable insights we deliver support targeted maintenance programs that extend tank life and safeguard structural integrity.",
     sections: [
       {
         title: "Services We Offer",
@@ -1441,7 +1441,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Positive Material Identification (PMI) Testing",
     description:
-      "Positive Material Identification (PMI) Testing is a critical service offered by Murban Engineering to confirm the composition of materials used in your equipment and structures. Our PMI testing ensures material compatibility with intended applications and compliance with industry standards. With our expertise, you can maintain the quality and safety of your assets, preventing material-related issues and ensuring long-term reliability. These services represent Murban Engineering's commitment to providing comprehensive asset integrity solutions that prioritize safety, compliance, and operational efficiency across a wide range of industries.",
+      "Positive Material Identification (PMI) Testing is a critical service offered by murban ENGINEERING to confirm the composition of materials used in your equipment and structures. Our PMI testing ensures material compatibility with intended applications and compliance with industry standards. With our expertise, you can maintain the quality and safety of your assets, preventing material-related issues and ensuring long-term reliability. These services represent murban ENGINEERING's commitment to providing comprehensive asset integrity solutions that prioritize safety, compliance, and operational efficiency across a wide range of industries.",
     sections: [
       {
         title: "What Our PMI Testing Provides",
@@ -1487,7 +1487,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Lifting Equipment Examination & Certification",
     description:
-      "Murban Engineering offers thorough examinations and certification for lifting equipment, crucial in industries where safety and load-bearing capacity are paramount. Our certified inspectors meticulously assess the condition and performance of lifting equipment, ensuring compliance with industry standards. With our services, you can trust that your lifting equipment is safe, reliable, and ready to perform the tasks it was designed for.",
+      "murban ENGINEERING offers thorough examinations and certification for lifting equipment, crucial in industries where safety and load-bearing capacity are paramount. Our certified inspectors meticulously assess the condition and performance of lifting equipment, ensuring compliance with industry standards. With our services, you can trust that your lifting equipment is safe, reliable, and ready to perform the tasks it was designed for.",
     sections: [
       {
         title: "Services We Offer",
@@ -1547,7 +1547,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Thermal Camera Inspection",
     description:
-      "Murban Engineering utilizes thermal cameras for inspections, allowing us to detect temperature anomalies and potential issues in your equipment and structures. Our thermal camera inspections provide valuable insights into the condition of critical components, helping you identify problems before they become major concerns. With our services, you can enhance the safety and reliability of your assets while minimizing downtime and maintenance costs.",
+      "murban ENGINEERING utilizes thermal cameras for inspections, allowing us to detect temperature anomalies and potential issues in your equipment and structures. Our thermal camera inspections provide valuable insights into the condition of critical components, helping you identify problems before they become major concerns. With our services, you can enhance the safety and reliability of your assets while minimizing downtime and maintenance costs.",
     sections: [
       {
         title: "Services We Offer",
@@ -1602,7 +1602,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "UAV Drone Inspection Services",
     description:
-      "Murban Engineering offers UAV (Unmanned Aerial Vehicle) inspection services, which provide efficient and cost-effective aerial assessments of assets. Our UAVs are equipped with high-resolution cameras and sensors, allowing us to capture valuable data from hard-to-reach areas. With our UAV Inspection services, you can access comprehensive visual data and reports, enabling informed decision-making for maintenance and asset management.",
+      "murban ENGINEERING offers UAV (Unmanned Aerial Vehicle) inspection services, which provide efficient and cost-effective aerial assessments of assets. Our UAVs are equipped with high-resolution cameras and sensors, allowing us to capture valuable data from hard-to-reach areas. With our UAV Inspection services, you can access comprehensive visual data and reports, enabling informed decision-making for maintenance and asset management.",
     sections: [
       {
         title: "Services We Offer",
@@ -1660,7 +1660,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Precision Tank Calibration & Volume Verification",
     description:
-      "Tank calibration is essential for ensuring accurate volume measurements and compliance with industry standards. Murban Engineering specializes in Tank Calibration Services, utilizing precise methods and equipment to calibrate your tanks accurately. Our services help you maintain compliance, minimize discrepancies in volume measurements, and ensure efficient operations in various industries, including oil and gas, chemicals, and more.",
+      "Tank calibration is essential for ensuring accurate volume measurements and compliance with industry standards. murban ENGINEERING specializes in Tank Calibration Services, utilizing precise methods and equipment to calibrate your tanks accurately. Our services help you maintain compliance, minimize discrepancies in volume measurements, and ensure efficient operations in various industries, including oil and gas, chemicals, and more.",
     sections: [
       {
         title: "Advantages",
@@ -1709,7 +1709,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "High-Fidelity 3D Laser Scanning & Digital Twin Capture",
     description:
-      "Murban Engineering provides 3D Laser Scanning Services, a cutting-edge technology that allows for precise measurements and mapping of structures, assets, and environments. Our state-of-the-art laser scanners capture detailed data, enabling accurate assessments for asset management, design planning, and facility maintenance. With our 3D Laser Scanning Services, you gain invaluable insights into your assets' conditions, facilitating informed decision-making and optimized operations.",
+      "murban ENGINEERING provides 3D Laser Scanning Services, a cutting-edge technology that allows for precise measurements and mapping of structures, assets, and environments. Our state-of-the-art laser scanners capture detailed data, enabling accurate assessments for asset management, design planning, and facility maintenance. With our 3D Laser Scanning Services, you gain invaluable insights into your assets' conditions, facilitating informed decision-making and optimized operations.",
     sections: [
       {
         title: "Advantages",
@@ -1743,7 +1743,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Comprehensive Industrial Gas Detection",
     description:
-      "Safety is paramount in any industry, and Murban Engineering's Gas Detection services are engineered to identify and mitigate gas-related risks in your operations. We deploy state-of-the-art detection technology to monitor gas levels continuously and provide timely alerts whenever potential hazards arise, helping create safer work environments and minimizing the risk of leaks or exposure.",
+      "Safety is paramount in any industry, and murban ENGINEERING's Gas Detection services are engineered to identify and mitigate gas-related risks in your operations. We deploy state-of-the-art detection technology to monitor gas levels continuously and provide timely alerts whenever potential hazards arise, helping create safer work environments and minimizing the risk of leaks or exposure.",
     sections: [
       {
         title: "Comprehensive Gas Monitoring Solutions",
@@ -1887,7 +1887,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Services We Offer"],
     headline: "Specialized Sphere Tank Inspection Services",
     description:
-      "Murban Engineering specializes in conducting sphere tank inspections to ensure their structural integrity and compliance with industry standards. Sphere tanks are commonly used for storing various materials, and our expert inspectors meticulously examine these structures to identify any corrosion, structural issues, or potential hazards. We provide comprehensive reports and recommendations to guarantee the safety and reliability of your sphere tanks, minimizing operational risks.",
+      "murban ENGINEERING specializes in conducting sphere tank inspections to ensure their structural integrity and compliance with industry standards. Sphere tanks are commonly used for storing various materials, and our expert inspectors meticulously examine these structures to identify any corrosion, structural issues, or potential hazards. We provide comprehensive reports and recommendations to guarantee the safety and reliability of your sphere tanks, minimizing operational risks.",
     sections: [
       {
         title: "Services We Offer",
@@ -1954,7 +1954,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     ],
     headline: "Turnkey Fabrication & Engineering Delivery",
     description:
-      "Murban Engineering provides end-to-end fabrication and engineering support, combining detailed design, controlled shop fabrication, surface finishing, and specialist welding with coordinated field erection. Our multidisciplinary teams keep complex industrial projects on schedule while meeting strict safety, quality, and compliance targets. We integrate planning, execution, and quality control so clients receive dependable, ready-for-service assets.",
+      "murban ENGINEERING provides end-to-end fabrication and engineering support, combining detailed design, controlled shop fabrication, surface finishing, and specialist welding with coordinated field erection. Our multidisciplinary teams keep complex industrial projects on schedule while meeting strict safety, quality, and compliance targets. We integrate planning, execution, and quality control so clients receive dependable, ready-for-service assets.",
     sections: [
       {
         title: "Services We Offer",
@@ -1991,7 +1991,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Fabrication & Engineering"],
     headline: "Surface Preparation & Protective Coating Systems",
     description:
-      "Murban Engineering provides comprehensive surface preparation and coating services for all fabricated steelwork, pipelines, and structures. We use advanced methods like abrasive blasting and chemical treatment to ensure the best adhesion for coatings.\n\nWe then apply high-performance coatings, ensuring long-term protection against corrosion, especially in harsh environments such as offshore and industrial plants.",
+      "murban ENGINEERING provides comprehensive surface preparation and coating services for all fabricated steelwork, pipelines, and structures. We use advanced methods like abrasive blasting and chemical treatment to ensure the best adhesion for coatings.\n\nWe then apply high-performance coatings, ensuring long-term protection against corrosion, especially in harsh environments such as offshore and industrial plants.",
     relatedServices: [
       "Fabrication",
       "Specialized Welding",
@@ -2006,7 +2006,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     breadcrumb: ["Home", "Industry Solutions", "Fabrication & Engineering"],
     headline: "Procurement & Supply Chain Assurance",
     description:
-      "Murban Engineering handles the procurement of high-quality raw materials and components, sourcing from trusted suppliers and ensuring that all materials meet the technical specifications for each project. We ensure timely delivery and cost efficiency in all procurement processes.",
+      "murban ENGINEERING handles the procurement of high-quality raw materials and components, sourcing from trusted suppliers and ensuring that all materials meet the technical specifications for each project. We ensure timely delivery and cost efficiency in all procurement processes.",
     relatedServices: [
       "Detailed Engineering",
       "Fabrication",
