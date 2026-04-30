@@ -28,8 +28,8 @@ export function FeaturedProductsSection() {
     <section id="technology" className="bg-background">
       {/* Section Title */}
       <div className="px-6 py-fluid-lg text-center md:px-12 lg:px-20">
-        <h2 className="text-fluid-4xl font-medium tracking-tight text-foreground text-balance">
-          Murban Engineering – NDT & Asset Integrity Services
+        <h2 className="murban-engineering-wordmark text-fluid-4xl tracking-tight text-balance">
+          murban ENGINEERING – NDT & Asset Integrity Services
         </h2>
         <p className="mx-auto mt-6 max-w-md text-fluid-sm text-muted-foreground">
           Technology
