@@ -7,7 +7,7 @@ import { AfricaGoogleMap, whereWeWorkCountries } from "./africa-google-map";
 
 const whoWeAre = [
   "Conventional and Advanced NDT and Inspection Services",
-  "Engineering Agency",
+  "Engineering",
   "Oil and Gas, Refinery, Petrochemical, Heavy Industry, Mining and Power Plant",
   "Qualified and certified inspectors and N-D-T Practitioners",
   "Kenya headquarters with Africa expertise since 2007",
@@ -92,7 +92,7 @@ export function TestimonialsSection() {
             </div>
 
             <div className="animate-in fade-in-0 slide-in-from-right-4 duration-700">
-              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">murban ENGINEERING Agency</h3>
+              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">murban ENGINEERING</h3>
 
               <h4 className="mt-8 text-2xl font-medium text-primary">Vision</h4>
               <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
