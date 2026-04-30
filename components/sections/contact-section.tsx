@@ -3,7 +3,7 @@ import { Upload } from "lucide-react";
 const officeLocations = [
   {
     city: "Nairobi",
-    division: "Murban Engineering",
+    division: "murban ENGINEERING",
     lines: [
       "POSTAL ADDRESS",
       "P.O. BOX 142-00502 Nairobi Karen",

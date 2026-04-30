@@ -23,7 +23,7 @@ export function TestimonialsSection() {
           <br />
           Murban Inspection Services
           <br />
-          Murban Engineering Services
+          murban ENGINEERING Services
           <br />
           With a fully equipped laboratory in Mombasa and mobile teams deployed regionally, Murban is
           your trusted partner for both on-site and lab-based inspections, delivered with safety,
@@ -36,7 +36,7 @@ export function TestimonialsSection() {
         <div className="relative mx-auto aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-2xl">
           <Image
             src="/images/Screenshot 2026-04-28 190300.png"
-            alt="Murban Engineering inspection team onsite"
+            alt="murban ENGINEERING inspection team onsite"
             fill
             className="object-cover object-center"
           />
@@ -52,7 +52,7 @@ export function TestimonialsSection() {
               murban ENGINEERING
             </h3>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-              Murban Engineering is a specialist firm in Asset Integrity, Inspection, and
+              murban ENGINEERING is a specialist firm in Asset Integrity, Inspection, and
               Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions that
               support critical infrastructure in the oil &amp; gas, energy, marine, and industrial sectors.
             </p>
@@ -92,7 +92,7 @@ export function TestimonialsSection() {
             </div>
 
             <div className="animate-in fade-in-0 slide-in-from-right-4 duration-700">
-              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Murban Engineering Agency</h3>
+              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">murban ENGINEERING Agency</h3>
 
               <h4 className="mt-8 text-2xl font-medium text-primary">Vision</h4>
               <p className="mt-3 text-lg leading-relaxed text-muted-foreground">

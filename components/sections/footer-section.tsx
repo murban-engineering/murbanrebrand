@@ -104,7 +104,7 @@ export function FooterSection() {
                 <DialogHeader className="text-left">
                   <DialogTitle className="text-2xl md:text-3xl">Protecting your information and building trust</DialogTitle>
                   <DialogDescription className="text-sm leading-relaxed text-muted-foreground md:text-base">
-                    Murban Engineering Services safeguards client and partner information with the same rigor we apply
+                    murban ENGINEERING Services safeguards client and partner information with the same rigor we apply
                     to our inspection and engineering assignments. This policy outlines how we collect, store, and use
                     personal data in line with applicable regulations and our commitment to transparency.
                   </DialogDescription>
