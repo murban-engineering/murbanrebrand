@@ -138,9 +138,9 @@ export function HeroSection() {
                 style={{ opacity: textOpacity }}
               >
                 <div className="w-full bg-gradient-to-t from-black/70 via-black/40 to-transparent px-6 pb-20 pt-20 text-white md:px-12 md:pb-14 md:pt-24 lg:px-16">
-                  <h1 className="text-4xl font-bold leading-tight tracking-wide md:text-6xl">
-                    <span className="block" style={{ color: "#A60D0F" }}>Murban</span>
-                    <span className="block" style={{ color: "#213164" }}>Engineering</span>
+                  <h1 className="murban-engineering-wordmark text-4xl leading-tight md:text-6xl">
+                    <span className="block lowercase">murban</span>
+                    <span className="block uppercase">engineering</span>
                   </h1>
                   <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/90 md:text-base">
                     A specialist firm in Asset Integrity, Inspection, and Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions for oil & gas, energy, marine, and industrial sectors across Africa.

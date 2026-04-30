@@ -48,8 +48,8 @@ export function TestimonialsSection() {
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="text-xs uppercase tracking-widest text-muted-foreground">Company Profile</p>
-            <h3 className="mt-4 text-3xl font-medium tracking-tight text-foreground md:text-4xl">
-              Murban Engineering
+            <h3 className="murban-engineering-wordmark mt-4 text-3xl tracking-tight md:text-4xl">
+              murban ENGINEERING
             </h3>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
               Murban Engineering is a specialist firm in Asset Integrity, Inspection, and
