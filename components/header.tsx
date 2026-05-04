@@ -91,8 +91,8 @@ export function Header() {
               Services
               <ChevronDown size={14} />
             </button>
-            <div className="invisible absolute right-0 top-full z-50 mt-2 max-h-[70vh] w-96 overflow-y-auto rounded-xl border border-border bg-background/95 p-2 text-right opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
-              <ServiceLink href="#services" className="mb-1 block rounded-lg px-3 py-2 text-sm font-medium text-[#A60D0F] transition-colors hover:bg-muted">
+            <div className="invisible absolute left-0 top-full z-50 mt-2 max-h-[70vh] w-96 overflow-y-auto rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
+              <ServiceLink href="#services" className="mb-1 block rounded-lg px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted">
                 All Services
               </ServiceLink>
               {serviceGroups.map((group) => (
@@ -117,7 +117,7 @@ export function Header() {
                       <ServiceLink
                         key={service.slug}
                         href={`/services/${service.slug}`}
-                        className="block rounded-lg px-5 py-2 text-sm text-[#A60D0F] transition-colors hover:bg-muted"
+                        className="block rounded-lg px-5 py-2 text-sm text-foreground transition-colors hover:bg-muted"
                       >
                         {service.title}
                       </ServiceLink>
@@ -137,7 +137,7 @@ export function Header() {
                 <Link
                   key={industry.href}
                   href={industry.href}
-                  className="block rounded-lg px-3 py-2 text-sm text-[#A60D0F] transition-colors hover:bg-muted"
+                  className="block rounded-lg px-3 py-2 text-sm text-foreground transition-colors hover:bg-muted"
                 >
                   {industry.label}
                 </Link>
@@ -200,7 +200,7 @@ export function Header() {
               </button>
               {isServicesOpen && (
                 <div className="space-y-2 border-l border-border pl-4">
-                  <ServiceLink href="#services" className="block text-base text-[#A60D0F]" onClick={() => setIsMenuOpen(false)}>
+                  <ServiceLink href="#services" className="block text-base text-muted-foreground" onClick={() => setIsMenuOpen(false)}>
                     All Services
                   </ServiceLink>
                   {serviceGroups.map((group) => (
@@ -225,7 +225,7 @@ export function Header() {
                           <ServiceLink
                             key={service.slug}
                             href={`/services/${service.slug}`}
-                            className="block text-base text-[#A60D0F]"
+                            className="block text-base text-muted-foreground"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             {service.title}
@@ -252,7 +252,7 @@ export function Header() {
                     <Link
                       key={industry.href}
                       href={industry.href}
-                      className="block text-base text-[#A60D0F]"
+                      className="block text-base text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {industry.label}
