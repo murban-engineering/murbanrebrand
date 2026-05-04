@@ -155,8 +155,9 @@ export function PhilosophySection() {
         />
         <div className="content-wide relative z-10 mx-auto text-foreground">
           <div className="text-center">
-            <h3 className="text-fluid-4xl font-medium text-foreground text-balance">
-              murban ENGINEERING
+            <h3 className="murban-engineering-wordmark text-fluid-4xl font-medium text-foreground text-balance">
+              <span className="block lowercase">murban</span>
+              <span className="block uppercase">engineering</span>
             </h3>
           </div>
 
