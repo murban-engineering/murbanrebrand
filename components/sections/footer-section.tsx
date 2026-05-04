@@ -44,19 +44,19 @@ export function FooterSection() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_0.7fr_0.7fr_0.7fr]">
           <div>
             <h2 className="murban-engineering-wordmark text-2xl tracking-tight text-black md:text-3xl">murban ENGINEERING</h2>
-            <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground md:mt-8 md:text-base">
+            <p className="mt-6 max-w-2xl text-sm leading-relaxed text-black md:mt-8 md:text-base">
               Our operations are split into two divisions, Murban Inspection Services and Murban
               Engineering Services. We pick the best talent from the industry and continually invest
               in their development through rigorous external and internal training so they stay
               ahead of industry trends.
             </p>
 
-            <div className="mt-8 text-sm text-muted-foreground md:mt-10 md:text-base">
+            <div className="mt-8 text-sm text-black md:mt-10 md:text-base">
               <p>Find our latest office details in the Contact Us section above.</p>
             </div>
 
             <div className="mt-10 md:mt-14">
-              <h3 className="text-2xl font-semibold text-foreground md:text-3xl">Follow Us</h3>
+              <h3 className="text-2xl font-semibold text-black md:text-3xl">Follow Us</h3>
               <Link
                 href="#"
                 aria-label="LinkedIn"
@@ -77,7 +77,7 @@ export function FooterSection() {
             <DialogTrigger asChild>
               <button
                 type="button"
-                className="text-sm font-medium text-foreground underline underline-offset-4 transition-colors hover:text-muted-foreground md:text-base"
+                className="text-sm font-medium text-black underline underline-offset-4 transition-colors hover:text-black/70 md:text-base"
               >
                 Privacy Policy
               </button>
@@ -134,7 +134,7 @@ export function FooterSection() {
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
                     You can request access to, correction of, or deletion of your personal data by contacting our team
                     at{" "}
-                    <a className="font-medium text-foreground underline underline-offset-4" href="mailto:info@murban-eng.com">
+                    <a className="font-medium text-black underline underline-offset-4" href="mailto:info@murban-eng.com">
                       info@murban-eng.com
                     </a>
                     . We respond promptly and transparently to all privacy-related requests.
@@ -160,13 +160,13 @@ export function FooterSection() {
 function FooterColumn({ title, links }: { title: string; links: { label: string; href: string }[] }) {
   return (
     <div>
-      <h4 className="text-2xl font-semibold text-foreground md:text-3xl">{title}</h4>
+      <h4 className="text-2xl font-semibold text-black md:text-3xl">{title}</h4>
       <ul className="mt-6 space-y-4 md:mt-8 md:space-y-5">
         {links.map((link) => (
           <li key={link.label}>
             <Link
               href={link.href}
-              className="text-sm leading-snug text-foreground transition-colors hover:text-muted-foreground md:text-base"
+              className="text-sm leading-snug text-black transition-colors hover:text-black/70 md:text-base"
             >
               {link.label}
             </Link>
