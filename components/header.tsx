@@ -91,39 +91,53 @@ export function Header() {
               Services
               <ChevronDown size={14} />
             </button>
-            <div className="invisible absolute left-0 top-full z-50 mt-2 max-h-[70vh] w-96 overflow-y-auto rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
-              <ServiceLink href="#services" className="mb-1 block rounded-lg px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted">
-                All Services
-              </ServiceLink>
-              {serviceGroups.map((group) => (
-                <div key={group.category} className="mb-2">
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setSelectedServiceCategory((prev) =>
-                        prev === group.category ? null : group.category,
-                      )
-                    }
-                    className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-muted-foreground transition-colors hover:bg-muted"
-                  >
-                    {group.category}
-                    <ChevronDown
-                      size={14}
-                      className={`transition-transform ${selectedServiceCategory === group.category ? "rotate-180" : ""}`}
-                    />
-                  </button>
-                  {selectedServiceCategory === group.category &&
-                    group.items.map((service) => (
-                      <ServiceLink
-                        key={service.slug}
-                        href={`/services/${service.slug}`}
-                        className="block rounded-lg px-5 py-2 text-sm text-foreground transition-colors hover:bg-muted"
+            <div className="invisible absolute left-0 top-full z-50 mt-2 w-[44rem] rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
+              <div className="grid grid-cols-[18rem_1fr] gap-2">
+                <div className="max-h-[70vh] overflow-y-auto rounded-lg border border-border/60 p-1">
+                  <ServiceLink href="#services" className="mb-1 block rounded-lg px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted">
+                    All Services
+                  </ServiceLink>
+                  {serviceGroups.map((group) => (
+                    <div key={group.category} className="mb-1">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setSelectedServiceCategory((prev) =>
+                            prev === group.category ? null : group.category,
+                          )
+                        }
+                        className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-muted-foreground transition-colors hover:bg-muted"
                       >
-                        {service.title}
-                      </ServiceLink>
-                    ))}
+                        {group.category}
+                        <ChevronDown
+                          size={14}
+                          className={`transition-transform ${selectedServiceCategory === group.category ? "-rotate-90" : ""}`}
+                        />
+                      </button>
+                    </div>
+                  ))}
                 </div>
-              ))}
+
+                <div className="min-h-[14rem] rounded-lg border border-border/60 p-1">
+                  {selectedServiceCategory ? (
+                    <div className="max-h-[70vh] overflow-y-auto">
+                      {serviceGroups
+                        .find((group) => group.category === selectedServiceCategory)
+                        ?.items.map((service) => (
+                          <ServiceLink
+                            key={service.slug}
+                            href={`/services/${service.slug}`}
+                            className="block rounded-lg px-3 py-2 text-sm text-foreground transition-colors hover:bg-muted"
+                          >
+                            {service.title}
+                          </ServiceLink>
+                        ))}
+                    </div>
+                  ) : (
+                    <p className="px-3 py-2 text-sm text-muted-foreground">Select a service group to view items.</p>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
 
