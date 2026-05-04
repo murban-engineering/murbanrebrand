@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ShieldCheck } from "lucide-react";
 import {
@@ -85,9 +86,12 @@ export function FooterSection() {
 
             <DialogContent className="max-h-[85vh] max-w-4xl overflow-y-auto p-0">
               <div className="relative overflow-hidden rounded-t-lg">
-                <img
+                <Image
                   src="/images/industrial-refinery.jpg"
                   alt="Industrial site representing secure engineering operations"
+                  width={1600}
+                  height={640}
+                  sizes="(min-width: 768px) 896px, 100vw"
                   className="h-48 w-full object-cover md:h-64"
                   loading="lazy"
                 />

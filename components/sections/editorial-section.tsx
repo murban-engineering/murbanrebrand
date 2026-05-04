@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const specs = [
 ];
 
@@ -36,10 +38,13 @@ export function EditorialSection() {
 
       {/* Full-width Image */}
       <div className="relative aspect-[16/9] w-full md:aspect-[21/9]">
-        <img
+        <Image
           src="/images/DSCN4156.JPG"
           alt="Murban facility"
+          fill
+          sizes="100vw"
           className="absolute inset-0 h-full w-full object-cover"
+          loading="lazy"
         />
       </div>
     </section>
