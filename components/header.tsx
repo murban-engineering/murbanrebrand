@@ -91,7 +91,10 @@ export function Header() {
               Services
               <ChevronDown size={14} />
             </button>
-            <div className="invisible absolute left-0 top-full z-50 mt-2 w-[44rem] rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
+            <div
+              className="invisible absolute left-0 top-full z-50 mt-2 w-[44rem] rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100"
+              onMouseLeave={() => setSelectedServiceCategory(null)}
+            >
               <div className="grid grid-cols-[18rem_1fr] gap-2">
                 <div className="max-h-[70vh] overflow-y-auto rounded-lg border border-border/60 p-1">
                   <ServiceLink href="#services" className="mb-1 block rounded-lg px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted">
