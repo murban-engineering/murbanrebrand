@@ -63,11 +63,35 @@ export function TestimonialsSection() {
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-widest text-muted-foreground">Where We Work</p>
-            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              We support projects across Africa with teams and certified inspectors in key markets.
-              Countries shown on the map include {whereWeWorkCountries.map((country) => country.label).join(", ")}.
+            <p className="text-xs uppercase tracking-widest text-muted-foreground">
+              Why Clients Choose murban Engineering
             </p>
+            <div className="mt-4 space-y-4 text-muted-foreground">
+              <p className="text-base leading-relaxed">
+                <span className="font-semibold text-foreground">African-Based, Globally Credible:</span>{" "}
+                18 years of experience with international standards, operating from Kenya across 35+ countries worldwide.
+              </p>
+              <p className="text-base leading-relaxed">
+                <span className="font-semibold text-foreground">ISO 9001:2015 Certified:</span>{" "}
+                Every aspect of our service delivery governed by a certified quality management system.
+              </p>
+              <p className="text-base leading-relaxed">
+                <span className="font-semibold text-foreground">Sharp Focus on Safety:</span>{" "}
+                100% commitment to safety embedded in every engagement — zero tolerance on HSE.
+              </p>
+              <p className="text-base leading-relaxed">
+                <span className="font-semibold text-foreground">Fast, Effective Mobilization:</span>{" "}
+                Strategic Nairobi and Mombasa bases enable rapid deployment across East, Central, Southern and West Africa.
+              </p>
+              <p className="text-base leading-relaxed">
+                <span className="font-semibold text-foreground">International Standards:</span>{" "}
+                API, ASNT, ISO — all work executed to internationally recognized codes and standards.
+              </p>
+              <p className="text-base leading-relaxed">
+                <span className="font-semibold text-foreground">Solutions-Focused Excellence:</span>{" "}
+                Technical depth ensures any inspection challenge — conventional or advanced — can be tackled.
+              </p>
+            </div>
           </div>
         </div>
       </div>
