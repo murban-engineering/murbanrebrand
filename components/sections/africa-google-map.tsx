@@ -23,6 +23,9 @@ export const whereWeWorkCountries = [
   { name: "Djibouti", label: "Djibouti" },
   { name: "Zimbabwe", label: "Zimbabwe" },
   { name: "Malawi", label: "Malawi" },
+  { name: "Sudan", label: "Sudan" },
+  { name: "South Sudan", label: "South Sudan" },
+  { name: "Chad", label: "Chad" },
 ] as const;
 
 const activeCountrySet: Set<string> = new Set(whereWeWorkCountries.map((country) => country.name));
