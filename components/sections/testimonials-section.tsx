@@ -63,11 +63,11 @@ export function TestimonialsSection() {
               </p>
             </div>
 
-            <div className="relative overflow-hidden rounded-3xl border border-[#A60D0F]/25 bg-[#111827] p-8 text-white shadow-lg md:p-10">
+            <div className="relative overflow-hidden rounded-3xl border border-[#A60D0F]/25 bg-[#213164] p-8 text-white shadow-lg md:p-10">
               <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-[#A60D0F]/20 blur-3xl" />
               <div className="pointer-events-none absolute -bottom-24 -left-20 h-60 w-60 rounded-full bg-[#213164]/35 blur-3xl" />
               <div className="relative">
-                <p className="text-xs uppercase tracking-[0.2em] text-white/70">
+                <p className="murban-engineering-wordmark text-xs uppercase tracking-[0.2em] text-black">
                   Why Clients Choose murban Engineering
                 </p>
               </div>
