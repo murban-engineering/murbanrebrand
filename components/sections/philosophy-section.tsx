@@ -23,6 +23,8 @@ export function PhilosophySection() {
   const [leftImageTranslateX, setLeftImageTranslateX] = useState(-100);
   const [rightImageTranslateX, setRightImageTranslateX] = useState(100);
   const [titleOpacity, setTitleOpacity] = useState(1);
+  const [servicesHeroProgress, setServicesHeroProgress] = useState(0);
+  const servicesHeroRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number | null>(null);
 
   const updateTransforms = useCallback(() => {
@@ -68,6 +70,24 @@ export function PhilosophySection() {
       }
     };
   }, [updateTransforms]);
+
+
+  useEffect(() => {
+    const updateServicesHero = () => {
+      if (!servicesHeroRef.current) return;
+
+      const rect = servicesHeroRef.current.getBoundingClientRect();
+      const viewport = window.innerHeight;
+      const totalScrollable = Math.max(1, servicesHeroRef.current.offsetHeight - viewport);
+      const progress = Math.max(0, Math.min(1, -rect.top / totalScrollable));
+      setServicesHeroProgress(progress);
+    };
+
+    window.addEventListener("scroll", updateServicesHero, { passive: true });
+    updateServicesHero();
+
+    return () => window.removeEventListener("scroll", updateServicesHero);
+  }, []);
 
   const categoryId = (value: string) =>
     `services-${value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "")}`;
@@ -141,18 +161,55 @@ export function PhilosophySection() {
       <TestimonialsSection />
 
       {/* Description */}
-      <div
-        id="services"
-        className="relative overflow-hidden px-6 py-fluid-lg md:px-12 lg:px-20"
-      >
-        <div
-          className="pointer-events-none absolute inset-0"
-          aria-hidden="true"
-          style={{
-            background:
-              "linear-gradient(100deg, hsl(var(--foreground)/0.96) 0%, hsl(var(--foreground)/0.92) 58%, hsl(var(--background)) 58.4%, hsl(var(--background)) 100%)",
-          }}
-        />
+      <div id="services" className="bg-background">
+        <div ref={servicesHeroRef} className="relative h-[220vh]">
+          <div className="sticky top-0 h-screen overflow-hidden">
+            <Image
+              src="/images/aerial-view-gas-oil-refinery-oil-industry.jpg"
+              alt="Aerial view of gas and oil refinery"
+              fill
+              priority={false}
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-black/45" />
+
+            <div
+              className="absolute inset-0 flex items-center justify-center px-6 md:px-12 lg:px-20"
+              style={{
+                opacity: Math.max(0, Math.min(1, (servicesHeroProgress - 0.22) / 0.5)),
+                transform: `translateY(${Math.max(0, 40 - servicesHeroProgress * 90)}px)`,
+              }}
+            >
+              <div className="w-full max-w-5xl rounded-2xl border border-white/30 bg-white/88 p-6 backdrop-blur-sm sm:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Our services</p>
+                <h3 className="murban-engineering-wordmark mt-3 text-fluid-4xl font-medium !text-black text-balance">
+                  <span className="block lowercase">murban</span>
+                  <span className="block uppercase">engineering</span>
+                </h3>
+
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {[
+                    { label: "General Non-Destructive Testing (NDT)", href: "#services-general-non-destructive-testing-ndt" },
+                    { label: "Advanced NDT & Specialized Technologies", href: "#services-advanced-ndt-specialized-technologies" },
+                    { label: "Engineering Assessments & Certification", href: "#services-engineering-assessments-certification" },
+                    { label: "Engineering & Fabrication", href: "#fabrication-services" },
+                  ].map((category) => (
+                    <a
+                      key={category.label}
+                      href={category.href}
+                      className="rounded-full border border-border bg-background/80 px-4 py-2 text-xs font-semibold tracking-wide text-[#A60D0F] transition-colors hover:bg-[#A60D0F]/10"
+                    >
+                      {category.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative overflow-hidden px-6 py-fluid-lg md:px-12 lg:px-20">
         <div className="content-wide relative z-10 mx-auto text-foreground">
           <div className="grid items-stretch gap-8 lg:grid-cols-[1.05fr_1fr] lg:gap-10">
             <div className="order-2 rounded-2xl border border-border/60 bg-background/85 p-6 backdrop-blur-sm sm:p-8 lg:order-1">
@@ -180,16 +237,6 @@ export function PhilosophySection() {
               </div>
             </div>
 
-            <div className="order-1 relative min-h-[320px] overflow-hidden rounded-2xl border border-border/60 lg:order-2 lg:mr-[-5rem] lg:min-h-[460px] lg:rounded-r-none">
-              <Image
-                src="/images/aerial-view-gas-oil-refinery-oil-industry.jpg"
-                alt="Aerial view of gas and oil refinery"
-                fill
-                priority={false}
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
           </div>
 
 
@@ -260,6 +307,7 @@ export function PhilosophySection() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
