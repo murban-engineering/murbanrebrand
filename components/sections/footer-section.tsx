@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck } from "lucide-react";
+import { Facebook, Linkedin, ShieldCheck } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -58,13 +58,26 @@ export function FooterSection() {
 
             <div className="mt-10 md:mt-14">
               <h3 className="text-2xl font-semibold text-black md:text-3xl">Follow Us</h3>
-              <Link
-                href="#"
-                aria-label="LinkedIn"
-                className="mt-5 inline-flex h-12 w-12 md:mt-6 md:h-14 md:w-14 items-center justify-center rounded-full border border-rose-200 text-xl font-medium text-foreground transition-colors hover:bg-white"
-              >
-                in
-              </Link>
+              <div className="mt-5 flex items-center gap-4 md:mt-6">
+                <Link
+                  href="https://ke.linkedin.com/company/murban-engineering"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-rose-200 text-foreground transition-colors hover:bg-white md:h-14 md:w-14"
+                >
+                  <Linkedin className="h-5 w-5 md:h-6 md:w-6" />
+                </Link>
+                <Link
+                  href="https://www.facebook.com/murbanke/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-rose-200 text-foreground transition-colors hover:bg-white md:h-14 md:w-14"
+                >
+                  <Facebook className="h-5 w-5 md:h-6 md:w-6" />
+                </Link>
+              </div>
             </div>
           </div>
 
