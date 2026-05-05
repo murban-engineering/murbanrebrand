@@ -193,7 +193,7 @@ export function PhilosophySection() {
                     { label: "General Non-Destructive Testing (NDT)", href: "#services-general-non-destructive-testing-ndt" },
                     { label: "Advanced NDT & Specialized Technologies", href: "#services-advanced-ndt-specialized-technologies" },
                     { label: "Engineering Assessments & Certification", href: "#services-engineering-assessments-certification" },
-                    { label: "Engineering & Fabrication", href: "#fabrication-services" },
+                    { label: "Engineering & Fabrication", href: "#services-engineering-fabrication" },
                   ].map((category) => (
                     <a
                       key={category.label}
