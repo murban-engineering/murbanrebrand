@@ -163,21 +163,27 @@ export function PhilosophySection() {
               </h3>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                {serviceCategories.map((category) => (
-                  <span
-                    key={category}
-                    className="rounded-full border border-border bg-background/80 px-4 py-2 text-xs font-medium tracking-wide text-foreground/75"
+                {[
+                  { label: "General Non-Destructive Testing (NDT)", href: "#services-general-non-destructive-testing-ndt" },
+                  { label: "Advanced NDT & Specialized Technologies", href: "#services-advanced-ndt-specialized-technologies" },
+                  { label: "Engineering Assessments & Certification", href: "#services-engineering-assessments-certification" },
+                  { label: "Engineering & Fabrication", href: "#fabrication-services" },
+                ].map((category) => (
+                  <a
+                    key={category.label}
+                    href={category.href}
+                    className="rounded-full border border-border bg-background/80 px-4 py-2 text-xs font-semibold tracking-wide text-[#A60D0F] transition-colors hover:bg-[#A60D0F]/10"
                   >
-                    {category}
-                  </span>
+                    {category.label}
+                  </a>
                 ))}
               </div>
             </div>
 
-            <div className="order-1 relative min-h-[320px] overflow-hidden rounded-2xl border border-border/60 lg:order-2 lg:min-h-[460px]">
+            <div className="order-1 relative min-h-[320px] overflow-hidden rounded-2xl border border-border/60 lg:order-2 lg:mr-[-5rem] lg:min-h-[460px] lg:rounded-r-none">
               <Image
-                src="/new4.jpg"
-                alt="Murban engineering service showcase"
+                src="/images/aerial-view-gas-oil-refinery-oil-industry.jpg"
+                alt="Aerial view of gas and oil refinery"
                 fill
                 priority={false}
                 className="object-cover"
