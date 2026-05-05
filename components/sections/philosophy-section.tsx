@@ -183,9 +183,9 @@ export function PhilosophySection() {
             >
               <div className="w-full max-w-5xl rounded-2xl p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Our services</p>
-                <h3 className="murban-engineering-wordmark mt-3 inline-block rounded-md bg-white px-4 py-2 text-fluid-4xl font-medium text-balance">
-                  <span className="block lowercase text-[#A60D0F]">murban</span>
-                  <span className="block uppercase text-[#213164]">engineering</span>
+                <h3 className="murban-engineering-wordmark mt-3 text-fluid-4xl font-medium text-white text-balance">
+                  <span className="block lowercase">murban</span>
+                  <span className="block uppercase">engineering</span>
                 </h3>
 
                 <div className="mt-8 flex flex-wrap gap-3">
