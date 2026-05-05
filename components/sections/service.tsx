@@ -2127,7 +2127,7 @@ const Services = () => {
       {/* Hero Section with Industrial Image */}
       <section
         id="services-hero"
-        className="relative overflow-hidden py-36 md:py-44"
+        className="relative overflow-hidden pt-24 pb-32 md:pt-28 md:pb-40"
       >
         {/* Background Image */}
         <div className="absolute inset-0">
@@ -2141,35 +2141,35 @@ const Services = () => {
             width={1920}
             height={1080}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/50" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/45 to-background/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-background/20" />
           <div className="absolute inset-0 bg-gradient-mesh opacity-30" />
         </div>
 
-        <div className="container relative z-10 mx-auto px-4 text-center">
+        <div className="container relative z-10 mx-auto px-4 text-left">
           <AnimateOnScroll direction="left">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 backdrop-blur-sm px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-primary shadow-sm mb-8">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-primary mb-8">
               <span className="h-2 w-2 rounded-full bg-primary animate-pulse-soft" />
               NDT & Asset Integrity Services
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold mb-8 leading-[1.1] text-foreground tracking-tight">
               Precision Inspection &<br />Engineering Services
             </h1>
-            <p className="text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground leading-relaxed mb-12">
+            <p className="text-lg md:text-xl max-w-3xl text-muted-foreground leading-relaxed mb-12">
               Comprehensive Non-Destructive Testing and Advanced NDT support to keep critical infrastructure running at peak performance.
             </p>
             
             {/* Navigation to sections */}
             <nav
               aria-label="Services sections"
-              className="flex flex-col items-center justify-center gap-3"
+              className="flex flex-col items-start justify-center gap-3"
             >
-              <div className="flex flex-wrap items-center justify-center gap-3">
+              <div className="flex flex-wrap items-center justify-start gap-3">
                 {serviceSections.map((section) => (
                   <a
                     key={section.id}
                     href={`#${section.id}`}
-                    className="group inline-flex items-center gap-2 rounded-2xl border border-border/50 bg-card/80 px-6 py-3 text-sm font-medium text-foreground backdrop-blur-md shadow-sm transition-all duration-300 hover:bg-primary/5 hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-md"
+                    className="group inline-flex items-center gap-2 rounded-2xl border border-border/50 px-6 py-3 text-sm font-medium text-foreground backdrop-blur-md shadow-sm transition-all duration-300 hover:bg-primary/5 hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-md"
                   >
                     <span>{section.label}</span>
                   </a>
