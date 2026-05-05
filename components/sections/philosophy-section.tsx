@@ -211,35 +211,6 @@ export function PhilosophySection() {
 
         <div className="relative overflow-hidden px-6 py-fluid-lg md:px-12 lg:px-20">
         <div className="content-wide relative z-10 mx-auto text-foreground">
-          <div className="grid items-stretch gap-8 lg:grid-cols-[1.05fr_1fr] lg:gap-10">
-            <div className="order-2 rounded-2xl border border-border/60 bg-background/85 p-6 backdrop-blur-sm sm:p-8 lg:order-1">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Our services</p>
-              <h3 className="murban-engineering-wordmark mt-3 text-fluid-4xl font-medium !text-black text-balance">
-                <span className="block lowercase">murban</span>
-                <span className="block uppercase">engineering</span>
-              </h3>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                {[
-                  { label: "General Non-Destructive Testing (NDT)", href: "#services-general-non-destructive-testing-ndt" },
-                  { label: "Advanced NDT & Specialized Technologies", href: "#services-advanced-ndt-specialized-technologies" },
-                  { label: "Engineering Assessments & Certification", href: "#services-engineering-assessments-certification" },
-                  { label: "Engineering & Fabrication", href: "#fabrication-services" },
-                ].map((category) => (
-                  <a
-                    key={category.label}
-                    href={category.href}
-                    className="rounded-full border border-border bg-background/80 px-4 py-2 text-xs font-semibold tracking-wide text-[#A60D0F] transition-colors hover:bg-[#A60D0F]/10"
-                  >
-                    {category.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-
-          </div>
-
-
           <div className="mt-14">
             <h4 className="text-center text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
               TECHNOLOGY AND TRAINING PARTNERS
