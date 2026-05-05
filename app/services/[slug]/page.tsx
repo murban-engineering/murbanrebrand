@@ -110,6 +110,10 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
               height={500}
               className="h-56 w-full object-cover md:h-72"
               priority
+              fetchPriority="high"
+              loading="eager"
+              sizes="(max-width: 768px) 100vw, 1200px"
+              quality={70}
             />
           ) : (
             <div className="flex h-56 w-full items-center justify-center bg-white/10 text-sm font-semibold uppercase tracking-[0.18em] text-white/80 md:h-72">
