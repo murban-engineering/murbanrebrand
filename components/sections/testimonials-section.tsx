@@ -70,9 +70,6 @@ export function TestimonialsSection() {
                 <p className="text-xs uppercase tracking-[0.2em] text-white/70">
                   Why Clients Choose murban Engineering
                 </p>
-                <h4 className="mt-4 max-w-sm text-2xl font-semibold leading-tight md:text-3xl">
-                  Amazing <span className="text-[#A60D0F]">Details</span>
-                </h4>
               </div>
               <div className="relative mt-6 space-y-4 text-white/90">
                 <p className="text-base leading-relaxed">
