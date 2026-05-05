@@ -181,9 +181,9 @@ export function PhilosophySection() {
                 transform: `translateY(${Math.max(0, 40 - servicesHeroProgress * 90)}px)`,
               }}
             >
-              <div className="w-full max-w-5xl rounded-2xl border border-white/30 bg-white/88 p-6 backdrop-blur-sm sm:p-8">
+              <div className="w-full max-w-5xl rounded-2xl p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Our services</p>
-                <h3 className="murban-engineering-wordmark mt-3 text-fluid-4xl font-medium !text-black text-balance">
+                <h3 className="murban-engineering-wordmark mt-3 text-fluid-4xl font-medium text-white text-balance">
                   <span className="block lowercase">murban</span>
                   <span className="block uppercase">engineering</span>
                 </h3>
