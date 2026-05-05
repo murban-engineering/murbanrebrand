@@ -102,7 +102,7 @@ export function TestimonialsSection() {
 
           <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
             <div className="animate-in fade-in-0 slide-in-from-left-4 duration-700">
-              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Who We Are</h3>
+              <h3 id="who-we-are" className="scroll-mt-28 text-3xl font-medium tracking-tight text-foreground md:text-4xl">Who We Are</h3>
               <div className="mt-8 grid gap-5 md:grid-cols-2">
                 {whoWeAre.map((item, index) => (
                   <div
@@ -189,7 +189,7 @@ export function TestimonialsSection() {
               <div className="mx-auto max-w-5xl">
                 <div className="flex flex-col items-center text-center">
                   <MapPin className="h-10 w-10 text-primary" strokeWidth={1.8} aria-hidden="true" />
-                  <h3 className="mt-3 text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
+                  <h3 id="where-we-work" className="scroll-mt-28 mt-3 text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
                     Where We Work
                   </h3>
                 </div>
