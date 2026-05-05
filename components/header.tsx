@@ -27,9 +27,15 @@ const serviceGroups = serviceCategories.map((category) => ({
   items: services.filter((service) => service.category === category),
 }));
 
+const aboutLinks = [
+  { label: "Who We Are", href: "#who-we-are" },
+  { label: "Where We Work", href: "#where-we-work" },
+];
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [selectedServiceCategory, setSelectedServiceCategory] = useState<string | null>(null);
   const [selectedMobileServiceCategory, setSelectedMobileServiceCategory] = useState<string | null>(null);
@@ -82,9 +88,23 @@ export function Header() {
           <Link href="#home" className={navTextClass}>
             Home
           </Link>
-          <Link href="#about" className={navTextClass}>
-            About
-          </Link>
+          <div className="group relative">
+            <button type="button" className={`${navTextClass} inline-flex items-center gap-1`}>
+              About
+              <ChevronDown size={14} />
+            </button>
+            <div className="invisible absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
+              {aboutLinks.map((aboutLink) => (
+                <Link
+                  key={aboutLink.href}
+                  href={aboutLink.href}
+                  className="block rounded-lg px-3 py-2 text-sm text-foreground transition-colors hover:bg-muted"
+                >
+                  {aboutLink.label}
+                </Link>
+              ))}
+            </div>
+          </div>
 
           <div className="group relative">
             <button type="button" className={`${navTextClass} inline-flex items-center gap-1`}>
@@ -186,6 +206,7 @@ export function Header() {
           onClick={() => {
             setIsMenuOpen((prev) => !prev);
             setIsServicesOpen(false);
+            setIsAboutOpen(false);
             setIsIndustriesOpen(false);
             setSelectedMobileServiceCategory(null);
           }}
@@ -202,9 +223,30 @@ export function Header() {
             <Link href="#home" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
               Home
             </Link>
-            <Link href="#about" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
-              About
-            </Link>
+            <div className="space-y-3">
+              <button
+                type="button"
+                className="flex w-full items-center justify-between text-lg text-foreground"
+                onClick={() => setIsAboutOpen((prev) => !prev)}
+              >
+                About
+                <ChevronDown size={18} className={`transition-transform ${isAboutOpen ? "rotate-180" : ""}`} />
+              </button>
+              {isAboutOpen && (
+                <div className="space-y-2 border-l border-border pl-4">
+                  {aboutLinks.map((aboutLink) => (
+                    <Link
+                      key={aboutLink.href}
+                      href={aboutLink.href}
+                      className="block text-base text-muted-foreground"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {aboutLink.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
             <div className="space-y-3">
               <button
