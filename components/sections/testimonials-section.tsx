@@ -110,14 +110,14 @@ export function TestimonialsSection() {
                     className="group relative overflow-hidden rounded-2xl border border-[#213164]/20 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#A60D0F]/45 hover:shadow-md"
                     style={{ animationDelay: `${index * 90}ms` }}
                   >
-                    <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#213164] via-[#A60D0F] to-[#213164]" />
+                    <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-[#213164]" />
                     <p className="text-base leading-relaxed text-muted-foreground">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="animate-in fade-in-0 slide-in-from-right-4 duration-700 rounded-3xl border border-[#213164]/20 bg-gradient-to-b from-white to-[#213164]/5 p-8 md:p-10">
+            <div className="animate-in fade-in-0 slide-in-from-right-4 duration-700 rounded-3xl border border-[#213164]/20 bg-white p-8 md:p-10">
               <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">murban ENGINEERING</h3>
 
               <h4 className="mt-8 text-2xl font-medium text-[#A60D0F]">Vision</h4>
