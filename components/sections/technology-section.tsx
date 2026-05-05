@@ -90,6 +90,7 @@ type Industry = {
   title: string;
   imageSrc: string;
   imageAlt: string;
+  imageClassName?: string;
   assetsCovered: string;
   keyServices: string[];
   whyItMatters: string;
@@ -107,6 +108,7 @@ const industries: Industry[] = [
     title: "Oil & Gas Industry",
     imageSrc: "/images/oiland gas.jpg",
     imageAlt: "Oil and gas processing plant at sunrise",
+    imageClassName: "object-center",
     assetsCovered: "Storage tanks, sphere tanks, pressure vessels, pipelines, marine terminals, FPSOs",
     keyServices: [
       "API 653 Storage Tank Inspection",
@@ -443,7 +445,7 @@ export function TechnologySection() {
                       src={industry.imageSrc}
                       alt={industry.imageAlt}
                       fill
-                      className="object-cover"
+                      className={`object-cover ${industry.imageClassName ?? ""}`.trim()}
                       sizes="(max-width: 1023px) 100vw, 280px"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/10" />
