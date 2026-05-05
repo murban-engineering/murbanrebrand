@@ -43,62 +43,66 @@ export function TestimonialsSection() {
         </div>
       </div>
 
-      {/* Company Profile + Where We Work */}
+      {/* Company Profile + Why Choose + About */}
       <div className="px-6 py-fluid-lg md:px-12 lg:px-20">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center">
-          <div>
-            <p className="text-xs uppercase tracking-widest text-muted-foreground">Company Profile</p>
-            <h3 className="murban-engineering-wordmark mt-4 text-3xl tracking-tight md:text-4xl">
-              murban ENGINEERING
-            </h3>
-            <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-              murban ENGINEERING is a specialist firm in Asset Integrity, Inspection, and
-              Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions that
-              support critical infrastructure in the oil &amp; gas, energy, marine, and industrial sectors.
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              With over 20 years of experience, we operate across Africa. Our services help clients
-              extend asset life, ensure regulatory compliance, and minimize downtime.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-xs uppercase tracking-widest text-muted-foreground">
-              Why Clients Choose murban Engineering
-            </p>
-            <div className="mt-4 space-y-4 text-muted-foreground">
-              <p className="text-base leading-relaxed">
-                <span className="font-semibold text-foreground">African-Based, Globally Credible:</span>{" "}
-                18 years of experience with international standards, operating from Kenya across 35+ countries worldwide.
+        <div className="mx-auto max-w-6xl space-y-14">
+          <div className="grid gap-10 lg:grid-cols-[1.05fr_1fr] lg:items-stretch">
+            <div className="rounded-3xl border border-[#213164]/20 bg-gradient-to-br from-[#213164]/5 via-white to-[#A60D0F]/5 p-8 shadow-sm md:p-10">
+              <p className="text-xs uppercase tracking-[0.2em] text-[#213164]">Company Profile</p>
+              <h3 className="murban-engineering-wordmark mt-4 text-3xl tracking-tight text-foreground md:text-4xl">
+                murban ENGINEERING
+              </h3>
+              <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+                murban ENGINEERING is a specialist firm in Asset Integrity, Inspection, and
+                Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions that
+                support critical infrastructure in the oil &amp; gas, energy, marine, and industrial sectors.
               </p>
-              <p className="text-base leading-relaxed">
-                <span className="font-semibold text-foreground">ISO 9001:2015 Certified:</span>{" "}
-                Every aspect of our service delivery governed by a certified quality management system.
-              </p>
-              <p className="text-base leading-relaxed">
-                <span className="font-semibold text-foreground">Sharp Focus on Safety:</span>{" "}
-                100% commitment to safety embedded in every engagement — zero tolerance on HSE.
-              </p>
-              <p className="text-base leading-relaxed">
-                <span className="font-semibold text-foreground">Fast, Effective Mobilization:</span>{" "}
-                Strategic Nairobi and Mombasa bases enable rapid deployment across East, Central, Southern and West Africa.
-              </p>
-              <p className="text-base leading-relaxed">
-                <span className="font-semibold text-foreground">International Standards:</span>{" "}
-                API, ASNT, ISO — all work executed to internationally recognized codes and standards.
-              </p>
-              <p className="text-base leading-relaxed">
-                <span className="font-semibold text-foreground">Solutions-Focused Excellence:</span>{" "}
-                Technical depth ensures any inspection challenge — conventional or advanced — can be tackled.
+              <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+                With over 20 years of experience, we operate across Africa. Our services help clients
+                extend asset life, ensure regulatory compliance, and minimize downtime.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Extended About Content */}
-      <div className="px-6 pb-fluid-xl md:px-12 lg:px-20">
-        <div className="mx-auto max-w-6xl space-y-14">
+            <div className="relative overflow-hidden rounded-3xl border border-[#A60D0F]/25 bg-[#111827] p-8 text-white shadow-lg md:p-10">
+              <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-[#A60D0F]/20 blur-3xl" />
+              <div className="pointer-events-none absolute -bottom-24 -left-20 h-60 w-60 rounded-full bg-[#213164]/35 blur-3xl" />
+              <div className="relative">
+                <p className="text-xs uppercase tracking-[0.2em] text-white/70">
+                  Why Clients Choose murban Engineering
+                </p>
+                <h4 className="mt-4 max-w-sm text-2xl font-semibold leading-tight md:text-3xl">
+                  Amazing <span className="text-[#A60D0F]">Details</span>
+                </h4>
+              </div>
+              <div className="relative mt-6 space-y-4 text-white/90">
+                <p className="text-base leading-relaxed">
+                  <span className="font-semibold text-white">African-Based, Globally Credible:</span>{" "}
+                  18 years of experience with international standards, operating from Kenya across 35+ countries worldwide.
+                </p>
+                <p className="text-base leading-relaxed">
+                  <span className="font-semibold text-white">ISO 9001:2015 Certified:</span>{" "}
+                  Every aspect of our service delivery governed by a certified quality management system.
+                </p>
+                <p className="text-base leading-relaxed">
+                  <span className="font-semibold text-white">Sharp Focus on Safety:</span>{" "}
+                  100% commitment to safety embedded in every engagement — zero tolerance on HSE.
+                </p>
+                <p className="text-base leading-relaxed">
+                  <span className="font-semibold text-white">Fast, Effective Mobilization:</span>{" "}
+                  Strategic Nairobi and Mombasa bases enable rapid deployment across East, Central, Southern and West Africa.
+                </p>
+                <p className="text-base leading-relaxed">
+                  <span className="font-semibold text-white">International Standards:</span>{" "}
+                  API, ASNT, ISO — all work executed to internationally recognized codes and standards.
+                </p>
+                <p className="text-base leading-relaxed">
+                  <span className="font-semibold text-white">Solutions-Focused Excellence:</span>{" "}
+                  Technical depth ensures any inspection challenge — conventional or advanced — can be tackled.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
             <div className="animate-in fade-in-0 slide-in-from-left-4 duration-700">
               <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">Who We Are</h3>
@@ -106,39 +110,38 @@ export function TestimonialsSection() {
                 {whoWeAre.map((item, index) => (
                   <div
                     key={item}
-                    className="rounded-xl border border-[#213164]/20 bg-card/70 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#A60D0F]/40 hover:shadow-md"
+                    className="group relative overflow-hidden rounded-2xl border border-[#213164]/20 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#A60D0F]/45 hover:shadow-md"
                     style={{ animationDelay: `${index * 90}ms` }}
                   >
-                  <p className="text-base leading-relaxed text-muted-foreground">{item}</p>
-                </div>
+                    <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#213164] via-[#A60D0F] to-[#213164]" />
+                    <p className="text-base leading-relaxed text-muted-foreground">{item}</p>
+                  </div>
                 ))}
               </div>
             </div>
 
-            <div className="animate-in fade-in-0 slide-in-from-right-4 duration-700">
+            <div className="animate-in fade-in-0 slide-in-from-right-4 duration-700 rounded-3xl border border-[#213164]/20 bg-gradient-to-b from-white to-[#213164]/5 p-8 md:p-10">
               <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">murban ENGINEERING</h3>
 
-              <h4 className="mt-8 text-2xl font-medium text-primary">Vision</h4>
+              <h4 className="mt-8 text-2xl font-medium text-[#A60D0F]">Vision</h4>
               <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
                 It is our vision to be the undisputed leaders in the field of specialized
                 Non-Destructive Testing through innovation, experience and the use of technology.
               </p>
 
-              <h4 className="mt-8 text-2xl font-medium text-primary">Mission</h4>
+              <h4 className="mt-8 text-2xl font-medium text-[#A60D0F]">Mission</h4>
               <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
                 We will deliver value to our clients by executing world class asset integrity
                 services that maximize up-time and safety.
               </p>
 
-              <h4 className="mt-8 text-2xl font-medium text-primary">Values</h4>
+              <h4 className="mt-8 text-2xl font-medium text-[#A60D0F]">Values</h4>
               <ul className="mt-3 space-y-1 text-lg leading-relaxed text-muted-foreground">
                 <li>• Respect and Diversity;</li>
                 <li>• Ethics and Integrity;</li>
                 <li>• Safety and Sustainability are important to us;</li>
               </ul>
-
             </div>
-
           </div>
 
           <div className="mx-auto mt-10 w-full max-w-md rounded-2xl border border-border bg-card/40 p-6">
@@ -177,7 +180,12 @@ export function TestimonialsSection() {
               </g>
             </svg>
           </div>
+        </div>
+      </div>
 
+      {/* Extended About Content */}
+      <div className="px-6 pb-fluid-xl md:px-12 lg:px-20">
+        <div className="mx-auto max-w-6xl space-y-14">
 
           <div>
             <div className="rounded-3xl bg-muted/60 px-6 py-12 md:px-10">
