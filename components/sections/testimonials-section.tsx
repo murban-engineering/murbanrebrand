@@ -49,15 +49,15 @@ export function TestimonialsSection() {
           <div className="grid gap-10 lg:grid-cols-[1.05fr_1fr] lg:items-stretch">
             <div className="rounded-3xl border border-[#213164]/20 bg-gradient-to-br from-[#213164]/5 via-white to-[#A60D0F]/5 p-8 shadow-sm md:p-10">
               <p className="text-xs uppercase tracking-[0.2em] text-[#213164]">Company Profile</p>
-              <h3 className="murban-engineering-wordmark mt-4 text-3xl tracking-tight text-foreground md:text-4xl">
+              <h3 className="murban-engineering-wordmark mt-4 text-3xl tracking-tight text-black md:text-4xl">
                 murban ENGINEERING
               </h3>
-              <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-5 text-lg leading-relaxed text-black">
                 murban ENGINEERING is a specialist firm in Asset Integrity, Inspection, and
                 Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions that
                 support critical infrastructure in the oil &amp; gas, energy, marine, and industrial sectors.
               </p>
-              <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-4 text-lg leading-relaxed text-black">
                 With over 20 years of experience, we operate across Africa. Our services help clients
                 extend asset life, ensure regulatory compliance, and minimize downtime.
               </p>
