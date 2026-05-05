@@ -57,7 +57,7 @@ export function FooterSection() {
             </div>
 
             <div className="mt-10 md:mt-14">
-              <h3 className="text-2xl font-semibold text-black md:text-3xl">Follow Us</h3>
+              <h3 className="text-2xl font-semibold text-[#A60D0F] md:text-3xl">Follow Us</h3>
               <div className="mt-5 flex items-center gap-4 md:mt-6">
                 <Link
                   href="https://ke.linkedin.com/company/murban-engineering"
@@ -177,7 +177,7 @@ export function FooterSection() {
 function FooterColumn({ title, links }: { title: string; links: { label: string; href: string }[] }) {
   return (
     <div>
-      <h4 className="text-2xl font-semibold text-black md:text-3xl">{title}</h4>
+      <h4 className="text-2xl font-semibold text-[#A60D0F] md:text-3xl">{title}</h4>
       <ul className="mt-6 space-y-4 md:mt-8 md:space-y-5">
         {links.map((link) => (
           <li key={link.label}>
