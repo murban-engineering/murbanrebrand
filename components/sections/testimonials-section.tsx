@@ -68,7 +68,7 @@ export function TestimonialsSection() {
               <div className="pointer-events-none absolute -bottom-24 -left-20 h-60 w-60 rounded-full bg-[#213164]/35 blur-3xl" />
               <div className="relative">
                 <p className="murban-engineering-wordmark text-xs uppercase tracking-[0.2em] text-black">
-                  Why Clients Choose murban Engineering
+                  Why Clients Choose murban ENGINEERING
                 </p>
               </div>
               <div className="relative mt-6 space-y-4 text-white/90">
