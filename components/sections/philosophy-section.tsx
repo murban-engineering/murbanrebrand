@@ -154,22 +154,36 @@ export function PhilosophySection() {
           }}
         />
         <div className="content-wide relative z-10 mx-auto text-foreground">
-          <div className="text-center">
-            <h3 className="murban-engineering-wordmark text-fluid-4xl font-medium !text-black text-balance">
-              <span className="block lowercase">murban</span>
-              <span className="block uppercase">engineering</span>
-            </h3>
-          </div>
+          <div className="grid items-stretch gap-8 lg:grid-cols-[1.05fr_1fr] lg:gap-10">
+            <div className="order-2 rounded-2xl border border-border/60 bg-background/85 p-6 backdrop-blur-sm sm:p-8 lg:order-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Our services</p>
+              <h3 className="murban-engineering-wordmark mt-3 text-fluid-4xl font-medium !text-black text-balance">
+                <span className="block lowercase">murban</span>
+                <span className="block uppercase">engineering</span>
+              </h3>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-3">
-            {serviceCategories.map((category) => (
-              <span
-                key={category}
-                className="rounded-full border border-border bg-background/80 px-4 py-2 text-xs font-medium tracking-wide text-foreground/75"
-              >
-                {category}
-              </span>
-            ))}
+              <div className="mt-8 flex flex-wrap gap-3">
+                {serviceCategories.map((category) => (
+                  <span
+                    key={category}
+                    className="rounded-full border border-border bg-background/80 px-4 py-2 text-xs font-medium tracking-wide text-foreground/75"
+                  >
+                    {category}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="order-1 relative min-h-[320px] overflow-hidden rounded-2xl border border-border/60 lg:order-2 lg:min-h-[460px]">
+              <Image
+                src="/new4.jpg"
+                alt="Murban engineering service showcase"
+                fill
+                priority={false}
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
 
 
