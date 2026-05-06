@@ -168,7 +168,8 @@ export function PhilosophySection() {
               src="/images/aerial-view-gas-oil-refinery-oil-industry.jpg"
               alt="Aerial view of gas and oil refinery"
               fill
-              priority={false}
+              priority
+              fetchPriority="high"
               className="object-cover"
               sizes="100vw"
             />
