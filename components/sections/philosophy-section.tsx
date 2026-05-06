@@ -24,6 +24,7 @@ export function PhilosophySection() {
   const [rightImageTranslateX, setRightImageTranslateX] = useState(100);
   const [titleOpacity, setTitleOpacity] = useState(1);
   const [servicesHeroProgress, setServicesHeroProgress] = useState(0);
+  const [servicesHeroImageSrc, setServicesHeroImageSrc] = useState("/images/aerial-view-gas-oil-refinery-oil-industry.jpg");
   const servicesHeroRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number | null>(null);
 
@@ -165,12 +166,14 @@ export function PhilosophySection() {
         <div ref={servicesHeroRef} className="relative h-[220vh]">
           <div className="sticky top-0 h-screen overflow-hidden">
             <Image
-              src="/images/aerial-view-gas-oil-refinery-oil-industry.jpg"
+              src={servicesHeroImageSrc}
               alt="Aerial view of gas and oil refinery"
               fill
-              priority={false}
+              priority
+              fetchPriority="high"
               className="object-cover"
               sizes="100vw"
+              onError={() => setServicesHeroImageSrc("/images/industrial-refinery.jpg")}
             />
             <div className="absolute inset-0 bg-black/45" />
 
