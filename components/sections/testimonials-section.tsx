@@ -183,6 +183,21 @@ export function TestimonialsSection() {
       {/* Extended About Content */}
       <div className="px-6 pb-fluid-xl md:px-12 lg:px-20">
         <div className="mx-auto max-w-6xl space-y-14">
+          <div>
+            <div className="rounded-3xl border border-border/60 bg-card px-6 py-10 md:px-10">
+              <div className="mx-auto max-w-5xl space-y-4">
+                <h3 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+                  Part of the Murban Group
+                </h3>
+                <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
+                  Murban Engineering Ltd is part of the Murban Group, a privately held East African holding company. Our
+                  sister company Murban Chemicals (Murchem) delivers dye injection and marine logistics services to the
+                  petroleum sector. Where a project calls for cross-disciplinary scope, the group entities collaborate
+                  under a single point of contact.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <div>
             <div className="rounded-3xl bg-muted/60 px-6 py-12 md:px-10">
