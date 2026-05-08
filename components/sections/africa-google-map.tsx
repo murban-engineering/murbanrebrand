@@ -99,7 +99,7 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
           type="image/svg+xml"
           data="/africamapsvg.svg"
           aria-label="Africa operations map"
-          className="h-full w-full"
+          className="h-full w-full scale-[1.6] origin-center"
         />
       </div>
     </div>
