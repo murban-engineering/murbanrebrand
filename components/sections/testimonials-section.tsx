@@ -10,7 +10,7 @@ const whoWeAre = [
   "Engineering",
   "Oil and Gas, Refinery, Petrochemical, Heavy Industry, Mining and Power Plant",
   "Qualified and certified inspectors and N-D-T Practitioners",
-  "Kenya headquarters with Africa expertise since 2007",
+  "Kenya headquartered. Operating since 2007.",
 ];
 
 export function TestimonialsSection() {
@@ -58,7 +58,7 @@ export function TestimonialsSection() {
                 support critical infrastructure in the oil &amp; gas, energy, marine, and industrial sectors.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-black">
-                With over 20 years of experience, we operate across Africa. Our services help clients
+                Operating since 2007, we deliver across East and Central Africa. Our services help clients
                 extend asset life, ensure regulatory compliance, and minimize downtime.
               </p>
             </div>
@@ -73,8 +73,8 @@ export function TestimonialsSection() {
               </div>
               <div className="relative mt-6 space-y-4 text-white/90">
                 <p className="text-base leading-relaxed">
-                  <span className="font-semibold text-white">African-Based, Globally Credible:</span>{" "}
-                  18 years of experience with international standards, operating from Kenya across 35+ countries worldwide.
+                  <span className="font-semibold text-white">African-based, globally credible:</span>{" "}
+                  Operating since 2007 to international standards, with delivered projects across East and Central Africa.
                 </p>
                 <p className="text-base leading-relaxed">
                   <span className="font-semibold text-white">ISO 9001:2015 Certified:</span>{" "}

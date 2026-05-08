@@ -204,7 +204,7 @@ export function HeroSection() {
         <p className="mx-auto max-w-2xl text-center text-2xl leading-relaxed text-muted-foreground md:text-3xl lg:text-[2.5rem] lg:leading-snug">
           ISO 9001:2015
           <br />
-          20+ years experience
+          Operating since 2007
           <br />
           Certified ASNT SNT-TC-1A
           <br />
