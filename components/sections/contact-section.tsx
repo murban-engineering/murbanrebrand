@@ -16,9 +16,9 @@ const officeLocations = [
   },
   {
     city: "Mombasa",
-    division: "Murban Inspection",
+    division: "murban ENGINEERING",
     lines: [
-      "Off Airport Road",
+      "Off Airport Road, Port Reitz",
       "P. O. Box 99215 – 80107",
       "Mombasa, Kenya",
       "Tel: +254 202651068",
