@@ -44,7 +44,7 @@ export function FooterSection() {
       <div className="px-6 py-12 md:px-12 md:py-14 lg:px-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_0.7fr_0.7fr_0.7fr]">
           <div>
-            <h2 className="murban-engineering-wordmark text-2xl tracking-tight !text-black md:text-3xl">murban ENGINEERING</h2>
+            <h2 className="murban-engineering-wordmark text-2xl tracking-tight !text-black md:text-3xl">MURBAN ENGINEERING LTD</h2>
             <p className="mt-6 max-w-2xl text-sm leading-relaxed text-black md:mt-8 md:text-base">
               Our operations are split into two divisions, Murban Inspection Services and Murban
               Engineering Services. We pick the best talent from the industry and continually invest

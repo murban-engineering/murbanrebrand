@@ -118,7 +118,7 @@ export function TestimonialsSection() {
             </div>
 
             <div className="animate-in fade-in-0 slide-in-from-right-4 duration-700 rounded-3xl border border-[#213164]/20 bg-white p-8 md:p-10">
-              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">murban ENGINEERING</h3>
+              <h3 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">MURBAN ENGINEERING LTD</h3>
 
               <h4 className="mt-8 text-2xl font-medium text-[#A60D0F]">Vision</h4>
               <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
