@@ -77,18 +77,18 @@ export function TestimonialsSection() {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 flex w-[min(86vw,32rem)] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-[2rem] border border-white/30 bg-white/88 px-6 py-8 text-center shadow-2xl shadow-black/25 backdrop-blur-xl md:w-[28rem] md:px-10 md:py-10">
-          <div className="flex h-24 w-24 items-center justify-center rounded-full border border-[#213164]/15 bg-white shadow-lg md:h-28 md:w-28">
+        <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 flex w-[min(72vw,24rem)] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-[1.5rem] border border-white/30 bg-white/88 px-5 py-6 text-center shadow-2xl shadow-black/25 backdrop-blur-xl md:w-[22rem] md:px-8 md:py-8">
+          <div className="flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-full border border-[#213164]/15 bg-white shadow-lg md:h-20 md:w-20">
             <Image
               src="/images/murban-logo.ico"
               alt="murban ENGINEERING logo"
-              width={86}
-              height={86}
-              className="h-16 w-16 object-contain md:h-20 md:w-20"
+              width={64}
+              height={64}
+              className="h-12 w-12 object-contain md:h-14 md:w-14"
             />
           </div>
-          <p className="mt-6 text-xs font-semibold uppercase tracking-[0.32em] text-[#A60D0F]">Outcome</p>
-          <h3 className="mt-3 text-fluid-3xl font-semibold uppercase tracking-tight text-[#213164] text-balance">
+          <p className="mt-4 text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-[#A60D0F]">Outcome</p>
+          <h3 className="mt-2 text-fluid-2xl font-semibold uppercase tracking-tight text-[#213164] text-balance">
             Asset Integrity
           </h3>
         </div>
