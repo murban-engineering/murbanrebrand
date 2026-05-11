@@ -23,18 +23,18 @@ const companyLinks = [
 const serviceLinksColumnOne = [
   { label: "Alternating Current Field Measurement", href: "/services/alternating-current-field-measurement" },
   { label: "API 570 Piping Inspection and Certification", href: "/services/api-570-piping-inspection-and-certification" },
-  { label: "Murban Fitness for Service", href: "/services/api-579-murban-fitness-for-service" },
-  { label: "Murban Risk Based Inspection", href: "/services/api-580-murban-risk-based-inspection" },
+  { label: "Fitness for Service", href: "/services/api-579-fitness-for-service" },
+  { label: "Risk Based Inspection", href: "/services/api-580-risk-based-inspection" },
   { label: "Boiler Inspection", href: "/services/boiler-inspection-services" },
   { label: "Lifting Equipment Thorough Examination and Certification", href: "/services/lifting-equipment-thorough-examination-and-certification" },
 ];
 
 const serviceLinksColumnTwo = [
-  { label: "Murban Pressure Testing", href: "/services/murban-pressure-testing" },
+  { label: "Pressure Testing", href: "/services/pressure-testing" },
   { label: "Paint Inspection", href: "/services/paint-coating-inspection" },
   { label: "PMI Testing", href: "/services/positive-material-identification-testing" },
   { label: "RT Service", href: "/services/rt-radiographic-services" },
-  { label: "Risk Based Inspection", href: "/services/api-580-murban-risk-based-inspection" },
+  { label: "Risk Based Inspection", href: "/services/api-580-risk-based-inspection" },
   { label: "Sphere Tank Inspection", href: "/services/sphere-tank-inspections" },
 ];
 
