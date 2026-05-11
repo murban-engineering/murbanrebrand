@@ -125,8 +125,8 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/pexels-arda-kaykisiz-672105204-37510648.jpg"
-                alt="Non-destructive testing technician inspecting industrial equipment"
+                src="/ChatGPT Image May 11, 2026, 06_30_27 PM.png"
+                alt="Murban Engineering industrial services hero image"
                 fill
                 className="object-cover"
                 priority
