@@ -93,13 +93,13 @@ export function AfricaGoogleMap({ className }: AfricaGoogleMapProps) {
       aria-label="Africa map showing Murban operations"
       role="img"
     >
-      <div className="relative aspect-[14/9] w-full min-h-[360px] overflow-hidden rounded-xl bg-transparent">
+      <div className="relative aspect-[10/11] w-full min-h-[360px] rounded-xl bg-transparent">
         <object
           ref={mapRef}
           type="image/svg+xml"
           data="/africamapsvg.svg"
           aria-label="Africa operations map"
-          className="h-full w-full scale-[1.6] origin-center"
+          className="block h-full w-full"
         />
       </div>
     </div>
