@@ -231,11 +231,11 @@ const industries: Industry[] = [
       "Thermal Imaging for hot spot detection in engines and exhausts",
       "Paint & Coating Assessment in ballast and cargo tanks",
       "Pressure Testing of marine pipelines and fluid systems",
-      "Lifting Gear and Lifesaving Equipment Certification",
-      "Compliance inspections under SOLAS, IMO, and Classification Society standards",
+      "Lifting gear and lifesaving equipment inspection support",
+      "Third-party inspection support to class societies and IACS member surveyors",
     ],
     whyItMatters:
-      "Marine environments expose vessels and offshore structures to accelerated wear from corrosion, mechanical loading, and extreme conditions. At murban ENGINEERING, we provide specialized marine inspection services that enhance safety, ensure class compliance, and support the longevity of your marine assets. Whether for in-service vessels, dockside inspections, or offshore operations, our NDT and engineering capabilities help mitigate risk, reduce repair costs, and maintain operational readiness at sea.",
+      "Marine environments expose vessels and offshore structures to accelerated wear from corrosion, mechanical loading, and extreme conditions. At murban ENGINEERING, we provide specialized marine inspection services that enhance safety, support class and regulatory compliance workflows, and contribute to the longevity of your marine assets. Whether for in-service vessels, dockside inspections, or offshore operations, our NDT and engineering capabilities help mitigate risk, reduce repair costs, and maintain operational readiness at sea.",
   },
 ];
 
