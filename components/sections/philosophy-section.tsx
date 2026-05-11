@@ -189,7 +189,7 @@ export function PhilosophySection() {
                 <p className="inline-flex rounded-full bg-white/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-primary shadow-lg shadow-black/15 backdrop-blur-sm">Our services</p>
                 <h3 className="murban-engineering-wordmark mt-3 text-fluid-4xl font-medium text-white text-balance">
                   <span className="block uppercase text-[#C82032] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]">MURBAN</span>
-                  <span className="mt-2 inline-block rounded-full bg-white/90 px-4 py-2 uppercase text-[#213164] shadow-lg shadow-black/20 backdrop-blur-sm tracking-[0.2em] text-xl md:text-3xl">ENGINEERING LTD</span>
+                  <span className="murban-engineering-wordmark-subtitle mt-2 inline-block rounded-full bg-white/90 px-4 py-2 text-[#213164] shadow-lg shadow-black/20 backdrop-blur-sm text-xl md:text-3xl">ENGINEERING LTD</span>
                 </h3>
 
                 <div className="mt-8 flex flex-wrap gap-3">

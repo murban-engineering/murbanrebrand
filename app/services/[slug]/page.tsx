@@ -23,7 +23,7 @@ const animatedServiceContent: Record<
 > = {
   "murban-uav-inspection": {
     paragraphs: [
-      "murban ENGINEERING offers UAV inspection services, providing efficient and cost-effective aerial assessments of assets. Our UAVs are equipped with high-resolution cameras and sensors, allowing us to capture valuable data from hard-to-reach areas.",
+      "MURBAN ENGINEERING LTD offers UAV inspection services, providing efficient and cost-effective aerial assessments of assets. Our UAVs are equipped with high-resolution cameras and sensors, allowing us to capture valuable data from hard-to-reach areas.",
       "With our UAV inspection services, you can access comprehensive visual data and reports, enabling informed decision-making for maintenance and asset management.",
     ],
     advantages: [
@@ -36,7 +36,7 @@ const animatedServiceContent: Record<
   "ultrasonic-flaw-testing-b-scan": {
     paragraphs: [
       "Our B-scan ultrasonic flaw testing services go beyond traditional methods, allowing us to create detailed corrosion maps of materials and structures.",
-      "murban ENGINEERING's expertise in corrosion mapping ensures precise assessments, enabling targeted maintenance and corrosion mitigation strategies to extend the lifespan and safety of your assets.",
+      "MURBAN ENGINEERING LTD's expertise in corrosion mapping ensures precise assessments, enabling targeted maintenance and corrosion mitigation strategies to extend the lifespan and safety of your assets.",
     ],
     advantages: [
       "Provides detailed cross-sectional imaging of materials for defect characterisation.",
@@ -48,7 +48,7 @@ const animatedServiceContent: Record<
   "ultrasonic-flaw-testing-c-scan": {
     paragraphs: [
       "Our C-scan ultrasonic flaw testing services go beyond traditional methods, allowing us to create detailed corrosion maps of materials and structures.",
-      "murban ENGINEERING's expertise in corrosion mapping ensures precise assessments, enabling targeted maintenance and corrosion mitigation strategies to extend the lifespan and safety of your assets.",
+      "MURBAN ENGINEERING LTD's expertise in corrosion mapping ensures precise assessments, enabling targeted maintenance and corrosion mitigation strategies to extend the lifespan and safety of your assets.",
     ],
     advantages: [
       "Provides detailed corrosion mapping for accurate assessment of asset condition.",
@@ -59,7 +59,7 @@ const animatedServiceContent: Record<
   },
   "utm-ultrasonic-thickness-measurement": {
     paragraphs: [
-      "murban ENGINEERING offers ultrasonic thickness measurement services to assess material thickness and identify thinning in critical components. Our precise measurements help you monitor the integrity of materials and structures, ensuring they meet safety and compliance requirements.",
+      "MURBAN ENGINEERING LTD offers ultrasonic thickness measurement services to assess material thickness and identify thinning in critical components. Our precise measurements help you monitor the integrity of materials and structures, ensuring they meet safety and compliance requirements.",
       "With our expertise, you can address potential thickness-related issues promptly and prevent structural failures.",
     ],
     advantages: [
@@ -71,9 +71,9 @@ const animatedServiceContent: Record<
   },
   "visual-inspection": {
     paragraphs: [
-      "Visual inspection is a versatile and essential service offered by murban ENGINEERING, encompassing a wide range of inspection techniques. Our skilled inspectors conduct thorough visual assessments of equipment, structures, and components to identify defects, wear and tear, or irregularities.",
+      "Visual inspection is a versatile and essential service offered by MURBAN ENGINEERING LTD, encompassing a wide range of inspection techniques. Our skilled inspectors conduct thorough visual assessments of equipment, structures, and components to identify defects, wear and tear, or irregularities.",
       "We provide detailed reports and recommendations, enabling you to address issues promptly and maintain the safety and reliability of your assets.",
-      "murban ENGINEERING is committed to delivering comprehensive asset integrity services across a diverse spectrum of industries, ensuring safety, compliance, and operational excellence.",
+      "MURBAN ENGINEERING LTD is committed to delivering comprehensive asset integrity services across a diverse spectrum of industries, ensuring safety, compliance, and operational excellence.",
     ],
     advantages: [
       "Provides a cost-effective method for detecting surface defects and anomalies.",

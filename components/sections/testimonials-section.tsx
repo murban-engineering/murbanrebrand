@@ -21,11 +21,11 @@ export function TestimonialsSection() {
         <p className="content-wide text-fluid-3xl leading-relaxed text-foreground text-pretty">
           We operate through two divisions:
           <br />
-          Murban Inspection Services
+          MURBAN Inspection Services
           <br />
-          murban ENGINEERING Services
+          MURBAN ENGINEERING LTD Services
           <br />
-          With a fully equipped laboratory in Mombasa and mobile teams deployed regionally, Murban is
+          With a fully equipped laboratory in Mombasa and mobile teams deployed regionally, MURBAN ENGINEERING LTD is
           your trusted partner for both on-site and lab-based inspections, delivered with safety,
           speed, and precision.
         </p>
@@ -35,7 +35,7 @@ export function TestimonialsSection() {
       <div
         className="relative isolate min-h-screen w-full overflow-hidden bg-[#101522]"
         role="img"
-        aria-label="Murban asset integrity connects inspection services and fabrication"
+        aria-label="MURBAN ENGINEERING LTD asset integrity connects inspection services and fabrication"
       >
         <div className="grid min-h-screen grid-cols-1 md:grid-cols-2">
           <div className="relative flex min-h-[50vh] items-center justify-center overflow-hidden px-6 py-24 text-center md:min-h-screen md:px-12 lg:px-20">
@@ -81,7 +81,7 @@ export function TestimonialsSection() {
           <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#213164]/15 bg-white shadow-lg md:h-16 md:w-16">
             <Image
               src="/images/murban-logo.ico"
-              alt="murban ENGINEERING logo"
+              alt="MURBAN ENGINEERING LTD logo"
               width={52}
               height={52}
               className="h-10 w-10 object-contain md:h-12 md:w-12"
@@ -101,10 +101,10 @@ export function TestimonialsSection() {
             <div className="rounded-3xl border border-[#213164]/20 bg-gradient-to-br from-[#213164]/5 via-white to-[#A60D0F]/5 p-8 shadow-sm md:p-10">
               <p className="text-xs uppercase tracking-[0.2em] text-[#213164]">Company Profile</p>
               <h3 className="murban-engineering-wordmark mt-4 text-3xl tracking-tight !text-black md:text-4xl">
-                murban ENGINEERING
+                MURBAN ENGINEERING LTD
               </h3>
               <p className="mt-5 text-lg leading-relaxed text-black">
-                murban ENGINEERING is a specialist firm in Asset Integrity, Inspection, and
+                MURBAN ENGINEERING LTD is a specialist firm in Asset Integrity, Inspection, and
                 Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions that
                 support critical infrastructure in the oil &amp; gas, energy, marine, and industrial sectors.
               </p>
@@ -118,7 +118,7 @@ export function TestimonialsSection() {
               <div className="pointer-events-none absolute -bottom-24 -left-20 h-60 w-60 rounded-full bg-[#213164]/35 blur-3xl" />
               <div className="relative">
                 <p className="murban-engineering-wordmark text-xs uppercase tracking-[0.2em] text-black">
-                  Why Clients Choose murban ENGINEERING
+                  Why Clients Choose MURBAN ENGINEERING LTD
                 </p>
               </div>
               <div className="relative mt-6 space-y-4 text-white/90">
@@ -240,7 +240,7 @@ export function TestimonialsSection() {
                   Part of the Murban Group
                 </h3>
                 <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
-                  Murban Engineering Ltd is part of the Murban Group, a privately held East African holding company. Our
+                  MURBAN ENGINEERING LTD is part of the Murban Group, a privately held East African holding company. Our
                   sister company Murban Chemicals (
                   <a
                     href="https://www.murchem.com/"

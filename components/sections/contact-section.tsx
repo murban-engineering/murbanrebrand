@@ -3,7 +3,7 @@ import { Upload } from "lucide-react";
 const officeLocations = [
   {
     city: "Nairobi",
-    division: "murban ENGINEERING",
+    division: "MURBAN ENGINEERING LTD",
     lines: [
       "POSTAL ADDRESS",
       "P.O. BOX 142-00502 Nairobi Karen",
@@ -16,7 +16,7 @@ const officeLocations = [
   },
   {
     city: "Mombasa",
-    division: "murban ENGINEERING",
+    division: "MURBAN ENGINEERING LTD",
     lines: [
       "Off Airport Road, Port Reitz",
       "P. O. Box 99215, 80107",
@@ -46,7 +46,7 @@ export function ContactSection() {
           <div className="flex h-full flex-col justify-between">
             <div>
               <span className="inline-flex rounded-full border border-white/30 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/80">
-                Contact Murban
+                Contact MURBAN ENGINEERING LTD
               </span>
               <h2 className="mt-6 text-4xl font-semibold tracking-tight text-white md:text-6xl">Contact us</h2>
             </div>

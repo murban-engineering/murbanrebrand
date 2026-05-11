@@ -224,7 +224,7 @@ const serviceSeed = [
 export const services: Service[] = serviceSeed.map((service) => ({
   ...service,
   slug: createSlug(service.title),
-  overview: `${service.title} is delivered by murban ENGINEERING as a focused ${service.category.toLowerCase()} offering that combines qualified personnel, proven procedures, and practical field execution for industrial reliability.`,
+  overview: `${service.title} is delivered by MURBAN ENGINEERING LTD as a focused ${service.category.toLowerCase()} offering that combines qualified personnel, proven procedures, and practical field execution for industrial reliability.`,
   benefits: [
     `Improves safety and compliance outcomes for ${service.title.toLowerCase()} engagements.`,
     "Delivers clear reporting to support maintenance and operational decisions.",
