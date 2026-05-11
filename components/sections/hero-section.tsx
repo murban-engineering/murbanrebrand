@@ -125,8 +125,8 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/images/hero-industrial.jpg"
-                alt="Industrial storage tanks with safety railings and piping"
+                src="/pexels-arda-kaykisiz-672105204-37510648.jpg"
+                alt="Industrial inspection site with technician and equipment"
                 fill
                 className="object-cover"
                 priority
