@@ -439,14 +439,14 @@ export function TechnologySection() {
                 key={industry.title}
                 className="scroll-mt-28 overflow-hidden rounded-2xl border border-border bg-card p-5 text-card-foreground shadow-sm md:p-6"
               >
-                <div className="grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)] lg:items-start">
-                  <div className="relative h-52 overflow-hidden rounded-xl border border-border sm:h-64 lg:h-full lg:min-h-[280px]">
+                <div className="grid gap-6 lg:grid-cols-[minmax(360px,42%)_minmax(0,1fr)] lg:items-stretch xl:grid-cols-[minmax(440px,46%)_minmax(0,1fr)]">
+                  <div className="relative h-52 overflow-hidden rounded-xl border border-border sm:h-64 lg:h-full lg:min-h-[420px] xl:min-h-[520px]">
                     <Image
                       src={industry.imageSrc}
                       alt={industry.imageAlt}
                       fill
                       className={`object-cover ${industry.imageClassName ?? ""}`.trim()}
-                      sizes="(max-width: 1023px) 100vw, 280px"
+                      sizes="(max-width: 1023px) 100vw, (max-width: 1279px) 42vw, 46vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/10" />
                   </div>
