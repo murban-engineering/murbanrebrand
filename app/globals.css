@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  scroll-padding-top: 7rem;
+}
+
 :root {
   --background: #FFFFFF;
   --foreground: #0A0A0A;

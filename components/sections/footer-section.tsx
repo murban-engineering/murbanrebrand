@@ -13,12 +13,12 @@ import {
 } from "@/components/ui/dialog";
 
 const companyLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
-  { label: "Industry Solutions", href: "#industries" },
-  { label: "Our Projects", href: "#our-projects" },
+  { label: "Home", href: "/#home" },
+  { label: "About Us", href: "/#about" },
+  { label: "Industry Solutions", href: "/#industries" },
+  { label: "Our Projects", href: "/#our-projects" },
   { label: "Murchem", href: "https://www.murchem.com/", isExternal: true },
-  { label: "Contact Us", href: "#contact-us" },
+  { label: "Contact Us", href: "/#contact-us" },
 ];
 
 const serviceLinksColumnOne = [
