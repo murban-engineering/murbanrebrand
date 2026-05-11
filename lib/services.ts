@@ -105,7 +105,7 @@ const serviceSeed = [
   },
   {
     category: "Advanced NDT & Specialized Technologies",
-    title: "Murban Phased Array Testing",
+    title: "Phased Array Testing",
     shortDescription:
       "Advanced phased array ultrasonics for complex geometry and high-resolution flaw detection.",
   },
@@ -129,13 +129,13 @@ const serviceSeed = [
   },
   {
     category: "Engineering Assessments & Certification",
-    title: "API 579 Murban Fitness for Service",
+    title: "API 579 Fitness for Service",
     shortDescription:
       "API 579-based integrity assessments that uncover defects, document risk, and guide repair or replacement decisions.",
   },
   {
     category: "Engineering Assessments & Certification",
-    title: "API 580 Murban Risk Based Inspection",
+    title: "API 580 Risk Based Inspection",
     shortDescription:
       "Risk-based inspection strategies prioritizing safety-critical assets and intervals.",
   },
@@ -153,13 +153,13 @@ const serviceSeed = [
   },
   {
     category: "General Non-Destructive Testing (NDT)",
-    title: "Murban Gas Detection",
+    title: "Gas Detection",
     shortDescription:
       "Comprehensive monitoring solutions that detect hazardous gases early and keep worksites compliant.",
   },
   {
     category: "General Non-Destructive Testing (NDT)",
-    title: "Murban Pressure Testing",
+    title: "Pressure Testing",
     shortDescription:
       "Verify system strength and tightness through controlled pressure testing.",
   },
@@ -183,7 +183,7 @@ const serviceSeed = [
   },
   {
     category: "Advanced NDT & Specialized Technologies",
-    title: "Murban UAV Inspection",
+    title: "UAV Inspection",
     shortDescription:
       "Aerial inspection using drone-based technology to access challenging environments.",
   },
@@ -239,5 +239,17 @@ export const serviceCategories = [
   "Engineering & Fabrication",
 ] as const;
 
-export const getServiceBySlug = (slug: string) =>
-  services.find((service) => service.slug === slug);
+const legacyServiceSlugAliases: Record<string, string> = {
+  "murban-phased-array-testing": "phased-array-testing",
+  "api-579-murban-fitness-for-service": "api-579-fitness-for-service",
+  "api-580-murban-risk-based-inspection": "api-580-risk-based-inspection",
+  "murban-gas-detection": "gas-detection",
+  "murban-pressure-testing": "pressure-testing",
+  "murban-uav-inspection": "uav-inspection",
+};
+
+export const getServiceBySlug = (slug: string) => {
+  const canonicalSlug = legacyServiceSlugAliases[slug] ?? slug;
+
+  return services.find((service) => service.slug === canonicalSlug);
+};
