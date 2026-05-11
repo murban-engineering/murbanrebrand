@@ -192,7 +192,7 @@ export function PhilosophySection() {
                 <div className="mt-8 flex flex-wrap gap-3">
                   {[
                     { label: "General Non-Destructive Testing (NDT)", href: "#services-general-non-destructive-testing-ndt" },
-                    { label: "Advanced NDT & Specialized Technologies", href: "#services-advanced-ndt-specialized-technologies" },
+                    { label: "Advanced NDT & Specialised Technologies", href: "#services-advanced-ndt-specialised-technologies" },
                     { label: "Engineering Assessments & Certification", href: "#services-engineering-assessments-certification" },
                     { label: "Engineering & Fabrication", href: "#services-engineering-fabrication" },
                   ].map((category) => (

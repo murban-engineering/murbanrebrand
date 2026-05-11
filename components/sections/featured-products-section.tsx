@@ -29,7 +29,7 @@ export function FeaturedProductsSection() {
       {/* Section Title */}
       <div className="px-6 py-fluid-lg text-center md:px-12 lg:px-20">
         <h2 className="murban-engineering-wordmark text-fluid-4xl tracking-tight text-balance">
-          MURBAN ENGINEERING LTD – NDT & Asset Integrity Services
+          MURBAN ENGINEERING LTD: NDT & Asset Integrity Services
         </h2>
         <p className="mx-auto mt-6 max-w-md text-fluid-sm text-muted-foreground">
           Technology

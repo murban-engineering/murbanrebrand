@@ -39,9 +39,9 @@ const animatedServiceContent: Record<
       "murban ENGINEERING's expertise in corrosion mapping ensures precise assessments, enabling targeted maintenance and corrosion mitigation strategies to extend the lifespan and safety of your assets.",
     ],
     advantages: [
-      "Provides detailed cross-sectional imaging of materials for defect characterization.",
+      "Provides detailed cross-sectional imaging of materials for defect characterisation.",
       "Detects internal defects such as cracks, voids, and inclusions accurately.",
-      "Enables precise defect sizing and localization for informed decision-making.",
+      "Enables precise defect sizing and localisation for informed decision-making.",
       "Supports quality control and assurance in manufacturing and maintenance.",
     ],
   },
@@ -52,7 +52,7 @@ const animatedServiceContent: Record<
     ],
     advantages: [
       "Provides detailed corrosion mapping for accurate assessment of asset condition.",
-      "Helps prioritize maintenance and repair activities based on severity.",
+      "Helps prioritise maintenance and repair activities based on severity.",
       "Enables proactive corrosion management to extend asset lifespan.",
       "Supports compliance with regulatory requirements and industry standards.",
     ],

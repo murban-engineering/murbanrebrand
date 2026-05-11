@@ -119,7 +119,7 @@ export function TestimonialsSection() {
                 support critical infrastructure in the oil &amp; gas, energy, marine, and industrial sectors.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-black">
-                Operating since 2007 across East, Central, Southern and West Africa, with delivered projects in 20+ countries. Our services help clients extend asset life, ensure regulatory compliance, and minimize downtime.
+                Operating since 2007 across East, Central, Southern and West Africa, with delivered projects in 20+ countries. Our services help clients extend asset life, ensure regulatory compliance, and minimise downtime.
               </p>
             </div>
 
@@ -142,19 +142,19 @@ export function TestimonialsSection() {
                 </p>
                 <p className="text-base leading-relaxed">
                   <span className="font-semibold text-white">Sharp Focus on Safety:</span>{" "}
-                  100% commitment to safety embedded in every engagement — zero tolerance on HSE.
+                  100% commitment to safety embedded in every engagement, with zero tolerance on HSE.
                 </p>
                 <p className="text-base leading-relaxed">
-                  <span className="font-semibold text-white">Fast, Effective Mobilization:</span>{" "}
+                  <span className="font-semibold text-white">Fast, Effective Mobilisation:</span>{" "}
                   Strategic Nairobi and Mombasa bases enable rapid deployment across East, Central, Southern and West Africa.
                 </p>
                 <p className="text-base leading-relaxed">
                   <span className="font-semibold text-white">International Standards:</span>{" "}
-                  API, ASNT, ISO — all work executed to internationally recognized codes and standards.
+                  API, ASNT and ISO: all work executed to internationally recognised codes and standards.
                 </p>
                 <p className="text-base leading-relaxed">
                   <span className="font-semibold text-white">Solutions-Focused Excellence:</span>{" "}
-                  Technical depth ensures any inspection challenge — conventional or advanced — can be tackled.
+                  Technical depth ensures any inspection challenge, conventional or advanced, can be tackled.
                 </p>
               </div>
             </div>
@@ -182,14 +182,14 @@ export function TestimonialsSection() {
 
               <h4 className="mt-8 text-2xl font-medium text-[#A60D0F]">Vision</h4>
               <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
-                It is our vision to be the undisputed leaders in the field of specialized
+                It is our vision to be the undisputed leaders in the field of specialised
                 Non-Destructive Testing through innovation, experience and the use of technology.
               </p>
 
               <h4 className="mt-8 text-2xl font-medium text-[#A60D0F]">Mission</h4>
               <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
                 We will deliver value to our clients by executing world class asset integrity
-                services that maximize up-time and safety.
+                services that maximise up-time and safety.
               </p>
 
               <h4 className="mt-8 text-2xl font-medium text-[#A60D0F]">Values</h4>
