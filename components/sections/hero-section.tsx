@@ -139,8 +139,8 @@ export function HeroSection() {
               >
                 <div className="w-full bg-gradient-to-t from-black/70 via-black/40 to-transparent px-6 pb-20 pt-20 text-white md:px-12 md:pb-14 md:pt-24 lg:px-16">
                   <h1 className="murban-engineering-wordmark text-4xl leading-tight md:text-6xl">
-                    <span className="block uppercase text-[#C82032]">MURBAN</span>
-                    <span className="block uppercase text-[#213164] tracking-[0.2em] text-2xl md:text-4xl">ENGINEERING LTD</span>
+                    <span className="block uppercase text-[#C82032] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]">MURBAN</span>
+                    <span className="mt-2 inline-block rounded-full bg-white/90 px-4 py-2 uppercase text-[#213164] shadow-lg shadow-black/20 backdrop-blur-sm tracking-[0.2em] text-2xl md:text-4xl">ENGINEERING LTD</span>
                   </h1>
                   <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/90 md:text-base">
                     A specialist firm in Asset Integrity, Inspection, and Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions for oil & gas, energy, marine, and industrial sectors across Africa.
