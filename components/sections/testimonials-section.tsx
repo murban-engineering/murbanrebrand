@@ -14,7 +14,7 @@ const whoWeAre = [
 
 export function TestimonialsSection() {
   return (
-    <section id="about" className="bg-background">
+    <section id="about" className="scroll-mt-28 bg-background">
       {/* Large Text Statement */}
       <div className="px-6 py-fluid-xl md:px-12 lg:px-20">
         <p className="content-wide text-fluid-3xl leading-relaxed text-foreground text-pretty">

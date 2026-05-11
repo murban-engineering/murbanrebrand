@@ -28,6 +28,7 @@ const serviceGroups = serviceCategories.map((category) => ({
 }));
 
 const aboutLinks = [
+  { label: "About", href: "#about" },
   { label: "Who We Are", href: "#who-we-are" },
   { label: "Where We Work", href: "#where-we-work" },
 ];
