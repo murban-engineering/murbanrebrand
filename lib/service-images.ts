@@ -51,7 +51,7 @@ const explicitKeywordMap: Array<{ keyword: string; file: string }> = [
     file: "Aboveground Storage Tank Inspection.jpg",
   },
   { keyword: "api 510 pressure vessel inspection", file: "Pressure Vessel Inspection.jpg" },
-  { keyword: "ultrasonic flaw testing c scan", file: "Ultrasonic Flaw Testing C-Scan.jpg" },
+  { keyword: "ultrasonic flaw testing c scan", file: "radiography.jpg" },
   { keyword: "ultrasonic flaw testing b scan", file: "Ultrasonic Flaw Testing B-Scan.jpg" },
   { keyword: "visual inspection", file: "/view-male-engineer-work-engineers-day-celebration.jpg" },
   { keyword: "magnetic particle testing", file: "Magnetic Particle Testing.jpg" },
