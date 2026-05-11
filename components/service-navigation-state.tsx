@@ -7,12 +7,26 @@ import { type MouseEvent, type ReactNode } from "react";
 const SERVICE_RETURN_URL_KEY = "murban:return:url";
 const SERVICE_RETURN_SCROLL_KEY = "murban:return:scroll";
 
+function isServiceDetailHref(href: LinkProps["href"]) {
+  if (typeof href === "string") {
+    return href.startsWith("/services/");
+  }
+
+  return typeof href.pathname === "string" && href.pathname.startsWith("/services/");
+}
+
 export function rememberServiceOrigin() {
   if (typeof window === "undefined") return;
 
   const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
   sessionStorage.setItem(SERVICE_RETURN_URL_KEY, currentUrl);
   sessionStorage.setItem(SERVICE_RETURN_SCROLL_KEY, String(window.scrollY));
+}
+
+export function clearServiceScrollRestore() {
+  if (typeof window === "undefined") return;
+
+  sessionStorage.removeItem(SERVICE_RETURN_SCROLL_KEY);
 }
 
 export function ServiceDetailBackButton({ className }: { className?: string }) {
@@ -44,7 +58,10 @@ export function ServiceLink({ children, onClick, ...props }: ServiceLinkProps & 
     <Link
       {...props}
       onClick={(event) => {
-        rememberServiceOrigin();
+        if (isServiceDetailHref(props.href)) {
+          rememberServiceOrigin();
+        }
+
         onClick?.(event);
       }}
     >
