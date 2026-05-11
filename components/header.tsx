@@ -33,11 +33,17 @@ const aboutLinks = [
   { label: "Where We Work", href: "/#where-we-work" },
 ];
 
+const projectLinks = [
+  { label: "Our Projects", href: "/#our-projects" },
+  { label: "Projects Video", href: "/#projects-video" },
+];
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
+  const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   const [selectedServiceCategory, setSelectedServiceCategory] = useState<string | null>(null);
   const [selectedMobileServiceCategory, setSelectedMobileServiceCategory] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -182,9 +188,23 @@ export function Header() {
             </div>
           </div>
 
-          <Link href="/#our-projects" className={navTextClass}>
-            Our Projects
-          </Link>
+          <div className="group relative">
+            <button type="button" className={`${navTextClass} inline-flex items-center gap-1`}>
+              Our Projects
+              <ChevronDown size={14} />
+            </button>
+            <div className="invisible absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-border bg-background/95 p-2 opacity-0 shadow-xl backdrop-blur transition-all duration-200 group-hover:visible group-hover:opacity-100">
+              {projectLinks.map((projectLink) => (
+                <Link
+                  key={projectLink.href}
+                  href={projectLink.href}
+                  className="block rounded-lg px-3 py-2 text-sm text-foreground transition-colors hover:bg-muted"
+                >
+                  {projectLink.label}
+                </Link>
+              ))}
+            </div>
+          </div>
           <Link href="/#contact-us" className={navTextClass}>
             Contact
           </Link>
@@ -208,6 +228,7 @@ export function Header() {
             setIsServicesOpen(false);
             setIsAboutOpen(false);
             setIsIndustriesOpen(false);
+            setIsProjectsOpen(false);
             setSelectedMobileServiceCategory(null);
           }}
           className={`rounded-md p-1 transition-colors md:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
@@ -321,9 +342,30 @@ export function Header() {
               )}
             </div>
 
-            <Link href="/#our-projects" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
-              Our Projects
-            </Link>
+            <div className="space-y-3">
+              <button
+                type="button"
+                className="flex w-full items-center justify-between text-lg text-foreground"
+                onClick={() => setIsProjectsOpen((prev) => !prev)}
+              >
+                Our Projects
+                <ChevronDown size={18} className={`transition-transform ${isProjectsOpen ? "rotate-180" : ""}`} />
+              </button>
+              {isProjectsOpen && (
+                <div className="space-y-2 border-l border-border pl-4">
+                  {projectLinks.map((projectLink) => (
+                    <Link
+                      key={projectLink.href}
+                      href={projectLink.href}
+                      className="block text-base text-muted-foreground"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {projectLink.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             <Link href="/#contact-us" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
