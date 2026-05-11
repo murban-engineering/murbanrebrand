@@ -38,7 +38,7 @@ export function ProjectVideoSection() {
   }, [playVideo]);
 
   return (
-    <section id="projects-video" ref={sectionRef} className="bg-background scroll-mt-24">
+    <section id="projects-video" ref={sectionRef} className="bg-background scroll-mt-4">
       <div className="relative left-1/2 aspect-[16/9] w-screen -translate-x-1/2 overflow-hidden bg-[#213164] md:aspect-[21/9]">
         <iframe
           ref={iframeRef}
