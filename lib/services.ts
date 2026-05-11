@@ -21,7 +21,7 @@ const serviceSeed = [
       "Full-scope Non-Destructive Testing coverage tailored to your assets and regulations.",
   },
   {
-    category: "Advanced NDT & Specialized Technologies",
+    category: "Advanced NDT & Specialised Technologies",
     title: "Tank Calibration Services",
     shortDescription:
       "Accurate volume measurement and tank calibration across all storage configurations.",
@@ -47,13 +47,13 @@ const serviceSeed = [
     category: "General Non-Destructive Testing (NDT)",
     title: "Ultrasonic Flaw Testing C-Scan",
     shortDescription:
-      "Detailed corrosion mapping and flaw visualization using advanced ultrasonic C-scan imaging.",
+      "Detailed corrosion mapping and flaw visualisation using advanced ultrasonic C-scan imaging.",
   },
   {
     category: "General Non-Destructive Testing (NDT)",
     title: "Ultrasonic Flaw Testing B-Scan",
     shortDescription:
-      "Cross-sectional ultrasonic imaging for defect characterization, sizing, and localization.",
+      "Cross-sectional ultrasonic imaging for defect characterisation, sizing, and localisation.",
   },
   {
     category: "General Non-Destructive Testing (NDT)",
@@ -104,25 +104,25 @@ const serviceSeed = [
       "Verify alloy composition quickly with positive material identification technology.",
   },
   {
-    category: "Advanced NDT & Specialized Technologies",
+    category: "Advanced NDT & Specialised Technologies",
     title: "Phased Array Testing",
     shortDescription:
       "Advanced phased array ultrasonics for complex geometry and high-resolution flaw detection.",
   },
   {
-    category: "Advanced NDT & Specialized Technologies",
+    category: "Advanced NDT & Specialised Technologies",
     title: "3D Laser Scanning Services",
     shortDescription:
       "High-accuracy spatial data capture for asset management, design planning, and facility maintenance.",
   },
   {
-    category: "Advanced NDT & Specialized Technologies",
+    category: "Advanced NDT & Specialised Technologies",
     title: "Thermal Camera Inspection",
     shortDescription:
       "Thermal imaging surveys that uncover temperature anomalies and emerging issues before they escalate.",
   },
   {
-    category: "Advanced NDT & Specialized Technologies",
+    category: "Advanced NDT & Specialised Technologies",
     title: "Alternating Current Field Measurement",
     shortDescription:
       "Advanced electromagnetic inspection that detects and sizes surface cracks with exceptional accuracy.",
@@ -137,7 +137,7 @@ const serviceSeed = [
     category: "Engineering Assessments & Certification",
     title: "API 580 Risk Based Inspection",
     shortDescription:
-      "Risk-based inspection strategies prioritizing safety-critical assets and intervals.",
+      "Risk-based inspection strategies prioritising safety-critical assets and intervals.",
   },
   {
     category: "Engineering Assessments & Certification",
@@ -164,7 +164,7 @@ const serviceSeed = [
       "Verify system strength and tightness through controlled pressure testing.",
   },
   {
-    category: "Advanced NDT & Specialized Technologies",
+    category: "Advanced NDT & Specialised Technologies",
     title: "Floormap 3D MFL Scanning",
     shortDescription:
       "3D magnetic flux leakage scanning that pinpoints tank floor defects with precision.",
@@ -182,7 +182,7 @@ const serviceSeed = [
       "Measuring metal surface strength to validate fabrication quality and wear resistance.",
   },
   {
-    category: "Advanced NDT & Specialized Technologies",
+    category: "Advanced NDT & Specialised Technologies",
     title: "UAV Inspection",
     shortDescription:
       "Aerial inspection using drone-based technology to access challenging environments.",
@@ -210,7 +210,7 @@ const serviceSeed = [
   },
   {
     category: "Engineering & Fabrication",
-    title: "Specialized Welding",
+    title: "Specialised Welding",
     shortDescription:
       "Certified TIG, MIG, SMAW, and SAW welding that safeguards structural integrity.",
   },
@@ -234,7 +234,7 @@ export const services: Service[] = serviceSeed.map((service) => ({
 
 export const serviceCategories = [
   "General Non-Destructive Testing (NDT)",
-  "Advanced NDT & Specialized Technologies",
+  "Advanced NDT & Specialised Technologies",
   "Engineering Assessments & Certification",
   "Engineering & Fabrication",
 ] as const;

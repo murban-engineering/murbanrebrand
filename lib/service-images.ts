@@ -84,6 +84,7 @@ const explicitKeywordMap: Array<{ keyword: string; file: string }> = [
   { keyword: "paint", file: "painting.jpg" },
   { keyword: "construction and erection", file: "construction and erection.jpg" },
   { keyword: "fabrication", file: "fabrication.jpg" },
+  { keyword: "specialised welding", file: "specialized welding.jpg" },
   { keyword: "specialized welding", file: "specialized welding.jpg" },
   { keyword: "ultrasonic thickness measurement", file: "UTM Ultrasonic Thickness Measurement.jpg" },
   { keyword: "uav", file: "uav.jpg" },
