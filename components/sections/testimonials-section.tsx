@@ -251,9 +251,17 @@ export function TestimonialsSection() {
                 </h3>
                 <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
                   Murban Engineering Ltd is part of the Murban Group, a privately held East African holding company. Our
-                  sister company Murban Chemicals (Murchem) delivers dye injection and marine logistics services to the
-                  petroleum sector. Where a project calls for cross-disciplinary scope, the group entities collaborate
-                  under a single point of contact.
+                  sister company Murban Chemicals (
+                  <a
+                    href="https://www.murchem.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+                  >
+                    Murchem
+                  </a>
+                  ) delivers dye injection and marine logistics services to the petroleum sector. Where a project calls
+                  for cross-disciplinary scope, the group entities collaborate under a single point of contact.
                 </p>
               </div>
             </div>
