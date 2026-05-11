@@ -146,7 +146,7 @@ const industries: Industry[] = [
   },
   {
     title: "Storage & Logistics Terminals",
-    imageSrc: "/images/storage terminal.jpg",
+    imageSrc: "/pexels-diego-f-parra-33199-24244233.jpg",
     imageAlt: "Storage and logistics terminal with bulk tanks",
     assetsCovered: "Bulk liquid tanks, LPG spheres, loading lines, depot infrastructure",
     keyServices: [
