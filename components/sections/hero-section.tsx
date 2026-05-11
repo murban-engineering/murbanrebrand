@@ -125,7 +125,7 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/Non-destructive Testing (NDT) Market ,Share, Sizeand Forecast 2020 – 2026(1).jpg"
+                src="/pexels-arda-kaykisiz-672105204-37510648.jpg"
                 alt="Non-destructive testing technician inspecting industrial equipment"
                 fill
                 className="object-cover"
