@@ -61,7 +61,7 @@ const explicitKeywordMap: Array<{ keyword: string; file: string }> = [
     keyword: "positive material identification testing",
     file: "Positive Material Identification Testing.jpg",
   },
-  { keyword: "phased array testing", file: "Ultrasonic Flaw Testing C-Scan.jpg" },
+  { keyword: "phased array testing", file: "/close-up-man-repairing-computer-chips.jpg" },
   { keyword: "3d laser scanning services", file: "3D Laser Scanning Services.jpg" },
   { keyword: "api 579 fitness for service", file: "Fitness for Service.jpg" },
   { keyword: "api 580 risk based inspection", file: "NDT Inspection Services.jpg" },
@@ -98,7 +98,9 @@ export const getServiceImageForTitle = (title: string) => {
   );
 
   if (explicitMatch) {
-    return `/images/${explicitMatch.file}`;
+    return explicitMatch.file.startsWith("/")
+      ? explicitMatch.file
+      : `/images/${explicitMatch.file}`;
   }
 
   const looseMatch = serviceImageFiles.find((file) => {
