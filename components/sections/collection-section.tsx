@@ -45,20 +45,6 @@ const activeProjects = [
     summary:
       "Client: regional fuel marketing company. Scope: selective radiography, UT thickness screening, and support-stress review on transfer and loading pipelines. Standards applied: ASME B31.3, API 570, and project-specific ITP checkpoints. Outcome: priority repairs were executed early, preventing leak-related shutdown risk.",
   },
-  {
-    id: 7,
-    name: "Total LOBP Stirrer System Upgrade",
-    image: "/images/industrial-pipes.jpg",
-    summary:
-      "Client: lubricants blending and packaging operator. Scope: fabrication QA, alignment verification, and weld/NDT acceptance for stirrer retrofits and associated supports. Standards applied: AWS D1.1, ASME IX, and OEM installation criteria. Outcome: upgraded stirrer trains improved blend consistency and reduced cycle variance.",
-  },
-  {
-    id: 8,
-    name: "Multi-Country Terminal Compliance Portfolio",
-    image: "/images/industrial-refinery.jpg",
-    summary:
-      "Client: portfolio of terminal and pipeline owners across East and Southern Africa. Scope: recurring inspection campaigns, code compliance gap closure, and consolidated reporting for insurers and regulators. Standards applied: API 510/570/653 suite and ISO 9001 traceability practices. Outcome: clients gained audit-ready dossiers and clearer capex prioritization.",
-  },
 ];
 
 export function CollectionSection() {
