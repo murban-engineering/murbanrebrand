@@ -4,7 +4,7 @@ export const serviceImageFiles = [
   "Pressure Vessel Inspection.jpg",
   "Ultrasonic Flaw Testing C-Scan.jpg",
   "Ultrasonic Flaw Testing B-Scan.jpg",
-  "Visual Inspection.jpg",
+  "/view-male-engineer-work-engineers-day-celebration.jpg",
   "Magnetic Particle Testing.jpg",
   "Fluorescent Magnet Particle Testing.jpg",
   "Positive Material Identification Testing.jpg",
@@ -35,6 +35,8 @@ export const serviceImageFiles = [
   "welding 2.jpg",
 ] as const;
 
+const getImageSrc = (file: string) => (file.startsWith("/") ? file : `/images/${file}`);
+
 const normalize = (value: string) =>
   value
     .toLowerCase()
@@ -51,7 +53,7 @@ const explicitKeywordMap: Array<{ keyword: string; file: string }> = [
   { keyword: "api 510 pressure vessel inspection", file: "Pressure Vessel Inspection.jpg" },
   { keyword: "ultrasonic flaw testing c scan", file: "Ultrasonic Flaw Testing C-Scan.jpg" },
   { keyword: "ultrasonic flaw testing b scan", file: "Ultrasonic Flaw Testing B-Scan.jpg" },
-  { keyword: "visual inspection", file: "Visual Inspection.jpg" },
+  { keyword: "visual inspection", file: "/view-male-engineer-work-engineers-day-celebration.jpg" },
   { keyword: "magnetic particle testing", file: "Magnetic Particle Testing.jpg" },
   {
     keyword: "fluorescent magnet particle testing",
@@ -98,9 +100,7 @@ export const getServiceImageForTitle = (title: string) => {
   );
 
   if (explicitMatch) {
-    return explicitMatch.file.startsWith("/")
-      ? explicitMatch.file
-      : `/images/${explicitMatch.file}`;
+    return getImageSrc(explicitMatch.file);
   }
 
   const looseMatch = serviceImageFiles.find((file) => {
@@ -108,5 +108,5 @@ export const getServiceImageForTitle = (title: string) => {
     return normalizedTitle.includes(normalizedFile) || normalizedFile.includes(normalizedTitle);
   });
 
-  return looseMatch ? `/images/${looseMatch}` : null;
+  return looseMatch ? getImageSrc(looseMatch) : null;
 };
