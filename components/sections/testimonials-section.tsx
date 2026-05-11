@@ -8,7 +8,7 @@ const whoWeAre = [
   "Conventional and Advanced NDT and Inspection Services",
   "Engineering",
   "Oil and Gas, Refinery, Petrochemical, Heavy Industry, Mining and Power Plant",
-  "Qualified and certified inspectors and N-D-T Practitioners",
+  "Qualified and certified inspectors and NDT Practitioners",
   "Operating since 2007 across East, Central, Southern and West Africa, with delivered projects in 20+ countries.",
 ];
 
