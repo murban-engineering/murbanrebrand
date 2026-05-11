@@ -111,7 +111,7 @@ export function PhilosophySection() {
                   What sets us apart
                 </h2>
                 <p className="mt-5 text-base font-medium text-foreground/90 sm:text-lg md:text-xl">
-                  Signature Delivery Experience, Data-Driven Decisions, Sustainability by Design
+                  ASNT SNT-TC-1A Level II inspectors on every job, API-aligned reporting that passes IOC technical evaluation, mobilisation across East and Central Africa within 72 hours.
                 </p>
               </div>
             </div>
