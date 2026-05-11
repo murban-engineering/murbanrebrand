@@ -176,17 +176,18 @@ export function PhilosophySection() {
             <div className="absolute inset-0 bg-black/45" />
 
             <div
-              className="absolute inset-0 flex items-center justify-center px-6 md:px-12 lg:px-20"
+              className="absolute inset-0 flex items-center justify-center px-6 transition-opacity duration-150 md:px-12 lg:px-20"
               style={{
-                opacity: Math.max(0, Math.min(1, (servicesHeroProgress - 0.22) / 0.5)),
-                transform: `translateY(${Math.max(0, 40 - servicesHeroProgress * 90)}px)`,
+                opacity: Math.max(0, Math.min(1, 1 - servicesHeroProgress / 0.45)),
+                transform: `translateY(${-servicesHeroProgress * 60}px)`,
+                pointerEvents: servicesHeroProgress < 0.45 ? "auto" : "none",
               }}
             >
               <div className="w-full max-w-5xl rounded-2xl p-6 sm:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Our services</p>
+                <p className="inline-flex rounded-full bg-white/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-primary shadow-lg shadow-black/15 backdrop-blur-sm">Our services</p>
                 <h3 className="murban-engineering-wordmark mt-3 text-fluid-4xl font-medium text-white text-balance">
-                  <span className="block uppercase text-[#C82032]">MURBAN</span>
-                  <span className="block uppercase text-[#213164] tracking-[0.2em] text-xl md:text-3xl">ENGINEERING LTD</span>
+                  <span className="block uppercase text-[#C82032] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]">MURBAN</span>
+                  <span className="mt-2 inline-block rounded-full bg-white/90 px-4 py-2 uppercase text-[#213164] shadow-lg shadow-black/20 backdrop-blur-sm tracking-[0.2em] text-xl md:text-3xl">ENGINEERING LTD</span>
                 </h3>
 
                 <div className="mt-8 flex flex-wrap gap-3">
