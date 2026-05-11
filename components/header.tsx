@@ -8,18 +8,18 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { serviceCategories, services } from "@/lib/services";
 
 const industryLinks = [
-  { label: "All Industries", href: "#industries" },
-  { label: "Oil & Gas Industry", href: "#industry-oil-gas-industry" },
-  { label: "Power & Steam Generation", href: "#industry-power-steam-generation" },
-  { label: "Storage & Logistics Terminals", href: "#industry-storage-logistics-terminals" },
-  { label: "Food Processing Industry", href: "#industry-food-processing-industry" },
-  { label: "Renewable Energy & Geothermal", href: "#industry-renewable-energy-geothermal" },
-  { label: "Rail Industry", href: "#industry-rail-industry" },
-  { label: "Shipping & Marine Industry", href: "#industry-shipping-marine-industry" },
+  { label: "All Industries", href: "/#industries" },
+  { label: "Oil & Gas Industry", href: "/#industry-oil-gas-industry" },
+  { label: "Power & Steam Generation", href: "/#industry-power-steam-generation" },
+  { label: "Storage & Logistics Terminals", href: "/#industry-storage-logistics-terminals" },
+  { label: "Food Processing Industry", href: "/#industry-food-processing-industry" },
+  { label: "Renewable Energy & Geothermal", href: "/#industry-renewable-energy-geothermal" },
+  { label: "Rail Industry", href: "/#industry-rail-industry" },
+  { label: "Shipping & Marine Industry", href: "/#industry-shipping-marine-industry" },
 ];
 
 const createSectionAnchor = (value: string) =>
-  `#services-${value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "")}`;
+  `/#services-${value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "")}`;
 
 const serviceGroups = serviceCategories.map((category) => ({
   category,
@@ -28,9 +28,9 @@ const serviceGroups = serviceCategories.map((category) => ({
 }));
 
 const aboutLinks = [
-  { label: "About", href: "#about" },
-  { label: "Who We Are", href: "#who-we-are" },
-  { label: "Where We Work", href: "#where-we-work" },
+  { label: "About", href: "/#about" },
+  { label: "Who We Are", href: "/#who-we-are" },
+  { label: "Where We Work", href: "/#where-we-work" },
 ];
 
 export function Header() {
@@ -74,7 +74,7 @@ export function Header() {
       }}
     >
       <div className="flex items-center justify-between px-3 py-2 transition-all duration-300 sm:pl-5">
-        <Link href="#" className="flex items-center">
+        <Link href="/#home" className="flex items-center">
           <Image
             src="/images/murban-logo.ico"
             alt="murban ENGINEERING"
@@ -85,7 +85,7 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex">
-          <Link href="#home" className={navTextClass}>
+          <Link href="/#home" className={navTextClass}>
             Home
           </Link>
           <div className="group relative">
@@ -117,7 +117,7 @@ export function Header() {
             >
               <div className="grid grid-cols-[18rem_1fr] gap-2">
                 <div className="max-h-[70vh] overflow-y-auto rounded-lg border border-border/60 p-1">
-                  <ServiceLink href="#services" className="mb-1 block rounded-lg px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted">
+                  <ServiceLink href="/#services" className="mb-1 block rounded-lg px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted">
                     All Services
                   </ServiceLink>
                   {serviceGroups.map((group) => (
@@ -182,10 +182,10 @@ export function Header() {
             </div>
           </div>
 
-          <Link href="#our-projects" className={navTextClass}>
+          <Link href="/#our-projects" className={navTextClass}>
             Our Projects
           </Link>
-          <Link href="#contact-us" className={navTextClass}>
+          <Link href="/#contact-us" className={navTextClass}>
             Contact
           </Link>
         </nav>
@@ -220,7 +220,7 @@ export function Header() {
       {isMenuOpen && (
         <div className="max-h-[calc(100vh-84px)] overflow-y-auto rounded-b-2xl border-t border-border bg-background px-5 py-6 pb-10 shadow-xl md:hidden">
           <nav className="flex flex-col gap-4">
-            <Link href="#home" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#home" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
               Home
             </Link>
             <div className="space-y-3">
@@ -259,7 +259,7 @@ export function Header() {
               </button>
               {isServicesOpen && (
                 <div className="space-y-2 border-l border-border pl-4">
-                  <ServiceLink href="#services" className="block text-base text-muted-foreground" onClick={() => setIsMenuOpen(false)}>
+                  <ServiceLink href="/#services" className="block text-base text-muted-foreground" onClick={() => setIsMenuOpen(false)}>
                     All Services
                   </ServiceLink>
                   {serviceGroups.map((group) => (
@@ -321,10 +321,10 @@ export function Header() {
               )}
             </div>
 
-            <Link href="#our-projects" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#our-projects" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
               Our Projects
             </Link>
-            <Link href="#contact-us" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#contact-us" className="text-lg text-foreground" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
             <Link
