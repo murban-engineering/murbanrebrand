@@ -17,6 +17,7 @@ const companyLinks = [
   { label: "About Us", href: "#about" },
   { label: "Industry Solutions", href: "#industries" },
   { label: "Our Projects", href: "#our-projects" },
+  { label: "Murchem", href: "https://www.murchem.com/", isExternal: true },
   { label: "Contact Us", href: "#contact-us" },
 ];
 
@@ -236,7 +237,13 @@ export function FooterSection() {
   );
 }
 
-function FooterColumn({ title, links }: { title: string; links: { label: string; href: string }[] }) {
+function FooterColumn({
+  title,
+  links,
+}: {
+  title: string;
+  links: { label: string; href: string; isExternal?: boolean }[];
+}) {
   return (
     <div>
       <h4 className="text-2xl font-semibold text-[#A60D0F] md:text-3xl">{title}</h4>
@@ -245,6 +252,8 @@ function FooterColumn({ title, links }: { title: string; links: { label: string;
           <li key={link.label}>
             <Link
               href={link.href}
+              target={link.isExternal ? "_blank" : undefined}
+              rel={link.isExternal ? "noopener noreferrer" : undefined}
               className="text-sm leading-snug text-black transition-colors hover:text-black/70 md:text-base"
             >
               {link.label}
