@@ -44,7 +44,7 @@ export function ProjectVideoSection() {
           ref={iframeRef}
           id="projects-video-player"
           src={videoSrc}
-          title="Murban projects video"
+          title="MURBAN ENGINEERING LTD projects video"
           className="pointer-events-none absolute left-1/2 top-1/2 h-[56.25vw] min-h-full w-[177.78vh] min-w-full -translate-x-1/2 -translate-y-1/2 border-0"
           allow="autoplay"
         />

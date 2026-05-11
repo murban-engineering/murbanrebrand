@@ -126,7 +126,7 @@ const industries: Industry[] = [
       "Post-fire and post-buckling assessments",
     ],
     whyItMatters:
-      "At murban ENGINEERING, we offer industry-leading inspection and integrity solutions tailored to the critical demands of the oil and gas sector. Our services span upstream, midstream, and downstream operations, from pipeline and pressure vessel inspections to storage tank calibration and corrosion assessment. Using advanced techniques like Phased Array Ultrasonic Testing (PAUT), Magnetic Flux Leakage (MFL), and Risk-Based Inspection (RBI), we help oil and gas operators extend asset life, avoid unplanned outages, and meet the highest standards of safety and compliance.",
+      "At MURBAN ENGINEERING LTD, we offer industry-leading inspection and integrity solutions tailored to the critical demands of the oil and gas sector. Our services span upstream, midstream, and downstream operations, from pipeline and pressure vessel inspections to storage tank calibration and corrosion assessment. Using advanced techniques like Phased Array Ultrasonic Testing (PAUT), Magnetic Flux Leakage (MFL), and Risk-Based Inspection (RBI), we help oil and gas operators extend asset life, avoid unplanned outages, and meet the highest standards of safety and compliance.",
   },
   {
     title: "Power & Steam Generation",
@@ -162,7 +162,7 @@ const industries: Industry[] = [
       "NDT Testing",
     ],
     whyItMatters:
-      "Bulk liquid and fuel terminals are complex facilities that demand accurate calibration, corrosion monitoring, and tank integrity assurance. murban ENGINEERING provides comprehensive solutions for tank farms, depots, and LPG storage facilities using technologies like 3D laser scanning, UAV-based inspections, and API 653-compliant tank assessments. Our goal is to help operators maintain regulatory compliance, safeguard stored products, and optimise infrastructure performance across the entire terminal lifecycle.",
+      "Bulk liquid and fuel terminals are complex facilities that demand accurate calibration, corrosion monitoring, and tank integrity assurance. MURBAN ENGINEERING LTD provides comprehensive solutions for tank farms, depots, and LPG storage facilities using technologies like 3D laser scanning, UAV-based inspections, and API 653-compliant tank assessments. Our goal is to help operators maintain regulatory compliance, safeguard stored products, and optimise infrastructure performance across the entire terminal lifecycle.",
   },
   {
     title: "Food Processing Industry",
@@ -178,7 +178,7 @@ const industries: Industry[] = [
       "Non-contaminating NDT procedures (e.g., non-toxic DPI)",
     ],
     whyItMatters:
-      "In food and beverage processing, cleanliness, accuracy, and structural integrity are non-negotiable. Murban supports this industry with non-contaminating inspection techniques, volumetric tank calibration, and material identification suited for food-grade environments. Whether it\'s ensuring weld quality in stainless vessels or verifying tank geometry for accurate mixing and batching, we bring precision, hygiene-compliant methods, and peace of mind to food manufacturers.",
+      "In food and beverage processing, cleanliness, accuracy, and structural integrity are non-negotiable. MURBAN ENGINEERING LTD supports this industry with non-contaminating inspection techniques, volumetric tank calibration, and material identification suited for food-grade environments. Whether it\'s ensuring weld quality in stainless vessels or verifying tank geometry for accurate mixing and batching, we bring precision, hygiene-compliant methods, and peace of mind to food manufacturers.",
   },
   {
     title: "Renewable Energy & Geothermal",
@@ -194,7 +194,7 @@ const industries: Industry[] = [
       "Structural laser scanning for alignment and elevation",
     ],
     whyItMatters:
-      "The renewable energy sector is expanding rapidly, and so is the need for safe, reliable, and long-lasting infrastructure. At Murban, we offer targeted inspection services for geothermal rigs, solar installations, and wind structures. From flaw detection in rig welds to thermal imaging of solar panels and structural surveys using UAVs and laser scanning, we ensure your green energy systems are safe, efficient, and compliant with modern engineering codes.",
+      "The renewable energy sector is expanding rapidly, and so is the need for safe, reliable, and long-lasting infrastructure. At MURBAN ENGINEERING LTD, we offer targeted inspection services for geothermal rigs, solar installations, and wind structures. From flaw detection in rig welds to thermal imaging of solar panels and structural surveys using UAVs and laser scanning, we ensure your green energy systems are safe, efficient, and compliant with modern engineering codes.",
   },
   {
     title: "Rail Industry",
@@ -211,7 +211,7 @@ const industries: Industry[] = [
       "3D Scanning of structural members in railway bridges",
     ],
     whyItMatters:
-      "Railway infrastructure must meet the demands of heavy loads, constant vibration, and dynamic stresses. Murban provides specialised inspection and certification services for railcars, bridges, depots, and fuel wagons. Our techniques, ranging from ultrasonic and radiographic testing to tank calibration and corrosion inspection, help operators ensure safety, prevent failures, and maintain smooth operations across the rail network.",
+      "Railway infrastructure must meet the demands of heavy loads, constant vibration, and dynamic stresses. MURBAN ENGINEERING LTD provides specialised inspection and certification services for railcars, bridges, depots, and fuel wagons. Our techniques, ranging from ultrasonic and radiographic testing to tank calibration and corrosion inspection, help operators ensure safety, prevent failures, and maintain smooth operations across the rail network.",
   },
   {
     title: "Shipping & Marine Industry",
@@ -235,7 +235,7 @@ const industries: Industry[] = [
       "Third-party inspection support to class societies and IACS member surveyors",
     ],
     whyItMatters:
-      "Marine environments expose vessels and offshore structures to accelerated wear from corrosion, mechanical loading, and extreme conditions. At murban ENGINEERING, we provide specialised marine inspection services that enhance safety, support class and regulatory compliance workflows, and contribute to the longevity of your marine assets. Whether for in-service vessels, dockside inspections, or offshore operations, our NDT and engineering capabilities help mitigate risk, reduce repair costs, and maintain operational readiness at sea.",
+      "Marine environments expose vessels and offshore structures to accelerated wear from corrosion, mechanical loading, and extreme conditions. At MURBAN ENGINEERING LTD, we provide specialised marine inspection services that enhance safety, support class and regulatory compliance workflows, and contribute to the longevity of your marine assets. Whether for in-service vessels, dockside inspections, or offshore operations, our NDT and engineering capabilities help mitigate risk, reduce repair costs, and maintain operational readiness at sea.",
   },
 ];
 
@@ -332,7 +332,7 @@ export function TechnologySection() {
             >
               <Image
                 src="/images/DSCN4156.JPG"
-                alt="Murban industrial storage installation"
+                alt="MURBAN industrial storage installation"
                 fill
                 className="object-cover"
               />

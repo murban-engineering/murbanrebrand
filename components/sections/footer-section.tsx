@@ -69,8 +69,7 @@ export function FooterSection() {
           <div>
             <h2 className="murban-engineering-wordmark text-2xl tracking-tight !text-black md:text-3xl">MURBAN ENGINEERING LTD</h2>
             <p className="mt-6 max-w-2xl text-sm leading-relaxed text-black md:mt-8 md:text-base">
-              Our operations are split into two divisions, Murban Inspection Services and Murban
-              Engineering Services. We pick the best talent from the industry and continually invest
+              Our operations are split into two divisions, MURBAN Inspection Services and MURBAN ENGINEERING LTD Services. We pick the best talent from the industry and continually invest
               in their development through rigorous external and internal training so they stay
               ahead of industry trends.
             </p>
@@ -184,7 +183,7 @@ export function FooterSection() {
                 <DialogHeader className="text-left">
                   <DialogTitle className="text-2xl md:text-3xl">Protecting your information and building trust</DialogTitle>
                   <DialogDescription className="text-sm leading-relaxed text-muted-foreground md:text-base">
-                    murban ENGINEERING Services safeguards client and partner information with the same rigor we apply
+                    MURBAN ENGINEERING LTD Services safeguards client and partner information with the same rigor we apply
                     to our inspection and engineering assignments. This policy outlines how we collect, store, and use
                     personal data in line with applicable regulations and our commitment to transparency.
                   </DialogDescription>
