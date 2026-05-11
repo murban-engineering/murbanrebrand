@@ -29,7 +29,7 @@ const officeLocations = [
 
 export function ContactSection() {
   return (
-    <section className="bg-[#213164] px-6 py-12 md:px-12 md:py-16 lg:px-20">
+    <section className="min-h-screen bg-[#213164] px-6 py-12 md:px-12 md:py-16 lg:px-20">
       <div
         id="contact-us"
         className="mx-auto grid max-w-7xl scroll-mt-24 overflow-hidden rounded-2xl border border-white/10 bg-[#213164] shadow-2xl lg:grid-cols-[1.2fr_0.8fr]"
