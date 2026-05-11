@@ -7,6 +7,7 @@ import { TechnologySection } from "@/components/sections/technology-section";
 import { GallerySection } from "@/components/sections/gallery-section";
 import { CollectionSection } from "@/components/sections/collection-section";
 import { EditorialSection } from "@/components/sections/editorial-section";
+import { ProjectVideoSection } from "@/components/sections/project-video-section";
 import { ContactSection } from "@/components/sections/contact-section";
 import { FooterSection } from "@/components/sections/footer-section";
 import { ResetHomeOnLoad } from "@/components/reset-home-on-load";
@@ -24,6 +25,7 @@ export default function Home() {
       <GallerySection />
       <CollectionSection />
       <EditorialSection />
+      <ProjectVideoSection />
       <ContactSection />
       <FooterSection />
     </main>
