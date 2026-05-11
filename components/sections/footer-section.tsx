@@ -38,6 +38,28 @@ const serviceLinksColumnTwo = [
   { label: "Sphere Tank Inspection", href: "/services/sphere-tank-inspections" },
 ];
 
+const officeDetails = [
+  {
+    city: "Nairobi",
+    address: [
+      "P.O. Box 142-00502 Nairobi Karen",
+      "Embakasi, Old North Airport Rd",
+      "Next to Naivas Embakasi",
+    ],
+    phone: "+254 203673821",
+    mobile: "+254 703041821",
+  },
+  {
+    city: "Mombasa",
+    address: ["Off Airport Road, Port Reitz", "P.O. Box 99215-80107", "Mombasa, Kenya"],
+    phone: "+254 202651068",
+    mobile: "+254 724966694",
+  },
+];
+
+const inspectionEmail = "info@murban-eng.com";
+const companyRegistrationNumber = "C. 146376";
+
 export function FooterSection() {
   return (
     <footer className="bg-neutral-200">
@@ -52,8 +74,48 @@ export function FooterSection() {
               ahead of industry trends.
             </p>
 
-            <div className="mt-8 text-sm text-black md:mt-10 md:text-base">
-              <p>Find our latest office details in the Contact Us section above.</p>
+            <div className="mt-8 space-y-5 text-sm text-black md:mt-10 md:text-base">
+              <div>
+                <h3 className="text-lg font-semibold text-[#A60D0F] md:text-xl">Office Details</h3>
+                <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                  {officeDetails.map((office) => (
+                    <address key={office.city} className="not-italic leading-relaxed">
+                      <p className="font-semibold">{office.city}</p>
+                      <div className="mt-1 text-black/80">
+                        {office.address.map((line) => (
+                          <span key={line} className="block">
+                            {line}
+                          </span>
+                        ))}
+                      </div>
+                      <p className="mt-2">
+                        <span className="font-medium">Tel:</span>{" "}
+                        <a href={`tel:${office.phone.replace(/\s/g, "")}`} className="hover:text-black/70">
+                          {office.phone}
+                        </a>
+                      </p>
+                      <p>
+                        <span className="font-medium">Mob:</span>{" "}
+                        <a href={`tel:${office.mobile.replace(/\s/g, "")}`} className="hover:text-black/70">
+                          {office.mobile}
+                        </a>
+                      </p>
+                    </address>
+                  ))}
+                </div>
+              </div>
+
+              <div className="space-y-2 border-t border-black/10 pt-5 leading-relaxed">
+                <p>
+                  <span className="font-semibold">Inspection enquiries:</span>{" "}
+                  <a href={`mailto:${inspectionEmail}`} className="underline underline-offset-4 transition-colors hover:text-black/70">
+                    {inspectionEmail}
+                  </a>
+                </p>
+                <p>
+                  <span className="font-semibold">Company Registration No.:</span> {companyRegistrationNumber}
+                </p>
+              </div>
             </div>
 
             <div className="mt-10 md:mt-14">
