@@ -1,9 +1,6 @@
 "use client";
 
-import Image from "next/image";
-
-const specs = [
-];
+const specs: Array<{ label: string; value: string }> = [];
 
 export function EditorialSection() {
   return (
@@ -36,14 +33,14 @@ export function EditorialSection() {
         </div>
       ) : null}
 
-      {/* Full-width Image */}
-      <div className="relative aspect-[16/9] w-full md:aspect-[21/9]">
-        <Image
-          src="/images/DSCN4156.JPG"
-          alt="Murban facility"
-          fill
-          sizes="100vw"
-          className="absolute inset-0 h-full w-full object-cover"
+      {/* Full-width Vimeo video above Contact Us */}
+      <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#213164] md:aspect-[21/9]">
+        <iframe
+          src="https://player.vimeo.com/video/1191095730?background=1&autoplay=1&muted=1&loop=1&autopause=0&playsinline=1"
+          title="Murban facility video"
+          className="absolute inset-0 h-full w-full border-0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          allowFullScreen
           loading="lazy"
         />
       </div>
