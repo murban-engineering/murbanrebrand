@@ -29,8 +29,11 @@ const officeLocations = [
 
 export function ContactSection() {
   return (
-    <section id="contact-us" className="bg-[#213164] px-6 py-12 md:px-12 md:py-16 lg:px-20">
-      <div className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl border border-white/10 bg-[#213164] shadow-2xl lg:grid-cols-[1.2fr_0.8fr]">
+    <section className="bg-[#213164] px-6 py-12 md:px-12 md:py-16 lg:px-20">
+      <div
+        id="contact-us"
+        className="mx-auto grid max-w-7xl scroll-mt-24 overflow-hidden rounded-2xl border border-white/10 bg-[#213164] shadow-2xl lg:grid-cols-[1.2fr_0.8fr]"
+      >
         <div
           className="relative min-h-[360px] p-8 md:min-h-[520px] md:p-12"
           style={{
