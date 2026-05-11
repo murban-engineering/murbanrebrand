@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { CheckCircle2, MapPin } from "lucide-react";
 
 import { AfricaGoogleMap, whereWeWorkCountries } from "./africa-google-map";
@@ -31,76 +32,65 @@ export function TestimonialsSection() {
       </div>
 
       {/* Service-to-outcomes visual */}
-      <div className="px-6 md:px-12 lg:px-20">
-        <div
-          className="relative mx-auto w-full max-w-5xl overflow-hidden rounded-3xl border border-[#213164]/15 bg-white p-6 shadow-sm md:p-10"
-          role="img"
-          aria-label="Inspection Services and Engineering and Fabrication feed into Asset Integrity Outcomes"
-        >
-          <div className="pointer-events-none absolute -left-28 -top-28 h-72 w-72 rounded-full bg-[#A60D0F]/10 blur-3xl" />
-          <div className="pointer-events-none absolute -bottom-32 -right-28 h-80 w-80 rounded-full bg-[#213164]/12 blur-3xl" />
-
-          <div className="relative">
-            <p className="text-center text-xs font-semibold uppercase tracking-[0.24em] text-[#213164]">
-              Integrated delivery model
-            </p>
-            <div className="mt-8 grid gap-5 lg:grid-cols-[1fr_auto_1fr_auto_1.15fr] lg:items-center">
-              <div className="rounded-2xl bg-[#A60D0F] p-6 text-white shadow-lg shadow-[#A60D0F]/15">
-                <div className="text-sm font-semibold uppercase tracking-[0.22em] text-white/75">01</div>
-                <h3 className="mt-4 text-2xl font-semibold tracking-tight">Inspection Services</h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/85">
-                  NDT, certification, testing, and compliance-focused field inspection teams.
-                </p>
-              </div>
-
-              <div className="flex justify-center text-[#213164] lg:hidden" aria-hidden="true">
-                <svg viewBox="0 0 24 44" className="h-10 w-6" fill="none">
-                  <path d="M12 2v34" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-                  <path d="M4 28l8 9 8-9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              <div className="hidden items-center justify-center text-[#213164] lg:flex" aria-hidden="true">
-                <svg viewBox="0 0 72 24" className="h-6 w-20" fill="none">
-                  <path d="M2 12h62" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-                  <path d="M54 3l10 9-10 9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              <div className="rounded-2xl bg-[#213164] p-6 text-white shadow-lg shadow-[#213164]/15">
-                <div className="text-sm font-semibold uppercase tracking-[0.22em] text-white/75">02</div>
-                <h3 className="mt-4 text-2xl font-semibold tracking-tight">Engineering &amp; Fabrication</h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/85">
-                  Engineering assessments, repair planning, fabrication support, and site execution.
-                </p>
-              </div>
-
-              <div className="flex justify-center text-[#A60D0F] lg:hidden" aria-hidden="true">
-                <svg viewBox="0 0 24 44" className="h-10 w-6" fill="none">
-                  <path d="M12 2v34" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-                  <path d="M4 28l8 9 8-9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              <div className="hidden items-center justify-center text-[#A60D0F] lg:flex" aria-hidden="true">
-                <svg viewBox="0 0 72 24" className="h-6 w-20" fill="none">
-                  <path d="M2 12h62" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-                  <path d="M54 3l10 9-10 9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              <div className="relative overflow-hidden rounded-2xl border border-[#213164]/20 bg-slate-50 p-6 text-center shadow-inner">
-                <div className="pointer-events-none absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-[#A60D0F] to-[#213164]" />
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#A60D0F]">Outcome</p>
-                <h3 className="mt-4 text-3xl font-semibold tracking-tight text-[#213164]">
-                  Asset Integrity Outcomes
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                  Safer assets, longer service life, stronger compliance, and reduced downtime.
-                </p>
-              </div>
+      <div
+        className="relative isolate min-h-screen w-full overflow-hidden bg-[#101522]"
+        role="img"
+        aria-label="Murban asset integrity connects inspection services and fabrication"
+      >
+        <div className="grid min-h-screen grid-cols-1 md:grid-cols-2">
+          <div className="relative flex min-h-[50vh] items-center justify-center overflow-hidden px-6 py-24 text-center md:min-h-screen md:px-12 lg:px-20">
+            <Image
+              src="/images/NDT Inspection Services.jpg"
+              alt="Inspection services background"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-[#A60D0F]/80 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#A60D0F]/90 via-[#A60D0F]/70 to-[#A60D0F]/55" />
+            <div className="relative z-10 max-w-md text-white">
+              <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white/75">01</p>
+              <h3 className="mt-5 text-fluid-3xl font-semibold tracking-tight text-balance">Inspection Services</h3>
+              <p className="mt-5 text-base leading-relaxed text-white/85 md:text-lg">
+                NDT, certification, testing, and compliance-focused field inspection teams.
+              </p>
             </div>
           </div>
+
+          <div className="relative flex min-h-[50vh] items-center justify-center overflow-hidden px-6 py-24 text-center md:min-h-screen md:px-12 lg:px-20">
+            <Image
+              src="/images/fabrication.jpg"
+              alt="Fabrication services background"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-[#213164]/80 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-gradient-to-l from-[#213164]/90 via-[#213164]/72 to-[#213164]/55" />
+            <div className="relative z-10 max-w-md text-white">
+              <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white/75">02</p>
+              <h3 className="mt-5 text-fluid-3xl font-semibold tracking-tight text-balance">Fabrication</h3>
+              <p className="mt-5 text-base leading-relaxed text-white/85 md:text-lg">
+                Engineering assessments, repair planning, fabrication support, and site execution.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="pointer-events-none absolute left-1/2 top-1/2 z-20 flex w-[min(86vw,32rem)] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-[2rem] border border-white/30 bg-white/88 px-6 py-8 text-center shadow-2xl shadow-black/25 backdrop-blur-xl md:w-[28rem] md:px-10 md:py-10">
+          <div className="flex h-24 w-24 items-center justify-center rounded-full border border-[#213164]/15 bg-white shadow-lg md:h-28 md:w-28">
+            <Image
+              src="/images/murban-logo.ico"
+              alt="murban ENGINEERING logo"
+              width={86}
+              height={86}
+              className="h-16 w-16 object-contain md:h-20 md:w-20"
+            />
+          </div>
+          <p className="mt-6 text-xs font-semibold uppercase tracking-[0.32em] text-[#A60D0F]">Outcome</p>
+          <h3 className="mt-3 text-fluid-3xl font-semibold uppercase tracking-tight text-[#213164] text-balance">
+            Asset Integrity
+          </h3>
         </div>
       </div>
 
