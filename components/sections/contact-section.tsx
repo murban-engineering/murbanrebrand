@@ -3,7 +3,7 @@ import { Upload } from "lucide-react";
 const officeLocations = [
   {
     city: "Nairobi",
-    division: "murban ENGINEERING",
+    division: "MURBAN ENGINEERING LTD",
     lines: [
       "POSTAL ADDRESS",
       "P.O. BOX 142-00502 Nairobi Karen",
@@ -16,7 +16,7 @@ const officeLocations = [
   },
   {
     city: "Mombasa",
-    division: "murban ENGINEERING",
+    division: "MURBAN ENGINEERING LTD",
     lines: [
       "Off Airport Road, Port Reitz",
       "P. O. Box 99215, 80107",
@@ -29,8 +29,11 @@ const officeLocations = [
 
 export function ContactSection() {
   return (
-    <section id="contact-us" className="bg-[#213164] px-6 py-12 md:px-12 md:py-16 lg:px-20">
-      <div className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl border border-white/10 bg-[#213164] shadow-2xl lg:grid-cols-[1.2fr_0.8fr]">
+    <section className="bg-[#213164] px-6 py-12 md:px-12 md:py-16 lg:px-20">
+      <div
+        id="contact-us"
+        className="mx-auto grid max-w-7xl scroll-mt-24 overflow-hidden rounded-2xl border border-white/10 bg-[#213164] shadow-2xl lg:grid-cols-[1.2fr_0.8fr]"
+      >
         <div
           className="relative min-h-[360px] p-8 md:min-h-[520px] md:p-12"
           style={{
@@ -43,7 +46,7 @@ export function ContactSection() {
           <div className="flex h-full flex-col justify-between">
             <div>
               <span className="inline-flex rounded-full border border-white/30 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/80">
-                Contact Murban
+                Contact MURBAN ENGINEERING LTD
               </span>
               <h2 className="mt-6 text-4xl font-semibold tracking-tight text-white md:text-6xl">Contact us</h2>
             </div>

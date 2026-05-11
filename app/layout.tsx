@@ -4,12 +4,12 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'murban ENGINEERING',
-  description: 'murban ENGINEERING.',
-  applicationName: 'murban ENGINEERING',
-  creator: 'murban ENGINEERING',
-  publisher: 'murban ENGINEERING',
-  authors: [{ name: 'murban ENGINEERING' }],
+  title: 'MURBAN ENGINEERING LTD',
+  description: 'MURBAN ENGINEERING LTD.',
+  applicationName: 'MURBAN ENGINEERING LTD',
+  creator: 'MURBAN ENGINEERING LTD',
+  publisher: 'MURBAN ENGINEERING LTD',
+  authors: [{ name: 'MURBAN ENGINEERING LTD' }],
   generator: 'v0.app',
   icons: {
     icon: '/murbanlogo.ico',
