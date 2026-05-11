@@ -31,16 +31,16 @@ export function ContactSection() {
   return (
     <section id="contact-us" className="bg-[#213164] px-6 py-12 md:px-12 md:py-16 lg:px-20">
       <div className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl border border-white/10 bg-[#213164] shadow-2xl lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="relative min-h-[360px] overflow-hidden p-8 md:min-h-[520px] md:p-12">
-          <iframe
-            src="https://player.vimeo.com/video/1191095730?background=1&autoplay=1&loop=1&muted=1&autopause=0&playsinline=1"
-            title="Murban contact section video"
-            allow="autoplay; fullscreen; picture-in-picture"
-            loading="lazy"
-            className="pointer-events-none absolute left-1/2 top-1/2 h-[120%] w-[140%] -translate-x-1/2 -translate-y-1/2 border-0 md:h-[130%] md:w-[130%]"
-          />
-          <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(33,49,100,0.78),rgba(24,33,66,0.92))]" />
-          <div className="relative z-10 flex h-full flex-col justify-between">
+        <div
+          className="relative min-h-[360px] p-8 md:min-h-[520px] md:p-12"
+          style={{
+            backgroundImage:
+              "linear-gradient(135deg, rgba(33,49,100,0.78), rgba(24,33,66,0.92)), url('/images/contactusbg.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="flex h-full flex-col justify-between">
             <div>
               <span className="inline-flex rounded-full border border-white/30 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/80">
                 Contact Murban
