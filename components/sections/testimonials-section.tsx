@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { CheckCircle2, MapPin } from "lucide-react";
 
 import { AfricaGoogleMap, whereWeWorkCountries } from "./africa-google-map";
@@ -31,15 +30,77 @@ export function TestimonialsSection() {
         </p>
       </div>
 
-      {/* About Image */}
+      {/* Service-to-outcomes visual */}
       <div className="px-6 md:px-12 lg:px-20">
-        <div className="relative mx-auto aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-2xl">
-          <Image
-            src="/images/Screenshot 2026-04-28 190300.png"
-            alt="murban ENGINEERING inspection team onsite"
-            fill
-            className="object-cover object-center"
-          />
+        <div
+          className="relative mx-auto w-full max-w-5xl overflow-hidden rounded-3xl border border-[#213164]/15 bg-white p-6 shadow-sm md:p-10"
+          role="img"
+          aria-label="Inspection Services and Engineering and Fabrication feed into Asset Integrity Outcomes"
+        >
+          <div className="pointer-events-none absolute -left-28 -top-28 h-72 w-72 rounded-full bg-[#A60D0F]/10 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-32 -right-28 h-80 w-80 rounded-full bg-[#213164]/12 blur-3xl" />
+
+          <div className="relative">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.24em] text-[#213164]">
+              Integrated delivery model
+            </p>
+            <div className="mt-8 grid gap-5 lg:grid-cols-[1fr_auto_1fr_auto_1.15fr] lg:items-center">
+              <div className="rounded-2xl bg-[#A60D0F] p-6 text-white shadow-lg shadow-[#A60D0F]/15">
+                <div className="text-sm font-semibold uppercase tracking-[0.22em] text-white/75">01</div>
+                <h3 className="mt-4 text-2xl font-semibold tracking-tight">Inspection Services</h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/85">
+                  NDT, certification, testing, and compliance-focused field inspection teams.
+                </p>
+              </div>
+
+              <div className="flex justify-center text-[#213164] lg:hidden" aria-hidden="true">
+                <svg viewBox="0 0 24 44" className="h-10 w-6" fill="none">
+                  <path d="M12 2v34" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                  <path d="M4 28l8 9 8-9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+
+              <div className="hidden items-center justify-center text-[#213164] lg:flex" aria-hidden="true">
+                <svg viewBox="0 0 72 24" className="h-6 w-20" fill="none">
+                  <path d="M2 12h62" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                  <path d="M54 3l10 9-10 9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+
+              <div className="rounded-2xl bg-[#213164] p-6 text-white shadow-lg shadow-[#213164]/15">
+                <div className="text-sm font-semibold uppercase tracking-[0.22em] text-white/75">02</div>
+                <h3 className="mt-4 text-2xl font-semibold tracking-tight">Engineering &amp; Fabrication</h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/85">
+                  Engineering assessments, repair planning, fabrication support, and site execution.
+                </p>
+              </div>
+
+              <div className="flex justify-center text-[#A60D0F] lg:hidden" aria-hidden="true">
+                <svg viewBox="0 0 24 44" className="h-10 w-6" fill="none">
+                  <path d="M12 2v34" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                  <path d="M4 28l8 9 8-9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+
+              <div className="hidden items-center justify-center text-[#A60D0F] lg:flex" aria-hidden="true">
+                <svg viewBox="0 0 72 24" className="h-6 w-20" fill="none">
+                  <path d="M2 12h62" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                  <path d="M54 3l10 9-10 9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+
+              <div className="relative overflow-hidden rounded-2xl border border-[#213164]/20 bg-slate-50 p-6 text-center shadow-inner">
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-[#A60D0F] to-[#213164]" />
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#A60D0F]">Outcome</p>
+                <h3 className="mt-4 text-3xl font-semibold tracking-tight text-[#213164]">
+                  Asset Integrity Outcomes
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                  Safer assets, longer service life, stronger compliance, and reduced downtime.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
