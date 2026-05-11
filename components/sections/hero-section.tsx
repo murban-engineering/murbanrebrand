@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
+const HERO_SCROLL_MULTIPLIER = 3;
+
 const sideImages = [
   {
     src: "/new1.jpg",
@@ -40,7 +42,7 @@ export function HeroSection() {
       if (!sectionRef.current) return;
       
       const rect = sectionRef.current.getBoundingClientRect();
-      const scrollableHeight = window.innerHeight * 2;
+      const scrollableHeight = window.innerHeight * HERO_SCROLL_MULTIPLIER;
       const scrolled = -rect.top;
       const progress = Math.max(0, Math.min(1, scrolled / scrollableHeight));
       
@@ -197,7 +199,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll space to enable animation */}
-      <div className="h-[200vh]" />
+      <div className="h-[300vh]" />
 
       {/* Tagline Section */}
       <div className="px-6 pt-32 pb-28 md:pt-48 md:px-12 md:pb-36 lg:px-20 lg:pt-56 lg:pb-44">
