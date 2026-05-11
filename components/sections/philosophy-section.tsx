@@ -110,9 +110,11 @@ export function PhilosophySection() {
                 <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
                   What sets us apart
                 </h2>
-                <p className="mt-5 text-base font-medium text-foreground/90 sm:text-lg md:text-xl">
-                  ASNT SNT-TC-1A Level II inspectors on every job, API-aligned reporting that passes IOC technical evaluation, and mobilisation across East and Central Africa within 72 hours.
-                </p>
+                <div className="mx-auto mt-5 flex max-w-4xl flex-col items-center gap-3 text-base font-medium text-foreground/90 sm:text-lg md:text-xl">
+                  <p>ASNT SNT-TC-1A Level II inspectors on every job.</p>
+                  <p>API-aligned reporting that passes IOC technical evaluation.</p>
+                  <p>Mobilisation across East and Central Africa within 72 hours.</p>
+                </div>
               </div>
             </div>
 
