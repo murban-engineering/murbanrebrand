@@ -125,8 +125,8 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/images/hero-industrial.jpg"
-                alt="Industrial storage tanks with safety railings and piping"
+                src="/Non-destructive Testing (NDT) Market ,Share, Sizeand Forecast 2020 – 2026(1).jpg"
+                alt="Non-destructive testing technician inspecting industrial equipment"
                 fill
                 className="object-cover"
                 priority
