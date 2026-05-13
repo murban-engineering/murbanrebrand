@@ -59,7 +59,6 @@ const officeDetails = [
 ];
 
 const inspectionEmail = "info@murban-eng.com";
-const companyRegistrationNumber = "C. 146376";
 
 export function FooterSection() {
   return (
@@ -111,9 +110,6 @@ export function FooterSection() {
                   <a href={`mailto:${inspectionEmail}`} className="underline underline-offset-4 transition-colors hover:text-black/70">
                     {inspectionEmail}
                   </a>
-                </p>
-                <p>
-                  <span className="font-semibold">Company Registration No.:</span> {companyRegistrationNumber}
                 </p>
               </div>
             </div>
