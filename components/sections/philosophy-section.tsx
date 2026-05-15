@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { SiteImage as Image } from "@/components/site-image";
 import { getServiceImageForTitle } from "@/lib/service-images";
 import { ServiceLink } from "@/components/service-navigation-state";
 import { useEffect, useRef, useState, useCallback } from "react";

@@ -1,4 +1,5 @@
 import { Upload } from "lucide-react";
+import { withSiteBasePath } from "@/lib/site-paths";
 
 const officeLocations = [
   {
@@ -38,7 +39,7 @@ export function ContactSection() {
           className="relative min-h-[360px] p-8 md:min-h-[520px] md:p-12"
           style={{
             backgroundImage:
-              "linear-gradient(135deg, rgba(33,49,100,0.78), rgba(24,33,66,0.92)), url('/images/contactusbg.png')",
+              `linear-gradient(135deg, rgba(33,49,100,0.78), rgba(24,33,66,0.92)), url('${withSiteBasePath("/images/contactusbg.png")}')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage as Image } from "@/components/site-image";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, services } from "@/lib/services";
 import { ServiceWordReveal } from "@/components/service-word-reveal";

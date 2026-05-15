@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { SiteImage as Image } from "@/components/site-image";
 import { useEffect, useRef, useState, useCallback } from "react";
 
 export function GallerySection() {
