@@ -2,6 +2,31 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
 
+## GitHub Pages deployment
+
+This project is configured for a seamless GitHub Pages deployment:
+
+- `next.config.mjs` exports the app as static files into `out/`.
+- Next.js image optimization is disabled for static hosting compatibility.
+- The GitHub Actions workflow in `.github/workflows/deploy.yml` builds and deploys the `out/` folder automatically on pushes to `main`.
+- The workflow automatically sets the correct base path for both project Pages sites, such as `/murbanrebrand`, and user or organization Pages sites, such as `owner.github.io`.
+
+To enable the deployment in GitHub:
+
+1. Go to the repository **Settings** tab.
+2. Open **Pages**.
+3. Set **Build and deployment** → **Source** to **GitHub Actions**.
+4. Push to `main` or run the **Deploy to GitHub Pages** workflow manually.
+
+For local verification, run:
+
+```bash
+pnpm install
+pnpm build:pages
+```
+
+The static site will be generated in `out/`.
+
 ## Built with v0
 
 This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SiteImage as Image } from "@/components/site-image";
 
 const trustedLogos = [
   "/images/Screenshot 2026-04-27 185325.png",

@@ -1,6 +1,7 @@
 "use client";
 
-import Image, { type ImageProps } from "next/image";
+import { type ImageProps } from "next/image";
+import { SiteImage as Image } from "@/components/site-image";
 import { useEffect, useRef, useState } from "react";
 
 interface FadeImageProps extends Omit<ImageProps, "onLoad"> {

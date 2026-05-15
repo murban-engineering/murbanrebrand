@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ServiceLink } from "@/components/service-navigation-state";
-import Image from "next/image";
+import { SiteImage as Image } from "@/components/site-image";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { serviceCategories, services } from "@/lib/services";
 

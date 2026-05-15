@@ -1,6 +1,7 @@
 import React from "react"
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
+import { withSiteBasePath } from '@/lib/site-paths'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -12,9 +13,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'MURBAN ENGINEERING LTD' }],
   generator: 'v0.app',
   icons: {
-    icon: '/murbanlogo.ico',
-    shortcut: '/murbanlogo.ico',
-    apple: '/apple-icon.png',
+    icon: withSiteBasePath('/murbanlogo.ico'),
+    shortcut: withSiteBasePath('/murbanlogo.ico'),
+    apple: withSiteBasePath('/apple-icon.png'),
   },
 }
 

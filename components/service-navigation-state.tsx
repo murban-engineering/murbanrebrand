@@ -3,6 +3,7 @@
 import Link, { type LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
 import { type MouseEvent, type ReactNode } from "react";
+import { withoutSiteBasePath } from "@/lib/site-paths";
 
 const SERVICE_RETURN_URL_KEY = "murban:return:url";
 const SERVICE_RETURN_SCROLL_KEY = "murban:return:scroll";
@@ -18,7 +19,7 @@ function isServiceDetailHref(href: LinkProps["href"]) {
 export function rememberServiceOrigin() {
   if (typeof window === "undefined") return;
 
-  const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+  const currentUrl = withoutSiteBasePath(`${window.location.pathname}${window.location.search}${window.location.hash}`);
   sessionStorage.setItem(SERVICE_RETURN_URL_KEY, currentUrl);
   sessionStorage.setItem(SERVICE_RETURN_SCROLL_KEY, String(window.scrollY));
 }
