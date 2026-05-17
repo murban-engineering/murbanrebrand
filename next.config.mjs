@@ -1,10 +1,6 @@
-const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? ""
-const isGitHubPagesBuild = process.env.GITHUB_ACTIONS === "true"
-const isUserOrOrgPagesRepo = repoName.endsWith(".github.io")
-const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? process.env.BASE_PATH
-const githubPagesBasePath =
-  isGitHubPagesBuild && repoName && !isUserOrOrgPagesRepo ? `/${repoName}` : ""
-const basePath = configuredBasePath ?? githubPagesBasePath
+const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? process.env.BASE_PATH ?? ""
+const normalizedBasePath = configuredBasePath.replace(/\/$/, "")
+const basePath = normalizedBasePath || undefined
 
 /** @type {import("next").NextConfig} */
 const nextConfig = {
