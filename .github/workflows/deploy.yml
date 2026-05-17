@@ -36,15 +36,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Configure GitHub Pages base path
-        shell: bash
-        run: |
-          repo_name="${GITHUB_REPOSITORY#*/}"
-          if [[ "$repo_name" == *.github.io ]]; then
-            echo "NEXT_PUBLIC_BASE_PATH=" >> "$GITHUB_ENV"
-          else
-            echo "NEXT_PUBLIC_BASE_PATH=/$repo_name" >> "$GITHUB_ENV"
-          fi
+      - name: Configure custom-domain base path
+        run: echo "NEXT_PUBLIC_BASE_PATH=" >> "$GITHUB_ENV"
 
       - name: Build static site
         run: pnpm build:pages
