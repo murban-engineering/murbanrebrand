@@ -1,4 +1,3 @@
-import { Upload } from "lucide-react";
 import { withSiteBasePath } from "@/lib/site-paths";
 
 const officeLocations = [
@@ -91,15 +90,7 @@ export function ContactSection() {
               </label>
             ))}
 
-            <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
-              <button
-                type="button"
-                className="inline-flex items-center gap-2 text-sm font-medium text-[#213164] transition-colors hover:text-[#A60D0F]"
-              >
-                <Upload className="h-4 w-4" />
-                Upload file
-              </button>
-
+            <div className="flex flex-wrap items-center justify-end gap-4 pt-2">
               <a
                 href="mailto:info@murban-eng.com"
                 className="inline-flex items-center rounded-md bg-[#A60D0F] px-6 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#8f0b0d]"
