@@ -163,7 +163,7 @@ export function ChatbotWidget() {
               />
               <button
                 aria-label="Send message"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground transition disabled:cursor-not-allowed disabled:opacity-50"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-[#A60D0F] text-white transition hover:bg-[#8f0b0d] disabled:cursor-not-allowed disabled:opacity-50"
                 disabled={!canSend}
                 type="submit"
               >
@@ -174,7 +174,7 @@ export function ChatbotWidget() {
         </div>
       ) : (
         <button
-          className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-3 text-sm font-medium text-primary-foreground shadow-xl transition hover:opacity-90"
+          className="inline-flex items-center gap-2 rounded-full bg-[#A60D0F] px-4 py-3 text-sm font-medium text-white shadow-xl transition hover:bg-[#8f0b0d]"
           onClick={() => setIsOpen(true)}
           type="button"
         >
