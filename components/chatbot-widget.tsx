@@ -23,17 +23,17 @@ const answers: Array<{ keywords: string[]; response: string }> = [
   {
     keywords: ["service", "services", "offer", "provide"],
     response:
-      "Murban supports inspection and engineering workflows including NDT inspection, pressure vessel and storage tank inspection, ultrasonic testing, magnetic particle testing, welding/fabrication support, and related industrial QA/QC services. If you share your asset type and project timeline, I can guide you to the right service flow.",
+      "MURBAN supports inspection and engineering workflows including NDT inspection, pressure vessel and storage tank inspection, ultrasonic testing, magnetic particle testing, welding/fabrication support, and related industrial QA/QC services. If you share your asset type and project timeline, I can guide you to the right service flow.",
   },
   {
     keywords: ["quote", "pricing", "price", "cost", "proposal"],
     response:
-      "To request a quote, prepare: (1) site/location, (2) asset type and dimensions, (3) required inspection standard/code, (4) timeline, and (5) any safety/access constraints. Then submit through the site contact section and include a project brief. Murban can usually respond faster when scope details are complete.",
+      "To request a quote, prepare: (1) site/location, (2) asset type and dimensions, (3) required inspection standard/code, (4) timeline, and (5) any safety/access constraints. Then submit through the site contact section and include a project brief. MURBAN can usually respond faster when scope details are complete.",
   },
   {
     keywords: ["where", "location", "operate", "region", "africa", "middle east"],
     response:
-      "Murban operates across multiple African markets, including Kenya, Uganda, Tanzania, Rwanda, Ethiopia, South Sudan, DR Congo, Zambia, Malawi, Mozambique, Zimbabwe, Botswana, Namibia, South Africa, Nigeria, Ghana, Ivory Coast, Senegal, and Cameroon. If you share your city and project scope, I can help draft the fastest inquiry for mobilization and lead times.",
+      "MURBAN operates across multiple African markets, including Kenya, Uganda, Tanzania, Rwanda, Ethiopia, South Sudan, DR Congo, Zambia, Malawi, Mozambique, Zimbabwe, Botswana, Namibia, South Africa, Nigeria, Ghana, Ivory Coast, Senegal, and Cameroon. If you share your city and project scope, I can help draft the fastest inquiry for mobilization and lead times.",
   },
   {
     keywords: ["ndt", "ultrasonic", "ut", "mpi", "mfl", "radiography"],
@@ -48,7 +48,7 @@ const answers: Array<{ keywords: string[]; response: string }> = [
   {
     keywords: ["hello", "hi", "hey"],
     response:
-      "Hi! I’m the Murban website assistant. I can help you explore services, prepare a quote request, or identify the right inspection workflow for your project.",
+      "Hi! I’m the MURBAN website assistant. I can help you explore services, prepare a quote request, or identify the right inspection workflow for your project.",
   },
 ];
 
@@ -70,7 +70,7 @@ export function ChatbotWidget() {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: "bot",
-      text: "Welcome to Murban 👋 I can help you quickly navigate services, prepare a quote request, and clarify inspection options.",
+      text: "Welcome to MURBAN 👋 I can help you quickly navigate services, prepare a quote request, and clarify inspection options.",
     },
   ]);
 
@@ -94,7 +94,7 @@ export function ChatbotWidget() {
           <div className="flex items-center justify-between border-b border-border px-4 py-3">
             <div className="flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-primary" />
-              <p className="text-sm font-semibold">Murban Assistant</p>
+              <p className="text-sm font-semibold">MURBAN Assistant</p>
             </div>
             <button
               aria-label="Exit chatbot"
@@ -179,7 +179,7 @@ export function ChatbotWidget() {
           type="button"
         >
           <Bot className="h-4 w-4" />
-          Chat with Murban
+          Chat with MURBAN
         </button>
       )}
     </div>
