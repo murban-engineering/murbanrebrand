@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Bot, Send, Sparkles, User, X } from "lucide-react";
 
 type ChatRole = "bot" | "user";
@@ -67,6 +67,7 @@ function getBotReply(input: string): string {
 export function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: "bot",
@@ -75,6 +76,13 @@ export function ChatbotWidget() {
   ]);
 
   const canSend = useMemo(() => input.trim().length > 0, [input]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const container = messagesContainerRef.current;
+    if (!container) return;
+    container.scrollTo({ top: container.scrollHeight, behavior: "smooth" });
+  }, [isOpen, messages]);
 
   const sendMessage = (text: string) => {
     const trimmed = text.trim();
@@ -107,7 +115,10 @@ export function ChatbotWidget() {
             </button>
           </div>
 
-          <div className="max-h-80 space-y-3 overflow-y-auto px-4 py-3">
+          <div
+            className="max-h-80 space-y-3 overflow-y-auto px-4 py-3"
+            ref={messagesContainerRef}
+          >
             {messages.map((message, index) => (
               <div
                 className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
