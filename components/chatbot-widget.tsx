@@ -14,7 +14,6 @@ const quickPrompts = [
   "What services do you provide?",
   "How can I request a quote?",
   "Where do you operate?",
-  "Which countries do you work in?",
   "Tell me about NDT capabilities.",
   "What industries do you support?",
 ];
