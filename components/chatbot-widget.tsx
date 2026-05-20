@@ -14,6 +14,7 @@ const quickPrompts = [
   "What services do you provide?",
   "How can I request a quote?",
   "Where do you operate?",
+  "Which countries do you work in?",
   "Tell me about NDT capabilities.",
   "What industries do you support?",
 ];
@@ -32,7 +33,7 @@ const answers: Array<{ keywords: string[]; response: string }> = [
   {
     keywords: ["where", "location", "operate", "region", "africa", "middle east"],
     response:
-      "Murban’s website highlights industrial inspection support across major energy and infrastructure markets. For exact deployment availability, share your city/country and I can help you draft the best inquiry message for logistics, mobilization window, and lead times.",
+      "Murban operates across multiple African markets, including Kenya, Uganda, Tanzania, Rwanda, Ethiopia, South Sudan, DR Congo, Zambia, Malawi, Mozambique, Zimbabwe, Botswana, Namibia, South Africa, Nigeria, Ghana, Ivory Coast, Senegal, and Cameroon. If you share your city and project scope, I can help draft the fastest inquiry for mobilization and lead times.",
   },
   {
     keywords: ["ndt", "ultrasonic", "ut", "mpi", "mfl", "radiography"],
@@ -96,12 +97,13 @@ export function ChatbotWidget() {
               <p className="text-sm font-semibold">Murban Assistant</p>
             </div>
             <button
-              aria-label="Close chatbot"
-              className="rounded-md p-1 text-muted-foreground transition hover:bg-muted"
+              aria-label="Exit chatbot"
+              className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs text-muted-foreground transition hover:bg-muted"
               onClick={() => setIsOpen(false)}
               type="button"
             >
-              <X className="h-4 w-4" />
+              Exit
+              <X className="h-3 w-3" />
             </button>
           </div>
 
