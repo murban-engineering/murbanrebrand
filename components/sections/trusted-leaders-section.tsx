@@ -26,7 +26,10 @@ function MarqueeRow({ images, reverse = false }: { images: string[]; reverse?: b
   return (
     <div className="relative overflow-hidden">
       <div className={`trusted-marquee ${reverse ? "trusted-marquee-reverse" : ""}`}>
-        {trackImages.map((src, index) => (
+        {trackImages.map((src, index) => {
+          const shouldPrioritize = index < 6;
+
+          return (
           <div
             key={`${src}-${index}`}
             className="flex h-20 w-44 shrink-0 items-center justify-center rounded-lg border border-border/60 bg-card/70 px-5"
@@ -36,10 +39,14 @@ function MarqueeRow({ images, reverse = false }: { images: string[]; reverse?: b
               alt="Client logo"
               width={136}
               height={48}
+              loading={shouldPrioritize ? "eager" : "lazy"}
+              fetchPriority={shouldPrioritize ? "high" : "auto"}
+              sizes="136px"
               className="h-10 w-auto object-contain"
             />
           </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
