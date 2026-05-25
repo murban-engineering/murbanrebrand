@@ -11,7 +11,6 @@ import { ProjectVideoSection } from "@/components/sections/project-video-section
 import { ContactSection } from "@/components/sections/contact-section";
 import { FooterSection } from "@/components/sections/footer-section";
 import { ResetHomeOnLoad } from "@/components/reset-home-on-load";
-import { ChatbotWidget } from "@/components/chatbot-widget";
 
 export default function Home() {
   return (
@@ -29,7 +28,6 @@ export default function Home() {
       <ProjectVideoSection />
       <ContactSection />
       <FooterSection />
-      <ChatbotWidget />
     </main>
   );
 }
