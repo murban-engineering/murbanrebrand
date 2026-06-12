@@ -46,17 +46,6 @@ export function Header() {
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   const [selectedServiceCategory, setSelectedServiceCategory] = useState<string | null>(null);
   const [selectedMobileServiceCategory, setSelectedMobileServiceCategory] = useState<string | null>(null);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   useEffect(() => {
     if (!isMenuOpen) {
       document.body.style.overflow = "";
@@ -231,7 +220,7 @@ export function Header() {
             setIsProjectsOpen(false);
             setSelectedMobileServiceCategory(null);
           }}
-          className={`rounded-md p-1 transition-colors md:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
+          className="rounded-md p-1 text-foreground transition-colors hover:text-primary md:hidden"
           aria-label="Toggle menu"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
