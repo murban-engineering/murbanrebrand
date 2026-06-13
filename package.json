@@ -7,7 +7,8 @@
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
-    "build:pages": "next build"
+    "build:pages": "next build",
+    "blob:upload-images": "node scripts/upload-public-images-to-blob.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
