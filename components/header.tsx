@@ -69,11 +69,11 @@ export function Header() {
     };
   }, [isMenuOpen]);
 
-  const navTextClass = "text-sm text-muted-foreground transition-colors hover:text-foreground";
+  const navTextClass = "whitespace-nowrap text-sm text-muted-foreground transition-colors hover:text-foreground";
 
   return (
     <header
-      className="fixed top-3 left-1/2 z-50 w-[94%] max-w-3xl -translate-x-1/2 rounded-2xl bg-background/90 backdrop-blur-md transition-all duration-300 sm:top-4 sm:w-[90%] sm:rounded-full"
+      className="fixed top-3 left-1/2 z-50 w-[94%] max-w-3xl -translate-x-1/2 rounded-2xl md:max-w-5xl bg-background/90 backdrop-blur-md transition-all duration-300 sm:top-4 sm:w-[90%] sm:rounded-full"
       style={{
         boxShadow:
           "rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px",
@@ -91,7 +91,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-10 md:flex">
+        <nav className="hidden min-w-0 flex-1 items-center justify-center gap-5 md:flex lg:gap-8 xl:gap-10">
           <Link href="/#home" className={navTextClass}>
             Home
           </Link>
@@ -211,7 +211,7 @@ export function Header() {
           </Link>
         </nav>
 
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden flex-shrink-0 items-center gap-6 md:flex">
           <Link
             href="https://portal.murban-eng.com/#/"
             target="_blank"
