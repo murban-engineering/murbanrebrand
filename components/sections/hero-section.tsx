@@ -140,10 +140,16 @@ export function HeroSection() {
                 style={{ opacity: textOpacity }}
               >
                 <div className="w-full bg-gradient-to-t from-black/70 via-black/40 to-transparent px-6 pb-20 pt-20 text-white md:px-12 md:pb-14 md:pt-24 lg:px-16">
-                  <h1 className="murban-engineering-wordmark text-4xl leading-tight md:text-6xl">
-                    <span className="block uppercase text-[#C82032] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]">MURBAN</span>
-                    <span className="murban-engineering-wordmark-subtitle mt-2 inline-block text-[#213164] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] text-2xl md:text-4xl">ENGINEERING LTD</span>
-                  </h1>
+                  <div className="relative h-[7rem] w-[16.5rem] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] md:h-[11rem] md:w-[26rem]" aria-label="MURBAN ENGINEERING LTD">
+                    <Image
+                      src="/images/MURBANLOGOFINAL TODAY.png"
+                      alt="MURBAN ENGINEERING LTD"
+                      fill
+                      className="object-contain object-left"
+                      sizes="(min-width: 768px) 26rem, 16.5rem"
+                      priority
+                    />
+                  </div>
                   <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/90 md:text-base">
                     A specialist firm in Asset Integrity, Inspection, and Non-Destructive Testing (NDT). We deliver reliable and safe inspection solutions for oil & gas, energy, marine, and industrial sectors across Africa.
                   </p>
