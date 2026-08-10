@@ -80,13 +80,14 @@ export function Header() {
       }}
     >
       <div className="flex items-center justify-between px-3 py-2 transition-all duration-300 sm:pl-5">
-        <Link href="/#home" className="flex items-center">
+        <Link href="/#home" className="flex min-w-0 flex-shrink-0 items-center" aria-label="MURBAN ENGINEERING LTD home">
           <Image
-            src="/images/murban-logo.ico"
+            src="/images/MURBANTODAY.png"
             alt="MURBAN ENGINEERING LTD"
-            width={40}
-            height={40}
-            className="object-contain"
+            width={1227}
+            height={345}
+            priority
+            className="h-auto w-[150px] max-w-[52vw] object-contain sm:w-[170px] md:w-[180px]"
           />
         </Link>
 
@@ -231,7 +232,7 @@ export function Header() {
             setIsProjectsOpen(false);
             setSelectedMobileServiceCategory(null);
           }}
-          className={`rounded-md p-1 transition-colors md:hidden ${isScrolled ? "text-foreground" : "text-white"}`}
+          className="rounded-md p-1 text-foreground transition-colors hover:text-[#A60D0F] md:hidden"
           aria-label="Toggle menu"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
