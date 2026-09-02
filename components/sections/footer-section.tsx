@@ -53,7 +53,7 @@ const officeDetails = [
   {
     city: "Mombasa",
     address: ["Off Airport Road, Port Reitz", "P.O. Box 99215-80107", "Mombasa, Kenya"],
-    phone: "+254 202651068",
+    phone: "+254202650618",
     mobile: "+254 724966694",
   },
 ];

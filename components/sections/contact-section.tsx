@@ -21,7 +21,7 @@ const officeLocations = [
       "Off Airport Road, Port Reitz",
       "P. O. Box 99215, 80107",
       "Mombasa, Kenya",
-      "Tel: +254 202651068",
+      "Tel: +254202650618",
       "Mob: +254 724966694",
     ],
   },
