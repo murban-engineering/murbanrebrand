@@ -252,7 +252,6 @@ export function PhilosophySection() {
                     <ServiceLink
                       key={service.slug}
                       href={`/services/${service.slug}`}
-                      prefetch={true}
                       className="rounded-2xl border border-border bg-card p-4 md:p-5 transition-colors hover:border-primary/40 hover:bg-card/90"
                     >
                       <article>
