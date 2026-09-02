@@ -16,6 +16,18 @@ function isServiceDetailHref(href: LinkProps["href"]) {
   return typeof href.pathname === "string" && href.pathname.startsWith("/services/");
 }
 
+function getServiceDetailPath(href: LinkProps["href"]) {
+  if (typeof href === "string") {
+    return href;
+  }
+
+  if (typeof href.pathname !== "string") {
+    return null;
+  }
+
+  return href.pathname;
+}
+
 export function rememberServiceOrigin() {
   if (typeof window === "undefined") return;
 
@@ -55,11 +67,29 @@ type ServiceLinkProps = LinkProps & {
 };
 
 export function ServiceLink({ children, onClick, ...props }: ServiceLinkProps & { onClick?: (event: MouseEvent<HTMLAnchorElement>) => void }) {
+  const router = useRouter();
+  const isServiceDetail = isServiceDetailHref(props.href);
+
+  const prefetchService = () => {
+    const servicePath = getServiceDetailPath(props.href);
+
+    if (isServiceDetail && servicePath) {
+      router.prefetch(servicePath);
+    }
+  };
+
   return (
     <Link
       {...props}
+      // The services grid contains every service. Prefetching every route as it
+      // enters the viewport competes with the visible images for bandwidth.
+      // Prefetch on a deliberate navigation intent instead.
+      prefetch={isServiceDetail ? false : props.prefetch}
+      onMouseEnter={prefetchService}
+      onFocus={prefetchService}
+      onTouchStart={prefetchService}
       onClick={(event) => {
-        if (isServiceDetailHref(props.href)) {
+        if (isServiceDetail) {
           rememberServiceOrigin();
         }
 
