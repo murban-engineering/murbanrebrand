@@ -10,8 +10,8 @@ const officeLocations = [
       "OFFICE",
       "Embakasi, Old North Airport Rd",
       "Next to Naivas Embakasi",
-      "Tel: +254 203673821",
-      "Mob: +254 703041821",
+      "Tel: +254203673821",
+      "Mob: +254703041821",
     ],
   },
   {
@@ -22,7 +22,7 @@ const officeLocations = [
       "P. O. Box 99215, 80107",
       "Mombasa, Kenya",
       "Tel: +254202650618",
-      "Mob: +254 724966694",
+      "Mob: +254724966694",
     ],
   },
 ];

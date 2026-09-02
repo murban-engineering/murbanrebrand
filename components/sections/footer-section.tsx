@@ -47,14 +47,14 @@ const officeDetails = [
       "Embakasi, Old North Airport Rd",
       "Next to Naivas Embakasi",
     ],
-    phone: "+254 203673821",
-    mobile: "+254 703041821",
+    phone: "+254203673821",
+    mobile: "+254703041821",
   },
   {
     city: "Mombasa",
     address: ["Off Airport Road, Port Reitz", "P.O. Box 99215-80107", "Mombasa, Kenya"],
     phone: "+254202650618",
-    mobile: "+254 724966694",
+    mobile: "+254724966694",
   },
 ];
 
